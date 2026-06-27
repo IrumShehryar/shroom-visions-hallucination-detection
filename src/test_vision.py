@@ -3,6 +3,21 @@ from src.evaluate_row import evaluate_single_row
 
 test_cases = [
     {
+    "row": {
+        "id": "train-en-416",
+        "prompt": "Does this cat have four legs? Please elaborate.",
+        "image_name": "cat_Three-legged_cat_3-legged-cat-sitting_Ted-Arts-Shutte.jpg",
+        "response": "Yes, this cat appears to have four legs. \n\nIn the image, we can clearly see all four of the cat's legs: two front legs supporting its upper body and two back legs positioned beneath its rear. While part of the back legs are hidden by the cat's body, their presence is evident. \n\nIt's a healthy-looking cat!"
+    },
+    "gold": [
+        {"start": 30, "end": 31, "prob": 0.67, "label": "miscounting"},
+        {"start": 31, "end": 34, "prob": 1.0, "label": "miscounting"},
+        {"start": 80, "end": 84, "prob": 0.67, "label": "miscounting"},
+        {"start": 104, "end": 107, "prob": 0.67, "label": "miscounting"}
+    ]
+},
+
+   """ {
         "row": {
             "id": "train-en-413",
             "prompt": "Does this desk have legs? Please elaborate.",
@@ -55,7 +70,7 @@ test_cases = [
             {"start": 269, "end": 276, "prob": 0.67, "label": "OCR"},
             {"start": 305, "end": 311, "prob": 0.67, "label": "OCR"}
         ]
-    }
+    }"""
 ]
 
 

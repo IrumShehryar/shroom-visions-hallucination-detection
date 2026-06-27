@@ -83,7 +83,9 @@ def build_audit_prompt(prompt_text,response_text,filename_hint):
         If nothing is clearly wrong, return an empty list.
         Be conservative — do not flag things unless you have 
         clear visual evidence they are wrong.
-
+        If you are not completely certain something is wrong based on 
+        clear visual evidence, do NOT flag it.
+        Prefer returning empty [] over uncertain flags.
     """
    
     output_format="""Return your answer as a JSON array only. No other text.
