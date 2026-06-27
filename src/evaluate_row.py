@@ -4,6 +4,12 @@ from src.rules.invention import check_invention_hallucination
 from src.rules.mischaracterization import check_color_hallucination, check_brand_hallucination
 from src.rules.miscounting import check_miscounting_hallucination       
 from src.rules.ocr import check_ocr_hallucination
+from src.utils import compress_char_arrays_to_spans
+# Global numeric mapping to align string numbers with digits
+NUMERIC_MAPPING = {
+    "one": "1", "two": "2", "three": "3", "four": "4", "five": "5",
+    "six": "6", "seven": "7", "eight": "8", "nine": "9", "ten": "10"
+}
 
 def clean_and_check_filename(filename):
     
@@ -62,7 +68,7 @@ def evaluate_single_row(dataset_row):
             for i in range(noun_item["start_idx"],noun_item["end_idx"]):
                 if i< response_len:
                     char_probabilities[i]=hallucination_confidence
-                    char_categories[i]="A"
+                    char_categories[i]="Invention"
                     
 
     # 2. Check Mischaracterization (Category B)
@@ -71,45 +77,31 @@ def evaluate_single_row(dataset_row):
             for i in range(adj_item["start_idx"], adj_item["end_idx"]):
                 if i < response_len:
                     char_probabilities[i] = hallucination_confidence
-                    char_categories[i] = "B"
+                    char_categories[i] = "Mischaracterization"
 
     # 3. Check Miscounting (Category D)
     for num_item in response_features["numerals"]:
-        if num_item["lemma"].lower() not in allowed_numerals:
+        num_lemma = num_item["lemma"].lower()
+        # Convert word form to digit form if applicable (e.g., "three" -> "3")
+        normalized_num = NUMERIC_MAPPING.get(num_lemma, num_lemma)
+        normalized_allowed = {NUMERIC_MAPPING.get(n, n) for n in allowed_numerals}
+        
+        if normalized_num not in normalized_allowed:
             for i in range(num_item["start_idx"], num_item["end_idx"]):
                 if i < response_len:
                     char_probabilities[i] = hallucination_confidence
-                    char_categories[i] = "D"
-
+                    char_categories[i] = "Miscounting"
+    # =============================================================
+    # 4. RUN COMPRESSION UTILITY & FORMAT FOR OFFICIAL SUBMISSION
+    # =============================================================
+    # Converts arrays into: [{"start": X, "end": Y, "prob": Z, "label": "..."}]
+    compressed_labels = compress_char_arrays_to_spans(char_probabilities, char_categories, model_response)
     return {
         "id": dataset_row.get("id"),
-        "response": model_response,
-        "char_probabilities": char_probabilities,
-        "char_categories": char_categories
+        "labels":compressed_labels,
     }
     
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # Test Case 1: Descriptive filename (ImageNet style). 
     # The model response invents an "airplane" and miscounts the masts.
     # 1. Create a mock row simulating an descriptive image dataset entry
-    test_row = {
-        "id": "test-001",
-        "prompt": "Are there any ships or yachts visible?",
-        "image_name": "luxury_yacht_harbor_view.jpg",
-        "response": "A red yacht is docked."
-    }
-    
-    print("--- Running Evaluation Test ---")
-    output = evaluate_single_row(test_row)
-    
-    print(f"\nResponse Text: '{output['response']}'")
-    print(f"Total Characters: {len(output['response'])}")
-    
-    print("\nCharacter Breakdown:")
-    # Print each character next to its assigned probability and category
-    for char_idx, char in enumerate(output["response"]):
-        prob = output["char_probabilities"][char_idx]
-        cat = output["char_categories"][char_idx]
-        # Only highlight if flagged to keep terminal output clean
-        flag_status = f"<- Flagged [{cat}] Prob: {prob}" if cat != "O" else ""
-        print(f"Index {char_idx:2d} | '{char}' | Cat: {cat} {flag_status}")
