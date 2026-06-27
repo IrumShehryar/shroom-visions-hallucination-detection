@@ -1,3 +1,4 @@
+.env
 distrib/
 *.jsonl
 *.tar.gz
