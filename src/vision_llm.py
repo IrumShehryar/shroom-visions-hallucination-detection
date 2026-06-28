@@ -62,7 +62,7 @@ def call_vision_llm(image_path, audit_prompt):
     )
     
     raw_text = response.content[0].text
-    return parse_llm_response(raw_text)
+    return parse_llm_response(raw_text),raw_text
 
 
 

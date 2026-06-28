@@ -24,7 +24,7 @@ def clean_and_check_filename(filename):
 def get_filename_hint(image_name):
     clean_filename, is_descriptive = clean_and_check_filename(image_name)
     if is_descriptive:
-        return f"The image filename suggests it contains: {clean_filename}"
+        return f"Background context only — image filename: {clean_filename}. Do not use this to validate response claims. Only use visual evidence from the image itself."
     return "No descriptive filename available"
 
 def get_image_path(image_name, images_dir=r"D:\SHROOM\distrib\images\shroom-vis-images"):
@@ -53,14 +53,15 @@ def evaluate_single_row(dataset_row):
         print(f"Warning: Image not found: {image_path}")
         return {"id": dataset_row.get("id"), "labels": []}
 
-    llm_output = call_vision_llm(image_path, audit_prompt)
+    llm_output,raw_response = call_vision_llm(image_path, audit_prompt)
 
     # Step 5: Map spans to character offsets
     labels = map_spans_to_characters(llm_output, model_response)
 
     return {
         "id": dataset_row.get("id"),
-        "labels": labels
+        "labels": labels,
+        "haiku_reasoning": raw_response
     }
 
 

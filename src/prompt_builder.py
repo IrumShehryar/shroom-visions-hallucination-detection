@@ -1,13 +1,24 @@
 def build_audit_prompt(prompt_text,response_text,filename_hint):
-    role="""You are a hallucination detection expert analyzing outputs from vision-language models.
+    role="""You are a precise hallucination span detector analyzing 
+outputs from vision-language models.
 
-        You will be given:
-        - An image
-        - A prompt that was asked about the image
-        - A response that a vision-language model generated
+You will be given:
+- An image
+- A prompt that was asked about the image  
+- A response that a vision-language model generated
 
-        Your job is to identify which parts of the response are 
-        factually wrong or unsupported by the image."""
+Your job is to find specific words or phrases in the response 
+that do not precisely match what is visible in the image.
+
+IMPORTANT INSTRUCTIONS:
+- Even if the response is broadly correct, individual words 
+  or phrases may be inaccurate. Find those specific words.
+- Do not evaluate the response as a whole.
+- Evaluate each factual claim individually against the image.
+- A response can be mostly right but contain specific wrong 
+  details — your job is to find those details.
+- Pay attention to: specific names, varieties, brands, colors,
+  quantities, spatial relationships, and visible text."""
     
     categories="""There are five hallucination categories:
         INVENTION: The response mentions something that does not 

@@ -1,0 +1,1155 @@
+[
+  {
+    "id": "train-en-411",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-412",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-413",
+    "iou": 0.5385,
+    "pred_count": 1,
+    "gold_count": 2,
+    "pred_labels": [
+      {
+        "start": 221,
+        "end": 228,
+        "label": "mischaracterization",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 148,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      },
+      {
+        "start": 221,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 228
+      }
+    ]
+  },
+  {
+    "id": "train-en-414",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-415",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 53,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 57
+      }
+    ]
+  },
+  {
+    "id": "train-en-416",
+    "iou": 0.4375,
+    "pred_count": 2,
+    "gold_count": 5,
+    "pred_labels": [
+      {
+        "start": 30,
+        "end": 34,
+        "label": "miscounting",
+        "prob": 0.95
+      },
+      {
+        "start": 104,
+        "end": 107,
+        "label": "miscounting",
+        "prob": 0.9
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 30,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 34,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 39
+      },
+      {
+        "start": 80,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 84
+      },
+      {
+        "start": 104,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 107
+      }
+    ]
+  },
+  {
+    "id": "train-en-417",
+    "iou": 0.0,
+    "pred_count": 2,
+    "gold_count": 2,
+    "pred_labels": [
+      {
+        "start": 101,
+        "end": 108,
+        "label": "mischaracterization",
+        "prob": 0.95
+      },
+      {
+        "start": 233,
+        "end": 252,
+        "label": "mischaracterization",
+        "prob": 0.9
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 588,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 722
+      },
+      {
+        "start": 706,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 722
+      }
+    ]
+  },
+  {
+    "id": "train-en-418",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 146,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 153
+      }
+    ]
+  },
+  {
+    "id": "train-en-419",
+    "iou": 0.0698,
+    "pred_count": 1,
+    "gold_count": 6,
+    "pred_labels": [
+      {
+        "start": 31,
+        "end": 34,
+        "label": "miscounting",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 56
+      },
+      {
+        "start": 56,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 75
+      },
+      {
+        "start": 97,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 101
+      },
+      {
+        "start": 26,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 34,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 41
+      }
+    ]
+  },
+  {
+    "id": "train-en-420",
+    "iou": 0.3137,
+    "pred_count": 1,
+    "gold_count": 6,
+    "pred_labels": [
+      {
+        "start": 127,
+        "end": 143,
+        "label": "mischaracterization",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 127,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 143
+      },
+      {
+        "start": 225,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 227
+      },
+      {
+        "start": 227,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 233
+      },
+      {
+        "start": 233,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 239
+      },
+      {
+        "start": 514,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 524
+      },
+      {
+        "start": 557,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 568
+      }
+    ]
+  },
+  {
+    "id": "train-en-421",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-422",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-423",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-424",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 0,
+    "pred_labels": [
+      {
+        "start": 43,
+        "end": 46,
+        "label": "miscounting",
+        "prob": 0.95
+      }
+    ],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-425",
+    "iou": 0.0615,
+    "pred_count": 1,
+    "gold_count": 8,
+    "pred_labels": [
+      {
+        "start": 72,
+        "end": 76,
+        "label": "mischaracterization",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 72,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 76
+      },
+      {
+        "start": 157,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 161
+      },
+      {
+        "start": 168,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 173
+      },
+      {
+        "start": 72,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 76
+      },
+      {
+        "start": 112,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 136
+      },
+      {
+        "start": 136,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 147
+      },
+      {
+        "start": 147,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 151
+      },
+      {
+        "start": 151,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 173
+      }
+    ]
+  },
+  {
+    "id": "train-en-426",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 236,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 239
+      },
+      {
+        "start": 269,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 276
+      },
+      {
+        "start": 305,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 311
+      }
+    ]
+  },
+  {
+    "id": "train-en-427",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 0,
+    "pred_labels": [
+      {
+        "start": 611,
+        "end": 616,
+        "label": "mischaracterization",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-431",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 114,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 224
+      },
+      {
+        "start": 331,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 343
+      },
+      {
+        "start": 80,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 86
+      }
+    ]
+  },
+  {
+    "id": "train-en-432",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-433",
+    "iou": 0.0549,
+    "pred_count": 1,
+    "gold_count": 3,
+    "pred_labels": [
+      {
+        "start": 44,
+        "end": 53,
+        "label": "mischaracterization",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 44,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 49
+      },
+      {
+        "start": 63,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 83
+      },
+      {
+        "start": 137,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 199
+      }
+    ]
+  },
+  {
+    "id": "train-en-434",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-435",
+    "iou": 0.2542,
+    "pred_count": 2,
+    "gold_count": 12,
+    "pred_labels": [
+      {
+        "start": 43,
+        "end": 92,
+        "label": "invention",
+        "prob": 0.85
+      },
+      {
+        "start": 122,
+        "end": 134,
+        "label": "invention",
+        "prob": 0.75
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 43
+      },
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 52
+      },
+      {
+        "start": 52,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      },
+      {
+        "start": 71,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 92
+      },
+      {
+        "start": 92,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 122
+      },
+      {
+        "start": 122,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 134
+      },
+      {
+        "start": 134,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 163
+      },
+      {
+        "start": 163,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 171
+      },
+      {
+        "start": 171,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 240
+      },
+      {
+        "start": 43,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 52
+      },
+      {
+        "start": 71,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 91
+      },
+      {
+        "start": 122,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 134
+      }
+    ]
+  },
+  {
+    "id": "train-en-437",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 3,
+    "pred_labels": [
+      {
+        "start": 76,
+        "end": 89,
+        "label": "invention",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 151,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 156
+      },
+      {
+        "start": 156,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 162
+      },
+      {
+        "start": 162,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 185
+      }
+    ]
+  },
+  {
+    "id": "train-en-438",
+    "iou": 0.1538,
+    "pred_count": 2,
+    "gold_count": 6,
+    "pred_labels": [
+      {
+        "start": 89,
+        "end": 93,
+        "label": "mischaracterization",
+        "prob": 0.95
+      },
+      {
+        "start": 400,
+        "end": 404,
+        "label": "mischaracterization",
+        "prob": 0.95
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 75,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 93
+      },
+      {
+        "start": 379,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 404
+      },
+      {
+        "start": 89,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 93
+      },
+      {
+        "start": 374,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 377
+      },
+      {
+        "start": 393,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 404
+      },
+      {
+        "start": 476,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 482
+      }
+    ]
+  },
+  {
+    "id": "train-en-439",
+    "iou": 0.1875,
+    "pred_count": 2,
+    "gold_count": 1,
+    "pred_labels": [
+      {
+        "start": 134,
+        "end": 147,
+        "label": "mischaracterization",
+        "prob": 0.9
+      },
+      {
+        "start": 257,
+        "end": 260,
+        "label": "mischaracterization",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 257,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 260
+      }
+    ]
+  },
+  {
+    "id": "train-en-440",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 0,
+    "pred_labels": [
+      {
+        "start": 162,
+        "end": 171,
+        "label": "mischaracterization",
+        "prob": 0.9
+      }
+    ],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-441",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-442",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-443",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-444",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-445",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-446",
+    "iou": 0.051,
+    "pred_count": 1,
+    "gold_count": 3,
+    "pred_labels": [
+      {
+        "start": 32,
+        "end": 37,
+        "label": "miscounting",
+        "prob": 0.75
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 135
+      },
+      {
+        "start": 40,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 49
+      },
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 37
+      }
+    ]
+  },
+  {
+    "id": "train-en-448",
+    "iou": 0.8108,
+    "pred_count": 1,
+    "gold_count": 2,
+    "pred_labels": [
+      {
+        "start": 337,
+        "end": 367,
+        "label": "invention",
+        "prob": 0.6
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 217,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 221
+      },
+      {
+        "start": 334,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 367
+      }
+    ]
+  },
+  {
+    "id": "train-en-449",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-450",
+    "iou": 0.0748,
+    "pred_count": 2,
+    "gold_count": 7,
+    "pred_labels": [
+      {
+        "start": 645,
+        "end": 653,
+        "label": "mischaracterization",
+        "prob": 0.95
+      },
+      {
+        "start": 659,
+        "end": 683,
+        "label": "invention",
+        "prob": 0.95
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 578,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 866
+      },
+      {
+        "start": 135,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      },
+      {
+        "start": 218,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 231
+      },
+      {
+        "start": 335,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 340
+      },
+      {
+        "start": 406,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 509
+      },
+      {
+        "start": 578,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 613
+      },
+      {
+        "start": 645,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 683
+      }
+    ]
+  },
+  {
+    "id": "train-en-451",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 136,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 141
+      },
+      {
+        "start": 378,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 389
+      },
+      {
+        "start": 448,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 453
+      }
+    ]
+  },
+  {
+    "id": "train-en-452",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 187,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 217
+      }
+    ]
+  },
+  {
+    "id": "train-en-454",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-455",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 403,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 417
+      },
+      {
+        "start": 466,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 480
+      }
+    ]
+  },
+  {
+    "id": "train-en-456",
+    "iou": 0.0,
+    "pred_count": 2,
+    "gold_count": 4,
+    "pred_labels": [
+      {
+        "start": 242,
+        "end": 248,
+        "label": "ocr_problem",
+        "prob": 0.95
+      },
+      {
+        "start": 266,
+        "end": 272,
+        "label": "ocr_problem",
+        "prob": 0.9
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 153,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 163
+      },
+      {
+        "start": 1006,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1029
+      },
+      {
+        "start": 1034,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1055
+      },
+      {
+        "start": 1098,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1124
+      }
+    ]
+  },
+  {
+    "id": "train-en-458",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 0,
+    "pred_labels": [
+      {
+        "start": 187,
+        "end": 190,
+        "label": "miscounting",
+        "prob": 0.95
+      }
+    ],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-459",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-460",
+    "iou": 0.0,
+    "pred_count": 2,
+    "gold_count": 4,
+    "pred_labels": [
+      {
+        "start": 117,
+        "end": 140,
+        "label": "invention",
+        "prob": 0.9
+      },
+      {
+        "start": 292,
+        "end": 305,
+        "label": "invention",
+        "prob": 0.85
+      }
+    ],
+    "gold_labels": [
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 65
+      },
+      {
+        "start": 731,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 783
+      },
+      {
+        "start": 229,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 284
+      },
+      {
+        "start": 609,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 633
+      }
+    ]
+  },
+  {
+    "id": "train-en-461",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-462",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-463",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-464",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 0,
+    "pred_labels": [
+      {
+        "start": 710,
+        "end": 723,
+        "label": "mischaracterization",
+        "prob": 0.95
+      }
+    ],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-465",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-466",
+    "iou": 0.0,
+    "pred_count": 1,
+    "gold_count": 0,
+    "pred_labels": [
+      {
+        "start": 32,
+        "end": 37,
+        "label": "miscounting",
+        "prob": 0.95
+      }
+    ],
+    "gold_labels": []
+  },
+  {
+    "id": "train-en-467",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": []
+  }
+]
