@@ -1,12 +1,12 @@
 ERROR ANALYSIS LOG
-Generated: 2026-06-30 00:22
+Generated: 2026-06-28 18:09
 Total samples: 50
 Zero IoU samples: 19
-Perfect IoU samples: 18
+Perfect IoU samples: 19
 ======================================================================
 
 ======================================================================
-FALSE POSITIVES (system flagged, gold is clean) — 9 cases
+FALSE POSITIVES (system flagged, gold is clean) — 8 cases
 ======================================================================
 
 ID: train-en-422
@@ -30,7 +30,7 @@ In summary, while it *might* have a very small auxiliary engine, the bus's prima
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [217:226] 'two poles' | miscounting | confidence: 0.85
+  [217:220] 'two' | miscounting | confidence: 0.90
 
 HAIKU REASONING:
 ```json
@@ -38,34 +38,8 @@ HAIKU REASONING:
   {
     "span_text": "two poles",
     "label": "miscounting",
-    "prob": 0.85,
-    "reason": "The image shows a single overhead pantograph pole/arm extending upward from the bus, not two poles."
-  }
-]
-```
-----------------------------------------------------------------------
-
-ID: train-en-424
-PROMPT: How many people are there in the image?
-IMAGE: 6879558675_033abbea15_o.jpg
-IoU: 0.0
-
-FULL RESPONSE:
-Based on the image, it appears there are **two** people. We can see two sets of hands holding a book, and parts of their clothing (jackets and sleeves) are visible.
-
-GOLD LABELS:
-
-PREDICTED LABELS:
-  [96:100] 'book' | mischaracterization | confidence: 0.85
-
-HAIKU REASONING:
-```json
-[
-  {
-    "span_text": "book",
-    "label": "mischaracterization",
-    "prob": 0.85,
-    "reason": "The object being held appears to be a paper or envelope, not a book; it is a single flat sheet held between two people's hands."
+    "prob": 0.9,
+    "reason": "The image clearly shows a single overhead pantograph pole extending upward from the bus roof, not two poles."
   }
 ]
 ```
@@ -92,7 +66,7 @@ Large appliances typically include things like full-size refrigerators, ovens, w
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [601:616] 'next to a stove' | mischaracterization | confidence: 0.90
+  [611:616] 'stove' | mischaracterization | confidence: 0.85
 
 HAIKU REASONING:
 ```json
@@ -100,8 +74,8 @@ HAIKU REASONING:
   {
     "span_text": "next to a stove",
     "label": "mischaracterization",
-    "prob": 0.9,
-    "reason": "The dishwasher is positioned to the right of the countertop, while the gas stove is visible to the left side of the image, not next to the dishwasher."
+    "prob": 0.85,
+    "reason": "The dishwasher is positioned next to a gas cooktop/range on the left side, not a separate stove unit as the phrasing suggests."
   }
 ]
 ```
@@ -128,67 +102,59 @@ You can see the chick in the image has a mostly tan and brown coloration, with s
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [65:70] 'chick' | mischaracterization | confidence: 0.90
-  [103:169] 'Young peafowl have a different plumage than adult males (peacocks)' | invention | confidence: 0.90
-  [626:631] 'chick' | mischaracterization | confidence: 0.90
+  [9:16] 'peacock' | mischaracterization | confidence: 0.90
 
 HAIKU REASONING:
 ```json
 [
   {
-    "span_text": "peafowl chick (a young peacock or peahen)",
-    "label": "mischaracterization",
-    "prob": 0.85,
-    "reason": "The bird in the image appears to be a meerkat, not a peafowl chick, based on its body structure, head shape, eye placement, and overall morphology."
-  },
-  {
-    "span_text": "Young peafowl have a different plumage than adult males (peacocks)",
-    "label": "invention",
-    "prob": 0.9,
-    "reason": "This entire discussion of peafowl plumage is irrelevant as the image does not show a peafowl chick at all."
-  },
-  {
-    "span_text": "chick",
+    "span_text": "peacock",
     "label": "mischaracterization",
     "prob": 0.9,
-    "reason": "The animal in the image is not a chick but appears to be a meerkat or similar small mammal."
+    "reason": "The bird in the image is a peafowl chick, not an adult peacock. The response itself correctly identifies it as a 'peafowl chick' but then refers to it as 'this peacock' in the opening sentence, which is inaccurate."
   }
 ]
 ```
 ----------------------------------------------------------------------
 
-ID: train-en-441
-PROMPT: Does this lime have smooth skin? Please elaborate.
-IMAGE: lime_Kaffir_lime_kaffir-lime-vs-lime.jpg
+ID: train-en-440
+PROMPT: Does this cockroach live indoors? Please elaborate.
+IMAGE: cockroach_Burrowing_cockroaches_(blaberus)_blaberus-craniifer-dead-head-cockroa.jpg
 IoU: 0.0
 
 FULL RESPONSE:
-Certainly! Let's analyze the image. 
+Certainly! Let's analyze whether the cockroach in the image typically lives indoors.
 
-Based on the picture, the limes (specifically, they are **kaffir limes**, also known as Thai limes) do **not** have smooth skin. 
+Based on its appearance, this is a **Pacific Beetle Cockroach** (Diploptera punctata). 
 
-Here's a detailed elaboration:
+Here's a breakdown of its indoor/outdoor habits:
 
-*   **Exterior Texture:** The whole kaffir limes in the background have a very bumpy, rough, and textured surface. It's quite distinctively wrinkled and not smooth at all.
-*   **Interior Texture:** The sliced kaffir limes reveal a pale green interior with a segmented structure. The rind has a bumpy texture even on the inside.
+*   **Primarily Outdoor:** Pacific Beetle Cockroaches are generally found outdoors in moist environments. They thrive in leaf litter, under decaying wood, in compost piles, and around gardens.
+*   **Can Enter Homes:** While they prefer the outdoors, they *can* wander into homes, especially during wet weather or when seeking shelter. They are often found in crawl spaces, basements, or garages.
+*   **Not a Common Indoor Infestation:** Unlike German or American cockroaches, Pacific Beetle Cockroaches don't typically establish large breeding populations indoors. They usually don't reproduce inside.
+*   **Unique Feature:** These cockroaches are known for giving birth to live young (viviparity), unlike many other cockroach species that lay eggs.
 
-Kaffir limes are known for their unique, bumpy skin, which is different from common limes that have relatively smooth skin. The rind is actually where a lot of the flavor and aroma are concentrated, making it a key ingredient in Southeast Asian cuisine.
+**In conclusion:** While this cockroach *can* be found indoors, it's more commonly an outdoor species that occasionally ventures inside. It's not a typical indoor pest like some other cockroach types.
 
-If you would like, you can send me another image and I will analyze it for you.
+If you're seeing one indoors, it's likely a stray rather than a sign of a major infestation. However, it's still a good idea to address any moisture issues or potential entry points to discourage them from entering.
+
+
+
+
 
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [432:451] 'pale green interior' | mischaracterization | confidence: 0.90
+  [162:171] 'punctata)' | mischaracterization | confidence: 0.90
 
 HAIKU REASONING:
 ```json
 [
   {
-    "span_text": "pale green interior",
+    "span_text": "Pacific Beetle Cockroach (Diploptera punctata)",
     "label": "mischaracterization",
     "prob": 0.9,
-    "reason": "The interior flesh of the sliced limes is clearly yellow-green to yellow, not pale green as claimed."
+    "reason": "The filename and visual characteristics suggest this is a Blaberus species (likely Blaberus craniifer), not Diploptera punctata (Pacific Beetle Cockroach), which is a distinct species with different morphology."
   }
 ]
 ```
@@ -222,7 +188,6 @@ GOLD LABELS:
 
 PREDICTED LABELS:
   [184:192] 'cleavers' | mischaracterization | confidence: 0.60
-  [562:570] 'cleavers' | mischaracterization | confidence: 0.60
 
 HAIKU REASONING:
 ```json
@@ -231,7 +196,7 @@ HAIKU REASONING:
     "span_text": "cleavers",
     "label": "mischaracterization",
     "prob": 0.6,
-    "reason": "The right tool appears to be a pointed handaxe rather than a cleaver, which typically has a flat, broad cutting edge. The pointed form is characteristic of a handaxe, not a cleaver."
+    "reason": "The right tool appears to be a pointed handaxe (similar to the left one), not a cleaver. Both objects shown have similar pointed, almond-shaped forms characteristic of handaxes, not the wider, flatter form typical of cleavers."
   }
 ]
 ```
@@ -259,7 +224,7 @@ So, to answer your question directly: No, the guns are not black in color. They 
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [187:195] 'two guns' | miscounting | confidence: 0.95
+  [187:190] 'two' | miscounting | confidence: 0.90
 
 HAIKU REASONING:
 ```json
@@ -267,8 +232,8 @@ HAIKU REASONING:
   {
     "span_text": "two guns",
     "label": "miscounting",
-    "prob": 0.95,
-    "reason": "The image shows three toy guns being held by the person, not two."
+    "prob": 0.9,
+    "reason": "The image shows three toy guns being held, not two. There is a red gun in the foreground, a blue gun in the middle, and a darker (camouflage/tan colored) gun in the background."
   }
 ]
 ```
@@ -296,16 +261,16 @@ While there are some white feathers visible on the wings and potentially some li
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [683:696] 'Brown Pelican' | mischaracterization | confidence: 0.90
+  [710:723] 'occidentalis)' | mischaracterization | confidence: 0.95
 
 HAIKU REASONING:
 ```json
 [
   {
-    "span_text": "Brown Pelican",
+    "span_text": "Brown Pelican (Pelecanus occidentalis)",
     "label": "mischaracterization",
-    "prob": 0.9,
-    "reason": "The filename indicates this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis), which are different species."
+    "prob": 0.95,
+    "reason": "The filename and visible characteristics indicate this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican. The white head with dark neck and body is distinctive of Peruvian Pelicans, not Brown Pelicans."
   }
 ]
 ```
@@ -328,8 +293,7 @@ Therefore, there are a total of three flags visible in the picture.
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [32:37] 'three' | miscounting | confidence: 0.95
-  [273:278] 'three' | miscounting | confidence: 0.95
+  [32:37] 'three' | miscounting | confidence: 0.90
 
 HAIKU REASONING:
 ```json
@@ -337,15 +301,15 @@ HAIKU REASONING:
   {
     "span_text": "three",
     "label": "miscounting",
-    "prob": 0.95,
-    "reason": "The image shows more than three Union Jack flags - there are multiple flags visible in the background, on tables, and partially visible, totaling more than three distinct flags."
+    "prob": 0.9,
+    "reason": "The image shows more than three flags. There is a large Union Jack in the background, Union Jacks on tables, and additional flag segments visible at the top and sides of the image, totaling more than three distinct flags."
   }
 ]
 ```
 ----------------------------------------------------------------------
 
 ======================================================================
-MISSED DETECTIONS (system clean, gold has errors) — 6 cases
+MISSED DETECTIONS (system clean, gold has errors) — 7 cases
 ======================================================================
 
 ID: train-en-415
@@ -368,6 +332,8 @@ HAIKU REASONING:
 ```json
 []
 ```
+
+The response correctly identifies the brand as Ford. The Ford logo is clearly visible on the truck's front panel below the windshield, making this statement accurate.
 ----------------------------------------------------------------------
 
 ID: train-en-418
@@ -417,6 +383,52 @@ PREDICTED LABELS:
 HAIKU REASONING:
 ```json
 []
+```
+----------------------------------------------------------------------
+
+ID: train-en-450
+PROMPT: Is this fox reddish in color? Please elaborate.
+IMAGE: fox_Darwin's_fox_(lycalopex_fulvipes)_260f71e6e37a07632ea315f7216563c9.jpg
+IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the color of the fox in the image.
+
+While the fox isn't a vibrant, bright red, it does have **reddish tones** throughout its coat. Here's a breakdown:
+
+*   **Overall:** The dominant color is a grizzled gray, but look closely, and you'll see a base of reddish-brown fur.
+*   **Legs and Ears:** The legs and the backs of the ears display more obvious reddish-brown coloration.
+*   **Undercoat:** Hints of reddish hues are visible in the undercoat, particularly around the neck and chest.
+*   **Tail:** The tail appears to have a darker, almost black tip, but the base has reddish undertones.
+
+This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present.
+
+If you'd like, you can share another image and I'll happily describe the colors within it!
+
+GOLD LABELS:
+  [578:866] 'but the base has reddish undertones.
+
+This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present' | invention | annotator agreement: 0.33
+  [135:154] 'throughout its coat' | mischaracterization | annotator agreement: 0.33
+  [218:231] 'grizzled gray' | mischaracterization | annotator agreement: 0.33
+  [335:340] 'backs' | mischaracterization | annotator agreement: 0.33
+  [406:509] 'Undercoat:** Hints of reddish hues are visible in the undercoat, particularly around the neck and chest' | mischaracterization | annotator agreement: 0.33
+  [578:613] 'but the base has reddish undertones' | mischaracterization | annotator agreement: 0.33
+  [645:683] 'Gray Fox** ( *Urocyon cinereoargenteus' | mischaracterization | annotator agreement: 0.33
+
+PREDICTED LABELS:
+  (none — system returned clean)
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Gray Fox (Urocyon cinereoargenteus)",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The filename indicates this is a Darwin's Fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus). These are different species from different continents."
+  }
+]
 ```
 ----------------------------------------------------------------------
 
@@ -527,23 +539,23 @@ GOLD LABELS:
   [706:722] 'ome pigmentation' | mischaracterization | annotator agreement: 0.33
 
 PREDICTED LABELS:
-  [65:108] 'alligator in the foreground is dark colored' | mischaracterization | confidence: 0.90
-  [233:252] 'American alligators' | invention | confidence: 0.85
+  [29:38] 'alligator' | mischaracterization | confidence: 0.95
+  [233:252] 'American alligators' | mischaracterization | confidence: 0.85
 
 HAIKU REASONING:
 ```json
 [
   {
-    "span_text": "alligator in the foreground is dark colored",
+    "span_text": "alligator",
     "label": "mischaracterization",
-    "prob": 0.9,
-    "reason": "The alligator in the foreground (being held in the hand) is actually dark colored with tan/yellow markings, but the alligator in the background/top of the image is the pale leucistic one, making the spatial description misleading about which is which."
+    "prob": 0.95,
+    "reason": "The animal in the image is a crocodilian, but based on the filename and appearance (slender snout, coloration pattern), this appears to be a caiman or young crocodile, not an alligator."
   },
   {
     "span_text": "American alligators",
-    "label": "invention",
+    "label": "mischaracterization",
     "prob": 0.85,
-    "reason": "The image shows what appears to be a crocodilian, and given the filename mentions leucistic gators, these appear to be alligators, but there is no visible text or definitive marker in the image identifying them specifically as American alligators rather than another species."
+    "reason": "The dark reptile in the foreground does not appear to be an American alligator based on its facial structure and overall morphology; it appears to be a different species of crocodilian such as a caiman."
   }
 ]
 ```
@@ -572,7 +584,7 @@ HAIKU REASONING:
     "span_text": "girl's pocket",
     "label": "invention",
     "prob": 0.9,
-    "reason": "The visible person holding the sign is wearing shorts/pants without any visible pocket contents or accessible pocket where an object could be seen."
+    "reason": "There is no visible girl's pocket in the image. The image shows people at what appears to be a memorial gathering holding a sign with a goose photo, but no pocket or small object within a pocket is visible."
   }
 ]
 ```
@@ -614,9 +626,7 @@ GOLD LABELS:
 PREDICTED LABELS:
   [242:248] 'Faşist' | ocr_problem | confidence: 0.95
   [266:272] 'Devlet' | ocr_problem | confidence: 0.95
-  [616:622] 'Faşist' | ocr_problem | confidence: 0.95
-  [629:635] 'Devlet' | ocr_problem | confidence: 0.95
-  [831:844] 'Fascist State' | ocr_problem | confidence: 0.92
+  [831:844] 'Fascist State' | ocr_problem | confidence: 0.95
 
 HAIKU REASONING:
 ```json
@@ -625,19 +635,19 @@ HAIKU REASONING:
     "span_text": "FaÅŸist",
     "label": "ocr_problem",
     "prob": 0.95,
-    "reason": "The image shows 'FaFST' not 'FaÅŸist' - the response misread the handwritten text."
+    "reason": "The text in the image reads 'FIRST' not 'FaÅŸist'. The response misread the visible handwriting."
   },
   {
     "span_text": "Devlet",
     "label": "ocr_problem",
     "prob": 0.95,
-    "reason": "The image shows 'DeVleT' not 'Devlet' - the response misread the handwritten text, particularly the capitalization and letter forms."
+    "reason": "The text in the image reads 'DENIT' not 'Devlet'. The response misread the visible handwriting."
   },
   {
     "span_text": "Fascist State",
     "label": "ocr_problem",
-    "prob": 0.92,
-    "reason": "The response claims the message means 'Fascist State' but the actual text appears to say 'FaFST DeVleT' which does not clearly translate to or match 'Fascist State'."
+    "prob": 0.95,
+    "reason": "The response claims the message means 'Fascist State' but the actual visible text reads 'FIRST DENIT', which does not convey that political message."
   }
 ]
 ```
@@ -669,7 +679,7 @@ GOLD LABELS:
 
 PREDICTED LABELS:
   [186:198] 'wooden cross' | mischaracterization | confidence: 0.85
-  [292:305] 'Palm branches' | invention | confidence: 0.90
+  [135:140] 'cross' | mischaracterization | confidence: 0.85
 
 HAIKU REASONING:
 ```json
@@ -678,13 +688,13 @@ HAIKU REASONING:
     "span_text": "wooden cross",
     "label": "mischaracterization",
     "prob": 0.85,
-    "reason": "The object being carried appears to be a wooden pole or staff, not clearly identifiable as a cross with the typical cross shape visible in the image."
+    "reason": "The object being carried appears to be a large wooden pole or staff, not a cross. It is a single vertical wooden beam without a crossbeam that would be required to form a cross shape."
   },
   {
-    "span_text": "Palm branches",
-    "label": "invention",
-    "prob": 0.9,
-    "reason": "The response acknowledges palm branches are 'not clearly visible' but still includes them as identifying features, when there is no clear evidence of palm branches in the image."
+    "span_text": "Person carrying a cross",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The individual is carrying a wooden pole or staff, not a cross shape. A cross requires both vertical and horizontal beams; this is only a vertical pole."
   }
 ]
 ```

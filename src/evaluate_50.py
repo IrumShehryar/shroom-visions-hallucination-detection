@@ -29,6 +29,13 @@ def run_evaluation(input_path, limit=50):
     results = []
     iou_scores = []
     originals = {}
+    
+    # -------------------------------------------------------------
+    # 🛠️ QUICK CONTROLLER: Add your target IDs here to isolate them.
+    # Leave it empty like this: TARGET_IDS = [] to run everything normally!
+    # -------------------------------------------------------------
+    TARGET_IDS = []  # Example: ["train-en-415", "train-en-416"]
+    
     with open(input_path, encoding="utf-8") as f:
         for line in f:
             row = json.loads(line)
@@ -39,15 +46,21 @@ def run_evaluation(input_path, limit=50):
     category_total = {"miscounting": 0, "mischaracterization": 0, 
                       "invention": 0, "ocr": 0, "other": 0}
 
+    evaluated_count = 0
     with open(input_path, encoding="utf-8") as f:
         for idx, line in enumerate(f):
-            if idx >= limit:
+            row = json.loads(line.strip())
+            
+            # If targeting specific IDs, skip everything else
+            if TARGET_IDS and row["id"] not in TARGET_IDS:
+                continue
+                
+            # If running normally (no specific targets), honor the standard limit
+            if not TARGET_IDS and evaluated_count >= limit:
                 break
             
-            row = json.loads(line.strip())
             gold_labels = row.get("labels", [])
-            
-            print(f"Processing {idx+1}/{limit}: {row['id']}...")
+            print(f"Processing ({evaluated_count + 1}): {row['id']}...")
             
             prediction = evaluate_single_row(row)
             pred_labels = prediction.get("labels", [])
@@ -77,14 +90,16 @@ def run_evaluation(input_path, limit=50):
             })
             
             print(f"  IoU: {iou:.4f} | Pred spans: {len(pred_labels)} | Gold spans: {len(gold_labels)}")
+            evaluated_count += 1
 
-    # Summary
-    avg_iou = sum(iou_scores) / len(iou_scores)
+    # Summary calculations (safeguarded against zero division if running few samples)
+    total_evaluated = len(iou_scores) if iou_scores else 1
+    avg_iou = sum(iou_scores) / total_evaluated
     perfect = sum(1 for s in iou_scores if s == 1.0)
     zero = sum(1 for s in iou_scores if s == 0.0)
     
     print(f"\n{'='*50}")
-    print(f"EVALUATION SUMMARY ({limit} samples)")
+    print(f"EVALUATION SUMMARY ({len(iou_scores)} samples processed)")
     print(f"{'='*50}")
     print(f"Average IoU:     {avg_iou:.4f}")
     print(f"Perfect (1.0):   {perfect} samples")

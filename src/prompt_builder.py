@@ -37,33 +37,26 @@ IMPORTANT INSTRUCTIONS:
         something visible in the image.
         Example: Saying "four legs" when the animal has three.
 
-        OCR_PROBLEM: The response misreads text that is visibly 
+        OCR: The response misreads text that is visibly 
         written in the image.
         Example: Reading a slide as "sign on" when it says "log in".
         When flagging spans follow these rules:
 
         OTHERS: Any other hallucination that does not fit the above categories.
     """
-    span_rules=span_rules="""SPAN EXTRACTION RULES:
+    span_rules = """SPAN EXTRACTION RULES:
+    
+    RULE 1 - MISCOUNTING: You MUST extract ONLY the exact number word or numeral. Do NOT include the noun being counted.
+    * CORRECT: "four"
+    * INCORRECT: "four legs"
+    * CORRECT: "2"
+    * INCORRECT: "2 front legs"
 
-        RULE 1 - MISCOUNTING: flag ONLY the number word itself.
-        Example: "four legs" → span_text = "four"
-        Example: "two front legs" → span_text = "two"
-        Find ALL wrong number words, each as a separate entry.
-
-        RULE 2 - MISCHARACTERIZATION: flag ONLY the wrong adjective or property word.
-        Example: "cables attached to the ceiling" → span_text = "ceiling"
-
-        RULE 3 - INVENTION: flag ONLY the invented name or place.
-        Example: "this is Auckland New Zealand" → span_text = "Auckland New Zealand"
-
-        RULE 4 - OCR_PROBLEM: flag ONLY the misread word.
-
-        RULE 5 - Do NOT flag background knowledge or explanations.
-
-        CRITICAL: span_text must be the shortest possible substring. 
-        Never return a full sentence.
-        """
+    RULE 2 - MISCHARACTERIZATION: Extract ONLY the specific word or short property phrase that is false. Do NOT return full clauses or explanations.
+    * CORRECT: "ceiling" or "the ceiling" (if it's attached to a wall)
+    * INCORRECT: "cables attached to the ceiling"
+    
+    CRITICAL MANDATE: The "span_text" must be the shortest possible verbatim substring from the RESPONSE. If you include extra correct words surrounding the error, the evaluation system will penalize it with a 0 score."""
 
         
     ocr_guide="""If the prompt asks about text visible in the image:
@@ -99,15 +92,15 @@ IMPORTANT INSTRUCTIONS:
         Prefer returning empty [] over uncertain flags.
     """
    
-    output_format="""Return your answer as a JSON array only. No other text.
-        Each entry must have:
-        - "span_text": the exact text from the response that is wrong
-        - "label": one of invention, mischaracterization, 
-            miscounting, ocr_problem, other
-        - "prob": your confidence score between 0 and 1
-        - "reason": one sentence explaining why it is wrong
-
-        If nothing is hallucinated return exactly: []
+    output_format = """Return your answer as a JSON array only. No other markdown formatting, no conversational text.
+    
+    Before writing each "span_text", verify: Is this the absolute minimum string required to isolate the error? For numbers, is it just the digit/number word?
+    
+    Each entry must have:
+    - "span_text": the shortest exact substring from the response
+    - "label": one of invention, mischaracterization, miscounting, ocr_problem, other
+    - "prob": confidence score between 0 and 1
+    - "reason": one sentence explanation
     """
     input_section= f"""
     FILENAME HINT: {filename_hint}

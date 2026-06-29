@@ -1,12 +1,12 @@
 ERROR ANALYSIS LOG
-Generated: 2026-06-30 00:22
+Generated: 2026-06-29 19:14
 Total samples: 50
-Zero IoU samples: 19
-Perfect IoU samples: 18
+Zero IoU samples: 21
+Perfect IoU samples: 17
 ======================================================================
 
 ======================================================================
-FALSE POSITIVES (system flagged, gold is clean) — 9 cases
+FALSE POSITIVES (system flagged, gold is clean) — 10 cases
 ======================================================================
 
 ID: train-en-422
@@ -30,7 +30,7 @@ In summary, while it *might* have a very small auxiliary engine, the bus's prima
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [217:226] 'two poles' | miscounting | confidence: 0.85
+  [217:226] 'two poles' | miscounting | confidence: 0.95
 
 HAIKU REASONING:
 ```json
@@ -38,8 +38,8 @@ HAIKU REASONING:
   {
     "span_text": "two poles",
     "label": "miscounting",
-    "prob": 0.85,
-    "reason": "The image shows a single overhead pantograph pole/arm extending upward from the bus, not two poles."
+    "prob": 0.95,
+    "reason": "The image shows a single overhead pole/pantograph extending upward from the bus, not two poles."
   }
 ]
 ```
@@ -65,7 +65,7 @@ HAIKU REASONING:
     "span_text": "book",
     "label": "mischaracterization",
     "prob": 0.85,
-    "reason": "The object being held appears to be a paper or envelope, not a book; it is a single flat sheet held between two people's hands."
+    "reason": "The two people are holding a sheet of paper or envelope, not a book; the object is clearly a single flat sheet with what appears to be writing on it."
   }
 ]
 ```
@@ -101,7 +101,7 @@ HAIKU REASONING:
     "span_text": "next to a stove",
     "label": "mischaracterization",
     "prob": 0.9,
-    "reason": "The dishwasher is positioned to the right of the countertop, while the gas stove is visible to the left side of the image, not next to the dishwasher."
+    "reason": "The dishwasher is positioned to the right of a gas cooktop/range, not next to it in the immediate sense implied; there is counter space between them and the stove is on the left side of the image."
   }
 ]
 ```
@@ -128,30 +128,89 @@ You can see the chick in the image has a mostly tan and brown coloration, with s
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [65:70] 'chick' | mischaracterization | confidence: 0.90
-  [103:169] 'Young peafowl have a different plumage than adult males (peacocks)' | invention | confidence: 0.90
+  [57:70] 'peafowl chick' | mischaracterization | confidence: 0.85
+  [76:99] 'young peacock or peahen' | mischaracterization | confidence: 0.85
+  [103:116] 'Young peafowl' | invention | confidence: 0.90
   [626:631] 'chick' | mischaracterization | confidence: 0.90
 
 HAIKU REASONING:
 ```json
 [
   {
-    "span_text": "peafowl chick (a young peacock or peahen)",
+    "span_text": "peafowl chick",
     "label": "mischaracterization",
     "prob": 0.85,
-    "reason": "The bird in the image appears to be a meerkat, not a peafowl chick, based on its body structure, head shape, eye placement, and overall morphology."
+    "reason": "The bird in the image appears to be a meerkat, not a peafowl chick, based on its distinctive body shape, posture, long thin legs, and facial features."
   },
   {
-    "span_text": "Young peafowl have a different plumage than adult males (peacocks)",
+    "span_text": "young peacock or peahen",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "This is not a young peacock or peahen; the animal's morphology is inconsistent with any peafowl species."
+  },
+  {
+    "span_text": "Young peafowl",
     "label": "invention",
     "prob": 0.9,
-    "reason": "This entire discussion of peafowl plumage is irrelevant as the image does not show a peafowl chick at all."
+    "reason": "The image does not show young peafowl at all; the animal is clearly a different species entirely."
   },
   {
     "span_text": "chick",
     "label": "mischaracterization",
     "prob": 0.9,
-    "reason": "The animal in the image is not a chick but appears to be a meerkat or similar small mammal."
+    "reason": "The animal is not a chick; it is an adult or juvenile meerkat, not any type of bird chick."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-440
+PROMPT: Does this cockroach live indoors? Please elaborate.
+IMAGE: cockroach_Burrowing_cockroaches_(blaberus)_blaberus-craniifer-dead-head-cockroa.jpg
+IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze whether the cockroach in the image typically lives indoors.
+
+Based on its appearance, this is a **Pacific Beetle Cockroach** (Diploptera punctata). 
+
+Here's a breakdown of its indoor/outdoor habits:
+
+*   **Primarily Outdoor:** Pacific Beetle Cockroaches are generally found outdoors in moist environments. They thrive in leaf litter, under decaying wood, in compost piles, and around gardens.
+*   **Can Enter Homes:** While they prefer the outdoors, they *can* wander into homes, especially during wet weather or when seeking shelter. They are often found in crawl spaces, basements, or garages.
+*   **Not a Common Indoor Infestation:** Unlike German or American cockroaches, Pacific Beetle Cockroaches don't typically establish large breeding populations indoors. They usually don't reproduce inside.
+*   **Unique Feature:** These cockroaches are known for giving birth to live young (viviparity), unlike many other cockroach species that lay eggs.
+
+**In conclusion:** While this cockroach *can* be found indoors, it's more commonly an outdoor species that occasionally ventures inside. It's not a typical indoor pest like some other cockroach types.
+
+If you're seeing one indoors, it's likely a stray rather than a sign of a major infestation. However, it's still a good idea to address any moisture issues or potential entry points to discourage them from entering.
+
+
+
+
+
+GOLD LABELS:
+
+PREDICTED LABELS:
+  [123:147] 'Pacific Beetle Cockroach' | mischaracterization | confidence: 0.95
+  [151:170] 'Diploptera punctata' | mischaracterization | confidence: 0.95
+  [252:276] 'Pacific Beetle Cockroach' | mischaracterization | confidence: 0.95
+  [701:725] 'Pacific Beetle Cockroach' | mischaracterization | confidence: 0.95
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Pacific Beetle Cockroach",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The filename and visual characteristics suggest this is a Blaberus craniifer (a large roach with distinctive brown/tan head markings), not a Pacific Beetle Cockroach (Diploptera punctata), which is much smaller and lacks these features."
+  },
+  {
+    "span_text": "Diploptera punctata",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The scientific name provided does not match the species indicated by the filename and the large size with distinctive coloration visible in the image."
   }
 ]
 ```
@@ -179,7 +238,7 @@ If you would like, you can send me another image and I will analyze it for you.
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [432:451] 'pale green interior' | mischaracterization | confidence: 0.90
+  [432:451] 'pale green interior' | mischaracterization | confidence: 0.85
 
 HAIKU REASONING:
 ```json
@@ -187,8 +246,8 @@ HAIKU REASONING:
   {
     "span_text": "pale green interior",
     "label": "mischaracterization",
-    "prob": 0.9,
-    "reason": "The interior flesh of the sliced limes is clearly yellow-green to yellow, not pale green as claimed."
+    "prob": 0.85,
+    "reason": "The interior flesh of the sliced limes is clearly yellow or yellow-green, not pale green as described."
   }
 ]
 ```
@@ -231,7 +290,7 @@ HAIKU REASONING:
     "span_text": "cleavers",
     "label": "mischaracterization",
     "prob": 0.6,
-    "reason": "The right tool appears to be a pointed handaxe rather than a cleaver, which typically has a flat, broad cutting edge. The pointed form is characteristic of a handaxe, not a cleaver."
+    "reason": "The right tool appears to be a pointed hand axe rather than a cleaver, which typically has a flat, broad cutting edge perpendicular to the handle."
   }
 ]
 ```
@@ -296,6 +355,7 @@ While there are some white feathers visible on the wings and potentially some li
 GOLD LABELS:
 
 PREDICTED LABELS:
+  [124:147] 'dark brown/grayish head' | mischaracterization | confidence: 0.85
   [683:696] 'Brown Pelican' | mischaracterization | confidence: 0.90
 
 HAIKU REASONING:
@@ -305,7 +365,13 @@ HAIKU REASONING:
     "span_text": "Brown Pelican",
     "label": "mischaracterization",
     "prob": 0.9,
-    "reason": "The filename indicates this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis), which are different species."
+    "reason": "The filename and visible characteristics (white head, dark body, yellowish bill) indicate this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis)."
+  },
+  {
+    "span_text": "dark brown/grayish head",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The pelican's head is clearly white/pale, not dark brown or grayish as claimed in the response."
   }
 ]
 ```
@@ -328,8 +394,8 @@ Therefore, there are a total of three flags visible in the picture.
 GOLD LABELS:
 
 PREDICTED LABELS:
-  [32:37] 'three' | miscounting | confidence: 0.95
-  [273:278] 'three' | miscounting | confidence: 0.95
+  [32:37] 'three' | miscounting | confidence: 0.90
+  [273:278] 'three' | miscounting | confidence: 0.90
 
 HAIKU REASONING:
 ```json
@@ -337,8 +403,8 @@ HAIKU REASONING:
   {
     "span_text": "three",
     "label": "miscounting",
-    "prob": 0.95,
-    "reason": "The image shows more than three Union Jack flags - there are multiple flags visible in the background, on tables, and partially visible, totaling more than three distinct flags."
+    "prob": 0.9,
+    "reason": "The image shows more than three Union Jack flags - there are at least 4-5 visible flags: one large in the background, one on the left table, one on the right table, and additional flags visible in the background/upper portion of the image."
   }
 ]
 ```
@@ -360,30 +426,6 @@ You can see the Ford logo prominently displayed on the front of the truck, just 
 
 GOLD LABELS:
   [53:57] 'Ford' | mischaracterization | annotator agreement: 0.33
-
-PREDICTED LABELS:
-  (none — system returned clean)
-
-HAIKU REASONING:
-```json
-[]
-```
-----------------------------------------------------------------------
-
-ID: train-en-418
-PROMPT: Does this bra have straps? Please elaborate.
-IMAGE: bra_Strapless_bra_dkny-intimates-white-signature-lace-.jpg
-IoU: 0.0
-
-FULL RESPONSE:
-Based on the image, the bra does **not** have straps. 
-
-It's a **strapless bra**, designed to be worn without shoulder straps. You can see it's a bandeau style that stays up by its shape, silicone lining, and snug fit around the ribcage. 
-
-It appears to have a decorative floral lace panel on the sides, but no visible straps.
-
-GOLD LABELS:
-  [146:153] 'bandeau' | invention | annotator agreement: 0.33
 
 PREDICTED LABELS:
   (none — system returned clean)
@@ -417,6 +459,52 @@ PREDICTED LABELS:
 HAIKU REASONING:
 ```json
 []
+```
+----------------------------------------------------------------------
+
+ID: train-en-450
+PROMPT: Is this fox reddish in color? Please elaborate.
+IMAGE: fox_Darwin's_fox_(lycalopex_fulvipes)_260f71e6e37a07632ea315f7216563c9.jpg
+IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the color of the fox in the image.
+
+While the fox isn't a vibrant, bright red, it does have **reddish tones** throughout its coat. Here's a breakdown:
+
+*   **Overall:** The dominant color is a grizzled gray, but look closely, and you'll see a base of reddish-brown fur.
+*   **Legs and Ears:** The legs and the backs of the ears display more obvious reddish-brown coloration.
+*   **Undercoat:** Hints of reddish hues are visible in the undercoat, particularly around the neck and chest.
+*   **Tail:** The tail appears to have a darker, almost black tip, but the base has reddish undertones.
+
+This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present.
+
+If you'd like, you can share another image and I'll happily describe the colors within it!
+
+GOLD LABELS:
+  [578:866] 'but the base has reddish undertones.
+
+This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present' | invention | annotator agreement: 0.33
+  [135:154] 'throughout its coat' | mischaracterization | annotator agreement: 0.33
+  [218:231] 'grizzled gray' | mischaracterization | annotator agreement: 0.33
+  [335:340] 'backs' | mischaracterization | annotator agreement: 0.33
+  [406:509] 'Undercoat:** Hints of reddish hues are visible in the undercoat, particularly around the neck and chest' | mischaracterization | annotator agreement: 0.33
+  [578:613] 'but the base has reddish undertones' | mischaracterization | annotator agreement: 0.33
+  [645:683] 'Gray Fox** ( *Urocyon cinereoargenteus' | mischaracterization | annotator agreement: 0.33
+
+PREDICTED LABELS:
+  (none — system returned clean)
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Gray Fox (Urocyon cinereoargenteus)",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The image filename and visual characteristics (smaller size, grizzled coat, reddish ears, darker tail tip) indicate this is Darwin's fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus), which is a different species found in the Americas."
+  }
+]
 ```
 ----------------------------------------------------------------------
 
@@ -501,7 +589,7 @@ HAIKU REASONING:
 ----------------------------------------------------------------------
 
 ======================================================================
-WRONG LOCATION (both have spans but no overlap) — 4 cases
+WRONG LOCATION (both have spans but no overlap) — 5 cases
 ======================================================================
 
 ID: train-en-417
@@ -528,7 +616,7 @@ GOLD LABELS:
 
 PREDICTED LABELS:
   [65:108] 'alligator in the foreground is dark colored' | mischaracterization | confidence: 0.90
-  [233:252] 'American alligators' | invention | confidence: 0.85
+  [132:186] 'dark brown or black markings over a lighter base color' | mischaracterization | confidence: 0.85
 
 HAIKU REASONING:
 ```json
@@ -537,13 +625,44 @@ HAIKU REASONING:
     "span_text": "alligator in the foreground is dark colored",
     "label": "mischaracterization",
     "prob": 0.9,
-    "reason": "The alligator in the foreground (being held in the hand) is actually dark colored with tan/yellow markings, but the alligator in the background/top of the image is the pale leucistic one, making the spatial description misleading about which is which."
+    "reason": "The alligator in the foreground (lower one being held) has dark coloring with yellowish-tan markings, but the alligator in the upper portion of the hand (the one on top) is the pale/leucistic one, making the spatial description of which is 'in the foreground' ambiguous and potentially misleading."
   },
   {
-    "span_text": "American alligators",
-    "label": "invention",
+    "span_text": "dark brown or black markings over a lighter base color",
+    "label": "mischaracterization",
     "prob": 0.85,
-    "reason": "The image shows what appears to be a crocodilian, and given the filename mentions leucistic gators, these appear to be alligators, but there is no visible text or definitive marker in the image identifying them specifically as American alligators rather than another species."
+    "reason": "The lower alligator actually shows a lighter tan/yellowish base with dark brown/black markings - the description reverses the primary color relationship, as the base is lighter, not the markings."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-418
+PROMPT: Does this bra have straps? Please elaborate.
+IMAGE: bra_Strapless_bra_dkny-intimates-white-signature-lace-.jpg
+IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, the bra does **not** have straps. 
+
+It's a **strapless bra**, designed to be worn without shoulder straps. You can see it's a bandeau style that stays up by its shape, silicone lining, and snug fit around the ribcage. 
+
+It appears to have a decorative floral lace panel on the sides, but no visible straps.
+
+GOLD LABELS:
+  [146:153] 'bandeau' | invention | annotator agreement: 0.33
+
+PREDICTED LABELS:
+  [261:289] 'decorative floral lace panel' | mischaracterization | confidence: 0.75
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "decorative floral lace panel",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "The lace visible on the sides appears to be a textured pattern rather than a prominent decorative floral panel design."
   }
 ]
 ```
@@ -563,7 +682,7 @@ GOLD LABELS:
   [162:185] 'small electronic device' | mischaracterization | annotator agreement: 0.67
 
 PREDICTED LABELS:
-  [76:89] 'girl's pocket' | invention | confidence: 0.90
+  [76:89] 'girl's pocket' | invention | confidence: 0.85
 
 HAIKU REASONING:
 ```json
@@ -571,8 +690,8 @@ HAIKU REASONING:
   {
     "span_text": "girl's pocket",
     "label": "invention",
-    "prob": 0.9,
-    "reason": "The visible person holding the sign is wearing shorts/pants without any visible pocket contents or accessible pocket where an object could be seen."
+    "prob": 0.85,
+    "reason": "The image shows a person holding a memorial sign, but no visible pocket or object in a pocket is clearly discernible in the image."
   }
 ]
 ```
@@ -613,10 +732,10 @@ GOLD LABELS:
 
 PREDICTED LABELS:
   [242:248] 'Faşist' | ocr_problem | confidence: 0.95
-  [266:272] 'Devlet' | ocr_problem | confidence: 0.95
+  [266:272] 'Devlet' | ocr_problem | confidence: 0.90
   [616:622] 'Faşist' | ocr_problem | confidence: 0.95
-  [629:635] 'Devlet' | ocr_problem | confidence: 0.95
-  [831:844] 'Fascist State' | ocr_problem | confidence: 0.92
+  [629:635] 'Devlet' | ocr_problem | confidence: 0.90
+  [831:844] 'Fascist State' | ocr_problem | confidence: 0.85
 
 HAIKU REASONING:
 ```json
@@ -625,19 +744,19 @@ HAIKU REASONING:
     "span_text": "FaÅŸist",
     "label": "ocr_problem",
     "prob": 0.95,
-    "reason": "The image shows 'FaFST' not 'FaÅŸist' - the response misread the handwritten text."
+    "reason": "The image shows 'Fai rST' not 'FaÅŸist' - the text does not contain a Turkish character or match this spelling."
   },
   {
     "span_text": "Devlet",
     "label": "ocr_problem",
-    "prob": 0.95,
-    "reason": "The image shows 'DeVleT' not 'Devlet' - the response misread the handwritten text, particularly the capitalization and letter forms."
+    "prob": 0.9,
+    "reason": "The image shows 'DevleT' but the response claims it says 'Devlet' - the capitalization and exact spelling need verification against the visible text."
   },
   {
     "span_text": "Fascist State",
     "label": "ocr_problem",
-    "prob": 0.92,
-    "reason": "The response claims the message means 'Fascist State' but the actual text appears to say 'FaFST DeVleT' which does not clearly translate to or match 'Fascist State'."
+    "prob": 0.85,
+    "reason": "The response interprets the message as 'Fascist State' but the actual visible text in the image appears to read 'Fai rST' and 'DevleT' which does not clearly convey this meaning."
   }
 ]
 ```
@@ -668,8 +787,8 @@ GOLD LABELS:
   [609:633] 'a Palm Sunday procession' | mischaracterization | annotator agreement: 0.33
 
 PREDICTED LABELS:
+  [117:140] 'Person carrying a cross' | mischaracterization | confidence: 0.80
   [186:198] 'wooden cross' | mischaracterization | confidence: 0.85
-  [292:305] 'Palm branches' | invention | confidence: 0.90
 
 HAIKU REASONING:
 ```json
@@ -678,13 +797,13 @@ HAIKU REASONING:
     "span_text": "wooden cross",
     "label": "mischaracterization",
     "prob": 0.85,
-    "reason": "The object being carried appears to be a wooden pole or staff, not clearly identifiable as a cross with the typical cross shape visible in the image."
+    "reason": "The object being carried appears to be a wooden pole or staff, not a cross with a crossbeam visible in the image."
   },
   {
-    "span_text": "Palm branches",
-    "label": "invention",
-    "prob": 0.9,
-    "reason": "The response acknowledges palm branches are 'not clearly visible' but still includes them as identifying features, when there is no clear evidence of palm branches in the image."
+    "span_text": "Person carrying a cross",
+    "label": "mischaracterization",
+    "prob": 0.8,
+    "reason": "While someone is carrying an object, it appears to be a pole or staff rather than a distinctly visible cross shape."
   }
 ]
 ```

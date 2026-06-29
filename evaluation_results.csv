@@ -5,13 +5,13 @@ train-en-411,1.0,0,0,,,,,Does this ship have masts? Please elaborate.,"```json
 train-en-412,1.0,0,0,,,,,Is this cauliflower white in color? Please elaborate.,"```json
 []
 ```"
-train-en-413,0.5385,1,2,mischaracterization|mischaracterization,mischaracterization,0.33|0.33,0.9,Does this desk have legs? Please elaborate.,"```json
+train-en-413,0.1944,1,2,mischaracterization|mischaracterization,mischaracterization,0.33|0.33,0.9,Does this desk have legs? Please elaborate.,"```json
 [
   {
     ""span_text"": ""cables attached to the ceiling"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.9,
-    ""reason"": ""The cables are attached to a wall-mounted bracket/arm system, not directly to the ceiling. The cables run upward but originate from the desk/bracket structure, not suspended from above.""
+    ""reason"": ""The cables are attached to the wall above the desk, not to the ceiling. They run vertically along the wall, not horizontally from a ceiling mount.""
   }
 ]
 ```"
@@ -20,51 +20,61 @@ train-en-414,1.0,0,0,,,,,Is this frog green in color? Please elaborate.,"```json
 ```"
 train-en-415,0.0,0,1,mischaracterization,,0.33,,What is the brand name of the truck?,"```json
 []
-```
-
-The response correctly identifies the brand as Ford. The Ford logo is clearly visible on the truck's front panel below the windshield, making this statement accurate."
-train-en-416,0.25,1,5,miscounting|miscounting|miscounting|miscounting|miscounting,miscounting,0.67|1.0|0.33|0.67|0.67,0.95,Does this cat have four legs? Please elaborate.,"```json
+```"
+train-en-416,0.2549,3,5,miscounting|miscounting|miscounting|miscounting|miscounting,miscounting|miscounting|miscounting,0.67|1.0|0.33|0.67|0.67,0.95|0.95|0.9,Does this cat have four legs? Please elaborate.,"```json
 [
   {
-    ""span_text"": ""all four"",
+    ""span_text"": ""four legs"",
     ""label"": ""miscounting"",
     ""prob"": 0.95,
-    ""reason"": ""The image shows a cat with only three visible legs; one back leg is not visible or present, contradicting the claim of four legs.""
+    ""reason"": ""The filename indicates this is a three-legged cat, and visual inspection shows only three visible legs supporting the cat's body, not four.""
+  },
+  {
+    ""span_text"": ""all four of the cat's legs"",
+    ""label"": ""miscounting"",
+    ""prob"": 0.95,
+    ""reason"": ""The cat has three legs, not four legs as claimed in this phrase.""
+  },
+  {
+    ""span_text"": ""two back legs"",
+    ""label"": ""miscounting"",
+    ""prob"": 0.9,
+    ""reason"": ""Only one back leg is visible in the image; the response incorrectly claims two back legs are present.""
   }
 ]
 ```"
-train-en-417,0.0,2,2,invention|mischaracterization,mischaracterization|mischaracterization,0.33|0.33,0.95|0.85,Is this alligator dark colored? Please elaborate.,"```json
+train-en-417,0.0,2,2,invention|mischaracterization,mischaracterization|invention,0.33|0.33,0.9|0.85,Is this alligator dark colored? Please elaborate.,"```json
 [
   {
-    ""span_text"": ""alligator"",
+    ""span_text"": ""alligator in the foreground is dark colored"",
     ""label"": ""mischaracterization"",
-    ""prob"": 0.95,
-    ""reason"": ""The animal in the image is a crocodilian, but based on the filename and appearance (slender snout, coloration pattern), this appears to be a caiman or young crocodile, not an alligator.""
+    ""prob"": 0.9,
+    ""reason"": ""The alligator in the foreground (being held in the hand) is actually dark colored with tan/yellow markings, but the alligator in the background/top of the image is the pale leucistic one, making the spatial description misleading about which is which.""
   },
   {
     ""span_text"": ""American alligators"",
-    ""label"": ""mischaracterization"",
+    ""label"": ""invention"",
     ""prob"": 0.85,
-    ""reason"": ""The dark reptile in the foreground does not appear to be an American alligator based on its facial structure and overall morphology; it appears to be a different species of crocodilian such as a caiman.""
+    ""reason"": ""The image shows what appears to be a crocodilian, and given the filename mentions leucistic gators, these appear to be alligators, but there is no visible text or definitive marker in the image identifying them specifically as American alligators rather than another species.""
   }
 ]
 ```"
 train-en-418,0.0,0,1,invention,,0.33,,Does this bra have straps? Please elaborate.,"```json
 []
 ```"
-train-en-419,0.3488,2,6,mischaracterization|mischaracterization|mischaracterization|miscounting|miscounting|miscounting,miscounting|mischaracterization,0.33|1.0|0.33|0.33|1.0|0.33,0.85|0.9,How many knobs are there in the image?,"```json
+train-en-419,0.2639,2,6,mischaracterization|mischaracterization|mischaracterization|miscounting|miscounting|miscounting,miscounting|mischaracterization,0.33|1.0|0.33|0.33|1.0|0.33,0.9|0.85,How many knobs are there in the image?,"```json
 [
   {
     ""span_text"": ""one"",
     ""label"": ""miscounting"",
-    ""prob"": 0.85,
-    ""reason"": ""There are clearly multiple knobs visible in the image - at least 2-3 dark knobs/valves on the white surface in the upper right area of the frame, not just one knob on a tape measure.""
+    ""prob"": 0.9,
+    ""reason"": ""The image shows multiple knobs/objects on the surface: at least 2-3 visible knobs/switches in the upper right area of the concrete surface, not just one.""
   },
   {
-    ""span_text"": ""tape measure"",
+    ""span_text"": ""tape measure located in the upper left corner"",
     ""label"": ""mischaracterization"",
-    ""prob"": 0.9,
-    ""reason"": ""The object in the upper left corner appears to be a GPS device or electronic measuring device, not a tape measure.""
+    ""prob"": 0.85,
+    ""reason"": ""The object in the upper left appears to be a small white container or box, not a tape measure, and the response incorrectly identifies what this object is.""
   }
 ]
 ```"
@@ -74,75 +84,69 @@ train-en-420,0.3137,1,6,invention|mischaracterization|mischaracterization|mischa
     ""span_text"": ""porcelain garlic"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.85,
-    ""reason"": ""The filename indicates this is 'purple stripe garlic' or 'purple glazer garlic', not porcelain garlic, which is a different variety typically characterized by fewer, larger cloves and different coloring patterns.""
+    ""reason"": ""The filename indicates this is 'purple stripe garlic' or 'purple glazer garlic', not porcelain garlic, which is typically a white variety without purple striping.""
   }
 ]
 ```"
 train-en-421,1.0,0,0,,,,,Does this shovel have a metal end? Please elaborate.,"```json
 []
 ```"
-train-en-422,0.0,1,0,,miscounting,,0.9,Does this bus have an engine? Please elaborate.,"```json
+train-en-422,0.0,1,0,,miscounting,,0.85,Does this bus have an engine? Please elaborate.,"```json
 [
   {
     ""span_text"": ""two poles"",
     ""label"": ""miscounting"",
-    ""prob"": 0.9,
-    ""reason"": ""The image clearly shows a single overhead pantograph pole extending upward from the bus roof, not two poles.""
+    ""prob"": 0.85,
+    ""reason"": ""The image shows a single overhead pantograph pole/arm extending upward from the bus, not two poles.""
   }
 ]
 ```"
 train-en-423,1.0,0,0,,,,,Does this mushroom have a cap? Please elaborate.,"```json
 []
 ```"
-train-en-424,1.0,0,0,,,,,How many people are there in the image?,"```json
+train-en-424,0.0,1,0,,mischaracterization,,0.85,How many people are there in the image?,"```json
 [
   {
-    ""span_text"": ""two"",
-    ""label"": ""miscounting"",
-    ""prob"": 0.9,
-    ""reason"": ""The image shows four hands holding the document, which indicates two people are visible, but the response correctly states 'two people.' However, examining more carefully, there appear to be hands from at least two individuals shown, making 'two' accurate. Upon closer inspection of the visible hands and clothing, this count appears correct.""
+    ""span_text"": ""book"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.85,
+    ""reason"": ""The object being held appears to be a paper or envelope, not a book; it is a single flat sheet held between two people's hands.""
   }
 ]
-```
-
-Actually, reconsidering: The response states ""two people"" and shows ""two sets of hands"" which is visible in the image. This is accurate. There are indeed two people visible by their hands and clothing.
-
-```json
-[]
 ```"
-train-en-425,0.0615,1,8,invention|invention|invention|mischaracterization|mischaracterization|mischaracterization|mischaracterization|mischaracterization,mischaracterization,0.33|0.33|0.33|0.67|0.33|0.67|1.0|0.67,0.85,What is carved into the handle side of the spoon?,"```json
+train-en-425,0.3692,3,8,invention|invention|invention|mischaracterization|mischaracterization|mischaracterization|mischaracterization|mischaracterization,mischaracterization|mischaracterization|mischaracterization,0.33|0.33|0.33|0.67|0.33|0.67|1.0|0.67,0.85|0.85|0.85,What is carved into the handle side of the spoon?,"```json
 [
   {
     ""span_text"": ""face"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.85,
-    ""reason"": ""The carving on the spoon handle shows a decorative rose or floral design, not a face with eyes and mouth.""
-  }
-]
-```"
-train-en-426,0.0637,2,3,OCR|OCR|OCR,ocr_problem|ocr_problem,0.33|0.67|0.67,0.6|0.6,What is written on the projector screen?,"```json
-[
-  {
-    ""span_text"": ""A system that enables users to authenticate once to log in everywhere."",
-    ""label"": ""ocr_problem"",
-    ""prob"": 0.6,
-    ""reason"": ""The text on the screen is too blurry to read with confidence, making it difficult to verify if this exact wording matches what is displayed.""
+    ""reason"": ""The carving on the spoon handle appears to show a rose or floral design, not a face with eyes and mouth.""
   },
   {
-    ""span_text"": ""Instead of creating an account on site X, you log in with your OpenID URL. You sign on to your OpenID provider and verify that you want site X to be able to access your credentials."",
-    ""label"": ""ocr_problem"",
-    ""prob"": 0.6,
-    ""reason"": ""The text on the screen is too blurry to read with confidence, making it difficult to verify if this exact wording matches what is displayed.""
+    ""span_text"": ""eyes and a mouth"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.85,
+    ""reason"": ""The visible carving shows decorative curved lines characteristic of a rose pattern, not facial features.""
   }
 ]
 ```"
-train-en-427,0.0,1,0,,mischaracterization,,0.85,Is this dishwasher large appliances? Please elaborate.,"```json
+train-en-426,0.0625,1,3,OCR|OCR|OCR,ocr_problem,0.33|0.67|0.67,0.35,What is written on the projector screen?,"```json
+[
+  {
+    ""span_text"": ""A system that enables users to authenticate once to log in everywhere.\n*   Instead of creating an account on site X, you log in with your OpenID URL. You sign on to your OpenID provider and verify that you want site X to be able to access your credentials."",
+    ""label"": ""ocr_problem"",
+    ""prob"": 0.35,
+    ""reason"": ""The text on the screen is too blurry to read with confidence, making it difficult to verify if the specific words and content match exactly what is displayed.""
+  }
+]
+```"
+train-en-427,0.0,1,0,,mischaracterization,,0.9,Is this dishwasher large appliances? Please elaborate.,"```json
 [
   {
     ""span_text"": ""next to a stove"",
     ""label"": ""mischaracterization"",
-    ""prob"": 0.85,
-    ""reason"": ""The dishwasher is positioned next to a gas cooktop/range on the left side, not a separate stove unit as the phrasing suggests.""
+    ""prob"": 0.9,
+    ""reason"": ""The dishwasher is positioned to the right of the countertop, while the gas stove is visible to the left side of the image, not next to the dishwasher.""
   }
 ]
 ```"
@@ -158,33 +162,45 @@ train-en-433,0.0549,1,3,mischaracterization|mischaracterization|mischaracterizat
     ""span_text"": ""small dog"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.85,
-    ""reason"": ""The dog in the foreground is not small; it appears to be a medium to large-sized greyhound or similar breed, noticeably larger than a small dog.""
+    ""reason"": ""The dog in the foreground is not small; it is a medium to large-sized dog (appears to be a greyhound or similar breed). The dog in the background is smaller, but the response clearly refers to the foreground dog as 'the one closer to the viewer,' which is the larger dog.""
   }
 ]
 ```"
-train-en-434,0.0,1,0,,mischaracterization,,0.9,Is this peacock blue in color? Please elaborate.,"```json
+train-en-434,0.0,3,0,,mischaracterization|invention|mischaracterization,,0.9|0.9|0.9,Is this peacock blue in color? Please elaborate.,"```json
 [
   {
-    ""span_text"": ""peacock"",
+    ""span_text"": ""peafowl chick (a young peacock or peahen)"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.85,
+    ""reason"": ""The bird in the image appears to be a meerkat, not a peafowl chick, based on its body structure, head shape, eye placement, and overall morphology.""
+  },
+  {
+    ""span_text"": ""Young peafowl have a different plumage than adult males (peacocks)"",
+    ""label"": ""invention"",
+    ""prob"": 0.9,
+    ""reason"": ""This entire discussion of peafowl plumage is irrelevant as the image does not show a peafowl chick at all.""
+  },
+  {
+    ""span_text"": ""chick"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.9,
-    ""reason"": ""The bird in the image is a peafowl chick, not an adult peacock. The response itself correctly identifies it as a 'peafowl chick' but then refers to it as 'this peacock' in the opening sentence, which is inaccurate.""
+    ""reason"": ""The animal in the image is not a chick but appears to be a meerkat or similar small mammal.""
   }
 ]
 ```"
-train-en-435,0.2542,2,12,invention|invention|invention|invention|invention|invention|invention|invention|invention|mischaracterization|mischaracterization|mischaracterization,invention|invention,0.33|0.67|0.33|0.67|0.33|0.67|0.33|0.67|0.33|0.33|0.33|0.33,0.85|0.85,What is the sea name?,"```json
+train-en-435,0.2542,2,12,invention|invention|invention|invention|invention|invention|invention|invention|invention|mischaracterization|mischaracterization|mischaracterization,invention|invention,0.33|0.67|0.33|0.67|0.33|0.67|0.33|0.67|0.33|0.33|0.33|0.33,0.75|0.75,What is the sea name?,"```json
 [
   {
     ""span_text"": ""Devonport ferry terminal in Auckland, New Zealand"",
     ""label"": ""invention"",
-    ""prob"": 0.85,
-    ""reason"": ""The image shows a ferry terminal with UK flag visible on the ship, coastal architecture typical of UK locations, and no identifying markers of Auckland, New Zealand or Devonport. The location cannot be verified from the image.""
+    ""prob"": 0.75,
+    ""reason"": ""While this appears to be a UK-based ferry (indicated by the flag visible on the vessel and the architectural style of the coastal settlement), there is no clear visual evidence confirming this is specifically Devonport, Auckland, New Zealand, making this location identification uncertain.""
   },
   {
     ""span_text"": ""Hauraki Gulf"",
     ""label"": ""invention"",
-    ""prob"": 0.85,
-    ""reason"": ""The Hauraki Gulf is specific to Auckland, New Zealand. Without visual confirmation of the location, claiming this specific sea name is an invention based on an unverified location identification.""
+    ""prob"": 0.75,
+    ""reason"": ""The sea name cannot be determined with certainty from the image alone; while the response identifies it as Hauraki Gulf based on an assumed Auckland location, the actual location and corresponding sea name are not visibly confirmed in the image.""
   }
 ]
 ```"
@@ -194,65 +210,84 @@ train-en-437,0.0,1,3,mischaracterization|mischaracterization|mischaracterization
     ""span_text"": ""girl's pocket"",
     ""label"": ""invention"",
     ""prob"": 0.9,
-    ""reason"": ""There is no visible girl's pocket in the image. The image shows people at what appears to be a memorial gathering holding a sign with a goose photo, but no pocket or small object within a pocket is visible.""
+    ""reason"": ""The visible person holding the sign is wearing shorts/pants without any visible pocket contents or accessible pocket where an object could be seen.""
   }
 ]
 ```"
-train-en-438,0.069,2,6,invention|invention|mischaracterization|mischaracterization|mischaracterization|mischaracterization,mischaracterization|mischaracterization,0.33|0.33|0.33|0.33|0.33|0.33,0.95|0.9,Does this tractor have wheels? Please elaborate.,"```json
+train-en-438,0.4423,3,6,invention|invention|mischaracterization|mischaracterization|mischaracterization|mischaracterization,mischaracterization|mischaracterization|mischaracterization,0.33|0.33|0.33|0.33|0.33|0.33,0.9|0.85|0.9,Does this tractor have wheels? Please elaborate.,"```json
 [
   {
     ""span_text"": ""wheels at the back"",
     ""label"": ""mischaracterization"",
-    ""prob"": 0.95,
-    ""reason"": ""The tractor has tracks at the rear, not wheels; the tracks are the continuous metal/rubber bands visible on both sides of the rear.""
+    ""prob"": 0.9,
+    ""reason"": ""The tractor has tracks on both the rear and front, not wheels at the back; the rear also uses continuous tracks, not traditional wheels.""
   },
   {
-    ""span_text"": ""the front tires have been replaced with tracks"",
+    ""span_text"": ""the front tires have been replaced with **tracks**"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.85,
+    ""reason"": ""Both the front and rear use tracks; the response incorrectly suggests only the front has been converted to tracks while the back retains wheels.""
+  },
+  {
+    ""span_text"": ""Yes, it has wheels on the rear"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.9,
-    ""reason"": ""The visible tracks are on the rear of the tractor, not the front; the tractor appears to have standard tires on the front axle.""
+    ""reason"": ""The rear does not have wheels; it has continuous tracks like the front, so this direct answer is incorrect.""
   }
 ]
 ```"
-train-en-439,0.1875,2,1,miscounting,mischaracterization|mischaracterization,0.33,0.85|0.8,Is this skunk black with white stripes? Please elaborate.,"```json
+train-en-439,0.0288,3,1,miscounting,mischaracterization|mischaracterization|mischaracterization,0.33,0.85|0.9|0.75,Is this skunk black with white stripes? Please elaborate.,"```json
 [
   {
     ""span_text"": ""striped skunk"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.85,
-    ""reason"": ""The filename indicates this is a western spotted skunk (Spilogale gracilis), not a striped skunk, which have a distinctly different pattern of spots rather than continuous stripes.""
+    ""reason"": ""The filename indicates this is a western spotted skunk (Spilogale gracilis), not a striped skunk, which have different stripe patterns and are a different species.""
   },
   {
     ""span_text"": ""two prominent white stripes running down its back"",
     ""label"": ""mischaracterization"",
-    ""prob"": 0.8,
-    ""reason"": ""The animal displays a spotted or broken stripe pattern characteristic of spotted skunks, not continuous prominent stripes typical of striped skunks.""
+    ""prob"": 0.9,
+    ""reason"": ""Western spotted skunks have multiple white spots and broken stripe patterns, not two prominent continuous stripes like striped skunks.""
+  },
+  {
+    ""span_text"": ""most common type of skunk in North America"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.75,
+    ""reason"": ""The image shows a western spotted skunk, and while striped skunks are common, this statement misidentifies the species in the image.""
   }
 ]
 ```"
-train-en-440,0.0,1,0,,mischaracterization,,0.9,Does this cockroach live indoors? Please elaborate.,"```json
+train-en-440,1.0,0,0,,,,,Does this cockroach live indoors? Please elaborate.,"```json
 [
   {
     ""span_text"": ""Pacific Beetle Cockroach (Diploptera punctata)"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.9,
-    ""reason"": ""The filename and visual characteristics suggest this is a Blaberus species (likely Blaberus craniifer), not Diploptera punctata (Pacific Beetle Cockroach), which is a distinct species with different morphology.""
+    ""reason"": ""The filename indicates this is a Blaberus craniifer (likely a Madagascar hissing cockroach or similar Blaberus species), not a Pacific Beetle Cockroach (Diploptera punctata), which is a different species entirely.""
   }
 ]
 ```"
-train-en-441,1.0,0,0,,,,,Does this lime have smooth skin? Please elaborate.,"```json
-[]
+train-en-441,0.0,1,0,,mischaracterization,,0.9,Does this lime have smooth skin? Please elaborate.,"```json
+[
+  {
+    ""span_text"": ""pale green interior"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.9,
+    ""reason"": ""The interior flesh of the sliced limes is clearly yellow-green to yellow, not pale green as claimed.""
+  }
+]
 ```"
 train-en-442,1.0,0,0,,,,,What is the battery percentage of the laptop?,"```json
 []
 ```"
-train-en-443,0.0,1,0,,mischaracterization,,0.6,Does this axe have a handle? Please elaborate.,"```json
+train-en-443,0.0,2,0,,mischaracterization|mischaracterization,,0.6|0.6,Does this axe have a handle? Please elaborate.,"```json
 [
   {
     ""span_text"": ""cleavers"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.6,
-    ""reason"": ""The right tool appears to be a pointed handaxe (similar to the left one), not a cleaver. Both objects shown have similar pointed, almond-shaped forms characteristic of handaxes, not the wider, flatter form typical of cleavers.""
+    ""reason"": ""The right tool appears to be a pointed handaxe rather than a cleaver, which typically has a flat, broad cutting edge. The pointed form is characteristic of a handaxe, not a cleaver.""
   }
 ]
 ```"
@@ -268,30 +303,36 @@ train-en-446,0.051,1,3,invention|mischaracterization|miscounting,miscounting,0.3
     ""span_text"": ""three"",
     ""label"": ""miscounting"",
     ""prob"": 0.9,
-    ""reason"": ""Only one dumpster/waste container is visible in the image, on the left side near the street level, not three.""
+    ""reason"": ""Only one dumpster (white waste/recycling container) is visible in the image on the left side, not three.""
   }
 ]
 ```"
-train-en-448,0.8108,1,2,invention|invention,invention,0.33|0.33,0.6,Does this ambulance have four wheels? Please elaborate.,"```json
+train-en-448,0.8108,1,2,invention|invention,invention,0.33|0.33,0.7,Does this ambulance have four wheels? Please elaborate.,"```json
 [
   {
     ""span_text"": ""FV433 Abbot Self-Propelled Gun"",
     ""label"": ""invention"",
-    ""prob"": 0.6,
-    ""reason"": ""The specific vehicle identification as an FV433 Abbot cannot be verified from the image alone. While the vehicle is clearly a tracked ambulance with Red Cross markings, the exact model designation is not visible or identifiable with certainty from the visual evidence provided.""
+    ""prob"": 0.7,
+    ""reason"": ""The response identifies a specific military vehicle model (FV433 Abbot) that cannot be verified from the image; the vehicle type is not clearly identifiable from visible details alone.""
   }
 ]
 ```"
 train-en-449,1.0,0,0,,,,,Does this alligator have scales? Please elaborate.,"```json
 []
 ```"
-train-en-450,0.0,0,7,invention|mischaracterization|mischaracterization|mischaracterization|mischaracterization|mischaracterization|mischaracterization,,0.33|0.33|0.33|0.33|0.33|0.33|0.33,,Is this fox reddish in color? Please elaborate.,"```json
+train-en-450,0.0748,2,7,invention|mischaracterization|mischaracterization|mischaracterization|mischaracterization|mischaracterization|mischaracterization,mischaracterization|mischaracterization,0.33|0.33|0.33|0.33|0.33|0.33|0.33,0.95|0.95,Is this fox reddish in color? Please elaborate.,"```json
 [
   {
-    ""span_text"": ""Gray Fox (Urocyon cinereoargenteus)"",
+    ""span_text"": ""Gray Fox"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.95,
-    ""reason"": ""The filename indicates this is a Darwin's Fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus). These are different species from different continents.""
+    ""reason"": ""The image shows a Darwin's fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus), as indicated in the filename.""
+  },
+  {
+    ""span_text"": ""Urocyon cinereoargenteus"",
+    ""label"": ""mischaracterization"",
+    ""prob"": 0.95,
+    ""reason"": ""This is the scientific name for Gray Fox, but the animal in the image is Darwin's fox (Lycalopex fulvipes), a different species.""
   }
 ]
 ```"
@@ -307,54 +348,54 @@ train-en-454,1.0,0,0,,,,,Does this blender have a container? Please elaborate.,"
 train-en-455,0.0,0,2,mischaracterization|mischaracterization,,0.33|0.33,,Exactly how long has this sanitation vehicle been driven?,"```json
 []
 ```"
-train-en-456,0.0,3,4,mischaracterization|mischaracterization|mischaracterization|mischaracterization,ocr_problem|ocr_problem|ocr_problem,0.33|0.33|0.33|0.33,0.95|0.95|0.95,Is this written by a kid?,"```json
+train-en-456,0.0,5,4,mischaracterization|mischaracterization|mischaracterization|mischaracterization,ocr_problem|ocr_problem|ocr_problem|ocr_problem|ocr_problem,0.33|0.33|0.33|0.33,0.95|0.95|0.95|0.95|0.92,Is this written by a kid?,"```json
 [
   {
     ""span_text"": ""Faşist"",
     ""label"": ""ocr_problem"",
     ""prob"": 0.95,
-    ""reason"": ""The text in the image reads 'FIRST' not 'Faşist'. The response misread the visible handwriting.""
+    ""reason"": ""The image shows 'FaFST' not 'Faşist' - the response misread the handwritten text.""
   },
   {
     ""span_text"": ""Devlet"",
     ""label"": ""ocr_problem"",
     ""prob"": 0.95,
-    ""reason"": ""The text in the image reads 'DENIT' not 'Devlet'. The response misread the visible handwriting.""
+    ""reason"": ""The image shows 'DeVleT' not 'Devlet' - the response misread the handwritten text, particularly the capitalization and letter forms.""
   },
   {
     ""span_text"": ""Fascist State"",
     ""label"": ""ocr_problem"",
-    ""prob"": 0.95,
-    ""reason"": ""The response claims the message means 'Fascist State' but the actual visible text reads 'FIRST DENIT', which does not convey that political message.""
+    ""prob"": 0.92,
+    ""reason"": ""The response claims the message means 'Fascist State' but the actual text appears to say 'FaFST DeVleT' which does not clearly translate to or match 'Fascist State'.""
   }
 ]
 ```"
-train-en-458,0.0,1,0,,miscounting,,0.9,Is this gun black in color? Please elaborate.,"```json
+train-en-458,0.0,1,0,,miscounting,,0.95,Is this gun black in color? Please elaborate.,"```json
 [
   {
     ""span_text"": ""two guns"",
     ""label"": ""miscounting"",
-    ""prob"": 0.9,
-    ""reason"": ""The image shows three toy guns being held, not two. There is a red gun in the foreground, a blue gun in the middle, and a darker (camouflage/tan colored) gun in the background.""
+    ""prob"": 0.95,
+    ""reason"": ""The image shows three toy guns being held by the person, not two.""
   }
 ]
 ```"
 train-en-459,1.0,0,0,,,,,Is this garlic white in color? Please elaborate.,"```json
 []
 ```"
-train-en-460,0.0,2,4,invention|invention|mischaracterization|mischaracterization,mischaracterization|mischaracterization,0.67|0.33|0.33|0.33,0.85|0.85,What is the  accurate reason for the rally?,"```json
+train-en-460,0.0,2,4,invention|invention|mischaracterization|mischaracterization,mischaracterization|invention,0.67|0.33|0.33|0.33,0.85|0.9,What is the  accurate reason for the rally?,"```json
 [
   {
     ""span_text"": ""wooden cross"",
     ""label"": ""mischaracterization"",
     ""prob"": 0.85,
-    ""reason"": ""The object being carried appears to be a large wooden pole or staff, not a cross. It is a single vertical wooden beam without a crossbeam that would be required to form a cross shape.""
+    ""reason"": ""The object being carried appears to be a wooden pole or staff, not clearly identifiable as a cross with the typical cross shape visible in the image.""
   },
   {
-    ""span_text"": ""Person carrying a cross"",
-    ""label"": ""mischaracterization"",
-    ""prob"": 0.85,
-    ""reason"": ""The individual is carrying a wooden pole or staff, not a cross shape. A cross requires both vertical and horizontal beams; this is only a vertical pole.""
+    ""span_text"": ""Palm branches"",
+    ""label"": ""invention"",
+    ""prob"": 0.9,
+    ""reason"": ""The response acknowledges palm branches are 'not clearly visible' but still includes them as identifying features, when there is no clear evidence of palm branches in the image.""
   }
 ]
 ```"
@@ -367,27 +408,29 @@ train-en-462,1.0,0,0,,,,,Does this tractor have wheels? Please elaborate.,"```js
 train-en-463,1.0,0,0,,,,,Is the knife infused with human blood?,"```json
 []
 ```"
-train-en-464,0.0,1,0,,mischaracterization,,0.95,Is this pelican white in color? Please elaborate.,"```json
+train-en-464,0.0,1,0,,mischaracterization,,0.9,Is this pelican white in color? Please elaborate.,"```json
 [
   {
-    ""span_text"": ""Brown Pelican (Pelecanus occidentalis)"",
+    ""span_text"": ""Brown Pelican"",
     ""label"": ""mischaracterization"",
-    ""prob"": 0.95,
-    ""reason"": ""The filename and visible characteristics indicate this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican. The white head with dark neck and body is distinctive of Peruvian Pelicans, not Brown Pelicans.""
+    ""prob"": 0.9,
+    ""reason"": ""The filename indicates this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis), which are different species.""
   }
 ]
 ```"
 train-en-465,1.0,0,0,,,,,Is this deer brown in color? Please elaborate.,"```json
 []
 ```"
-train-en-466,0.0,1,0,,miscounting,,0.9,How many flags are in this picture?,"```json
+train-en-466,0.0,2,0,,miscounting|miscounting,,0.95|0.95,How many flags are in this picture?,"```json
 [
   {
     ""span_text"": ""three"",
     ""label"": ""miscounting"",
-    ""prob"": 0.9,
-    ""reason"": ""The image shows more than three flags. There is a large Union Jack in the background, Union Jacks on tables, and additional flag segments visible at the top and sides of the image, totaling more than three distinct flags.""
+    ""prob"": 0.95,
+    ""reason"": ""The image shows more than three Union Jack flags - there are multiple flags visible in the background, on tables, and partially visible, totaling more than three distinct flags.""
   }
 ]
 ```"
-train-en-467,1.0,0,0,,,,,Does this blouse have sleeves? Please elaborate.,[]
+train-en-467,1.0,0,0,,,,,Does this blouse have sleeves? Please elaborate.,"```json
+[]
+```"
