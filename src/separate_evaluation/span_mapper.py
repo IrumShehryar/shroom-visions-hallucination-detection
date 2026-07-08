@@ -1,31 +1,56 @@
 import re
+import nltk
 
+try:
+    nltk.data.find('taggers/averaged_perceptron_tagger_eng')
+except LookupError:
+    nltk.download('averaged_perceptron_tagger_eng')
+
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
+    
 def normalize_text(text):
     text = text.replace('\u2019', "'").replace('\u2018', "'")
     text = text.replace('\u201c', '"').replace('\u201d', '"')
     return text
 
-def extract_key_span(span_text, label):
-    number_words = [
-        "zero", "one", "two", "three", "four", "five", "six", "seven",
-        "eight", "nine", "ten", "eleven", "twelve", "couple", "several",
-        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
-    ]
+def extract_key_span(span_text, label, reason=""):
+    
+    span_words = span_text.lower().split()
+    reason_text = reason.lower()
+    
+    # Clean punctuation from words for clean matching
+    span_words_clean = [w.strip(".,*()\"'") for w in span_words if w.strip(".,*()\"'")]
+    
+    # 1. Check if the reasoning explicitly points to a replacement phrase
+    for word in span_words_clean:
+        if f"not {word}" in reason_text or f"instead of {word}" in reason_text or f"no {word}" in reason_text:
+            return word
 
-    span_lower = span_text.lower()
-    for num in number_words:
-        pattern = r'\b' + num + r'\b'
-        match = re.search(pattern, span_lower)
-        if match:
-            return span_text[match.start():match.end()]
+    # 2. Extract specific targets using Part-of-Speech tags
+    try:
+        tagged = nltk.pos_tag(span_words)
+    except:
+        tagged = [(w, 'UNK') for w in span_words] # Safe fallback if nltk data isn't loaded
 
-    if label == "mischaracterization" or label=="invention":
-        words = span_text.split()
-        if len(words) > 3:
-            return words[-2:]
-        return span_text
-
-    return span_text
+    if label.lower() == "miscounting":
+        # Pull the absolute number (Cardinal Number)
+        for word, tag in tagged:
+            if tag == 'CD' or word.isdigit():
+                return word
+                
+    elif label.lower() in ["mischaracterization", "invention"]:
+        # Fallback for short descriptions or pull the dominant descriptive adjective/adverb
+        if len(span_words) > 3:
+            # Check for adjectives
+            for word, tag in tagged:
+                if tag in ['JJ', 'JJR', 'JJS', 'RB']:
+                    return word
+            return " ".join(span_words[-2:]) # Fallback to last two words if no explicit tag hit
+            
+    return span_text # Safety fallback to original span
 
 def map_spans_to_characters(llm_output, response_text):
     mapped = []
@@ -37,11 +62,12 @@ def map_spans_to_characters(llm_output, response_text):
         span_text = normalize_text(item.get("span_text", "").strip())
         label = item.get("label", "other")
         prob = item.get("prob", 0.5)
+        reasoning = item.get("reason", "")
 
         if not span_text:
             continue
         
-        #span_text = extract_key_span(span_text, label)
+        span_text = extract_key_span(span_text, label,reasoning)
         
         
         found_any_match = False

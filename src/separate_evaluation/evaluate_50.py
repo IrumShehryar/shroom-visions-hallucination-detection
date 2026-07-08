@@ -1,7 +1,6 @@
 import json
 from src.evaluate_row import evaluate_single_row
-
-def calculate_iou(pred_spans, gold_spans, response_len):
+def calculate_iou(pred_spans, gold_spans, response_len, agreement_threshold=0.5):
     pred_chars = set()
     gold_chars = set()
     
@@ -9,15 +8,18 @@ def calculate_iou(pred_spans, gold_spans, response_len):
         for i in range(span["start"], span["end"]):
             pred_chars.add(i)
     
+    # Filters out human noise under the threshold
     for span in gold_spans:
-        for i in range(span["start"], span["end"]):
-            gold_chars.add(i)
+        prob = span.get("prob", 1.0)
+        if prob >= agreement_threshold:
+            for i in range(span["start"], span["end"]):
+                gold_chars.add(i)
     
     if not pred_chars and not gold_chars:
-        return 1.0  # both empty — perfect
+        return 1.0
     
     if not pred_chars or not gold_chars:
-        return 0.0  # one empty one not — zero
+        return 0.0
     
     intersection = len(pred_chars & gold_chars)
     union = len(pred_chars | gold_chars)
@@ -67,7 +69,7 @@ def run_evaluation(input_path, limit=50):
             
             # Calculate IoU
             response_len = len(row["response"])
-            iou = calculate_iou(pred_labels, gold_labels, response_len)
+            iou = calculate_iou(pred_labels, gold_labels, response_len, agreement_threshold=0.5)
             iou_scores.append(iou)
             
             # Track by category

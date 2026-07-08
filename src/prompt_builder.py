@@ -98,7 +98,7 @@ IMPORTANT INSTRUCTIONS:
     
     Each entry must have:
     - "span_text": the shortest exact substring from the response
-    - "label": one of invention, mischaracterization, miscounting, ocr_problem, other
+    - "label": one of invention, mischaracterization, miscounting, OCR, other
     - "prob": confidence score between 0 and 1
     - "reason": one sentence explanation
     """
