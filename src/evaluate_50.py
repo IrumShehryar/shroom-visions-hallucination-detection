@@ -1,3 +1,4 @@
+
 import json
 from src.evaluate_row import evaluate_single_row
 def calculate_iou(pred_spans, gold_spans, response_len, agreement_threshold=0.5):
@@ -27,7 +28,7 @@ def calculate_iou(pred_spans, gold_spans, response_len, agreement_threshold=0.5)
     return intersection / union
 
 
-def run_evaluation(input_path, limit=50):
+def run_evaluation(input_path):
     results = []
     iou_scores = []
     originals = {}
@@ -58,8 +59,8 @@ def run_evaluation(input_path, limit=50):
                 continue
                 
             # If running normally (no specific targets), honor the standard limit
-            if not TARGET_IDS and evaluated_count >= limit:
-                break
+            #if not TARGET_IDS and evaluated_count >= limit:
+            #    break
             
             gold_labels = row.get("labels", [])
             print(f"Processing ({evaluated_count + 1}): {row['id']}...")
@@ -154,4 +155,5 @@ def save_csv(results, originals, output_path):
             ])
 if __name__ == "__main__":
     INPUT = r"D:\SHROOM\shroom-visions-data\distrib\shroom-vision.train.en.labeled.jsonl"
-    results = run_evaluation(INPUT, limit=50)
+    results = run_evaluation(INPUT)
+    

@@ -1,0 +1,1764 @@
+OFFLINE ERROR ANALYSIS: NONE
+Generated: 2026-07-09 23:16:47.214601
+======================================================================
+SUMMARY
+  Samples:     75
+  Average IoU: 0.4267
+  Perfect (1.0): 32
+  Partial:       0
+  Zero (0.0):    43
+======================================================================
+
+==================== IMAGE ID: train-en-411 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the ship does **not** have traditional masts like those found on sailing vessels. 
+
+However, it does have a **communications mast** – a relatively small, single pole structure visible towards the top of the ship. This mast is used for antennas and communication equipment, not for sails. It's a common feature on modern motor yachts like this one.
+
+So, while it doesn't have masts in the traditional sense, it does have a mast-like structure for technical purposes.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-412 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+No, the cauliflower in the image is **not** white. It is a vibrant **purple** color! 
+
+This is a variety of cauliflower called **purple cauliflower**. The purple hue comes from the presence of anthocyanins, which are antioxidants also found in foods like blueberries and red cabbage. 
+
+While traditional cauliflower is white, there are also orange, green, and purple varieties available. The color doesn't significantly affect the taste, though some people find purple cauliflower to have a slightly nuttier flavor.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-414 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, this frog is **not green** in color. It is primarily a **dark, purplish-brown** hue. 
+
+Here's a more detailed breakdown:
+
+*   **Body:** The main body of the frog appears a deep, almost chocolate-brown color.
+*   **Limbs:** The legs have some purplish tones and lighter, grayish-white markings towards the feet.
+*   **Background:** The mossy background has green tones, which might create a slight illusion, but the frog itself is not green.
+
+This frog is likely a species of purple frog (Nasikabatrachus sahyadrensis) which are known for their unusual color and plump bodies. They live underground for most of the year and only emerge during the monsoon season to breed.
+
+
+
+
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-421 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the shovel does **not** appear to have a metal end. 
+
+It appears to be made entirely of yellow plastic. You can see the plastic extends from the handle, through the neck, and forms the entire shovel blade. There's no visible separation or different material indicating a metal edge or tip.
+
+These types of plastic shovels are often used for lighter tasks like moving mulch, sand, or snow, where a metal blade isn't necessary and the plastic won't be as easily damaged.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-422 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, this bus is an **electric trolleybus**. 
+
+Here's why it likely doesn't have a traditional internal combustion engine:
+
+*   **Overhead wires:** The bus is connected to overhead electrical wires via two poles extending upwards. This indicates it's powered by electricity drawn from the grid.
+*   **"Clean Air Vehicle" label:** The text on the bus states "Clean Air Vehicle," which suggests it doesn't produce emissions like a gasoline or diesel engine would.
+*   **Trolleybus design:** Trolleybuses are specifically designed to run on electricity and don't have an engine in the conventional sense. They use electric motors to drive the wheels.
+
+**However, it might have a small auxiliary engine.** Some trolleybuses have a small diesel or gasoline engine to allow them to operate away from the trolley wires for short distances, but this is not the primary power source. 
+
+In summary, while it *might* have a very small auxiliary engine, the bus's primary power source is electricity, and it doesn't rely on a traditional engine for propulsion.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two poles",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows only one overhead pantograph pole extending upward from the bus, not two poles."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [217:220] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-423 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, this mushroom does **not** have a traditional cap like many people picture when they think of a mushroom. 
+
+This is a **Lion's Mane mushroom** (*Hericium erinaceus*). Instead of a cap and stem, it's characterized by long, cascading spines or "teeth" that hang down. It looks like a white, fluffy pom-pom or a lion's mane (hence the name!). 
+
+Here's a breakdown:
+
+*   **Traditional Mushroom:** Usually has a distinct cap (the umbrella-like top) and a stem.
+*   **Lion's Mane:** Lacks a cap. The entire fruiting body is composed of these tooth-like structures.
+
+The "teeth" are actually sterile (don't produce spores) and hang down on all sides, giving it a unique, rounded, and somewhat globular shape.
+
+
+
+
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-424 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it appears there are **two** people. We can see two sets of hands holding a book, and parts of their clothing (jackets and sleeves) are visible.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "book",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The two people are holding a sheet of paper or envelope, not a book."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [96:100] 'book' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-427 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, the dishwasher in the image is **not** a large appliance. It's a **compact or countertop dishwasher**. 
+
+Here's why:
+
+*   **Size:** Large appliances like dishwashers are typically built-in under countertops and are around 24 inches wide. This one appears much smaller and is designed to sit *on* a countertop.
+*   **Capacity:** Compact dishwashers have a much smaller capacity than standard ones, suitable for individuals or small households.
+*   **Portability:** They're often more portable and easier to move than traditional dishwashers.
+
+In the image, you can see it sitting on the countertop next to a stove, confirming its compact nature.
+
+Large appliances typically include things like full-size refrigerators, ovens, washing machines, and standard dishwashers. This is a smaller, more space-saving alternative.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "next to a stove",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The dishwasher is positioned to the right of a gas cooktop/range, not next to it in a way that would be naturally described as 'next to' â€” there is significant counter space between them, and the stove is on the left side of the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [601:605] 'next' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-432 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image you sent, there is **no red dot** visible. The image is a solid dark blue color. 
+
+Perhaps the image you intended to send is different, or the red dot is very small and difficult to see. If you can provide a different image or describe the dot's location more clearly, I'd be happy to help!
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-434 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, this peacock is **not** blue in color. 
+
+This is a **peafowl chick** (a young peacock or peahen).  Young peafowl have a different plumage than adult males (peacocks). 
+
+Here's a breakdown:
+
+*   **Adult male peacocks** are famous for their brilliant blue and green iridescent feathers.
+*   **Adult female peafhens** are typically a mottled brown-grey color.
+*   **Chicks** like the one in the image are generally a buff-brown or tan color with paler undersides. They don't develop the vibrant colors until they mature, and even then, only the males will display the full, iconic blue and green coloration.
+
+You can see the chick in the image has a mostly tan and brown coloration, with some lighter, fluffy down. There's no blue visible at all.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "a young peacock or peahen",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The bird in the image is a peafowl chick, but the response incorrectly suggests it could be either a young peacock or peahen when peacocks are specifically males; peafowl chicks of both sexes look similar at this age, but the term 'peacock' refers only to adult males."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [76:81] 'young' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-440 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze whether the cockroach in the image typically lives indoors.
+
+Based on its appearance, this is a **Pacific Beetle Cockroach** (Diploptera punctata). 
+
+Here's a breakdown of its indoor/outdoor habits:
+
+*   **Primarily Outdoor:** Pacific Beetle Cockroaches are generally found outdoors in moist environments. They thrive in leaf litter, under decaying wood, in compost piles, and around gardens.
+*   **Can Enter Homes:** While they prefer the outdoors, they *can* wander into homes, especially during wet weather or when seeking shelter. They are often found in crawl spaces, basements, or garages.
+*   **Not a Common Indoor Infestation:** Unlike German or American cockroaches, Pacific Beetle Cockroaches don't typically establish large breeding populations indoors. They usually don't reproduce inside.
+*   **Unique Feature:** These cockroaches are known for giving birth to live young (viviparity), unlike many other cockroach species that lay eggs.
+
+**In conclusion:** While this cockroach *can* be found indoors, it's more commonly an outdoor species that occasionally ventures inside. It's not a typical indoor pest like some other cockroach types.
+
+If you're seeing one indoors, it's likely a stray rather than a sign of a major infestation. However, it's still a good idea to address any moisture issues or potential entry points to discourage them from entering.
+
+
+
+
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Pacific Beetle Cockroach (Diploptera punctata)",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename and visual characteristics indicate this is a Blaberus species (likely Blaberus craniifer), not Diploptera punctata (Pacific Beetle Cockroach)."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-441 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze the image. 
+
+Based on the picture, the limes (specifically, they are **kaffir limes**, also known as Thai limes) do **not** have smooth skin. 
+
+Here's a detailed elaboration:
+
+*   **Exterior Texture:** The whole kaffir limes in the background have a very bumpy, rough, and textured surface. It's quite distinctively wrinkled and not smooth at all.
+*   **Interior Texture:** The sliced kaffir limes reveal a pale green interior with a segmented structure. The rind has a bumpy texture even on the inside.
+
+Kaffir limes are known for their unique, bumpy skin, which is different from common limes that have relatively smooth skin. The rind is actually where a lot of the flavor and aroma are concentrated, making it a key ingredient in Southeast Asian cuisine.
+
+If you would like, you can send me another image and I will analyze it for you.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "pale green interior",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The interior of the sliced limes shows a yellowish-green flesh, not pale green; the flesh appears more yellow-toned than pale green."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [437:442] 'green' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-442 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+It is impossible to determine the battery percentage of the laptop from the given image. The image only shows the exterior of the laptop with a sticker on it, and there is no visible display of the battery percentage.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-443 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, these are not axes, but rather **stone tools** likely from the Paleolithic (Old Stone Age) period. 
+
+Specifically, they appear to be examples of **handaxes** and **cleavers**. 
+
+**They do not have handles.** 
+
+Here's why:
+
+*   **Technology of the time:** During the Paleolithic, people made tools by *flaking* stone – carefully chipping away at it to create a sharp edge. Handles weren't developed yet. These tools were designed to be held *directly in the hand*.
+*   **Shape and form:** The shapes of these tools are typical of handaxes and cleavers. They were used for a variety of purposes including digging, butchering animals, and processing plants.
+*   **No evidence of hafting:** There's no visible evidence of any materials used to attach a handle (haft) to the stone. Hafting (attaching a handle) came much later in prehistory.
+
+These tools represent some of the earliest evidence of human technology and ingenuity!
+
+
+
+
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "cleavers",
+    "label": "mischaracterization",
+    "prob": 0.6,
+    "reason": "The right tool appears to be a pointed handaxe typical of Paleolithic technology, not a cleaver which typically has a broader, flatter cutting edge oriented differently than what is shown."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [184:192] 'cleavers' | mischaracterization | model confidence: 0.6
+
+==================== IMAGE ID: train-en-444 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+No, this is not a traditional broom with bristles. 
+
+Based on the image, this is a **foam floor squeegee**. Instead of bristles, it has a wide, flat pad made of foam. It's designed to be used on smooth, hard floors to push water and dirt around for cleaning, rather than sweeping up loose debris like a bristled broom would. 
+
+It's commonly used for things like:
+
+*   Pushing water after mopping
+*   Cleaning spills
+*   Sweeping up light dust on hard floors.
+
+
+
+
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-445 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+No, the belt in the image does not have buckles. 
+
+It appears to be a sash-style belt that is tied around the waist. It features long ribbons that create a bow at the front. The belt is wide and textured, but it doesn't have any visible buckles or clasps for fastening.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-449 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, this alligator plush toy does **not** have realistic scales. 
+
+Instead, it has a textured, bumpy surface that *mimics* the appearance of scales, but it's created by the plush fabric itself. You can see this particularly well along its back. Real alligators have hard, bony plates underneath their skin that form scales. This plush toy uses the texture of the material to suggest scales rather than having individually defined, hard scales. 
+
+It's a stylistic choice for a toy, making it softer and more cuddly than a realistic scaled alligator would be!
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-454 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, this is an **immersion blender** (also known as a stick blender or hand blender). 
+
+**No, it does not have a built-in container.** 
+
+Immersion blenders are designed to be used *directly in* the pot, bowl, or container you are already using for your ingredients. You simply insert the blending shaft into the liquid or food you want to blend. 
+
+Some immersion blenders *are sold as part of a set* that includes a separate blending container or beaker, but this particular model in the image does not appear to include one. It's the blender itself, with the blending head and handle/motor.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-458 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze the image. 
+
+While there are black components on the guns (like the grips and some detailing), the guns themselves are **not primarily black**. 
+
+The image shows two guns:
+
+*   One is **red**.
+*   The other is **blue**.
+
+The black parts are accents on both guns.
+
+So, to answer your question directly: No, the guns are not black in color. They are red and blue with black accents.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two guns",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows three toy guns/water guns being held, not two."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [187:190] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-459 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+No, this garlic is not purely white in color. 
+
+As you can see in the image, the garlic bulb has a beautiful mix of colors! It's predominantly **purple and shades of pink**, with hints of **white and cream**. The outer layers have strong purple stripes, while some areas appear more pale or whitish. 
+
+While garlic *can* be white (like some varieties of softneck garlic), this particular bulb is a type known as **Purple Stripe garlic**, which is characterized by its distinctive coloring.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-461 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, this is not a wasp, but a **velvet ant**. They are actually wingless female wasps! 
+
+Here's a breakdown:
+
+*   **Velvet Ants are Wasps:** Despite their name and ant-like appearance, velvet ants are actually wingless female wasps of the family Mutillidae.
+*   **Males Have Wings:** Male velvet ants *do* have wings and resemble typical wasps, but they are rarely seen. The females are the ones most people recognize, with their fuzzy, brightly colored bodies.
+*   **Winglessness:** The females have lost their wings during evolution, likely as a trade-off for a tough exoskeleton and a potent sting.
+
+So, the individual in the image does not have wings because it is a wingless female velvet ant. They are known for their bright colors and extremely painful sting – earning them the nickname "cow killer" in some areas.
+
+
+
+
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-462 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+No, this tractor does **not** have wheels. 
+
+Instead of traditional wheels, this tractor uses **tracks** – similar to those found on tanks or construction equipment. You can clearly see the black, segmented tracks running along both sides of the vehicle. 
+
+Here's why tracks are used instead of wheels:
+
+*   **Better Traction:** Tracks provide a much larger surface area in contact with the ground, giving it superior traction, especially in soft or uneven terrain like mud, sand, or snow.
+*   **Lower Ground Pressure:** The weight of the tractor is distributed over a larger area with tracks, reducing ground pressure and preventing it from sinking into soft surfaces.
+*   **Improved Stability:** Tracks offer greater stability on slopes and challenging terrain.
+
+This type of tractor is often used for tasks where wheels would struggle, like landscaping, forestry work, or agricultural operations in difficult conditions.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-463 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+It is **impossible to determine** if the knife is infused with human blood from just an image. 
+
+The red substance on the blade *appears* to be blood, but it could be:
+
+*   **Animal blood:** The knife could have been used for butchering meat.
+*   **Food coloring or other red substance:** It could be a prop for a film, a stage performance, or a prank.
+*   **Rust or other corrosion:** Certain types of corrosion can appear red.
+
+**Important Note:** Assuming it is human blood is dangerous and potentially harmful. If you've encountered this knife in a real-life situation, it's crucial to **treat it as potentially hazardous** and contact the appropriate authorities (police, forensics) for investigation. Do not touch it yourself.
+
+**I am an AI and cannot provide definitive answers about real-world scenarios involving potential biohazards.** My purpose is to provide information, not to make judgments about potentially dangerous situations.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-464 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, this pelican is **not** white in color. 
+
+Here's a breakdown of its coloring:
+
+*   **Head and Neck:** The pelican has a dark brown/grayish head and neck. It appears to have some lighter streaking or mottling on the head.
+*   **Body:** The body feathers are predominantly a warm brown with a lot of intricate patterns and streaks.
+*   **Wings:** The wings have a mix of brown, white, and black feathers, creating a patterned effect.
+*   **Bill:** The bill is a pale yellowish-orange color.
+
+While there are some white feathers visible on the wings and potentially some lighter areas on the head, the overall coloration is clearly brown and gray, not white. This appears to be a **Brown Pelican** (Pelecanus occidentalis), which is known for its darker plumage compared to other pelican species.
+
+
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Brown Pelican",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename indicates this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis), which are different species."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [683:696] 'Brown Pelican' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-465 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze the color of the deer in the image.
+
+While the deer does have brown patches, it's not simply "brown" in color. The deer exhibits a striking **piebald** coloration. 
+
+Here's a breakdown:
+
+*   **Piebald** refers to a genetic condition that causes large patches of unpigmented (white) hair alongside areas with normal pigmentation (in this case, brown).
+*   The deer has significant areas of white covering its body.
+*   The brown coloration is present in patches, creating a spotted or mottled appearance.
+
+So, while brown *is* part of the deer's color scheme, it's more accurate to describe it as a piebald deer with brown markings.
+
+It's a beautiful and relatively rare color variation!
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-466 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I can see **three** flags:
+
+1.  A large **Union Jack** (British flag) hanging in the background.
+2.  A smaller **Union Jack** on a table to the left.
+3.  A partial view of another **Union Jack** on a table to the right.
+
+Therefore, there are a total of three flags visible in the picture.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows more than three flags - there are large Union Jack flags hanging in the background, flag decorations on tables, and multiple flag elements visible throughout the scene."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [32:37] 'three' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-467 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+No, this blouse does **not** have sleeves. 
+
+It is a sleeveless blouse, often referred to as a tank top or shell top, with a collared neckline and a button-down front. You can see that the armholes are open and there is no fabric extending to form sleeves.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10538 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+My apologies, but I am unable to answer this question. There is no lady or hair visible in the image provided. The image depicts an old, dilapidated barn.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2537 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, there is a light on the front top of the train.
+
+Looking at the image, you can see a small, round, illuminated light fixture positioned at the very top center of the train's front end, just above the destination sign. It appears to be lit, casting a warm glow, which is typical for a headlight or marker light on a tram or train to improve visibility, especially during low-light conditions or at night.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "just above the destination sign",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The light fixture is positioned above the destination/route number signs, but the response's phrasing suggests it's directly above a single destination sign when there are multiple signs/displays on the front of the tram."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [190:221] 'just above the destination sign' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2042 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the apple in the image is predominantly round. It has a classic heart-like shape with broad sides tapering slightly towards one end where the stem was attached. The halves and slices also maintain this rounded form, characteristic of many common varieties like Red Delicious or Gala apples.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "heart-like shape",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The apple is clearly round/spherical in shape, not heart-like; the response contradicts its own opening statement that the apple is 'predominantly round.'"
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [69:79] 'heart-like' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11193 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the shirt has buttons. There are two visible clear or light-colored buttons near the waist area, used for fastening.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows decorative embellishments near the waist that appear to be rhinestone or crystal embellishments, not two distinct buttons for fastening."
+  },
+  {
+    "span_text": "clear or light-colored buttons",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The fasteners visible are sparkling rhinestone or crystal decorative elements, not traditional buttons, and they appear to be for decorative purposes rather than functional fastening."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [38:41] 'two' | miscounting | model confidence: 0.9
+  [50:55] 'clear' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1467 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The strawberry in the image is not red. Instead, it appears to be in the process of ripening, which typically involves a greenish hue. As strawberries ripen, they generally transition from green to red. The one in the photo seems to be at an early stage of ripening, which is why it's still green.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "strawberry",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The image shows a strawberry flower bud or developing fruit structure, not a mature strawberry in early ripening stages as described."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [4:14] 'strawberry' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-661 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it's highly likely this is a moth larva (caterpillar) inside a seed pod. 
+
+Here's what we can tell and how it relates to wings:
+
+*   **Larval Stage:** The creatures in the image are clearly larvae. They don't have wings at this stage of their life cycle. 
+*   **Moth Life Cycle:** Moths undergo complete metamorphosis. This means they have four distinct stages: egg, larva (caterpillar), pupa (chrysalis or cocoon), and adult (moth).
+*   **Wing Development:** Wings develop *during* the pupa stage. The caterpillar will eventually form a pupa (likely within a cocoon or chrysalis, though not visible in this image). Inside the pupa, the larval tissues break down and reorganize into the adult form, including the wings.
+*   **Adult Moth:** Once the moth emerges from the pupa, it *will* have wings.
+
+**Therefore, the creatures in the image don't have wings *yet*. They will develop wings when they transition to the adult moth stage.**
+
+It's also worth noting that the seed pod is likely the food source for these larvae.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "seed pod",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The image shows a bagworm moth case/bag (a silken structure constructed by the larva), not a seed pod. The filename confirms this is a bagworm moth, and the structure visible is the characteristic bagworm case, not botanical in origin."
+  },
+  {
+    "span_text": "caterpillar",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "Bagworm moth larvae are not caterpillars in the traditional sense - they are lepidopteran larvae that construct distinctive cases/bags, which is a different ecological and behavioral form than typical caterpillars."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [61:72] 'caterpillar' | mischaracterization | model confidence: 0.75
+  [83:91] 'seed pod' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10372 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The pen is located at the bottom left corner of the image, held by a hand that appears to be partially visible in the foreground.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "bottom left corner",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The microphone is visible in the foreground on the right side of the image, not the bottom left corner. There is no pen visible in the image at all."
+  },
+  {
+    "span_text": "pen",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "No pen is visible in the image. The object in the foreground is a microphone with 'RTÉ' branding, not a pen."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [4:7] 'pen' | invention | model confidence: 0.9
+  [26:44] 'bottom left corner' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-682 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it's difficult to determine the store name. The image shows a display of natural dyes - Anil, Grana cochinilla, and Caracol Purpura Pansa - and their sources. It appears to be an exhibit or display *within* a store or museum, rather than the store itself being named after these dyes. 
+
+Without more information visible in the image, I cannot identify the store name.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Caracol Purpura Pansa",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The label in the image reads 'Caracol Púrpura Pansa' with an accent mark on 'Púrpura', not 'Purpura' as stated in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [136:157] 'Caracol Purpura Pansa' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-2004 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The girl on the right, wearing a pink top and black shorts, has a necklace around her neck.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "pink top",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The girl on the right is wearing a white or light-colored top, not a pink top. The pink color visible is her hat/headwear, not her clothing."
+  },
+  {
+    "span_text": "black shorts",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The girl on the right is wearing black socks/leg coverings and what appears to be blue patterned shorts or swimwear, not black shorts."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [33:41] 'pink top' | mischaracterization | model confidence: 0.9
+  [46:51] 'black' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1245 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The hashtag phrase at the bottom is "#tourfever".
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "#tourfever",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The visible text in the image shows '#tourfever' but the response claims it says '#tourfever' when it actually says '#tourfever' - the image clearly shows '#tourfever' at the bottom of the blue section."
+  }
+]
+
+
+Wait, let me re-examine this more carefully. Looking at the text visible at the bottom right of the blue section, I can see "#tourfever" written there. The response states "#tourfever" which matches what I can see in the image.
+
+
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-619 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, the fox in the image is not reddish in color. It is an **Arctic Fox**, and its coat is primarily **white or a very pale grayish-beige**. 
+
+Here's a more detailed breakdown:
+
+*   **Seasonal Variation:** Arctic foxes have a fascinating adaptation. In the winter, they typically have a pure white coat for camouflage in the snow. As the seasons change and snow melts, their coat transitions to a grayish-brown or beige color, like the one seen in the picture. This helps them blend into the tundra landscape during the warmer months.
+*   **No Red Tones:** You won't see any significant red coloration in an Arctic Fox's coat. Reddish tones are more common in other fox species like the Red Fox.
+*   **The Image:** In the image, the fox's fur is a light beige-gray, with subtle variations in shade. It's a warm tone, but definitely not red.
+
+You can tell from the image that this fox is well adapted to cold environments due to its thick fur and light coloring.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Arctic Fox",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename indicates this is a Corsac Fox, not an Arctic Fox. While both are light-colored foxes, they are different species with different characteristics and habitats."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [61:71] 'Arctic Fox' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-2651 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, there are two distinct pieces of text written on the boat:
+
+1.  **On the canopy:** The words **"SAUGATUCK FERRY"** are written in large, black, capital letters across the front of the white, ornate canopy. This identifies the name of the ferry service.
+
+2.  **On the side of the boat's hull:** The name **"DIANE"** is written in black capital letters on the white side of the boat, near the front.
+
+Therefore, the text written on the boat is **"SAUGATUCK FERRY"** and **"DIANE"**.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "black, capital letters",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The text 'SAUGATUCK FERRY' on the canopy appears to be in white/light colored letters, not black letters."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [166:171] 'black' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1264 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The cannon in the image is predominantly green due to a process called patina, which occurs on brass or bronze over time. This greenish hue is a result of chemical reactions with the environment, especially involving sulfur compounds and oxygen, leading to the formation of a protective layer on the metal surface. The wheels and other parts of the cannon are black, likely due to painting or different material. The overall effect is a striking contrast between the green barrel and the black wheels.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "brass or bronze",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The response says patina occurs on 'brass or bronze' but the filename and visual evidence indicate this is a bronze cannon, not brass."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [95:110] 'brass or bronze' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1217 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The goat in the image has curly hair rather than straight hair. You can see the texture and waves in its coat, which are characteristic of curly fur. This type of coat helps with insulation and can be a feature of certain goat breeds.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "curly hair",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The goat's coat appears to be long and wavy/crimped rather than distinctly curly; the texture is characteristic of Angora goat fleece which is typically described as long, silky, and wavy rather than curly."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [26:36] 'curly hair' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1958 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The sky appears to be mostly clear with some scattered clouds. The reflection on the car's window shows a blue sky and white cloud patterns, indicating fair weather conditions at the time the photo was taken.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-9920 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+There are three benches in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows one picnic bench/table in the forest, not three benches."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11214 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The plums in the image are primarily a mix of yellow and pink hues, rather than purple. Some plums may have a reddish tint, but they generally appear more on the yellow-pink spectrum.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11003 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The motorcycle in the image appears to be a three-wheeled vehicle. The design is unique, with two wheels at the front and one at the rear. This configuration is often referred to as a trike, which is distinct from traditional motorcycles with two wheels.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two wheels at the front and one at the rear",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The vehicle has one wheel at the front and two wheels at the rear, not two at front and one at rear as stated."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [94:137] 'two wheels at the front and one at the rear' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10681 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+This image is of a plaque or monument, which is typically found in cemeteries. Cemeteries often often have plaques or memorials to honor and remember loved ones, significant events, or important figures. The presence of the cement ground in the image further supports that this might be a location associated with cemeteries. However, without more specific details or context, it's challenging to determine the exact location of this particular monument.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "cement ground",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The ground visible in the image appears to be marble or stone tiles, not cement. The surface has a polished, finished appearance characteristic of marble rather than raw cement."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [224:237] 'cement ground' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2273 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the man is wearing glasses.
+
+He is wearing a pair of thin, wire-framed glasses that sit on his nose. They are visible on his face as he looks toward the camera.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11360 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The person in the image is playing a red guitar.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "red",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The guitar visible in the image appears to be dark-colored (black or dark brown), not red as claimed in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [37:40] 'red' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2444 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, this broom does not have a long handle.
+
+Based on the image provided, we can see the broom head and the very top of the handle. The handle is capped with a metallic ferrule (the metal piece that secures the bristles to the handle), but the handle itself is not visible extending downward. The broom is shown in a way that emphasizes the bristles, and there is no indication of a long shaft or handle attached to it.
+
+In fact, this appears to be a “broom head” or “broom brush” — a replacement head that is designed to be attached to an existing handle. The ferrule at the top is meant to be inserted into the end of a handle, which would be provided separately. The broom head itself is short and conical, typical of a traditional broom head that would be used with a standard-sized handle.
+
+Therefore, the broom shown does not have a long handle — it is just the head, and the handle is not included or visible.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "the handle itself is not visible extending downward",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The image clearly shows a handle extending upward from the broom head with a brass ferrule at the top, contrary to the claim that the handle is not visible."
+  },
+  {
+    "span_text": "this appears to be a \"broom head\" or \"broom brush\" — a replacement head",
+    "label": "mischaracterization",
+    "prob": 0.8,
+    "reason": "The image shows a complete traditional broom with an integrated handle and head, not a detachable replacement head designed to attach to a separate handle."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [265:272] 'visible' | mischaracterization | model confidence: 0.85
+  [430:501] 'this appears to be a “broom head” or “broom brush” — a replacement head' | mischaracterization | model confidence: 0.8
+
+==================== IMAGE ID: train-en-1107 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, the ambulance in the image does not have four wheels. This is a helicopter, specifically a medical evacuation helicopter used by the Midlands Air Ambulance. Helicopters typically have rotor blades for lift and do not use wheels for ground movement. Instead, they have skids or landing gear that glides over the ground during takeoff and landing.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "glides over the ground",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The helicopter has fixed skids/landing gear that does not glide; it lands and remains stationary on the ground."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [299:321] 'glides over the ground' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2379 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the text visible on the building in the image, one type of food served in the "DINING DANCING BAR & GRILL" is **seafood**.
+
+The sign for the restaurant is clearly visible above the awning, and it reads "SEA FOOD" (with a space between "SEA" and "FOOD"). This indicates that seafood is a featured item on their menu.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "SEA FOOD",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible text on the building shows 'SEA Food' as two separate words, but the response claims it reads 'SEA FOOD' in all caps when 'Food' appears to be in mixed case."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [212:220] 'SEA FOOD' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1145 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, there is an exit sign above a door in the background of the picture.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "above a door",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The EXIT sign is visible on the wall/shelving unit in the background, but there is no visible door directly below it; it appears to be mounted on or near the wooden shelving structure."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [27:39] 'above a door' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1748 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The word that appears several times on the building is "shake shack."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "shake shack",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text visible on the building reads 'SHAKE SHACK' (all capitals), not 'shake shack' (lowercase), though the response captures the correct words."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [56:67] 'shake shack' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-2515 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the close-up image provided, the text written on the blue bicycle hub is:
+
+**CHRIS KING®**
+**MADE IN U.S.A.**
+**6210005362**
+
+This is the branding and manufacturing information for the Chris King hub, a well-known manufacturer of high-end bicycle hubs. The number `6210005362` is likely a serial number or part number.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "MADE IN U.S.A.",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible text on the hub appears to read something different; the image shows text that does not clearly match 'MADE IN U.S.A.' when examined closely."
+  },
+  {
+    "span_text": "6210005362",
+    "label": "OCR",
+    "prob": 0.75,
+    "reason": "The serial/part number visible on the hub does not clearly match this exact sequence when examined in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [102:116] 'MADE IN U.S.A.' | OCR | model confidence: 0.85
+  [121:131] '6210005362' | OCR | model confidence: 0.75
+
+==================== IMAGE ID: train-en-1077 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The image shows a child dressed in a cow costume playing with bubbles on a stage. There are other children and adults in the background, suggesting this could be a performance or event, possibly a children's party or a cultural festival. However, the specific name or name of the event is not indicated in the image.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1529 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are no people visible in the image below the palm trees.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10602 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Human: There are no ants in the picture.
+
+The image shows two slugs crawling on a bed of green, leafy vegetation. Slugs are mollusks, not insects, and they do not have antennae like ants do. The creatures in the image are slugs, not ants.
+
+There are 0 ants in this picture.
+
+The image shows two slugs crawling on a bed of green, leafy vegetation. Slugs are mollusks, not insects, and they do not have antennae like ants do. The creatures in the image are slugs, not ants.
+
+Therefore, the number of ants in this picture is 0.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2056 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the turtle in the image has legs. However, it's important to note that these are not typical "legs" like those of land animals; they have evolved into flippers for swimming.
+
+This sea turtle is using its front flipper-like limbs (which you can see extended on either side) as paddles or oars to propel itself through the water. These modified forelimbs allow turtles to swim efficiently underwater. While their hind limbs also exist and may be used occasionally for maneuvering near the surface or when nesting on land, most visible movement here comes from the powerful strokes of their large, paddle-shaped front appendages. 
+
+So while we might call them "legs," functionally speaking—especially given this aquatic environment—they serve primarily as specialized fins rather than weight-bearing structures found on terrestrial creatures.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2602 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, it is **not possible to determine** whether the car's rear tyres are air-filled.
+
+Here's why:
+
+1.  **Limited View:** The photograph is a front-facing shot of the vehicle. It only shows the front bumper, grille, headlights, and the front wheels. The rear of the car, including the rear wheels and tyres, is completely out of frame.
+2.  **No Visual Cues:** There are no visual indicators in the image—such as the tyre's sidewall, tread pattern, or any signs of deflation—that would allow us to judge the air pressure or condition of the rear tyres.
+3.  **Assumption vs. Fact:** While it is highly likely that a modern car's tyres are air-filled (as they are designed to be), we cannot confirm this from the image alone. The car might be on a lift, or the tyres might be flat for some reason, but the image does not provide evidence for either.
+
+Therefore, without being able to see the rear tyres, any answer would be purely speculative. The correct answer based on the available visual information is that it cannot be determined.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "The rear of the car, including the rear wheels and tyres, is completely out of frame.",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The image is a front-facing shot showing the front of the vehicle, and while the rear is not visible, the rear wheels/tyres are not completely out of frame—they are partially visible on the right side of the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [274:359] 'The rear of the car, including the rear wheels and tyres, is completely out of frame.' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-2206 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+This desk does not have drawers. From what I can see, the surface is flat and open with no visible compartments or storage spaces built into its sides that would typically be found on a drawer-equipped desk. The design appears to focus solely on providing space for work items like monitors, keyboard, mouse, and notebook without integrated storage solutions such as drawers or shelves.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-554 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze the color of the fruit in the image. 
+
+While the fruit is related to oranges, it isn't quite the typical bright orange color we often associate with them. 
+
+**The skin of the fruit is a reddish-orange hue.** It's more of a deep, warm orange with noticeable red tones. 
+
+**The inside of the fruit (the flesh) is a striking deep red color.** This is characteristic of a type of orange called a **blood orange**. The red color comes from anthocyanins, which are pigments that develop in the fruit due to temperature fluctuations.
+
+So, to answer your question directly: **It's not a standard "orange" orange in color.** It has both reddish and orange tones, making it a unique and visually appealing fruit!
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11179 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The objects in the image do not appear to have handles. They look like natural stone or mineral formations rather than finished axes. An axe typically has a handle for gripping, which is often made of wood or another material attached to a metal head. These objects lack any visible signs of such attachments or handles.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "do not appear to have handles",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The right object clearly shows a white/pale handle or haft attachment at the top, which is visible as a distinct component separate from the stone blade portion."
+  },
+  {
+    "span_text": "They look like natural stone or mineral formations rather than finished axes",
+    "label": "mischaracterization",
+    "prob": 0.80,
+    "reason": "These are clearly worked stone tools (hand axes/bifaces) with deliberate flaking patterns and refined shaping, not natural mineral formations."
+  },
+  {
+    "span_text": "lack any visible signs of such attachments or handles",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The rightmost object displays a clear pale/white handle or socket attachment at the apex that is distinctly visible."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [25:54] 'do not appear to have handles' | mischaracterization | model confidence: 0.85
+  [71:78] 'natural' | mischaracterization | model confidence: 0.8
+  [275:282] 'visible' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9658 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The stadium is Sun Life Stadium.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Sun Life Stadium",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The welcome sign visible in the image reads 'WELCOME SUN LIFE STADIUM HERE' but the stadium's name has changed; the signage shows this is the current name displayed, however modern records indicate this stadium is now known by a different name (Hard Rock Stadium), though the image itself shows 'Sun Life' text."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [15:31] 'Sun Life Stadium' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10323 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The house is located on the right side of the image, nestled at the base of a tree-covered mountain slope. It appears to be partially hidden by vegetation but stands out against the greenery where it's visible.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "on the right side of the image",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The small structure visible in the image appears to be on the right side but far in the distance, not prominently positioned as the response suggests."
+  },
+  {
+    "span_text": "partially hidden by vegetation but stands out against the greenery",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "The house/structure is extremely small and distant, barely visible in the landscape, rather than standing out against the greenery as claimed."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [28:33] 'right' | mischaracterization | model confidence: 0.85
+  [124:190] 'partially hidden by vegetation but stands out against the greenery' | mischaracterization | model confidence: 0.75
+
+==================== IMAGE ID: train-en-9962 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+There is one person standing in the image, located on the right side of the train.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "one person",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows at least two people visible on the right side near the train, not just one person."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [9:12] 'one' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1863 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+There are three distinct racks visible in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image clearly shows four horizontal shelves/racks displaying wine bottles, not three."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11344 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The image shows a plum that appears to be quite wrinkled and shriveled, which is indicative of it being overripe. The skin is not smooth but has numerous wrinkles and creases, which could also suggest that the plum has been exposed to the elements for some time. Overripe plums often lose their firmness and develop a leathery texture due to the softening of the fruit's pectin.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "plum",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The image shows dried prunes (processed dried plums), not a fresh plum; the filename and visual evidence of completely desiccated, blackened fruit indicate this is a prune, not an overripe fresh plum."
+  },
+  {
+    "span_text": "overripe",
+    "label": "mischaracterization",
+    "prob": 0.92,
+    "reason": "The fruit is dried/processed (a prune), not overripe; overripe refers to a fresh fruit condition, whereas this is a deliberately dehydrated product."
+  },
+  {
+    "span_text": "leathery texture due to the softening of the fruit's pectin",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "Dried prunes have a hard, shriveled texture from dehydration, not a soft leathery texture from pectin breakdown in an overripe fresh fruit."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [18:22] 'plum' | mischaracterization | model confidence: 0.95
+  [104:112] 'overripe' | mischaracterization | model confidence: 0.92
+  [335:338] 'due' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1439 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The image shows a person performing at what appears to be a live concert. However, without any visible text or logos that provide the name of the concert or the name of the artist or band, I'm unable to provide that information. The person is playing an acoustic guitar and singing into a microphone, which suggests that this could be an intimate acoustic performance or a song from a band that incorporates acoustic instruments.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10377 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The woman in the background is wearing a red dress.
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response states that "the woman in the background is wearing a red dress." Looking at the image, there is indeed a woman visible in the blurred background, and while the image quality and distance make it difficult to determine exact colors with certainty, the response's claim about a red dress cannot be clearly contradicted by what is visible. The background is out of focus, making definitive color assessment problematic. Without clear visual evidence that contradicts this claim, no flag should be raised.
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1764 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+In the image provided, there is a person playing the violin. It appears to be a single individual, so there is one person playing the violin.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "one person playing the violin",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "No one is visibly playing a violin in this image; the scene shows an outdoor dining event under a covered archway with diners seated at tables, not a musical performance with a violinist."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [111:140] 'one person playing the violin' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11072 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The tricycle in the image appears to have a non-traditional rear wheel setup. Instead of a single rubber wheel, it has a larger wheel that appears to be designed for motocross or off-road use, and a smaller, round rubber wheel attached to it. The small wheel is likely used for better traction in certain conditions. It's not a standard tricycle wheel configuration, and it's a creative modification that makes the tricycle more versatile for different terrains.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "a smaller, round rubber wheel attached to it",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The image shows a single large rear wheel/tire on the right side, not two wheels (a larger wheel with a smaller wheel attached to it). There is no visible smaller wheel attached to the main rear wheel."
+  },
+  {
+    "span_text": "The small wheel is likely used for better traction in certain conditions",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "This statement references a small wheel that does not exist in the image; there is only one rear wheel visible, not multiple wheels."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [197:241] 'a smaller, round rubber wheel attached to it' | invention | model confidence: 0.85
+  [243:315] 'The small wheel is likely used for better traction in certain conditions' | invention | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10457 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Okay, I've carefully examined the image! 
+
+I don't see a bee in the picture. It's a lovely shot of mangoes on a tree, but there are no bees visible among the fruit or leaves. 
+
+Perhaps the bee was hiding or had already flown away when the photo was taken!
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1085 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the squirrel in the image has a bushy tail. Squirrels often have tails that are longer and bushier compared to other members of the rodent family, which they use for balance, communication, and insulation.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "bushy tail",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The squirrel's tail visible in the image appears relatively thin and not particularly bushy; it lacks the full, fluffy appearance typically associated with a bushy tail."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [37:42] 'bushy' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1996 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The image shows a group of people gathered in what appears to be a public space, possibly for an event or meeting. There is a sign that says "fast u" on the concrete pillar and another board with various posters behind it. However, there are no clear signs indicating the specific topic or purpose of the meeting.
+
+Given the context, this could be related to educational services (since "fast u" might refer to fast university), community events, or informational sessions at a library or similar venue. Without more explicit information from visible text or additional context about where this photo was taken, I cannot determine the exact subject of the meeting just from the visual details provided.
+
+If you have any other clues or can provide more background about the location or setting, I may be able to help further!
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "fast u",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible sign on the concrete pillar appears to read 'fast!' not 'fast u' based on the visible text in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [142:148] 'fast u' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-551 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, there is **one** goat visible. It is a small, white goat standing near a little girl.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "one",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image clearly shows two goats - one white goat in the foreground that the child is interacting with, and at least one other goat visible in the background to the left."
+  }
+]
+
+GOLD LABELS (All Annotations):
+
+PREDICTED LABELS:
+  [31:34] 'one' | miscounting | model confidence: 0.95

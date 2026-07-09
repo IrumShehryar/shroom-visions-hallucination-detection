@@ -3,8 +3,8 @@ import os
 #from src.parse_text import extract_linguistic_features
 from src.prompt_builder import build_audit_prompt
 from src.vision_llm import call_vision_llm
-#from src.span_mapper import map_spans_to_characters
-from src.span_mapper_v2 import map_spans_to_characters
+from src.span_mapper import map_spans_to_characters
+#from src.span_mapper_v2 import map_spans_to_characters
 
 NUMERIC_MAPPING = {
     "one": "1", "two": "2", "three": "3", "four": "4", "five": "5",

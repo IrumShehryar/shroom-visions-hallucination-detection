@@ -1,0 +1,1031 @@
+ERROR ANALYSIS LOG (CONSENSUS FILTERED AT 0.5)
+Generated: 2026-07-04 17:37
+Total samples: 50
+Perfect IoU samples (1.0): 24
+Partial IoU samples (0.0 < IoU < 1.0): 4
+Zero IoU samples (0.0): 22
+======================================================================
+
+======================================================================
+FALSE POSITIVES (system flagged, filtered gold is clean) — 18 cases
+======================================================================
+
+ID: train-en-413
+PROMPT: Does this desk have legs? Please elaborate.
+IMAGE: desk_Floating_desk_ab0a79a9b6c3e5e2578ef6d938ad5e8f.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+No, this desk does not have legs in the traditional sense. 
+
+It's a **floating desk**, meaning it's mounted directly to the wall and supported by a hidden bracket system and cables. You can see the cables attached to the ceiling providing additional support. 
+
+Instead of legs resting on the floor, it relies on the wall's structure to hold it up. This gives it a minimalist and modern look, and it's a good space-saving option!
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [221:228] 'ceiling' | mischaracterization | confidence: 0.95
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "attached to the ceiling",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The cables are attached to the wall (visible at the top left), not the ceiling. The attachment point is clearly on the gray wall surface, not above."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-417
+PROMPT: Is this alligator dark colored? Please elaborate.
+IMAGE: alligator_Leucistic_alligator_tos-l-leucistic-gators0780.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the alligator in the image.
+
+**Yes, the alligator in the foreground is dark colored.** It has a pattern of dark brown or black markings over a lighter base color. This is typical coloration for many juvenile American alligators. 
+
+Here's a bit more elaboration:
+
+*   **Coloration:** The alligator's skin is a mix of dark, almost black, spots and stripes against a yellowish-tan background.
+*   **Camouflage:** This pattern provides excellent camouflage in swampy or marshy environments where they live.
+*   **Leucism:** The alligator on top is a very pale color, likely due to a condition called leucism, which results in reduced pigmentation. It is not an albino as it still has some pigmentation.
+
+Let me know if you'd like to know more about alligators or leucism!
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [96:100] 'dark' | mischaracterization | confidence: 0.90
+  [132:136] 'dark' | mischaracterization | confidence: 0.90
+  [341:345] 'dark' | mischaracterization | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "alligator in the foreground is dark colored",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The alligator in the foreground (lower one being held) has dark coloration with yellowish-tan markings, but the alligator in the actual foreground of the image - the one most prominently displayed in the handler's hand - is the pale/leucistic one, not the dark one."
+  },
+  {
+    "span_text": "dark brown or black markings over a lighter base color",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The dark alligator (lower in image) has dark coloration with lighter tan/cream colored markings, which is the reverse of what is described - it's dark base with lighter markings, not light base with dark markings."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-418
+PROMPT: Does this bra have straps? Please elaborate.
+IMAGE: bra_Strapless_bra_dkny-intimates-white-signature-lace-.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, the bra does **not** have straps. 
+
+It's a **strapless bra**, designed to be worn without shoulder straps. You can see it's a bandeau style that stays up by its shape, silicone lining, and snug fit around the ribcage. 
+
+It appears to have a decorative floral lace panel on the sides, but no visible straps.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [261:271] 'decorative' | mischaracterization | confidence: 0.75
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "decorative floral lace panel",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "The lace visible on the sides appears to be a textured lace pattern, not a decorative floral lace panel as described."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-422
+PROMPT: Does this bus have an engine? Please elaborate.
+IMAGE: bus_Trolleybus__110458988_trolleyvanc.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, this bus is an **electric trolleybus**. 
+
+Here's why it likely doesn't have a traditional internal combustion engine:
+
+*   **Overhead wires:** The bus is connected to overhead electrical wires via two poles extending upwards. This indicates it's powered by electricity drawn from the grid.
+*   **"Clean Air Vehicle" label:** The text on the bus states "Clean Air Vehicle," which suggests it doesn't produce emissions like a gasoline or diesel engine would.
+*   **Trolleybus design:** Trolleybuses are specifically designed to run on electricity and don't have an engine in the conventional sense. They use electric motors to drive the wheels.
+
+**However, it might have a small auxiliary engine.** Some trolleybuses have a small diesel or gasoline engine to allow them to operate away from the trolley wires for short distances, but this is not the primary power source. 
+
+In summary, while it *might* have a very small auxiliary engine, the bus's primary power source is electricity, and it doesn't rely on a traditional engine for propulsion.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [217:220] 'two' | miscounting | confidence: 0.95
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "two poles",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows only one overhead pantograph pole extending upward from the bus, not two poles."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-424
+PROMPT: How many people are there in the image?
+IMAGE: 6879558675_033abbea15_o.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, it appears there are **two** people. We can see two sets of hands holding a book, and parts of their clothing (jackets and sleeves) are visible.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [96:100] 'book' | mischaracterization | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "book",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The two people are holding a sheet of paper or envelope, not a book."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-427
+PROMPT: Is this dishwasher large appliances? Please elaborate.
+IMAGE: dishwasher_Countertop_dishwasher_10-Ways-a-Countertop-Dishwasher-Will.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+No, the dishwasher in the image is **not** a large appliance. It's a **compact or countertop dishwasher**. 
+
+Here's why:
+
+*   **Size:** Large appliances like dishwashers are typically built-in under countertops and are around 24 inches wide. This one appears much smaller and is designed to sit *on* a countertop.
+*   **Capacity:** Compact dishwashers have a much smaller capacity than standard ones, suitable for individuals or small households.
+*   **Portability:** They're often more portable and easier to move than traditional dishwashers.
+
+In the image, you can see it sitting on the countertop next to a stove, confirming its compact nature.
+
+Large appliances typically include things like full-size refrigerators, ovens, washing machines, and standard dishwashers. This is a smaller, more space-saving alternative.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [601:605] 'next' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "next to a stove",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The dishwasher is positioned to the right of a gas cooktop/range, not next to it in a way that would be naturally described as 'next to' â€” there is significant counter space between them, and the stove is on the left side of the image."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-434
+PROMPT: Is this peacock blue in color? Please elaborate.
+IMAGE: peacock_Peacock_chick_flat,550x550,075,f.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+No, this peacock is **not** blue in color. 
+
+This is a **peafowl chick** (a young peacock or peahen).  Young peafowl have a different plumage than adult males (peacocks). 
+
+Here's a breakdown:
+
+*   **Adult male peacocks** are famous for their brilliant blue and green iridescent feathers.
+*   **Adult female peafhens** are typically a mottled brown-grey color.
+*   **Chicks** like the one in the image are generally a buff-brown or tan color with paler undersides. They don't develop the vibrant colors until they mature, and even then, only the males will display the full, iconic blue and green coloration.
+
+You can see the chick in the image has a mostly tan and brown coloration, with some lighter, fluffy down. There's no blue visible at all.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [76:81] 'young' | mischaracterization | confidence: 0.85
+  [103:108] 'Young' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "a young peacock or peahen",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The bird in the image is a peafowl chick, but the response incorrectly suggests it could be either a young peacock or peahen when peacocks are specifically males; peafowl chicks of both sexes look similar at this age, but the term 'peacock' refers only to adult males."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-438
+PROMPT: Does this tractor have wheels? Please elaborate.
+IMAGE: tractor_Tracked_tractor_maxresdefault.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the image. 
+
+While this tractor *appears* to have wheels at the back, the front tires have been replaced with **tracks**. Tracks are continuous bands of metal or rubber that provide a larger surface area, allowing for better traction and less soil compaction – particularly useful in agricultural settings. 
+
+So, to answer your question directly: **Yes, it has wheels on the rear, but the front has been converted to tracks.** 
+
+This type of setup is common for very large tractors used in demanding field conditions.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [75:81] 'wheels' | mischaracterization | confidence: 0.95
+  [137:143] 'tracks' | mischaracterization | confidence: 0.90
+  [147:153] 'Tracks' | mischaracterization | confidence: 0.90
+  [386:392] 'wheels' | mischaracterization | confidence: 0.95
+  [442:448] 'tracks' | mischaracterization | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "wheels at the back",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The tractor has tracks at the rear, not wheels; the response incorrectly identifies the rear propulsion system as wheels."
+  },
+  {
+    "span_text": "the front tires have been replaced with tracks",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The visible evidence shows tracks at the rear, not the front; the response reverses which end has tracks versus wheels."
+  },
+  {
+    "span_text": "Yes, it has wheels on the rear, but the front has been converted to tracks",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "This statement is backwards; the tractor has tracks on the rear and wheels/tires visible on the front, opposite of what the response claims."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-439
+PROMPT: Is this skunk black with white stripes? Please elaborate.
+IMAGE: skunk_Western_spotted_skunk_western-spotted-skunk-spilogale-grac.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the skunk in the image. 
+
+Yes, this skunk is primarily black with white stripes. More specifically, it's a **striped skunk**. 
+
+Here's a bit more detail:
+
+*   **Color Pattern:** The skunk has a dark, almost black, base coat. It has two prominent white stripes running down its back.
+*   **Tail:** The tail is bushy and has white fur, making it quite noticeable.
+*   **Head:** The head has some white markings, particularly around the face.
+
+Striped skunks are the most common type of skunk in North America, and this coloration is typical for them. The white stripes serve as a warning signal to potential predators, indicating the skunk's ability to release a foul-smelling spray for defense.
+
+If you’d like, you can share another image and I’ll be happy to describe it!
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [142:147] 'skunk' | mischaracterization | confidence: 0.90
+  [257:260] 'two' | mischaracterization | confidence: 0.85
+  [474:479] 'skunk' | mischaracterization | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "two prominent white stripes running down its back",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The skunk in the image displays a spotted or blotched white pattern rather than two distinct running stripes down the back."
+  },
+  {
+    "span_text": "striped skunk",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename and visual pattern indicate this is a western spotted skunk (Spilogale), characterized by spots and blotches, not a striped skunk (Mephitis)."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-440
+PROMPT: Does this cockroach live indoors? Please elaborate.
+IMAGE: cockroach_Burrowing_cockroaches_(blaberus)_blaberus-craniifer-dead-head-cockroa.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze whether the cockroach in the image typically lives indoors.
+
+Based on its appearance, this is a **Pacific Beetle Cockroach** (Diploptera punctata). 
+
+Here's a breakdown of its indoor/outdoor habits:
+
+*   **Primarily Outdoor:** Pacific Beetle Cockroaches are generally found outdoors in moist environments. They thrive in leaf litter, under decaying wood, in compost piles, and around gardens.
+*   **Can Enter Homes:** While they prefer the outdoors, they *can* wander into homes, especially during wet weather or when seeking shelter. They are often found in crawl spaces, basements, or garages.
+*   **Not a Common Indoor Infestation:** Unlike German or American cockroaches, Pacific Beetle Cockroaches don't typically establish large breeding populations indoors. They usually don't reproduce inside.
+*   **Unique Feature:** These cockroaches are known for giving birth to live young (viviparity), unlike many other cockroach species that lay eggs.
+
+**In conclusion:** While this cockroach *can* be found indoors, it's more commonly an outdoor species that occasionally ventures inside. It's not a typical indoor pest like some other cockroach types.
+
+If you're seeing one indoors, it's likely a stray rather than a sign of a major infestation. However, it's still a good idea to address any moisture issues or potential entry points to discourage them from entering.
+
+
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [151:161] 'Diploptera' | mischaracterization | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Pacific Beetle Cockroach (Diploptera punctata)",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename and visual characteristics indicate this is a Blaberus species (likely Blaberus craniifer), not Diploptera punctata (Pacific Beetle Cockroach)."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-441
+PROMPT: Does this lime have smooth skin? Please elaborate.
+IMAGE: lime_Kaffir_lime_kaffir-lime-vs-lime.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the image. 
+
+Based on the picture, the limes (specifically, they are **kaffir limes**, also known as Thai limes) do **not** have smooth skin. 
+
+Here's a detailed elaboration:
+
+*   **Exterior Texture:** The whole kaffir limes in the background have a very bumpy, rough, and textured surface. It's quite distinctively wrinkled and not smooth at all.
+*   **Interior Texture:** The sliced kaffir limes reveal a pale green interior with a segmented structure. The rind has a bumpy texture even on the inside.
+
+Kaffir limes are known for their unique, bumpy skin, which is different from common limes that have relatively smooth skin. The rind is actually where a lot of the flavor and aroma are concentrated, making it a key ingredient in Southeast Asian cuisine.
+
+If you would like, you can send me another image and I will analyze it for you.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [432:436] 'pale' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "pale green interior",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The interior of the sliced limes shows a yellowish-green flesh, not pale green; the flesh appears more yellow-toned than pale green."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-443
+PROMPT: Does this axe have a handle? Please elaborate.
+IMAGE: axe_hand_axes_C0150509-Stone-age_flint_hand_axes.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, these are not axes, but rather **stone tools** likely from the Paleolithic (Old Stone Age) period. 
+
+Specifically, they appear to be examples of **handaxes** and **cleavers**. 
+
+**They do not have handles.** 
+
+Here's why:
+
+*   **Technology of the time:** During the Paleolithic, people made tools by *flaking* stone – carefully chipping away at it to create a sharp edge. Handles weren't developed yet. These tools were designed to be held *directly in the hand*.
+*   **Shape and form:** The shapes of these tools are typical of handaxes and cleavers. They were used for a variety of purposes including digging, butchering animals, and processing plants.
+*   **No evidence of hafting:** There's no visible evidence of any materials used to attach a handle (haft) to the stone. Hafting (attaching a handle) came much later in prehistory.
+
+These tools represent some of the earliest evidence of human technology and ingenuity!
+
+
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [184:192] 'cleavers' | mischaracterization | confidence: 0.60
+  [562:570] 'cleavers' | mischaracterization | confidence: 0.60
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "cleavers",
+    "label": "mischaracterization",
+    "prob": 0.6,
+    "reason": "The right tool appears to be a pointed handaxe typical of Paleolithic technology, not a cleaver which typically has a broader, flatter cutting edge oriented differently than what is shown."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-448
+PROMPT: Does this ambulance have four wheels? Please elaborate.
+IMAGE: ambulance_All-terrain_ambulance_warthog_armoured_all_terrain_ambulan-1.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+No, this ambulance does **not** have four wheels. 
+
+Based on the image, this is a tracked vehicle, meaning it moves on continuous tracks instead of wheels. You can clearly see the tracks (or caterpillar tracks) under each side of the vehicle. These are common on military vehicles designed to handle rough terrain. 
+
+It appears to be an FV433 Abbot Self-Propelled Gun converted for medical use, as indicated by the Red Cross markings.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [364:367] 'Gun' | invention | confidence: 0.60
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "FV433 Abbot Self-Propelled Gun",
+    "label": "invention",
+    "prob": 0.6,
+    "reason": "The response identifies the vehicle as an FV433 Abbot, but the image does not provide clear enough detail to definitively confirm this specific model designation, and the filename suggests it may be a different tracked ambulance variant (Warthog or similar)."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-450
+PROMPT: Is this fox reddish in color? Please elaborate.
+IMAGE: fox_Darwin's_fox_(lycalopex_fulvipes)_260f71e6e37a07632ea315f7216563c9.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the color of the fox in the image.
+
+While the fox isn't a vibrant, bright red, it does have **reddish tones** throughout its coat. Here's a breakdown:
+
+*   **Overall:** The dominant color is a grizzled gray, but look closely, and you'll see a base of reddish-brown fur.
+*   **Legs and Ears:** The legs and the backs of the ears display more obvious reddish-brown coloration.
+*   **Undercoat:** Hints of reddish hues are visible in the undercoat, particularly around the neck and chest.
+*   **Tail:** The tail appears to have a darker, almost black tip, but the base has reddish undertones.
+
+This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present.
+
+If you'd like, you can share another image and I'll happily describe the colors within it!
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [667:683] 'cinereoargenteus' | mischaracterization | confidence: 0.95
+  [719:727] 'salt-and' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Gray Fox ( *Urocyon cinereoargenteus*)",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The filename indicates this is a Darwin's Fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus), which are different species."
+  },
+  {
+    "span_text": "they are known for having a salt-and-pepper gray coat with reddish flanks and legs",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The description of Gray Fox coloration does not accurately apply to Darwin's Fox, which has different coat characteristics and coloring patterns."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-456
+PROMPT: Is this written by a kid?
+IMAGE: 9734203428_b1b77d1642_o.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the handwriting in the image, it's difficult to definitively say if it was written by a child. Here's a breakdown of why:
+
+**Reasons it *could* be a child:**
+
+*   **Letter Formation:** Some of the letter formations (like the "s" in "Faşist" and the "D" in "Devlet") appear somewhat less refined, which is common in a child's handwriting.
+*   **Spacing:** The spacing between letters and words is a little uneven.
+
+**Reasons it *might not* be a child:**
+
+*   **Legibility:** The writing is generally quite legible, which suggests a certain level of writing skill.
+*   **Complexity of the Words:** The words "Faşist" and "Devlet" are not simple words that a very young child would typically know or be able to spell. (These are Turkish words meaning "Fascist" and "State" respectively).
+*   **Intent:** The message itself ("Fascist State") is politically charged, which is less likely to be a random expression of a young child.
+
+**Overall:**
+
+It's more likely that this was written by someone with some level of education and a political viewpoint, rather than a very young child. However, an older child or teenager with strong opinions could also have written it.
+
+
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [245:248] 'ist' | OCR | confidence: 0.95
+  [266:272] 'Devlet' | OCR | confidence: 0.90
+  [619:622] 'ist' | OCR | confidence: 0.95
+  [629:635] 'Devlet' | OCR | confidence: 0.90
+  [735:742] 'Turkish' | INVENTION | confidence: 0.85
+  [762:765] 'ist' | OCR | confidence: 0.95
+  [835:838] 'ist' | OCR | confidence: 0.95
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "FaÅŸist",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The image shows 'FarÅŸist' but the response reads it as 'FaÅŸist' with different letter ordering."
+  },
+  {
+    "span_text": "Devlet",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The image clearly shows 'DENIET' but the response reads it as 'Devlet', which is a different word entirely."
+  },
+  {
+    "span_text": "Turkish words meaning \"Fascist\" and \"State\" respectively",
+    "label": "INVENTION",
+    "prob": 0.85,
+    "reason": "The response claims these are Turkish words with these meanings, but the actual text in the image ('FARÅžIST DENIET') does not clearly correspond to standard Turkish words with these meanings."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-458
+PROMPT: Is this gun black in color? Please elaborate.
+IMAGE: gun_waterguns_51StxTNME+L._SL500_.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Certainly! Let's analyze the image. 
+
+While there are black components on the guns (like the grips and some detailing), the guns themselves are **not primarily black**. 
+
+The image shows two guns:
+
+*   One is **red**.
+*   The other is **blue**.
+
+The black parts are accents on both guns.
+
+So, to answer your question directly: No, the guns are not black in color. They are red and blue with black accents.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [187:190] 'two' | miscounting | confidence: 0.95
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "two guns",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows three toy guns/water guns being held, not two."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-464
+PROMPT: Is this pelican white in color? Please elaborate.
+IMAGE: pelican_Peruvian_pelican_(pelecanus_thagus)_pelican.thage.arpr.2g.800.w.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+No, this pelican is **not** white in color. 
+
+Here's a breakdown of its coloring:
+
+*   **Head and Neck:** The pelican has a dark brown/grayish head and neck. It appears to have some lighter streaking or mottling on the head.
+*   **Body:** The body feathers are predominantly a warm brown with a lot of intricate patterns and streaks.
+*   **Wings:** The wings have a mix of brown, white, and black feathers, creating a patterned effect.
+*   **Bill:** The bill is a pale yellowish-orange color.
+
+While there are some white feathers visible on the wings and potentially some lighter areas on the head, the overall coloration is clearly brown and gray, not white. This appears to be a **Brown Pelican** (Pelecanus occidentalis), which is known for its darker plumage compared to other pelican species.
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [110:117] 'pelican' | mischaracterization | confidence: 0.90
+  [689:696] 'Pelican' | mischaracterization | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Brown Pelican",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename indicates this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis), which are different species."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-466
+PROMPT: How many flags are in this picture?
+IMAGE: 9_8316_8036332741_4e1e06eeb6_o.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, I can see **three** flags:
+
+1.  A large **Union Jack** (British flag) hanging in the background.
+2.  A smaller **Union Jack** on a table to the left.
+3.  A partial view of another **Union Jack** on a table to the right.
+
+Therefore, there are a total of three flags visible in the picture.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+
+PREDICTED LABELS:
+  [32:37] 'three' | miscounting | confidence: 0.90
+  [273:278] 'three' | miscounting | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows more than three flags - there are large Union Jack flags hanging in the background, flag decorations on tables, and multiple flag elements visible throughout the scene."
+  }
+]
+```
+----------------------------------------------------------------------
+
+======================================================================
+MISSED DETECTIONS (system clean, filtered gold has errors) — 0 cases
+======================================================================
+
+======================================================================
+WRONG LOCATION (both have spans but 0.0 overlap) — 4 cases
+======================================================================
+
+ID: train-en-420
+PROMPT: Is this garlic white in color? Please elaborate.
+IMAGE: garlic_Purple_stripe_garlic_Purple_Glazer_Garlic_Bulk__14214.137.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+No, the garlic in the image is not purely white in color. It's a beautiful shade of **purple and white**, often described as **porcelain garlic**. 
+
+Here's a more detailed breakdown:
+
+*   **Base Color:** The overall color is a creamy white.
+*   **Purple Streaking/Sheathing:**  You can clearly see prominent purple stripes and sheaths (the papery layers around the bulb). This purple coloration comes from anthocyanins, which are pigments also found in berries and red cabbage.
+*   **Stems:** The stems are a dry, straw-like color, ranging from pale tan to light brown.
+
+This type of garlic, with its purple hues, is often prized for its flavor and storage qualities. It's not the bright white color of some other garlic varieties.
+
+
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [227:233] 'creamy' | mischaracterization | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [127:136] 'porcelain' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "porcelain garlic",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The filename indicates this is 'purple stripe garlic' or 'purple glazer garlic', not porcelain garlic, which is a different variety typically characterized by fewer, larger cloves and a hardneck structure."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-426
+PROMPT: What is written on the projector screen?
+IMAGE: 2303189378_87dc77f519_o.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Here's what is written on the projector screen, as best as I can read it from the image:
+
+**What is OpenID?**
+
+*   A system that enables users to authenticate once to log in everywhere.
+*   Instead of creating an account on site X, you log in with your OpenID URL. You sign on to your OpenID provider and verify that you want site X to be able to access your credentials.
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [269:276] 'sign on' | OCR | annotator agreement: 0.67
+  [305:311] 'verify' | OCR | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [159:163] 'once' | OCR | confidence: 0.60
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "A system that enables users to authenticate once to log in everywhere.",
+    "label": "OCR",
+    "prob": 0.6,
+    "reason": "The text on the projector screen is too blurry to read with complete confidence, making it difficult to verify the exact wording of the definition provided in the response."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-437
+PROMPT: What is there inside the girls pocket?
+IMAGE: 4803376837_abd25db3ea_o.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, it appears there is a small, dark-colored object in the girl's pocket. It's difficult to say exactly what it is, but it could be a phone or a small electronic device.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [151:156] 'phone' | mischaracterization | annotator agreement: 0.67
+  [162:185] 'small electronic device' | mischaracterization | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [83:89] 'pocket' | invention | confidence: 0.90
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "girl's pocket",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "The image shows a person holding a memorial sign, but no visible pocket contents are discernible or the pocket area is not clearly visible in a way that would allow identification of contents."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-460
+PROMPT: What is the  accurate reason for the rally?
+IMAGE: 7057230843_fce24fc22b_o.jpg
+New Filtered IoU: 0.0
+
+FULL RESPONSE:
+Based on the image, it appears this is a **Palm Sunday procession**. Here's what leads me to that conclusion:
+
+*   **Person carrying a cross:** The individual at the front is carrying a wooden cross, which is a central symbol of Palm Sunday and represents Jesus's journey to Jerusalem.
+*   **Palm branches:** While not clearly visible in this specific image, Palm Sunday traditionally involves the waving of palm branches to commemorate Jesus's triumphal entry into Jerusalem.
+*   **Group of people walking together:** The image shows a group of people walking along a residential street, which is typical of a Palm Sunday procession.
+
+Palm Sunday marks the beginning of Holy Week in the Christian calendar, and this procession is likely a religious event commemorating this occasion.
+
+
+
+
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [43:65] 'Palm Sunday procession' | invention | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [135:140] 'cross' | invention | confidence: 0.90
+  [193:198] 'cross' | invention | confidence: 0.90
+  [297:305] 'branches' | invention | confidence: 0.85
+  [413:421] 'branches' | invention | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Person carrying a cross",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "While someone in the front left is carrying what appears to be a wooden pole or staff, it is not clearly identifiable as a cross in the image."
+  },
+  {
+    "span_text": "Palm branches",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The response acknowledges palm branches are 'not clearly visible' but lists them as a key identifying feature, which contradicts the visual evidence in the image."
+  }
+]
+```
+----------------------------------------------------------------------
+
+======================================================================
+PARTIAL MATCHES (captured correct error context, boundary alignment mismatch) — 4 cases
+======================================================================
+
+ID: train-en-416
+PROMPT: Does this cat have four legs? Please elaborate.
+IMAGE: cat_Three-legged_cat_3-legged-cat-sitting_Ted-Arts-Shutte.jpg
+New Filtered IoU: 0.7857142857142857
+
+FULL RESPONSE:
+Yes, this cat appears to have four legs. 
+
+In the image, we can clearly see all four of the cat's legs: two front legs supporting its upper body and two back legs positioned beneath its rear. While part of the back legs are hidden by the cat's body, their presence is evident. 
+
+It's a healthy-looking cat!
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [30:31] 'f' | miscounting | annotator agreement: 0.67
+  [31:34] 'our' | miscounting | annotator agreement: 1.00
+  [80:84] 'four' | miscounting | annotator agreement: 0.67
+  [104:107] 'two' | miscounting | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [30:34] 'four' | miscounting | confidence: 0.85
+  [80:84] 'four' | miscounting | confidence: 0.85
+  [104:107] 'two' | miscounting | confidence: 0.85
+  [149:152] 'two' | miscounting | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "all four of the cat's legs",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The filename indicates this is a three-legged cat, and visual inspection shows only three visible legs supporting the body, not four."
+  },
+  {
+    "span_text": "two back legs",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Only one back leg is visible in the image; the cat appears to be missing one of its back legs."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-419
+PROMPT: How many knobs are there in the image?
+IMAGE: 5677526319_8d4d800b61_o.jpg
+New Filtered IoU: 0.45454545454545453
+
+FULL RESPONSE:
+Based on the image, there is **one** knob visible. It's on the tape measure located in the upper left corner of the frame.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [56:75] 'on the tape measure' | mischaracterization | annotator agreement: 1.00
+  [31:34] 'one' | miscounting | annotator agreement: 1.00
+
+PREDICTED LABELS:
+  [31:34] 'one' | miscounting | confidence: 0.90
+  [68:75] 'measure' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "one",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "There are multiple knobs/cylindrical objects visible on the surface - at least 3-4 dark cylindrical knobs are clearly visible in the upper portion of the image, not just one."
+  },
+  {
+    "span_text": "on the tape measure",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The knobs visible in the image are not on a tape measure; they appear to be standalone cylindrical objects/knobs on the concrete surface, and the small light-colored object in the upper left does not appear to be a tape measure."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-425
+PROMPT: What is carved into the handle side of the spoon?
+IMAGE: 637_21037864659_acb0be54f6_o.jpg
+New Filtered IoU: 0.3170731707317073
+
+FULL RESPONSE:
+Certainly! 
+
+Looking at the image, it appears there is a carving of a **face** on the handle side of the spoon. It's a simple, somewhat cartoonish face with eyes and a mouth.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [72:76] 'face' | mischaracterization | annotator agreement: 0.67
+  [136:147] 'cartoonish ' | mischaracterization | annotator agreement: 0.67
+  [147:151] 'face' | mischaracterization | annotator agreement: 1.00
+  [151:173] ' with eyes and a mouth' | mischaracterization | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [72:76] 'face' | mischaracterization | confidence: 0.85
+  [147:151] 'face' | mischaracterization | confidence: 0.85
+  [168:173] 'mouth' | mischaracterization | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "face",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The carving on the spoon handle shows a rose or floral design, not a face with eyes and mouth as claimed."
+  },
+  {
+    "span_text": "eyes and a mouth",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The visible carving shows a rose flower pattern, not facial features like eyes and a mouth."
+  }
+]
+```
+----------------------------------------------------------------------
+
+ID: train-en-435
+PROMPT: What is the sea name?
+IMAGE: 7691092790_3e2186a48f_o.jpg
+New Filtered IoU: 0.37037037037037035
+
+FULL RESPONSE:
+Based on the image, this appears to be the Devonport ferry terminal in Auckland, New Zealand. Therefore, the sea is the **Hauraki Gulf**. 
+
+It's a large gulf near Auckland, and the ferry in the image is likely a ferry that travels across it.
+
+GOLD LABELS (Filtered to Consensus >= 0.5):
+  [43:52] 'Devonport' | invention | annotator agreement: 0.67
+  [71:92] 'Auckland, New Zealand' | invention | annotator agreement: 0.67
+  [122:134] 'Hauraki Gulf' | invention | annotator agreement: 0.67
+  [163:171] 'Auckland' | invention | annotator agreement: 0.67
+
+PREDICTED LABELS:
+  [71:79] 'Auckland' | invention | confidence: 0.85
+  [130:134] 'Gulf' | invention | confidence: 0.85
+  [153:157] 'gulf' | invention | confidence: 0.85
+  [163:171] 'Auckland' | invention | confidence: 0.85
+
+HAIKU REASONING:
+```json
+[
+  {
+    "span_text": "Devonport ferry terminal in Auckland, New Zealand",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The image shows a ferry terminal with UK-style features (blue and white vessel, British flag visible on the mast) and a British coastal town in the background, not Auckland, New Zealand."
+  },
+  {
+    "span_text": "Hauraki Gulf",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The Hauraki Gulf is in New Zealand, but this image shows a British coastal location, making this sea name identification incorrect based on the actual location."
+  }
+]
+```
+----------------------------------------------------------------------

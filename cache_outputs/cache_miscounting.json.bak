@@ -1,0 +1,934 @@
+[
+  {
+    "id": "train-en-416",
+    "iou": 0.7857,
+    "pred_count": 0,
+    "gold_count": 5,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 30,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 34,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 39
+      },
+      {
+        "start": 80,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 84
+      },
+      {
+        "start": 104,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 107
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"all four of the cat's legs\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The filename indicates this is a three-legged cat, and visual inspection shows only three visible legs supporting the body, not four.\"\n  },\n  {\n    \"span_text\": \"two back legs\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only one back leg is visible in the image; the cat appears to be missing one of its back legs.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-439",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 257,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 260
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two prominent white stripes running down its back\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The skunk in the image displays a spotted or blotched white pattern rather than two distinct running stripes down the back.\"\n  },\n  {\n    \"span_text\": \"striped skunk\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The filename and visual pattern indicate this is a western spotted skunk (Spilogale), characterized by spots and blotches, not a striped skunk (Mephitis).\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11099",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 33
+      },
+      {
+        "start": 82,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 87
+      },
+      {
+        "start": 87,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 117
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three small, matching buttons\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The shirt has a single button at the neckline, not three buttons. The response appears to have misidentified the single button and the tie/bow detail as multiple buttons.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10638",
+    "gold_labels": [
+      {
+        "start": 24,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 27
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only one package of Duracell batteries is visible on the table; the response claims two batteries.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11636",
+    "gold_labels": [
+      {
+        "start": 38,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 43
+      },
+      {
+        "start": 147,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 152
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three prongs\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The fork in the image clearly has two prongs/tines visible, not three as stated in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2111",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 13
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows three types of berries: black currants (in basket and blue/orange containers), red currants (in glass bowl), and what appears to be dark red/burgundy currants (in the upper left area), totaling three types, not two.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9944",
+    "gold_labels": [
+      {
+        "start": 24,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 27
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only one person is clearly visible sitting in the restaurant - the woman in the foreground. The background figure appears to be standing, not sitting.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9867",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only two people are clearly visible standing in the foreground of the image - a person in a blue jacket on the left and a person in a gray/brown coat next to them.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10173",
+    "gold_labels": [
+      {
+        "start": 38,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 41
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two wheels on each of its two end sections\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The cart has four wheels total (two wheels per end), not two wheels per end section as stated. The response incorrectly describes the wheel configuration.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11427",
+    "gold_labels": [
+      {
+        "start": 47,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 50
+      },
+      {
+        "start": 206,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 211
+      },
+      {
+        "start": 340,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 343
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"eight other legs\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows a porcelain crab with two claws and six walking legs visible, not eight walking legs as claimed.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10083",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 511
+      },
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 511
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"1400\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows at most 1-2 visible watches on the wrists of the people pictured, not 1400.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9948",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only two people are clearly visible standing in the foreground on the left side of the image; the claim of a third person near the statue on the right is not supported by visible evidence.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11675",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 13
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only one side view mirror is clearly visible on the right side of the truck cab; the left side mirror is not visible from this angle.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1209",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 3
+      },
+      {
+        "start": 3,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 13
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"One\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"At least two people are visibly wearing watches in the image - the man in the white shirt in the foreground has a watch on his wrist, and another person behind him also appears to be wearing a watch.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10606",
+    "gold_labels": [
+      {
+        "start": 95,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 98
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"ducks\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The birds visible in the water appear to be waterfowl but are more consistent with geese or other large water birds rather than ducks based on their size and coloring.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10153",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows approximately 4-5 people visible outside the cars on the hillside, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10053",
+    "gold_labels": [
+      {
+        "start": 41,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 42
+      },
+      {
+        "start": 42,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 49
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"7 plates\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only 2 place settings with plates are clearly visible in front of the two men in the foreground; no additional plates are visible on the table.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-530",
+    "gold_labels": [
+      {
+        "start": 103,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 110
+      },
+      {
+        "start": 110,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 121
+      },
+      {
+        "start": 236,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 247
+      },
+      {
+        "start": 338,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 343
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"20-30 trees\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows significantly fewer trees than 20-30; there are only a handful of clearly visible individual trees (approximately 5-8), primarily on the left side and scattered along the shoreline.\"\n  },\n  {\n    \"span_text\": \"10-15 trees\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.8,\n    \"reason\": \"The cluster on the left side contains far fewer than 10-15 individual trees; the estimate is considerably inflated.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10819",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 13
+      },
+      {
+        "start": 17,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 18
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows one orange/red pen on the papers in the upper right area, not two pens.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2279",
+    "gold_labels": [
+      {
+        "start": 54,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 59
+      },
+      {
+        "start": 586,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 589
+      },
+      {
+        "start": 634,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 637
+      },
+      {
+        "start": 668,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 671
+      },
+      {
+        "start": 720,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 723
+      },
+      {
+        "start": 769,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 772
+      },
+      {
+        "start": 804,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 807
+      },
+      {
+        "start": 857,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 860
+      },
+      {
+        "start": 913,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 916
+      },
+      {
+        "start": 947,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 950
+      },
+      {
+        "start": 1001,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 1004
+      },
+      {
+        "start": 1053,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 1056
+      },
+      {
+        "start": 1086,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 1089
+      },
+      {
+        "start": 1161,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 1178
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"eight\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The bench clearly has four legs total (one at each corner/section), not eight legs as claimed in the response.\"\n  },\n  {\n    \"span_text\": \"There are two legs visible on the left side of the bench (one under the front-left section, one under the back-left section).\\n   *   There are two legs visible on the right side of the bench (one under the front-right section, one under the back-right section).\\n   *   There are two legs visible on the bottom (or front) of the bench (one under the front-left section, one under the front-right section).\\n   *   There are two legs visible on the top (or back) of the bench (one under the back-left section, one under the back-right section).\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The leg counting breakdown is incorrect; the bench has only four legs (one per major section), not overlapping pairs as described.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9957",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only two people are clearly visible outside the cars in the image - one person standing near the yellow Jeep and another person visible on the hillside in the distance.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1642",
+    "gold_labels": [
+      {
+        "start": 182,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 205
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"at least one motorcycle\",\n    \"label\": \"invention\",\n    \"prob\": 0.75,\n    \"reason\": \"The image shows a nighttime city street with vehicle headlights and taillights, but no motorcycle is clearly identifiable among the blurred vehicles on the road.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10019",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 35
+      },
+      {
+        "start": 133,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 136
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"one\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows at least two runners visible on the track - the runner in red in the foreground and additional runners visible further back on the course.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-583",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 35
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only one white ceramic saucer is clearly visible on the table to the right of the water jar; the response claims there are two.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10232",
+    "gold_labels": [
+      {
+        "start": 14,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"there is a bird visible in the image\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"While there is a small dark object on the ground that could be a bird, the image does not clearly show a bird; the object is too distant and indistinct to confidently identify as a bird.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9895",
+    "gold_labels": [
+      {
+        "start": 41,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 45
+      },
+      {
+        "start": 691,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 692
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only three people are clearly visible and standing in the image: a man in grey coat on the left, a person in blue jacket next to him, and a person in teal/cyan jacket on the right near the statue. The fourth person mentioned as 'walking' is not clearly identifiable as a distinct standing figure.\"\n  },\n  {\n    \"span_text\": \"A younger person, likely a boy or teenager, in a blue jacket is standing and looking up at the buildings\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.7,\n    \"reason\": \"The person next to the man in the grey coat appears to be wearing a blue jacket, but they appear to be a woman/adult, not a boy or teenager as characterized.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9965",
+    "gold_labels": [
+      {
+        "start": 24,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 25
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"7\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.75,\n    \"reason\": \"The image shows significantly more ice cubes than 7, with ice filling a substantial portion of the tall glass from bottom to middle.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2072",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 13
+      },
+      {
+        "start": 13,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 27
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"one blue dumpster\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"There is a blue dumpster visible, but it appears to be on the right side of the image near the building, not on the left side near the street as claimed.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10163",
+    "gold_labels": [
+      {
+        "start": 30,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 32
+      },
+      {
+        "start": 70,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 71
+      },
+      {
+        "start": 85,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 86
+      },
+      {
+        "start": 103,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 104
+      },
+      {
+        "start": 120,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 121
+      },
+      {
+        "start": 152,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 153
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"12 cars\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Counting the visible toy cars in the diorama scene, there appear to be approximately 9-10 cars total, not 12.\"\n  },\n  {\n    \"span_text\": \"4 Grey cars\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.75,\n    \"reason\": \"The number of grey cars visible in the image appears to be fewer than 4; approximately 1-2 grey cars are clearly visible.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11455",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 35
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two humps\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The camel in the image is a dromedary (Arabian camel) with a single hump, not two humps. The response incorrectly states the camel has two humps.\"\n  },\n  {\n    \"span_text\": \"although some individuals may have a third, smaller hump\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"Dromedary camels do not have three humps. This statement is factually incorrect and not supported by what is visible in the image or biological reality.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9922",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 12
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"12\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows significantly fewer than 12 distinct standing people visible in the frame; a careful count reveals approximately 6-8 people at most in this black and white photograph of the interior.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10120",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 13
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"Only one person is clearly visible sitting in the restaurant in the foreground; the woman in the gray cardigan is the only person shown seated at a table.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9937",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 14
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"five\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Counting the colored lights visible at the top of the stage, there are 6 distinct colored light sources (yellow, magenta, yellow, red, blue, cyan), not five.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-597",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 33
+      },
+      {
+        "start": 33,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 46
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"3\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Examining the table carefully, there appear to be 2 wine bottles visible on the dark wooden table, not 3.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10045",
+    "gold_labels": [
+      {
+        "start": 52,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 55
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows multiple wooden benches in the courtroom/conference hall - at least 3-4 are clearly visible in the foreground and middle ground, not just two.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9875",
+    "gold_labels": [
+      {
+        "start": 41,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 45
+      },
+      {
+        "start": 716,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 717
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image clearly shows only 2-3 people visible: a man in grey coat and a person in blue jacket on the left side, and possibly one more person in the distance, but not four distinct people standing as claimed.\"\n  },\n  {\n    \"span_text\": \"Girl near the statue (right side): A girl in a light blue jacket is standing next to the large statue, leaning against its base.\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"There is no girl in a light blue jacket standing next to or leaning against the statue visible in the image.\"\n  },\n  {\n    \"span_text\": \"Woman in the background (right side): A woman in a dark coat is walking on the sidewalk behind the statue, also standing.\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"There is no clearly visible woman in a dark coat standing behind the statue as described in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1735",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 13
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"Only one train is visible in the image - the reddish-brown locomotive with white tanker cars in the middle distance.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10001",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only two people are clearly visible standing in the image - one on the left in a blue jacket and one in darker clothing next to them; no young girl is visible near the statue.\"\n  },\n  {\n    \"span_text\": \"there's also a young girl near the statue on the right side of the picture\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"No young girl is visible near the statue on the right side of the image; this person does not exist in the photograph.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-987",
+    "gold_labels": [
+      {
+        "start": 19,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 22
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11212",
+    "gold_labels": [
+      {
+        "start": 41,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 45
+      },
+      {
+        "start": 45,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 52
+      },
+      {
+        "start": 109,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 113
+      },
+      {
+        "start": 233,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 237
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four prongs\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The forks in the image clearly have three prongs/tines, not four. All seven forks visible display the same three-pronged design.\"\n  },\n  {\n    \"span_text\": \"four tines\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The forks consistently show three tines extending from the neck, not four tines as claimed in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9936",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 14
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows approximately 3 people visible outside the cars, not four.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11073",
+    "gold_labels": [
+      {
+        "start": 75,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 78
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The shirt clearly shows more than two buttons on the front placket; there are at least three or four visible buttons down the center chest area.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10189",
+    "gold_labels": [
+      {
+        "start": 237,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 244
+      },
+      {
+        "start": 244,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 257
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10037",
+    "gold_labels": [
+      {
+        "start": 34,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 35
+      },
+      {
+        "start": 130,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 131
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"6\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows what appears to be 2-3 slices of tomato on the plate, not 6 clearly visible slices as claimed.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10111",
+    "gold_labels": [
+      {
+        "start": 24,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 29
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows approximately 2-3 people visible outside the vehicles, but counting the clearly visible figures shows 2 distinct people, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10113",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows at least four wooden benches visible in the courtroom, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10017",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 37
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image clearly shows more than three colored lights above the stage - there are yellow, magenta/pink, and red lights visible on the left side, plus blue and cyan lights on the right side, totaling at least 6 colored lights.\"\n  },\n  {\n    \"span_text\": \"red lights\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"While there are some red lights, the response incorrectly characterizes all the colored lights as red when the image shows yellow, magenta/pink, blue, and cyan lights in addition to red.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10101",
+    "gold_labels": [
+      {
+        "start": 85,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 88
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two people visible\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only one person is clearly visible sitting in the restaurant in the foreground; the woman in the chair. Other people are standing in the background, not sitting.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10046",
+    "gold_labels": [
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 36
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"five\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows fewer than five distinct lights hanging on the black fence; the prominent glowing area appears to be primarily a bright light source (possibly street/moon light) rather than five separate hanging lights on the fence.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1120",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 15
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only one white cup/saucer is clearly visible on the table in the foreground; the response claims three unused saucers.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10121",
+    "gold_labels": [
+      {
+        "start": 35,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 40
+      },
+      {
+        "start": 66,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 69
+      },
+      {
+        "start": 96,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 99
+      },
+      {
+        "start": 99,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 112
+      },
+      {
+        "start": 118,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 122
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"seven\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Visible boats in the image include: 1 white boat on the left (docked), 1 white and blue boat in center foreground (docked), 1 sailboat with blue canopy (docked right), and 1 white boat in background on left, totaling approximately 4 clearly visible boats, not seven.\"\n  },\n  {\n    \"span_text\": \"two boats docked at the pier, one on each side\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.8,\n    \"reason\": \"There are clearly more than two boats docked at the pier visible in the image; at least three boats are docked at or near the dock structure in the foreground.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9943",
+    "gold_labels": [
+      {
+        "start": 6,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 10
+      },
+      {
+        "start": 10,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 13
+      },
+      {
+        "start": 19,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 20
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only one plate is clearly visible on the table in front of the two men in the foreground.\"\n  }\n]\n```"
+  }
+]

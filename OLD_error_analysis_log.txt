@@ -1,5 +1,5 @@
 OFFLINE ERROR ANALYSIS DIAGNOSTIC LOG (Alignment: All Gold Annotations)
-Generated: 2026-07-09 18:25:03.860357
+Generated: 2026-07-08 16:28:10.646552
 ======================================================================
 
 --- IMAGE ID: train-en-411 ---
