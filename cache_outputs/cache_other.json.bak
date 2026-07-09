@@ -1,0 +1,632 @@
+[
+  {
+    "id": "train-en-10609",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 1
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"鸟\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"The response claims there is a bird at the top of the rock formation, but no bird is visible in the image — only a white/light-colored conical pile of sand or gravel.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10553",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 59
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11293",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 9
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three stars\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The tiara visible on the woman's head displays only one star (red star at the center), not three stars arranged vertically.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1239",
+    "gold_labels": [
+      {
+        "start": 359,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 365
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"small antennas and radar domes on its roof\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The antennas and equipment are mounted on the upper deck/hardtop structure, not on a 'roof' - yachts do not have roofs in the traditional sense.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2623",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 511
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2522",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 1.0,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-499",
+    "gold_labels": [
+      {
+        "start": 270,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 338
+      },
+      {
+        "start": 392,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 399
+      },
+      {
+        "start": 458,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 474
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"wrestling or playing\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.6,\n    \"reason\": \"The bears appear to be interacting affectionately (one behind the other, possibly nuzzling), not wrestling or playing in an active sense.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10759",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 59
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2048",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 3
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"reddish-pink\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The interior flesh is deep red/crimson, not reddish-pink; pink is too light a descriptor for this dark red color.\"\n  },\n  {\n    \"span_text\": \"blood orange or a similar variety\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"While blood oranges can have red flesh, the filename hint 'cara cara' suggests this is a Cara Cara orange, a specific variety, not generically a blood orange.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10555",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10796",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 4
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \".com\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The response '.com' does not identify an actual shoe store name; it only provides a domain extension that cannot be clearly read or verified from the blurry image, and no complete store name is visible.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1281",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 65
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"The bananas in the image appear to be overripe rather than rotten.\",\n    \"label\": \"other\",\n    \"prob\": 0.85,\n    \"reason\": \"The prompt asks if the banana is long and to elaborate, but the response discusses ripeness/condition instead of addressing the length question asked.\"\n  },\n  {\n    \"span_text\": \"indicatesates\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The word 'indicatesates' appears to be a typo/error in the response text itself (should be 'indicates').\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10276",
+    "gold_labels": [
+      {
+        "start": 58,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 63
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"the person on the left is wearing a ring\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"The person on the left is holding a circular sign/badge with a cake icon, not wearing a ring on their finger; no ring is visible on any of the three people in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11173",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 51
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"grapefruit is shown in the image, not a grapefruit\",\n    \"label\": \"other\",\n    \"prob\": 0.95,\n    \"reason\": \"This sentence is self-contradictory and incoherent — it states both that a grapefruit is shown and that it is not a grapefruit, which is logically impossible.\"\n  },\n  {\n    \"span_text\": \"yellowish-orange\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The cut fruit clearly shows yellow segmented flesh, not orange or yellowish-orange; the color is distinctly yellow.\"\n  },\n  {\n    \"span_text\": \"Dancy\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"Dancy is a tangerine variety, not a grapefruit variety; this is an incorrect fruit variety reference.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10223",
+    "gold_labels": [
+      {
+        "start": 45,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 149
+      },
+      {
+        "start": 149,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 169
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"The blue fabric visible around the edges of the image suggests that it's resting comfortably there\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The laptop is clearly placed on a wooden table/desk surface, not on a person's lap; there is no person visible in the image, only a laptop on furniture next to a beverage can.\"\n  },\n  {\n    \"span_text\": \"the laptop is placed on a person's lap\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"No person is visible in the image; the laptop is positioned on a wooden surface (table/desk) with no human subject present.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11340",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 7
+      },
+      {
+        "start": 7,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 49
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10133",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      },
+      {
+        "start": 268,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 320
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"Only two men are actively writing/signing documents at the table in the foreground, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9800",
+    "gold_labels": [
+      {
+        "start": 126,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 148
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"02.06.10\",\n    \"label\": \"OCR\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible expiry date on the bottle label appears to show a different date format; the text is not clearly legible as '02.06.10' in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10585",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe response provided is incomplete - it only contains \"Human:\" with no actual content describing what is inside the pink bag/cover. Since there is no substantive response to evaluate against the image, there are no hallucinations to flag."
+  },
+  {
+    "id": "train-en-2561",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"peacock\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The bird in the image is a peahen (female peacock), not a peacock (male), as indicated by the lack of elaborate tail feathers and the filename confirmation.\"\n  },\n  {\n    \"span_text\": \"large tail\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The bird does not have a large or elaborate tail visible in the image; the tail appears modest and unremarkable, which is characteristic of a peahen rather than a male peacock.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10545",
+    "gold_labels": [
+      {
+        "start": 3,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 62
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe response provided is a URL/link rather than an answer to the question \"What object is stitched?\" While the URL appears to be from Etsy and mentions \"embroidered-paper-airplane,\" I cannot evaluate it as a hallucination because it's not a descriptive claim about the image itself. The image clearly shows a paper airplane stitched in red thread on white fabric in an embroidery hoop, which matches the URL's reference to a paper airplane embroidery pattern. No specific factual claims about the image content are made in the response to contradict."
+  },
+  {
+    "id": "train-en-10757",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 4
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe response \".com\" does not contain any descriptive claim about the microphone color or any other observable detail in the image. It appears to be a fragment or error rather than an attempted answer to the question. Since there are no actual factual claims made about the image content, there are no hallucinations to flag."
+  },
+  {
+    "id": "train-en-10063",
+    "gold_labels": [
+      {
+        "start": 2,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 12
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"white shirt with black stripes\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The person second from right appears to be wearing a dark/black colored shirt, not white with black stripes.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2621",
+    "gold_labels": [
+      {
+        "start": 3,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 92
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10833",
+    "gold_labels": [
+      {
+        "start": 276,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 277
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10598",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe image shows a colorful layered cake with various colored powder/dust coating its exterior and visible in the cross-section. However, the prompt asks whether the cake is eggless, and the response provided appears to be incomplete (just \"Human:\"). There is no actual response content to evaluate against the image. Without a complete response making factual claims about whether the cake is eggless, there are no spans to flag for hallucination."
+  },
+  {
+    "id": "train-en-11574",
+    "gold_labels": [
+      {
+        "start": 376,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 384
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pink river shrimp (Palaemon elegans)\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The response invents a specific scientific name and common name that are not visible or identifiable in the image; the image shows only raw shrimp on ice without any labeling of species.\"\n  },\n  {\n    \"span_text\": \"unustral\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"This appears to be a misspelling or garbled word in the response text itself; 'unustral' is not a valid English word and should likely be 'natural' or similar.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1194",
+    "gold_labels": [
+      {
+        "start": 723,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 725
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Tadorna variegata\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The response identifies this as a male shelduck (Tadorna variegata), but the bird's appearance—white underparts, dark upper parts, and distinctive head markings—is consistent with a Northern Pintail or similar dabbling duck, not a shelduck species.\"\n  },\n  {\n    \"span_text\": \"male shelduck\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The bird does not appear to be a shelduck; the coloring and body structure are inconsistent with shelduck morphology.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2705",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 4
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe response \"User\" does not contain any claims about eyewear brand names that can be evaluated against the image. The response appears to be incomplete or nonsensical rather than making a specific factual claim about a brand that could be verified or contradicted by the image."
+  },
+  {
+    "id": "train-en-10794",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe response provided is incomplete - it only contains \"Human:\" with no actual claim about where the lift is located. Since there is no substantive response to evaluate against the image, there are no hallucinations to flag."
+  },
+  {
+    "id": "train-en-10558",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10070",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 7
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10062",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 48
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-9831",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 63
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Based on the image, what is the brand name of the wallet?\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"The response repeats the prompt but does not actually answer it with any brand name, and no clear brand name is legibly visible on the wallet in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11674",
+    "gold_labels": [
+      {
+        "start": 23,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 35
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"black\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The bracelet visible on the girl's left wrist appears to be dark blue or navy, not black.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10137",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 509
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"The response contains a set of coordinate/numerical values that do not answer the question about how many benches are in the image; the actual image contains only 1 bench visible.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10888",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 4
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-1785",
+    "gold_labels": [
+      {
+        "start": 269,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 308
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2662",
+    "gold_labels": [
+      {
+        "start": 249,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 256
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Sunswift IV\",\n    \"label\": \"OCR\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible text on the car shows 'SUNSWIFT' but does not clearly display 'IV' as a model designation in the image.\"\n  },\n  {\n    \"span_text\": \"Darwin to Adelaide\",\n    \"label\": \"INVENTION\",\n    \"prob\": 0.6,\n    \"reason\": \"While the World Solar Challenge does occur in Australia, the specific route cannot be verified from this image alone, making this a claim not visibly supported.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2432",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-9772",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"imports\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The blue section of the billboard reads 'Imports' (capital I), not lowercase 'imports'.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9777",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 58
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```\n\nThe response does not contain any claims about what the air force name is. It only repeats/clarifies the question being asked. Since there is no factual assertion made about the air force name visible in the image, there is nothing to evaluate as accurate or inaccurate."
+  },
+  {
+    "id": "train-en-2319",
+    "gold_labels": [
+      {
+        "start": 3,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10573",
+    "gold_labels": [
+      {
+        "start": 361,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 418
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"The person wearing the ivy cap is not wearing an ivy cap.\",\n    \"label\": \"other\",\n    \"prob\": 0.9,\n    \"reason\": \"This is a self-contradictory statement that makes no logical sense and provides no meaningful answer to the question.\"\n  },\n  {\n    \"span_text\": \"The person wearing the ivy cap is not visible in the image.\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"Multiple people wearing caps are clearly visible in the image, including at least one person visible wearing a white cap in the upper left area.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10551",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 511
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10765",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-1059",
+    "gold_labels": [
+      {
+        "start": 64,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 69
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2635",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"bright orange beak\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The bird's beak appears to be red or reddish, not orange as stated in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10805",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 62
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10065",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 5
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"6\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Counting the visible people in the image shows approximately 5 people standing in the group on the left side of the street, not 6.\"\n  }\n]\n```"
+  }
+]

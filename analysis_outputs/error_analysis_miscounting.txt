@@ -1,0 +1,1375 @@
+OFFLINE ERROR ANALYSIS: MISCOUNTING
+Generated: 2026-07-09 23:16:47.211597
+======================================================================
+SUMMARY
+  Samples:     52
+  Average IoU: 0.6108
+  Perfect (1.0): 24
+  Partial:       24
+  Zero (0.0):    4
+======================================================================
+
+==================== IMAGE ID: train-en-416 ====================
+MODEL PERFORMANCE (IoU): 0.4375
+
+--- FULL MODEL RESPONSE ---
+Yes, this cat appears to have four legs. 
+
+In the image, we can clearly see all four of the cat's legs: two front legs supporting its upper body and two back legs positioned beneath its rear. While part of the back legs are hidden by the cat's body, their presence is evident. 
+
+It's a healthy-looking cat!
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "all four of the cat's legs",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The filename indicates this is a three-legged cat, and visual inspection shows only three visible legs supporting the body, not four."
+  },
+  {
+    "span_text": "two back legs",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Only one back leg is visible in the image; the cat appears to be missing one of its back legs."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [30:31] 'f' | miscounting | agreement: 0.6666666667
+  [31:34] 'our' | miscounting | agreement: 1.0
+  [34:39] ' legs' | miscounting | agreement: 0.3333333333
+  [80:84] 'four' | miscounting | agreement: 0.6666666667
+  [104:107] 'two' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [30:34] 'four' | miscounting | model confidence: 0.85
+  [104:107] 'two' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-439 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze the skunk in the image. 
+
+Yes, this skunk is primarily black with white stripes. More specifically, it's a **striped skunk**. 
+
+Here's a bit more detail:
+
+*   **Color Pattern:** The skunk has a dark, almost black, base coat. It has two prominent white stripes running down its back.
+*   **Tail:** The tail is bushy and has white fur, making it quite noticeable.
+*   **Head:** The head has some white markings, particularly around the face.
+
+Striped skunks are the most common type of skunk in North America, and this coloration is typical for them. The white stripes serve as a warning signal to potential predators, indicating the skunk's ability to release a foul-smelling spray for defense.
+
+If you’d like, you can share another image and I’ll be happy to describe it!
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two prominent white stripes running down its back",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The skunk in the image displays a spotted or blotched white pattern rather than two distinct running stripes down the back."
+  },
+  {
+    "span_text": "striped skunk",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The filename and visual pattern indicate this is a western spotted skunk (Spilogale), characterized by spots and blotches, not a striped skunk (Mephitis)."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [257:260] 'two' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [134:147] 'striped skunk' | mischaracterization | model confidence: 0.9
+  [261:270] 'prominent' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11099 ====================
+MODEL PERFORMANCE (IoU): 0.1389
+
+--- FULL MODEL RESPONSE ---
+Yes, this shirt does have buttons! 
+
+Looking closely at the neckline, you can see three small, matching buttons. They appear to be functional, likely used to close the slight keyhole opening at the front of the neck. 
+
+Additionally, there's a decorative tie detail that hangs down from the neckline, adding to the shirt's style.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three small, matching buttons",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The shirt has a single button at the neckline, not three buttons. The response appears to have misidentified the single button and the tie/bow detail as multiple buttons."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:33] 's' | miscounting | agreement: 0.3333333333
+  [82:87] 'three' | miscounting | agreement: 1.0
+  [87:117] ' small, matching buttons. They' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [88:93] 'small' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10638 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+In the image, there are two batteries visible on the table.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only one package of Duracell batteries is visible on the table; the response claims two batteries."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:27] 'two' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [24:27] 'two' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-11636 ====================
+MODEL PERFORMANCE (IoU): 0.2941
+
+--- FULL MODEL RESPONSE ---
+The fork in the image appears to have three prongs. The prongs are typically used to hold food securely when eating. In the case of this fork, the three prongs are arranged in a symmetrical pattern, which is common for dining forks. However, in some regions or for specific types of dishes, a four-pronged fork might be used, particularly to handle delicate food items such as pasta or other foods that require a more secure grip.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three prongs",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The fork in the image clearly has two prongs/tines visible, not three as stated in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [38:43] 'three' | miscounting | agreement: 1.0
+  [147:152] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [38:50] 'three prongs' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-2111 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are two types of fruits visible in the image: black currants and red currants.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows three types of berries: black currants (in basket and blue/orange containers), red currants (in glass bowl), and what appears to be dark red/burgundy currants (in the upper left area), totaling three types, not two."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] 'two' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [10:13] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9944 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+In the image, there are two people sitting in the restaurant. One is the woman in the foreground, and the other person is seated in the background, near the window on the left side of the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only one person is clearly visible sitting in the restaurant - the woman in the foreground. The background figure appears to be standing, not sitting."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:27] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [24:27] 'two' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9867 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are three people standing in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only two people are clearly visible standing in the foreground of the image - a person in a blue jacket on the left and a person in a gray/brown coat next to them."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10173 ====================
+MODEL PERFORMANCE (IoU): 0.0714
+
+--- FULL MODEL RESPONSE ---
+The cart in the image appears to have two wheels on each of its two end sections. This design is typical for carts that are meant to be pushed or pulled along a flat surface, and it allows for easier maneuverability. Each wheel seems to be equipped with a textured wheel cover, which could be intended to provide better traction or grip. The wheels are positioned in a way that would allow the cart to be steered or turned more easily.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two wheels on each of its two end sections",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The cart has four wheels total (two wheels per end), not two wheels per end section as stated. The response incorrectly describes the wheel configuration."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [38:41] 'two' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [38:80] 'two wheels on each of its two end sections' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11427 ====================
+MODEL PERFORMANCE (IoU): 0.4545
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the crab appears to have **ten legs** (or leg-like appendages). 
+
+Here's the breakdown:
+
+*   **Claws (Chelae):** The two large pincers are modified legs.
+*   **Walking Legs:** There are eight other legs used for walking, visible in the image.
+
+Crabs, like all decapod crustaceans (meaning "ten-footed"), have a total of ten legs. Two are claws, and the other eight are walking legs.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "eight other legs",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows a porcelain crab with two claws and six walking legs visible, not eight walking legs as claimed."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [47:50] 'ten' | miscounting | agreement: 1.0
+  [206:211] 'eight' | miscounting | agreement: 0.6666666667
+  [340:343] 'ten' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [206:211] 'eight' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10083 ====================
+MODEL PERFORMANCE (IoU): 0.0078
+
+--- FULL MODEL RESPONSE ---
+1400 132 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 14
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1400",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows at most 1-2 visible watches on the wrists of the people pictured, not 1400."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:511] '1400 132 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 14' | miscounting | agreement: 0.3333333333
+  [0:511] '1400 132 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 140 14' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:4] '1400' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9948 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are three people standing in the image. One person is taking a photo with their phone, another appears to be observing or waiting nearby, and a third individual can be seen near the statue on the right side of the scene.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only two people are clearly visible standing in the foreground on the left side of the image; the claim of a third person near the statue on the right is not supported by visible evidence."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-11675 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are two side view mirrors visible in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only one side view mirror is clearly visible on the right side of the truck cab; the left side mirror is not visible from this angle."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] 'two' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:13] 'two' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1209 ====================
+MODEL PERFORMANCE (IoU): 0.2308
+
+--- FULL MODEL RESPONSE ---
+One person is wearing a watch.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "One",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "At least two people are visibly wearing watches in the image - the man in the white shirt in the foreground has a watch on his wrist, and another person behind him also appears to be wearing a watch."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'One' | miscounting | agreement: 1.0
+  [3:13] ' person is' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:3] 'One' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10606 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, there are no alligators visible in the water.
+
+The image shows:
+- Two ducks swimming in a greenish, algae-filled pond or lake.
+- Reflections of clouds and trees on the water's surface.
+- Reeds and vegetation along the shoreline.
+
+There are no reptiles, especially not alligators, visible in the picture. The animals present are clearly ducks.
+
+Therefore, the number of alligators in the water is **0**.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "ducks",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The birds visible in the water appear to be waterfowl but are more consistent with geese or other large water birds rather than ducks based on their size and coloring."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [95:98] 'Two' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [99:104] 'ducks' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10153 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are three people outside of the cars.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows approximately 4-5 people visible outside the cars on the hillside, not three."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10053 ====================
+MODEL PERFORMANCE (IoU): 0.1250
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I can see at least **7 plates** on the table. It's possible there are more partially obscured by people or objects.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "7 plates",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Only 2 place settings with plates are clearly visible in front of the two men in the foreground; no additional plates are visible on the table."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:42] '7' | miscounting | agreement: 1.0
+  [42:49] ' plates' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [41:42] '7' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-530 ====================
+MODEL PERFORMANCE (IoU): 0.6471
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it's tricky to give an exact number, but I can estimate. It looks like there are **around 20-30 trees** visible. 
+
+Here's how I'm estimating:
+
+*   There's a cluster of trees on the left side of the image, with about 10-15 trees.
+*   Scattered trees are visible along the shoreline and on the hillsides, adding another 10-15.
+
+It's possible there are more trees hidden behind hills or further in the distance, but this is my best estimate based on what's visible.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "20-30 trees",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows significantly fewer trees than 20-30; there are only a handful of clearly visible individual trees (approximately 5-8), primarily on the left side and scattered along the shoreline."
+  },
+  {
+    "span_text": "10-15 trees",
+    "label": "miscounting",
+    "prob": 0.8,
+    "reason": "The cluster on the left side contains far fewer than 10-15 individual trees; the estimate is considerably inflated."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [103:110] 'around ' | miscounting | agreement: 0.3333333333
+  [110:121] '20-30 trees' | miscounting | agreement: 0.6666666667
+  [236:247] '10-15 trees' | miscounting | agreement: 0.3333333333
+  [338:343] '10-15' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [110:121] '20-30 trees' | miscounting | model confidence: 0.85
+  [236:247] '10-15 trees' | miscounting | model confidence: 0.8
+
+==================== IMAGE ID: train-en-10819 ====================
+MODEL PERFORMANCE (IoU): 0.7500
+
+--- FULL MODEL RESPONSE ---
+There are two pens placed on the papers.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows one orange/red pen on the papers in the upper right area, not two pens."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] 'two' | miscounting | agreement: 1.0
+  [17:18] 's' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:13] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-2279 ====================
+MODEL PERFORMANCE (IoU): 0.0769
+
+--- FULL MODEL RESPONSE ---
+ **No, this bench does not have four legs.** It has **eight legs**.
+
+Here’s a breakdown of why:
+
+1.  **The Design:** This is a circular, tree-encircling bench. It is constructed from multiple curved wooden slats that form a ring around the tree trunk. The bench is supported by legs that are attached to the underside of the bench structure.
+
+2.  **Counting the Legs:** If you look closely at the image, you can see that the bench is divided into four main sections (or "quarters") by the tree trunk. Each of these four sections has its own set of legs. Specifically:
+    *   There are two legs visible on the left side of the bench (one under the front-left section, one under the back-left section).
+    *   There are two legs visible on the right side of the bench (one under the front-right section, one under the back-right section).
+    *   There are two legs visible on the bottom (or front) of the bench (one under the front-left section, one under the front-right section).
+    *   There are two legs visible on the top (or back) of the bench (one under the back-left section, one under the back-right section).
+
+3.  **Total:** Adding them up, we have 2 + 2 + 2 + 2 = 8 legs.
+
+This design is common for tree benches as it provides stability and distributes the weight evenly around the tree trunk. The legs are typically attached to the frame of the bench, not directly to the ground, allowing for easy installation and removal.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "eight",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The bench clearly has four legs total (one at each corner/section), not eight legs as claimed in the response."
+  },
+  {
+    "span_text": "There are two legs visible on the left side of the bench (one under the front-left section, one under the back-left section).\n   *   There are two legs visible on the right side of the bench (one under the front-right section, one under the back-right section).\n   *   There are two legs visible on the bottom (or front) of the bench (one under the front-left section, one under the front-right section).\n   *   There are two legs visible on the top (or back) of the bench (one under the back-left section, one under the back-right section).",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The leg counting breakdown is incorrect; the bench has only four legs (one per major section), not overlapping pairs as described."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [54:59] 'eight' | miscounting | agreement: 1.0
+  [586:589] 'two' | miscounting | agreement: 0.6666666667
+  [634:637] 'one' | miscounting | agreement: 0.3333333333
+  [668:671] 'one' | miscounting | agreement: 0.3333333333
+  [720:723] 'two' | miscounting | agreement: 0.6666666667
+  [769:772] 'one' | miscounting | agreement: 0.3333333333
+  [804:807] 'one' | miscounting | agreement: 0.3333333333
+  [857:860] 'two' | miscounting | agreement: 0.6666666667
+  [913:916] 'one' | miscounting | agreement: 0.3333333333
+  [947:950] 'one' | miscounting | agreement: 0.3333333333
+  [1001:1004] 'two' | miscounting | agreement: 0.6666666667
+  [1053:1056] 'one' | miscounting | agreement: 0.3333333333
+  [1086:1089] 'one' | miscounting | agreement: 0.3333333333
+  [1161:1178] '2 + 2 + 2 + 2 = 8' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [54:59] 'eight' | miscounting | model confidence: 0.95
+  [595:602] 'visible' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9957 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are three people visible outside the cars in the image. Two individuals can be seen standing near different vehicles, and a third person is further away on top of the hill.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Only two people are clearly visible outside the cars in the image - one person standing near the yellow Jeep and another person visible on the hillside in the distance."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1642 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+It's difficult to provide an exact count of vehicles on the road from this image due to the low resolution and movement blur. However, I can tell you that there are several cars and at least one motorcycle on the road. It's a typical city street scene with traffic.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "at least one motorcycle",
+    "label": "invention",
+    "prob": 0.75,
+    "reason": "The image shows a nighttime city street with vehicle headlights and taillights, but no motorcycle is clearly identifiable among the blurred vehicles on the road."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [182:205] 'at least one motorcycle' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [182:205] 'at least one motorcycle' | invention | model confidence: 0.75
+
+==================== IMAGE ID: train-en-10019 ====================
+MODEL PERFORMANCE (IoU): 0.5000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I can see **one** person clearly running on the track. There are many people on the sidelines watching, but only one is actively running in the foreground.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "one",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows at least two runners visible on the track - the runner in red in the foreground and additional runners visible further back on the course."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:35] 'one' | miscounting | agreement: 1.0
+  [133:136] 'one' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:35] 'one' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-583 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, there are **two** unused saucers on the table. They are the white ceramic dishes to the right of the jar of candies.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only one white ceramic saucer is clearly visible on the table to the right of the water jar; the response claims there are two."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:35] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:35] 'two' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10232 ====================
+MODEL PERFORMANCE (IoU): 0.0278
+
+--- FULL MODEL RESPONSE ---
+Yes, there is a bird visible in the image. It appears to be on the ground near the bottom left side of the scene, close to one of the trees and below the white fence that encloses the yard area around the house.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "there is a bird visible in the image",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "While there is a small dark object on the ground that could be a bird, the image does not clearly show a bird; the object is too distant and indistinct to confidently identify as a bird."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [14:15] 'a' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [5:41] 'there is a bird visible in the image' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9895 ====================
+MODEL PERFORMANCE (IoU): 0.3333
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, there are **four** people standing.
+
+Here is a breakdown of where each person is located:
+
+1.  **In the foreground (left side):** A man in a grey coat and glasses is holding up a phone, seemingly taking a photo or video. He is standing.
+2.  **Next to him (left side):** A younger person, likely a boy or teenager, in a blue jacket is standing and looking up at the buildings.
+3.  **Near the statue (right side):** A young girl in a light blue jacket is leaning against the stone base of the statue. She is standing.
+4.  **In the background (right side):** A woman in a dark coat is walking on the pavement near the statue. She is standing.
+
+Therefore, there are 4 people standing in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "four",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only three people are clearly visible and standing in the image: a man in grey coat on the left, a person in blue jacket next to him, and a person in teal/cyan jacket on the right near the statue. The fourth person mentioned as 'walking' is not clearly identifiable as a distinct standing figure."
+  },
+  {
+    "span_text": "A younger person, likely a boy or teenager, in a blue jacket is standing and looking up at the buildings",
+    "label": "mischaracterization",
+    "prob": 0.7,
+    "reason": "The person next to the man in the grey coat appears to be wearing a blue jacket, but they appear to be a woman/adult, not a boy or teenager as characterized."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:45] 'four' | miscounting | agreement: 0.3333333333
+  [691:692] '4' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [41:45] 'four' | miscounting | model confidence: 0.9
+  [301:308] 'younger' | mischaracterization | model confidence: 0.7
+
+==================== IMAGE ID: train-en-9965 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are approximately 7 ice cubes visible in the glass.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "7",
+    "label": "miscounting",
+    "prob": 0.75,
+    "reason": "The image shows significantly more ice cubes than 7, with ice filling a substantial portion of the tall glass from bottom to middle."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:25] '7' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [24:25] '7' | miscounting | model confidence: 0.75
+
+==================== IMAGE ID: train-en-2072 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+I can see one blue dumpster in the image, located on the left side near the street.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "one blue dumpster",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "There is a blue dumpster visible, but it appears to be on the right side of the image near the building, not on the left side near the street as claimed."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] 'one' | miscounting | agreement: 1.0
+  [13:27] ' blue dumpster' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:27] 'one blue dumpster' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10163 ====================
+MODEL PERFORMANCE (IoU): 0.4286
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I count **12 cars**. 
+
+Here's the breakdown:
+
+*   2 Red cars
+*   3 Yellow cars
+*   1 Silver car
+*   1 White car
+*   1 Black car
+*   4 Grey cars
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "12 cars",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Counting the visible toy cars in the diorama scene, there appear to be approximately 9-10 cars total, not 12."
+  },
+  {
+    "span_text": "4 Grey cars",
+    "label": "miscounting",
+    "prob": 0.75,
+    "reason": "The number of grey cars visible in the image appears to be fewer than 4; approximately 1-2 grey cars are clearly visible."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [30:32] '12' | miscounting | agreement: 0.3333333333
+  [70:71] '2' | miscounting | agreement: 1.0
+  [85:86] '3' | miscounting | agreement: 1.0
+  [103:104] '1' | miscounting | agreement: 0.3333333333
+  [120:121] '1' | miscounting | agreement: 1.0
+  [152:153] '4' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [30:32] '12' | miscounting | model confidence: 0.85
+  [152:153] '4' | miscounting | model confidence: 0.75
+
+==================== IMAGE ID: train-en-11455 ====================
+MODEL PERFORMANCE (IoU): 0.0462
+
+--- FULL MODEL RESPONSE ---
+Yes, the camel in the image has two humps. Camels are known for having two humps, although some individuals may have a third, smaller hump. The humps are made of fat, which camels store as a food reserve. This fat is used when food is scarce, allowing the camel to survive in harsh desert environments. The humps also serve as a means of insulation and buoyancy for the camel. Their shape and size can vary among individual camels, and this variation can be influenced by the age of the camel, its sex, and its nutritional status.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two humps",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The camel in the image is a dromedary (Arabian camel) with a single hump, not two humps. The response incorrectly states the camel has two humps."
+  },
+  {
+    "span_text": "although some individuals may have a third, smaller hump",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "Dromedary camels do not have three humps. This statement is factually incorrect and not supported by what is visible in the image or biological reality."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:35] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:41] 'two humps' | mischaracterization | model confidence: 0.95
+  [82:138] 'although some individuals may have a third, smaller hump' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9922 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are 12 people standing in the image. They appear to be visitors or tourists, scattered throughout what looks like a grand and ornate hall with high ceilings and intricate architectural details.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "12",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows significantly fewer than 12 distinct standing people visible in the frame; a careful count reveals approximately 6-8 people at most in this black and white photograph of the interior."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:12] '12' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:12] '12' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10120 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are two people sitting in the restaurant.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "Only one person is clearly visible sitting in the restaurant in the foreground; the woman in the gray cardigan is the only person shown seated at a table."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:13] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9937 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are five visible color lights in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "five",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Counting the colored lights visible at the top of the stage, there are 6 distinct colored light sources (yellow, magenta, yellow, red, blue, cyan), not five."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:14] 'five' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:14] 'five' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-597 ====================
+MODEL PERFORMANCE (IoU): 0.0714
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I can see **3 wine bottles** on the table.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "3",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Examining the table carefully, there appear to be 2 wine bottles visible on the dark wooden table, not 3."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:33] '3' | miscounting | agreement: 1.0
+  [33:46] ' wine bottles' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [32:33] '3' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10045 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it appears there are at least **two** benches visible in the conference hall. It's possible there are more benches out of view.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows multiple wooden benches in the courtroom/conference hall - at least 3-4 are clearly visible in the foreground and middle ground, not just two."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [52:55] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [52:55] 'two' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9875 ====================
+MODEL PERFORMANCE (IoU): 0.8000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, there are **four** people standing.
+
+Here is a breakdown of where each person is located:
+
+1.  **Man in the foreground (left side):** A man wearing a grey coat and glasses is standing on the cobblestone street, holding up a smartphone as if taking a picture.
+2.  **Boy next to him (left side):** A younger boy in a blue jacket is standing next to the man, looking up at the buildings.
+3.  **Girl near the statue (right side):** A girl in a light blue jacket is standing next to the large statue, leaning against its base.
+4.  **Woman in the background (right side):** A woman in a dark coat is walking on the sidewalk behind the statue, also standing.
+
+Therefore, there are a total of **4** people standing in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "four",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image clearly shows only 2-3 people visible: a man in grey coat and a person in blue jacket on the left side, and possibly one more person in the distance, but not four distinct people standing as claimed."
+  },
+  {
+    "span_text": "Girl near the statue (right side): A girl in a light blue jacket is standing next to the large statue, leaning against its base.",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "There is no girl in a light blue jacket standing next to or leaning against the statue visible in the image."
+  },
+  {
+    "span_text": "Woman in the background (right side): A woman in a dark coat is walking on the sidewalk behind the statue, also standing.",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "There is no clearly visible woman in a dark coat standing behind the statue as described in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:45] 'four' | miscounting | agreement: 0.3333333333
+  [716:717] '4' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [41:45] 'four' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1735 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are two trains visible in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "Only one train is visible in the image - the reddish-brown locomotive with white tanker cars in the middle distance."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:13] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10001 ====================
+MODEL PERFORMANCE (IoU): 0.0633
+
+--- FULL MODEL RESPONSE ---
+There are three people standing in the image. One person is taking a photo, another one stands beside them wearing a blue jacket, and there's also a young girl near the statue on the right side of the picture.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only two people are clearly visible standing in the image - one on the left in a blue jacket and one in darker clothing next to them; no young girl is visible near the statue."
+  },
+  {
+    "span_text": "there's also a young girl near the statue on the right side of the picture",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "No young girl is visible near the statue on the right side of the image; this person does not exist in the photograph."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.9
+  [134:208] 'there's also a young girl near the statue on the right side of the picture' | invention | model confidence: 0.85
+
+==================== IMAGE ID: train-en-987 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, there is only one rose visible on the plant in the image.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [19:22] 'one' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11212 ====================
+MODEL PERFORMANCE (IoU): 0.6000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, **yes, each fork has four prongs.** 
+
+You can clearly see that each utensil has a set of four tines (the pointy ends) extending from the neck of the fork. These are specifically designed for holding food, and the four-pronged design is common for serving or eating certain types of dishes.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "four prongs",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The forks in the image clearly have three prongs/tines, not four. All seven forks visible display the same three-pronged design."
+  },
+  {
+    "span_text": "four tines",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The forks consistently show three tines extending from the neck, not four tines as claimed in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:45] 'four' | miscounting | agreement: 1.0
+  [45:52] ' prongs' | miscounting | agreement: 0.3333333333
+  [109:113] 'four' | miscounting | agreement: 0.6666666667
+  [233:237] 'four' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [41:52] 'four prongs' | mischaracterization | model confidence: 0.95
+  [109:119] 'four tines' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9936 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are four people outside of the cars.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "four",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows approximately 3 people visible outside the cars, not four."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:14] 'four' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:14] 'four' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11073 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the shirt has buttons. It features a small placket at the collar with two visible buttons.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The shirt clearly shows more than two buttons on the front placket; there are at least three or four visible buttons down the center chest area."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [75:78] 'two' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [75:78] 'two' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10189 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, there is no Princess Leia present.
+
+The image features:
+*   A Stormtrooper in the foreground, holding a blaster.
+*   Darth Vader standing to the right of the Stormtrooper (from the viewer's perspective).
+*   Another Stormtrooper partially visible behind the main one.
+*   Several onlookers, including children and adults, in the background.
+
+Princess Leia is a character from the Star Wars universe, but she is not visible in this particular photograph. The people in the background are not in costume as Leia; they are dressed in everyday clothing.
+
+Therefore, Princess Leia is not on any side of the Stormtrooper in this image.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [237:244] 'Another' | miscounting | agreement: 0.6666666667
+  [244:257] ' Stormtrooper' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10037 ====================
+MODEL PERFORMANCE (IoU): 0.5000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I can count **6** visible slices of tomato. It looks like someone is in the process of slicing more, but only 6 are clearly visible on the plate and cutting board.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "6",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows what appears to be 2-3 slices of tomato on the plate, not 6 clearly visible slices as claimed."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [34:35] '6' | miscounting | agreement: 1.0
+  [130:131] '6' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [34:35] '6' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10111 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+In the image, there are three people standing outside their vehicles.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows approximately 2-3 people visible outside the vehicles, but counting the clearly visible figures shows 2 distinct people, not three."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:29] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [24:29] 'three' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10113 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are three benches in the conference hall.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows at least four wooden benches visible in the courtroom, not three."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10017 ====================
+MODEL PERFORMANCE (IoU): 0.6250
+
+--- FULL MODEL RESPONSE ---
+Based on the image, there are **three** visible coloured lights. They appear as red lights above the stage.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image clearly shows more than three colored lights above the stage - there are yellow, magenta/pink, and red lights visible on the left side, plus blue and cyan lights on the right side, totaling at least 6 colored lights."
+  },
+  {
+    "span_text": "red lights",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "While there are some red lights, the response incorrectly characterizes all the colored lights as red when the image shows yellow, magenta/pink, blue, and cyan lights in addition to red."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:37] 'three' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [32:37] 'three' | miscounting | model confidence: 0.95
+  [53:56] 'red' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10101 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+In the image, there are several people sitting in the restaurant. There are at least two people visible, one in the foreground and one in the background. However, I am unable to provide an exact number of people present in the restaurant as I can only describe the content of the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two people visible",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Only one person is clearly visible sitting in the restaurant in the foreground; the woman in the chair. Other people are standing in the background, not sitting."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [85:88] 'two' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [85:88] 'two' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10046 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, I can see **five** lights hanging on the black fence. They appear to be small, decorative lights.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "five",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows fewer than five distinct lights hanging on the black fence; the prominent glowing area appears to be primarily a bright light source (possibly street/moon light) rather than five separate hanging lights on the fence."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:36] 'five' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:36] 'five' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1120 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+There are three unused saucers on the table.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only one white cup/saucer is clearly visible on the table in the foreground; the response claims three unused saucers."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:15] 'three' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10121 ====================
+MODEL PERFORMANCE (IoU): 0.1562
+
+--- FULL MODEL RESPONSE ---
+In the image, there are a total of seven boats visible. There are two boats docked at the pier, one on each side, and five more boats in the background, tied up or anchored in the water.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "seven",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Visible boats in the image include: 1 white boat on the left (docked), 1 white and blue boat in center foreground (docked), 1 sailboat with blue canopy (docked right), and 1 white boat in background on left, totaling approximately 4 clearly visible boats, not seven."
+  },
+  {
+    "span_text": "two boats docked at the pier, one on each side",
+    "label": "mischaracterization",
+    "prob": 0.8,
+    "reason": "There are clearly more than two boats docked at the pier visible in the image; at least three boats are docked at or near the dock structure in the foreground."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [35:40] 'seven' | miscounting | agreement: 1.0
+  [66:69] 'two' | miscounting | agreement: 0.6666666667
+  [96:99] 'one' | miscounting | agreement: 0.6666666667
+  [99:112] ' on each side' | miscounting | agreement: 0.3333333333
+  [118:122] 'five' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [35:40] 'seven' | miscounting | model confidence: 0.85
+  [90:94] 'pier' | mischaracterization | model confidence: 0.8
+
+==================== IMAGE ID: train-en-9943 ====================
+MODEL PERFORMANCE (IoU): 0.3750
+
+--- FULL MODEL RESPONSE ---
+There are two plates visible on the table.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Only one plate is clearly visible on the table in front of the two men in the foreground."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [6:10] 'are ' | miscounting | agreement: 0.3333333333
+  [10:13] 'two' | miscounting | agreement: 1.0
+  [19:20] 's' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:13] 'two' | miscounting | model confidence: 0.85

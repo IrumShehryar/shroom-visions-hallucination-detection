@@ -1,0 +1,2474 @@
+[
+  {
+    "id": "train-en-417",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 588,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 722
+      },
+      {
+        "start": 706,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 722
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"alligator in the foreground is dark colored\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The alligator in the foreground (lower one being held) has dark coloration with yellowish-tan markings, but the alligator in the actual foreground of the image - the one most prominently displayed in the handler's hand - is the pale/leucistic one, not the dark one.\"\n  },\n  {\n    \"span_text\": \"dark brown or black markings over a lighter base color\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The dark alligator (lower in image) has dark coloration with lighter tan/cream colored markings, which is the reverse of what is described - it's dark base with lighter markings, not light base with dark markings.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-418",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 146,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 153
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"decorative floral lace panel\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The lace visible on the sides appears to be a textured lace pattern, not a decorative floral lace panel as described.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-420",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 6,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 127,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 143
+      },
+      {
+        "start": 225,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 227
+      },
+      {
+        "start": 227,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 233
+      },
+      {
+        "start": 233,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 239
+      },
+      {
+        "start": 514,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 524
+      },
+      {
+        "start": 557,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 568
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"porcelain garlic\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The filename indicates this is 'purple stripe garlic' or 'purple glazer garlic', not porcelain garlic, which is a different variety typically characterized by fewer, larger cloves and a hardneck structure.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-425",
+    "iou": 0.3171,
+    "pred_count": 0,
+    "gold_count": 8,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 72,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 76
+      },
+      {
+        "start": 157,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 161
+      },
+      {
+        "start": 168,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 173
+      },
+      {
+        "start": 72,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 76
+      },
+      {
+        "start": 112,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 136
+      },
+      {
+        "start": 136,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 147
+      },
+      {
+        "start": 147,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 151
+      },
+      {
+        "start": 151,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 173
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"face\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The carving on the spoon handle shows a rose or floral design, not a face with eyes and mouth as claimed.\"\n  },\n  {\n    \"span_text\": \"eyes and a mouth\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible carving shows a rose flower pattern, not facial features like eyes and a mouth.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-431",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 114,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 224
+      },
+      {
+        "start": 331,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 343
+      },
+      {
+        "start": 80,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 86
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-435",
+    "iou": 0.3704,
+    "pred_count": 0,
+    "gold_count": 12,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 43
+      },
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 52
+      },
+      {
+        "start": 52,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      },
+      {
+        "start": 71,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 92
+      },
+      {
+        "start": 92,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 122
+      },
+      {
+        "start": 122,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 134
+      },
+      {
+        "start": 134,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 163
+      },
+      {
+        "start": 163,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 171
+      },
+      {
+        "start": 171,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 240
+      },
+      {
+        "start": 43,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 52
+      },
+      {
+        "start": 71,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 91
+      },
+      {
+        "start": 122,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 134
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Devonport ferry terminal in Auckland, New Zealand\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows a ferry terminal with UK-style features (blue and white vessel, British flag visible on the mast) and a British coastal town in the background, not Auckland, New Zealand.\"\n  },\n  {\n    \"span_text\": \"Hauraki Gulf\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The Hauraki Gulf is in New Zealand, but this image shows a British coastal location, making this sea name identification incorrect based on the actual location.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-438",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 6,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 75,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 93
+      },
+      {
+        "start": 379,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 404
+      },
+      {
+        "start": 89,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 93
+      },
+      {
+        "start": 374,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 377
+      },
+      {
+        "start": 393,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 404
+      },
+      {
+        "start": 476,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 482
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"wheels at the back\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The tractor has tracks at the rear, not wheels; the response incorrectly identifies the rear propulsion system as wheels.\"\n  },\n  {\n    \"span_text\": \"the front tires have been replaced with tracks\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The visible evidence shows tracks at the rear, not the front; the response reverses which end has tracks versus wheels.\"\n  },\n  {\n    \"span_text\": \"Yes, it has wheels on the rear, but the front has been converted to tracks\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"This statement is backwards; the tractor has tracks on the rear and wheels/tires visible on the front, opposite of what the response claims.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-446",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 135
+      },
+      {
+        "start": 40,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 49
+      },
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 37
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only one white dumpster/waste container is clearly visible in the lower left portion of the image, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-448",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 217,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 221
+      },
+      {
+        "start": 334,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 367
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"FV433 Abbot Self-Propelled Gun\",\n    \"label\": \"invention\",\n    \"prob\": 0.6,\n    \"reason\": \"The response identifies the vehicle as an FV433 Abbot, but the image does not provide clear enough detail to definitively confirm this specific model designation, and the filename suggests it may be a different tracked ambulance variant (Warthog or similar).\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-450",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 7,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 578,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 866
+      },
+      {
+        "start": 135,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      },
+      {
+        "start": 218,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 231
+      },
+      {
+        "start": 335,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 340
+      },
+      {
+        "start": 406,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 509
+      },
+      {
+        "start": 578,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 613
+      },
+      {
+        "start": 645,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 683
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Gray Fox ( *Urocyon cinereoargenteus*)\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The filename indicates this is a Darwin's Fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus), which are different species.\"\n  },\n  {\n    \"span_text\": \"they are known for having a salt-and-pepper gray coat with reddish flanks and legs\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The description of Gray Fox coloration does not accurately apply to Darwin's Fox, which has different coat characteristics and coloring patterns.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-452",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 187,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 217
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-460",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 4,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 65
+      },
+      {
+        "start": 731,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 783
+      },
+      {
+        "start": 229,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 284
+      },
+      {
+        "start": 609,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 633
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Person carrying a cross\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"While someone in the front left is carrying what appears to be a wooden pole or staff, it is not clearly identifiable as a cross in the image.\"\n  },\n  {\n    \"span_text\": \"Palm branches\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The response acknowledges palm branches are 'not clearly visible' but lists them as a key identifying feature, which contradicts the visual evidence in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-582",
+    "gold_labels": [
+      {
+        "start": 445,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 456
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10917",
+    "gold_labels": [
+      {
+        "start": 64,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 70
+      },
+      {
+        "start": 70,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 82
+      },
+      {
+        "start": 295,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 301
+      },
+      {
+        "start": 333,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 339
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"It appears to have a handle on the side\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The cup in the image does not have a visible handle; it is a handleless disposable cup with only a lid on top.\"\n  },\n  {\n    \"span_text\": \"The handle would be used to grip the cup when it is full\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"This sentence describes a functional property of a handle that does not exist on this cup, as the cup has no handle to grip.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11564",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 3
+      },
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 64,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 68
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two wheels\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The cart clearly has four wheels visible in the image (two on each side), not two wheels.\"\n  },\n  {\n    \"span_text\": \"dual-wheel setup at the back\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The cart has wheels on all four corners (front and back), not just a dual-wheel setup at the back.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11035",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 3
+      },
+      {
+        "start": 446,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 463
+      },
+      {
+        "start": 795,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 805
+      },
+      {
+        "start": 1053,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1063
+      },
+      {
+        "start": 20,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 25
+      },
+      {
+        "start": 397,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 434
+      },
+      {
+        "start": 487,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 491
+      },
+      {
+        "start": 801,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 805
+      },
+      {
+        "start": 1059,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1063
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"the roots and the lower part of the stems may have a slight green tint\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible roots and lower stems in the image are white/cream colored with brown soil, not showing a green tint.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1193",
+    "gold_labels": [
+      {
+        "start": 185,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 189
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"The horses\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"Only one horse is visible in the image, not multiple horses.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1736",
+    "gold_labels": [
+      {
+        "start": 198,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 249
+      },
+      {
+        "start": 95,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 99
+      },
+      {
+        "start": 146,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 167
+      },
+      {
+        "start": 186,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 197
+      },
+      {
+        "start": 33,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 36
+      },
+      {
+        "start": 85,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 88
+      },
+      {
+        "start": 162,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 167
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two wheels\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image clearly shows four wheels (two large rear wheels and two smaller front wheels), not two wheels as stated.\"\n  },\n  {\n    \"span_text\": \"a smaller front wheel\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"There are two smaller front wheels visible in the image, not a single front wheel.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1831",
+    "gold_labels": [
+      {
+        "start": 144,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 159
+      },
+      {
+        "start": 159,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 171
+      },
+      {
+        "start": 171,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 187
+      },
+      {
+        "start": 9,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 19
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two halved sections\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows four halves total: two whole lemons in the back and two cut halves in the front on the plate, not just two halved sections.\"\n  },\n  {\n    \"span_text\": \"placed on the plate\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The two cut halves are placed on a white dish/bowl, not a plate as stated.\"\n  },\n  {\n    \"span_text\": \"small, dark-colored seed structures\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"These are lemons, not grapefruits, and the visible structures in the flesh are the natural segments/pulp divisions, not seeds. Lemons typically have few or no visible seeds, and what is shown here are the juice sacs/segments.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2369",
+    "gold_labels": [
+      {
+        "start": 42,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      },
+      {
+        "start": 157,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 191
+      },
+      {
+        "start": 251,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 258
+      },
+      {
+        "start": 266,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 344
+      },
+      {
+        "start": 467,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 487
+      },
+      {
+        "start": 530,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 546
+      },
+      {
+        "start": 558,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 583
+      },
+      {
+        "start": 753,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 776
+      },
+      {
+        "start": 802,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 808
+      },
+      {
+        "start": 42,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 71
+      },
+      {
+        "start": 712,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 737
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"ocelot\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The animal in the image is clearly a cheetah, not an ocelot, as evidenced by the distinctive cheetah head shape, facial structure, body proportions, and the characteristic black tear marks on the face.\"\n  },\n  {\n    \"span_text\": \"Leopardus pardalis\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"This is the scientific name for an ocelot, but the animal shown is a cheetah (Acinonyx jubatus), not an ocelot.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10588",
+    "gold_labels": [
+      {
+        "start": 109,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 124
+      },
+      {
+        "start": 443,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 479
+      },
+      {
+        "start": 565,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 577
+      },
+      {
+        "start": 729,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 805
+      },
+      {
+        "start": 1240,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1265
+      },
+      {
+        "start": 1294,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 1306
+      },
+      {
+        "start": 1659,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 1700
+      },
+      {
+        "start": 1700,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1733
+      },
+      {
+        "start": 1659,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1700
+      },
+      {
+        "start": 3,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 59
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Mount Shasta\",\n    \"label\": \"invention\",\n    \"prob\": 0.6,\n    \"reason\": \"While the image shows a snow-capped volcano at sunrise, the specific identity as Mount Shasta cannot be definitively confirmed from the image alone without visible markers or text.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-658",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 20
+      },
+      {
+        "start": 20,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 30
+      },
+      {
+        "start": 30,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 51
+      },
+      {
+        "start": 69,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 85
+      },
+      {
+        "start": 24,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 30
+      },
+      {
+        "start": 47,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 51
+      },
+      {
+        "start": 74,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 80
+      },
+      {
+        "start": 93,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 97
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"crayon\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows a stick figure drawing and text on a wooden surface, not a crayon. The blue mark on the left appears to be drawn with marker or paint, not a crayon.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11586",
+    "gold_labels": [
+      {
+        "start": 1046,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1079
+      },
+      {
+        "start": 85,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 123
+      },
+      {
+        "start": 148,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 166
+      },
+      {
+        "start": 856,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 869
+      },
+      {
+        "start": 877,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 922
+      },
+      {
+        "start": 948,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1009
+      },
+      {
+        "start": 1242,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1321
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Eastern Freshwater Mussel (Anodonta sp.)\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The image filename and visual characteristics (large siphon, shell shape) indicate this is a geoduck clam, not a freshwater mussel species.\"\n  },\n  {\n    \"span_text\": \"they do not possess \\\"siphons\\\" as seen in saltwater clams\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"Freshwater mussels do possess siphons; the response incorrectly claims they lack them, then contradicts itself by describing inhalant and exhalant siphons.\"\n  },\n  {\n    \"span_text\": \"The large, elongated structure you see extending upward is the mussel's muscular foot\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The structure being held is clearly a siphon, not a muscular foot; this is the defining feature visible in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10236",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 33
+      },
+      {
+        "start": 33,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 37
+      },
+      {
+        "start": 37,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 47
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Nata River\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"No visible markers, signs, or text in the image identify this river as the Nata River. The river's name cannot be verified from the image alone.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1611",
+    "gold_labels": [
+      {
+        "start": 35,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 48
+      },
+      {
+        "start": 48,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 58
+      },
+      {
+        "start": 74,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 83
+      },
+      {
+        "start": 125,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 146
+      },
+      {
+        "start": 146,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 157
+      },
+      {
+        "start": 157,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 195
+      },
+      {
+        "start": 267,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 282
+      },
+      {
+        "start": 320,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 326
+      },
+      {
+        "start": 326,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 330
+      },
+      {
+        "start": 330,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 342
+      },
+      {
+        "start": 342,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 360
+      },
+      {
+        "start": 48,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 58
+      },
+      {
+        "start": 78,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 83
+      },
+      {
+        "start": 140,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 164
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"with both hands\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The man is holding the phone with one hand, not both hands; his other hand appears to be at his side or holding something else.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11177",
+    "gold_labels": [
+      {
+        "start": 893,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 903
+      },
+      {
+        "start": 956,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1044
+      },
+      {
+        "start": 1211,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1225
+      },
+      {
+        "start": 1225,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 1239
+      },
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 33,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 37
+      },
+      {
+        "start": 142,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 155
+      },
+      {
+        "start": 276,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 280
+      },
+      {
+        "start": 807,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 817
+      },
+      {
+        "start": 852,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 856
+      },
+      {
+        "start": 956,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 964
+      },
+      {
+        "start": 1084,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 1088
+      },
+      {
+        "start": 250,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 270
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"long handle\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The handle visible in the image is relatively short, not long. The handle appears to be a compact garden tool handle, consistent with the filename hint 'mini rake', making 'long' inaccurate.\"\n  },\n  {\n    \"span_text\": \"three tines\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The rake head clearly shows four curved prongs/tines, not three as stated in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1389",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 40
+      },
+      {
+        "start": 15,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 40
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2533",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 3
+      },
+      {
+        "start": 5,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 16
+      },
+      {
+        "start": 16,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 25
+      },
+      {
+        "start": 25,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 38
+      },
+      {
+        "start": 45,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 61
+      },
+      {
+        "start": 67,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 79
+      },
+      {
+        "start": 79,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 90
+      },
+      {
+        "start": 353,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 357
+      },
+      {
+        "start": 373,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 379
+      },
+      {
+        "start": 1086,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1096
+      },
+      {
+        "start": 1265,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1268
+      },
+      {
+        "start": 1281,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1285
+      },
+      {
+        "start": 1285,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 1290
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"drupe\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"Grapes are berries, not drupes or stone fruits. The response incorrectly classifies grapes as drupes, which are fruits with a hard stone pit (like peaches or plums).\"\n  },\n  {\n    \"span_text\": \"stone fruit\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"Grapes are not stone fruits; they are berries. Stone fruits have a single hard pit, while grapes have small seeds embedded in the flesh.\"\n  },\n  {\n    \"span_text\": \"these are black grapes, not purple\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The response describes the grapes as 'dark purple' when the image clearly shows black/very dark purple grapes that are distinctly black in appearance.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1240",
+    "gold_labels": [
+      {
+        "start": 35,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 48
+      },
+      {
+        "start": 35,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 48
+      },
+      {
+        "start": 140,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 149
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"not a cucumber; it's a yellow tomato\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows a melon (likely a honeydew or similar variety based on the netted pattern and oval shape), not a tomato. The response fundamentally misidentifies the fruit.\"\n  },\n  {\n    \"span_text\": \"yellow tomatoes\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The fruit in the image is a melon with characteristic netted/textured skin and an oval shape, not a tomato which would be round and smooth.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9802",
+    "gold_labels": [
+      {
+        "start": 63,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 67
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"2008\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"No visible manufacturing date or vintage year is legible on the bottle label in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9794",
+    "gold_labels": [
+      {
+        "start": 48,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 72
+      },
+      {
+        "start": 72,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 138
+      },
+      {
+        "start": 334,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 348
+      },
+      {
+        "start": 48,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 60
+      },
+      {
+        "start": 48,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 60
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Coffee Drink\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The visible text on the cup appears to show a different brand name, not 'Coffee Drink' - the logo and text are not clearly readable as that brand name.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-727",
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 63
+      },
+      {
+        "start": 81,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 83
+      },
+      {
+        "start": 83,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 87
+      },
+      {
+        "start": 87,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 94
+      },
+      {
+        "start": 94,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 106
+      },
+      {
+        "start": 106,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 113
+      },
+      {
+        "start": 121,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 133
+      },
+      {
+        "start": 94,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 106
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Shelby's Bar\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"No sign reading 'Shelby's Bar' is visible in the lower center of the image or anywhere else in the photograph.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-564",
+    "gold_labels": [
+      {
+        "start": 154,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 201
+      },
+      {
+        "start": 201,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 213
+      },
+      {
+        "start": 252,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 264
+      },
+      {
+        "start": 345,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 417
+      },
+      {
+        "start": 451,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 488
+      },
+      {
+        "start": 488,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 501
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Muscovy Duck\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The duck in the image appears to be a different species, likely a Blue or Black and White duck with distinct coloring (dark blue/black back and white front), not a Muscovy Duck which typically has red facial skin and different plumage patterns.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9706",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 32
+      },
+      {
+        "start": 32,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 43
+      },
+      {
+        "start": 43,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 55
+      },
+      {
+        "start": 55,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 100
+      },
+      {
+        "start": 100,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 147
+      },
+      {
+        "start": 147,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 175
+      },
+      {
+        "start": 175,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 192
+      },
+      {
+        "start": 192,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 247
+      },
+      {
+        "start": 32,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 43
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"JFX Fitness\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"No visible gym name or branding text reading 'JFX Fitness' can be seen on any equipment or signage in the image.\"\n  },\n  {\n    \"span_text\": \"The name can be seen on one of the pieces of equipment\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"No gym name is legibly visible on any equipment in the image.\"\n  },\n  {\n    \"span_text\": \"JFX stands for James Fitness\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"This interpretation is unverifiable from the image and appears to be fabricated; no such name or branding is visible.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11629",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 3
+      },
+      {
+        "start": 3,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 24
+      },
+      {
+        "start": 24,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 59
+      },
+      {
+        "start": 59,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 78
+      },
+      {
+        "start": 78,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 111
+      },
+      {
+        "start": 111,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 140
+      },
+      {
+        "start": 140,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 164
+      },
+      {
+        "start": 164,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 177
+      },
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 24,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 31
+      },
+      {
+        "start": 59,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 78
+      },
+      {
+        "start": 111,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 139
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"green fabric handle\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The left rattle has a purple patterned fabric handle, not a green one; the green is the head/ball portion.\"\n  },\n  {\n    \"span_text\": \"yellow handle with red straps\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The right rattle has a colorful striped fabric handle (rainbow stripes including red, blue, yellow, green), not specifically a yellow handle with red straps.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10425",
+    "gold_labels": [
+      {
+        "start": 57,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 62
+      },
+      {
+        "start": 95,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 127
+      },
+      {
+        "start": 57,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 62
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Davek\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The umbrellas visible in the image show geometric patterns (stripes and diamond shapes) but no clearly visible brand logo or text identifying them as Davek can be discerned from this black and white photograph.\"\n  },\n  {\n    \"span_text\": \"You can see the logo clearly printed on the umbrella's canopy\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"While umbrellas are present in the image, no brand logo is clearly visible or legible on the canopy in this photograph.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11658",
+    "gold_labels": [
+      {
+        "start": 762,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 791
+      },
+      {
+        "start": 1045,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1052
+      },
+      {
+        "start": 209,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 216
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"a long, narrow pit chamber\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible pit cavity in the cross-section appears roughly oval or rounded, not distinctly long and narrow as described.\"\n  },\n  {\n    \"span_text\": \"light green flesh\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The flesh of the cut avocado half appears to be a pale yellowish-green or cream-colored green, not a bright or distinctly 'light green' tone.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1179",
+    "gold_labels": [
+      {
+        "start": 244,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 257
+      },
+      {
+        "start": 285,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 293
+      },
+      {
+        "start": 293,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 301
+      },
+      {
+        "start": 322,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 332
+      },
+      {
+        "start": 370,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 385
+      },
+      {
+        "start": 746,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 753
+      },
+      {
+        "start": 788,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 823
+      },
+      {
+        "start": 920,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 936
+      },
+      {
+        "start": 1339,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1355
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"chioggia variety\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The response identifies these as chioggia carrots, but the image shows black/purple carrots with solid orange interiors, not the distinctive white and orange concentric ring pattern characteristic of chioggia carrots.\"\n  },\n  {\n    \"span_text\": \"love apple\",\n    \"label\": \"invention\",\n    \"prob\": 0.80,\n    \"reason\": \"Black/purple carrots are not commonly known as 'love apple' carrots; this term is not a recognized alternative name for the variety shown in the image.\"\n  },\n  {\n    \"span_text\": \"alternating orange and white concentric circles\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.90,\n    \"reason\": \"The sliced carrot cross-sections visible in the image show solid orange interiors without the distinctive white and orange ring pattern claimed in the response.\"\n  },\n  {\n    \"span_text\": \"marbled pattern\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.90,\n    \"reason\": \"The interior of the sliced carrots shown appears to be uniform orange, not a marbled or patterned appearance as described.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-481",
+    "gold_labels": [
+      {
+        "start": 54,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 61
+      },
+      {
+        "start": 61,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 70
+      },
+      {
+        "start": 70,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      },
+      {
+        "start": 54,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 71
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"soldier\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The person in the image is a young civilian wearing a headband, not a soldier in military uniform.\"\n  },\n  {\n    \"span_text\": \"a star on it\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The headband appears to have stripes or a pattern, not a visible star design.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2209",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 4
+      },
+      {
+        "start": 4,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 19
+      },
+      {
+        "start": 19,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 20
+      },
+      {
+        "start": 20,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 28
+      },
+      {
+        "start": 28,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 56
+      },
+      {
+        "start": 56,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 84
+      },
+      {
+        "start": 28,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 56
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"stars in the sky\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows a concert stage with red lights and musicians, not stars in the sky—there are no visible stars in this image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1188",
+    "gold_labels": [
+      {
+        "start": 55,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 73
+      },
+      {
+        "start": 254,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 278
+      },
+      {
+        "start": 418,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 485
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"crescent-shaped marking on which they are named\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The distinctive marking on sun bears is typically described as a crescent or V-shaped marking on their chest, not something they are named 'on' — the marking is on their chest, and they are named for the sun-like appearance of this chest patch.\"\n  },\n  {\n    \"span_text\": \"they do not enter a deep, prolonged sleep\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.6,\n    \"reason\": \"While the response correctly states sun bears experience torpor rather than true hibernation, the phrasing could be misleading as it implies they enter some sleep; torpor is more accurately a state of reduced metabolic activity that differs fundamentally from sleep.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10352",
+    "gold_labels": [
+      {
+        "start": 4,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 10
+      },
+      {
+        "start": 38,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 49
+      },
+      {
+        "start": 54,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 65
+      },
+      {
+        "start": 54,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 65
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2023",
+    "gold_labels": [
+      {
+        "start": 144,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 177
+      },
+      {
+        "start": 560,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 587
+      },
+      {
+        "start": 821,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 848
+      },
+      {
+        "start": 94,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 122
+      },
+      {
+        "start": 454,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 462
+      },
+      {
+        "start": 549,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 587
+      },
+      {
+        "start": 821,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 848
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"WORLDFIELD.COM\",\n    \"label\": \"OCR\",\n    \"prob\": 0.85,\n    \"reason\": \"The banner text visible in the image appears to read 'LUNA SECURITY' on the visible shirts/clothing, not 'WORLDFIELD.COM', and no such banner is clearly visible in the stadium stands.\"\n  },\n  {\n    \"span_text\": \"Indianapolis Motor Speedway\",\n    \"label\": \"INVENTION\",\n    \"prob\": 0.7,\n    \"reason\": \"The response claims this is the Indianapolis Motor Speedway based on inference, but there is no visible text or identifying markers in the image that confirm this stadium's identity.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10164",
+    "gold_labels": [
+      {
+        "start": 25,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 124
+      },
+      {
+        "start": 1054,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1074
+      },
+      {
+        "start": 1165,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1185
+      },
+      {
+        "start": 1276,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1296
+      },
+      {
+        "start": 1387,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1407
+      },
+      {
+        "start": 1498,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1518
+      },
+      {
+        "start": 1609,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1629
+      },
+      {
+        "start": 1720,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1740
+      },
+      {
+        "start": 1831,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1851
+      },
+      {
+        "start": 1942,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1962
+      },
+      {
+        "start": 2053,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 2073
+      },
+      {
+        "start": 943,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 2164
+      },
+      {
+        "start": 2164,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 2165
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Two wooden buckets\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows one wooden bucket/tub visible in the foreground, not two separate buckets.\"\n  },\n  {\n    \"span_text\": \"A wooden ladle\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"No wooden ladle is clearly visible in the image; only buckets/tubs and stools are present.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1326",
+    "gold_labels": [
+      {
+        "start": 10,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 16
+      },
+      {
+        "start": 10,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 16
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"silver-colored\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The button at the top of the embroidery hoop is brass or gold-toned metal, not silver.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10684",
+    "gold_labels": [
+      {
+        "start": 23,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 33
+      },
+      {
+        "start": 33,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 38
+      },
+      {
+        "start": 61,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 66
+      },
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 38
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10803",
+    "gold_labels": [
+      {
+        "start": 55,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 77
+      },
+      {
+        "start": 112,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 148
+      },
+      {
+        "start": 148,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 162
+      },
+      {
+        "start": 162,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 171
+      },
+      {
+        "start": 216,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 220
+      },
+      {
+        "start": 240,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 252
+      },
+      {
+        "start": 402,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 412
+      },
+      {
+        "start": 419,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 467
+      },
+      {
+        "start": 512,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 2379
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"bright yellow ornament\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The ornament in the image is not yellow but rather transparent/clear with orange and red coloring visible inside, resembling a toy gun rather than a traditional round ornament.\"\n  },\n  {\n    \"span_text\": \"small, round, yellow object\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The ornament is not round; it is gun-shaped with a pistol form, and it is not yellow but transparent with orange and red interior coloring.\"\n  },\n  {\n    \"span_text\": \"a small, possibly red, circular tag\",\n    \"label\": \"invention\",\n    \"prob\": 0.75,\n    \"reason\": \"There is no visible circular tag attached to the ornament in the image; the ornament is a transparent toy gun shape.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-843",
+    "gold_labels": [
+      {
+        "start": 532,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 554
+      },
+      {
+        "start": 548,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 554
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"right side (as we look at it)\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The larger, pale cream-colored claw is on the left side of the image as viewed, not the right side.\"\n  },\n  {\n    \"span_text\": \"smaller claw is darker\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The smaller claw on the right side appears to be tan/cream colored, not darker than the larger claw which is also cream-colored but with dark coloring on the crab's body.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11858",
+    "gold_labels": [
+      {
+        "start": 477,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 492
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"black fur on its head and back, transitioning to white down its belly\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The rat actually has black fur on its head and white/cream colored fur on its belly, but the back appears to be mixed black and white, not a clear transition from black to white.\"\n  },\n  {\n    \"span_text\": \"a smaller mouse-like creature positioned near the bottom right corner\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The smaller animal is positioned in the bottom right but appears to be a decorative figurine or ornament, not an actual mouse-like creature.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11514",
+    "gold_labels": [
+      {
+        "start": 555,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 602
+      },
+      {
+        "start": 1572,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1577
+      },
+      {
+        "start": 962,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 967
+      },
+      {
+        "start": 1096,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1107
+      },
+      {
+        "start": 1165,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1183
+      },
+      {
+        "start": 1450,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1461
+      },
+      {
+        "start": 1461,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 1466
+      },
+      {
+        "start": 1622,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 1654
+      },
+      {
+        "start": 1676,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1679
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"the tusks are not visible in this specific photograph due to the angle and positioning of the animal\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The response claims tusks are hidden by angle/positioning, but visible ivory-colored tusks are clearly seen protruding from the walrus's mouth in the image.\"\n  },\n  {\n    \"span_text\": \"the tusks may be pointing backward or downward, out of the frame\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The walrus's tusks are visibly in the frame, protruding forward from the snout area, not pointing backward or out of frame.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10311",
+    "gold_labels": [
+      {
+        "start": 4,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 9
+      },
+      {
+        "start": 9,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 20
+      },
+      {
+        "start": 21,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 28
+      },
+      {
+        "start": 28,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 34
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11565",
+    "gold_labels": [
+      {
+        "start": 196,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 212
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"family Testudinidae, which includes pond turtles, box turtles, and coachroaches\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"Testudinidae is the tortoise family, not pond turtles; 'coachroaches' appears to be an error and are insects, not turtles; the turtle shown is a snake-necked turtle from family Chelodina, not Testudinidae.\"\n  },\n  {\n    \"span_text\": \"leaves and aquatic plants\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.7,\n    \"reason\": \"Snake-necked turtles are carnivorous and hunt small aquatic animals, not herbivorous feeders of leaves and plants.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10186",
+    "gold_labels": [
+      {
+        "start": 215,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 244
+      },
+      {
+        "start": 620,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 692
+      },
+      {
+        "start": 692,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 731
+      },
+      {
+        "start": 731,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 742
+      },
+      {
+        "start": 742,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 785
+      },
+      {
+        "start": 1091,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1190
+      },
+      {
+        "start": 633,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 665
+      },
+      {
+        "start": 756,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 785
+      },
+      {
+        "start": 1123,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 1146
+      },
+      {
+        "start": 1146,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1169
+      },
+      {
+        "start": 1169,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 1190
+      },
+      {
+        "start": 211,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 212
+      },
+      {
+        "start": 303,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 307
+      },
+      {
+        "start": 314,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 324
+      },
+      {
+        "start": 597,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 603
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"\\\"Candid\\\"\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The race bib clearly shows the number 1148 but the text below it is not legible enough to confidently read as 'CANDID' - the response invents a specific word that cannot be verified from the image.\"\n  },\n  {\n    \"span_text\": \"Candiac, Quebec\",\n    \"label\": \"INVENTION\",\n    \"prob\": 0.95,\n    \"reason\": \"The response invents a specific location (Candiac, Quebec) based on a misread or hallucinated bib text that is not clearly visible or verifiable in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9862",
+    "gold_labels": [
+      {
+        "start": 728,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 793
+      },
+      {
+        "start": 837,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 844
+      },
+      {
+        "start": 83,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 87
+      },
+      {
+        "start": 83,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 87
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"1100%\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The bus clearly displays '100% Electric Bus' in yellow text, not '1100% electric bus' as stated in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11872",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 404
+      },
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"one pair of long hind wings\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The response describes grasshoppers as having 'one pair of long hind wings' when adult grasshoppers have two pairs of wings (forewings/tegmina and hind wings), though these nymphs appear to lack fully developed wings.\"\n  },\n  {\n    \"span_text\": \"two pairs of forewings\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"Grasshoppers have one pair of forewings (tegmina), not two pairs; they have one pair of forewings and one pair of hind wings for a total of two pairs of wings overall.\"\n  },\n  {\n    \"span_text\": \"the wings are folded and positioned along the grasshopper's back\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"These appear to be grasshopper nymphs without fully developed wings visible in the image; no clear wings are visible folded along their backs.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-807",
+    "gold_labels": [
+      {
+        "start": 157,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 416
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2087",
+    "gold_labels": [
+      {
+        "start": 336,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 347
+      },
+      {
+        "start": 848,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 857
+      },
+      {
+        "start": 857,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 861
+      },
+      {
+        "start": 861,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 880
+      },
+      {
+        "start": 178,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 186
+      },
+      {
+        "start": 848,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 880
+      },
+      {
+        "start": 38,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 115
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"white cord or rope\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The drawstring appears to be cream/off-white colored, not pure white, and the image shows it more clearly as a light cream tone rather than bright white.\"\n  },\n  {\n    \"span_text\": \"a single knot in the center of the tied string\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The drawstring shows a bow knot (with two loops), not a single knot, which is clearly visible in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10540",
+    "gold_labels": [
+      {
+        "start": 64,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      },
+      {
+        "start": 71,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 74
+      },
+      {
+        "start": 74,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 99
+      },
+      {
+        "start": 99,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 141
+      },
+      {
+        "start": 141,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 152
+      },
+      {
+        "start": 152,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 165
+      },
+      {
+        "start": 165,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 181
+      },
+      {
+        "start": 181,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 204
+      },
+      {
+        "start": 204,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 256
+      },
+      {
+        "start": 256,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 281
+      },
+      {
+        "start": 281,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 291
+      },
+      {
+        "start": 291,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 307
+      },
+      {
+        "start": 307,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 386
+      },
+      {
+        "start": 386,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 390
+      },
+      {
+        "start": 390,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 468
+      },
+      {
+        "start": 468,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 612
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10933",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 43
+      },
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 45
+      },
+      {
+        "start": 45,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 68
+      },
+      {
+        "start": 70,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 210
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"with a handle on the left side\",\n    \"label\": \"invention\",\n    \"prob\": 0.95,\n    \"reason\": \"The cup shown in the image has no handle visible on either side; it is a handleless disposable cup with only a lid.\"\n  }\n]\n```"
+  }
+]

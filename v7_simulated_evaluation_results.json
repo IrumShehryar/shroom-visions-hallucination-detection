@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "train-en-411",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-412",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-413",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 148,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      },
+      {
+        "start": 221,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 228
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"attached to the ceiling\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The cables are attached to the wall (visible at the top left), not the ceiling. The attachment point is clearly on the gray wall surface, not above.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-414",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-415",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 53,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 57
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-416",
+    "iou": 0.7857,
+    "pred_count": 0,
+    "gold_count": 5,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 30,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 34,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 39
+      },
+      {
+        "start": 80,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 84
+      },
+      {
+        "start": 104,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 107
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"all four of the cat's legs\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"The filename indicates this is a three-legged cat, and visual inspection shows only three visible legs supporting the body, not four.\"\n  },\n  {\n    \"span_text\": \"two back legs\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only one back leg is visible in the image; the cat appears to be missing one of its back legs.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-417",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 588,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 722
+      },
+      {
+        "start": 706,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 722
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"alligator in the foreground is dark colored\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The alligator in the foreground (lower one being held) has dark coloration with yellowish-tan markings, but the alligator in the actual foreground of the image - the one most prominently displayed in the handler's hand - is the pale/leucistic one, not the dark one.\"\n  },\n  {\n    \"span_text\": \"dark brown or black markings over a lighter base color\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The dark alligator (lower in image) has dark coloration with lighter tan/cream colored markings, which is the reverse of what is described - it's dark base with lighter markings, not light base with dark markings.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-418",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 146,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 153
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"decorative floral lace panel\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The lace visible on the sides appears to be a textured lace pattern, not a decorative floral lace panel as described.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-419",
+    "iou": 0.4545,
+    "pred_count": 0,
+    "gold_count": 6,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 56
+      },
+      {
+        "start": 56,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 75
+      },
+      {
+        "start": 97,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 101
+      },
+      {
+        "start": 26,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 34,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 41
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"one\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"There are multiple knobs/cylindrical objects visible on the surface - at least 3-4 dark cylindrical knobs are clearly visible in the upper portion of the image, not just one.\"\n  },\n  {\n    \"span_text\": \"on the tape measure\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The knobs visible in the image are not on a tape measure; they appear to be standalone cylindrical objects/knobs on the concrete surface, and the small light-colored object in the upper left does not appear to be a tape measure.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-420",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 6,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 127,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 143
+      },
+      {
+        "start": 225,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 227
+      },
+      {
+        "start": 227,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 233
+      },
+      {
+        "start": 233,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 239
+      },
+      {
+        "start": 514,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 524
+      },
+      {
+        "start": 557,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 568
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"porcelain garlic\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The filename indicates this is 'purple stripe garlic' or 'purple glazer garlic', not porcelain garlic, which is a different variety typically characterized by fewer, larger cloves and a hardneck structure.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-421",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-422",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two poles\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows only one overhead pantograph pole extending upward from the bus, not two poles.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-423",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-424",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"book\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The two people are holding a sheet of paper or envelope, not a book.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-425",
+    "iou": 0.3171,
+    "pred_count": 0,
+    "gold_count": 8,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 72,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 76
+      },
+      {
+        "start": 157,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 161
+      },
+      {
+        "start": 168,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 173
+      },
+      {
+        "start": 72,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 76
+      },
+      {
+        "start": 112,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 136
+      },
+      {
+        "start": 136,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 147
+      },
+      {
+        "start": 147,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 151
+      },
+      {
+        "start": 151,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 173
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"face\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The carving on the spoon handle shows a rose or floral design, not a face with eyes and mouth as claimed.\"\n  },\n  {\n    \"span_text\": \"eyes and a mouth\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible carving shows a rose flower pattern, not facial features like eyes and a mouth.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-426",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 236,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 239
+      },
+      {
+        "start": 269,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 276
+      },
+      {
+        "start": 305,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 311
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"A system that enables users to authenticate once to log in everywhere.\",\n    \"label\": \"OCR\",\n    \"prob\": 0.6,\n    \"reason\": \"The text on the projector screen is too blurry to read with complete confidence, making it difficult to verify the exact wording of the definition provided in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-427",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"next to a stove\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The dishwasher is positioned to the right of a gas cooktop/range, not next to it in a way that would be naturally described as 'next to' \u00e2\u20ac\u201d there is significant counter space between them, and the stove is on the left side of the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-431",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 114,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 224
+      },
+      {
+        "start": 331,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 343
+      },
+      {
+        "start": 80,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 86
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-432",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-433",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 44,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 49
+      },
+      {
+        "start": 63,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 83
+      },
+      {
+        "start": 137,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 199
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"small dog\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The dog in the foreground is not small; it appears to be a medium-to-large sized dog, likely a greyhound or similar breed. The dog in the background (being held) is smaller.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-434",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"a young peacock or peahen\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The bird in the image is a peafowl chick, but the response incorrectly suggests it could be either a young peacock or peahen when peacocks are specifically males; peafowl chicks of both sexes look similar at this age, but the term 'peacock' refers only to adult males.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-435",
+    "iou": 0.3704,
+    "pred_count": 0,
+    "gold_count": 12,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 43
+      },
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 52
+      },
+      {
+        "start": 52,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      },
+      {
+        "start": 71,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 92
+      },
+      {
+        "start": 92,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 122
+      },
+      {
+        "start": 122,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 134
+      },
+      {
+        "start": 134,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 163
+      },
+      {
+        "start": 163,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 171
+      },
+      {
+        "start": 171,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 240
+      },
+      {
+        "start": 43,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 52
+      },
+      {
+        "start": 71,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 91
+      },
+      {
+        "start": 122,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 134
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Devonport ferry terminal in Auckland, New Zealand\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows a ferry terminal with UK-style features (blue and white vessel, British flag visible on the mast) and a British coastal town in the background, not Auckland, New Zealand.\"\n  },\n  {\n    \"span_text\": \"Hauraki Gulf\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The Hauraki Gulf is in New Zealand, but this image shows a British coastal location, making this sea name identification incorrect based on the actual location.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-437",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 151,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 156
+      },
+      {
+        "start": 156,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 162
+      },
+      {
+        "start": 162,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 185
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"girl's pocket\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows a person holding a memorial sign, but no visible pocket contents are discernible or the pocket area is not clearly visible in a way that would allow identification of contents.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-438",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 6,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 75,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 93
+      },
+      {
+        "start": 379,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 404
+      },
+      {
+        "start": 89,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 93
+      },
+      {
+        "start": 374,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 377
+      },
+      {
+        "start": 393,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 404
+      },
+      {
+        "start": 476,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 482
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"wheels at the back\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The tractor has tracks at the rear, not wheels; the response incorrectly identifies the rear propulsion system as wheels.\"\n  },\n  {\n    \"span_text\": \"the front tires have been replaced with tracks\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The visible evidence shows tracks at the rear, not the front; the response reverses which end has tracks versus wheels.\"\n  },\n  {\n    \"span_text\": \"Yes, it has wheels on the rear, but the front has been converted to tracks\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"This statement is backwards; the tractor has tracks on the rear and wheels/tires visible on the front, opposite of what the response claims.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-439",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 257,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 260
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two prominent white stripes running down its back\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The skunk in the image displays a spotted or blotched white pattern rather than two distinct running stripes down the back.\"\n  },\n  {\n    \"span_text\": \"striped skunk\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The filename and visual pattern indicate this is a western spotted skunk (Spilogale), characterized by spots and blotches, not a striped skunk (Mephitis).\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-440",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Pacific Beetle Cockroach (Diploptera punctata)\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The filename and visual characteristics indicate this is a Blaberus species (likely Blaberus craniifer), not Diploptera punctata (Pacific Beetle Cockroach).\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-441",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pale green interior\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The interior of the sliced limes shows a yellowish-green flesh, not pale green; the flesh appears more yellow-toned than pale green.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-442",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-443",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"cleavers\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.6,\n    \"reason\": \"The right tool appears to be a pointed handaxe typical of Paleolithic technology, not a cleaver which typically has a broader, flatter cutting edge oriented differently than what is shown.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-444",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-445",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-446",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 135
+      },
+      {
+        "start": 40,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 49
+      },
+      {
+        "start": 32,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 37
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Only one white dumpster/waste container is clearly visible in the lower left portion of the image, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-448",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 217,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 221
+      },
+      {
+        "start": 334,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 367
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"FV433 Abbot Self-Propelled Gun\",\n    \"label\": \"invention\",\n    \"prob\": 0.6,\n    \"reason\": \"The response identifies the vehicle as an FV433 Abbot, but the image does not provide clear enough detail to definitively confirm this specific model designation, and the filename suggests it may be a different tracked ambulance variant (Warthog or similar).\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-449",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-450",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 7,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 578,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 866
+      },
+      {
+        "start": 135,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      },
+      {
+        "start": 218,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 231
+      },
+      {
+        "start": 335,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 340
+      },
+      {
+        "start": 406,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 509
+      },
+      {
+        "start": 578,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 613
+      },
+      {
+        "start": 645,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 683
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Gray Fox ( *Urocyon cinereoargenteus*)\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The filename indicates this is a Darwin's Fox (Lycalopex fulvipes), not a Gray Fox (Urocyon cinereoargenteus), which are different species.\"\n  },\n  {\n    \"span_text\": \"they are known for having a salt-and-pepper gray coat with reddish flanks and legs\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The description of Gray Fox coloration does not accurately apply to Darwin's Fox, which has different coat characteristics and coloring patterns.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-451",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 136,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 141
+      },
+      {
+        "start": 378,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 389
+      },
+      {
+        "start": 448,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 453
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-452",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 187,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 217
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-454",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-455",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 403,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 417
+      },
+      {
+        "start": 466,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 480
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-456",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 4,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 153,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 163
+      },
+      {
+        "start": 1006,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1029
+      },
+      {
+        "start": 1034,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1055
+      },
+      {
+        "start": 1098,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1124
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Fa\u00c5\u0178ist\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows 'Far\u00c5\u0178ist' but the response reads it as 'Fa\u00c5\u0178ist' with different letter ordering.\"\n  },\n  {\n    \"span_text\": \"Devlet\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The image clearly shows 'DENIET' but the response reads it as 'Devlet', which is a different word entirely.\"\n  },\n  {\n    \"span_text\": \"Turkish words meaning \\\"Fascist\\\" and \\\"State\\\" respectively\",\n    \"label\": \"INVENTION\",\n    \"prob\": 0.85,\n    \"reason\": \"The response claims these are Turkish words with these meanings, but the actual text in the image ('FAR\u00c5\u017eIST DENIET') does not clearly correspond to standard Turkish words with these meanings.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-458",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two guns\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows three toy guns/water guns being held, not two.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-459",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-460",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 4,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 43,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 65
+      },
+      {
+        "start": 731,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 783
+      },
+      {
+        "start": 229,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 284
+      },
+      {
+        "start": 609,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 633
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Person carrying a cross\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"While someone in the front left is carrying what appears to be a wooden pole or staff, it is not clearly identifiable as a cross in the image.\"\n  },\n  {\n    \"span_text\": \"Palm branches\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"The response acknowledges palm branches are 'not clearly visible' but lists them as a key identifying feature, which contradicts the visual evidence in the image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-461",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-462",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-463",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-464",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Brown Pelican\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The filename indicates this is a Peruvian Pelican (Pelecanus thagus), not a Brown Pelican (Pelecanus occidentalis), which are different species.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-465",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-466",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows more than three flags - there are large Union Jack flags hanging in the background, flag decorations on tables, and multiple flag elements visible throughout the scene.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-467",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 0,
+    "pred_labels": [],
+    "gold_labels": [],
+    "haiku_reasoning": "```json\n[]\n```"
+  }
+]

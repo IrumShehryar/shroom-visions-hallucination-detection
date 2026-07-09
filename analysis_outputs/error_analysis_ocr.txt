@@ -1,0 +1,1319 @@
+OFFLINE ERROR ANALYSIS: OCR
+Generated: 2026-07-09 23:16:47.218602
+======================================================================
+SUMMARY
+  Samples:     51
+  Average IoU: 0.6536
+  Perfect (1.0): 26
+  Partial:       22
+  Zero (0.0):    3
+======================================================================
+
+==================== IMAGE ID: train-en-426 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Here's what is written on the projector screen, as best as I can read it from the image:
+
+**What is OpenID?**
+
+*   A system that enables users to authenticate once to log in everywhere.
+*   Instead of creating an account on site X, you log in with your OpenID URL. You sign on to your OpenID provider and verify that you want site X to be able to access your credentials.
+
+
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "A system that enables users to authenticate once to log in everywhere.",
+    "label": "OCR",
+    "prob": 0.6,
+    "reason": "The text on the projector screen is too blurry to read with complete confidence, making it difficult to verify the exact wording of the definition provided in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [236:239] 'log' | OCR | agreement: 0.3333333333
+  [269:276] 'sign on' | OCR | agreement: 0.6666666667
+  [305:311] 'verify' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [115:185] 'A system that enables users to authenticate once to log in everywhere.' | OCR | model confidence: 0.6
+
+==================== IMAGE ID: train-en-9780 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The large letters in the middle of the railway sleeper appear to be the word "RAMADAN."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "RAMADAN",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The visible text on the railway sleeper in the image does not clearly show 'RAMADAN' - the text is partially visible but appears to show different characters/numbers, not this word."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [78:85] 'RAMADAN' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [78:85] 'RAMADAN' | invention | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1410 ====================
+MODEL PERFORMANCE (IoU): 0.3000
+
+--- FULL MODEL RESPONSE ---
+It appears there are two unused saucers on the table.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "two",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "Only one white saucer/cup is clearly visible on the table in the foreground; the response claims there are two unused saucers."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [21:31] 'two unused' | OCR | agreement: 0.3333333333
+  [21:24] 'two' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [21:24] 'two' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9714 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The name as it appears on the tag is "Bob Weland."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Bob Weland",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The name badge clearly reads 'Bobo Wieland' not 'Bob Weland' - the first name is 'Bobo' not 'Bob', and the last name is 'Wieland' not 'Weland'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [38:48] 'Bob Weland' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [38:48] 'Bob Weland' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-721 ====================
+MODEL PERFORMANCE (IoU): 0.2941
+
+--- FULL MODEL RESPONSE ---
+Certainly! Based on the image, the following is written on the bike hub:
+
+**CHRIS KING** 
+MADE IN U.S.A.
+(followed by some numbers: 31000583-2)
+
+It's a Chris King hub, which is a well-known and respected brand in the cycling world, particularly known for its high-quality hubs.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "CHRIS KING",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text visible on the blue hub reads 'CHRIS KING' but appears to be partially obscured; the response claims this text is present but the exact spelling and readability from this angle is questionable given the hub orientation."
+  },
+  {
+    "span_text": "MADE IN U.S.A.",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "While there is text on the hub, the specific text 'MADE IN U.S.A.' is not clearly legible in the image due to the angle and focus of the photograph."
+  },
+  {
+    "span_text": "31000583-2",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The response claims specific numbers are visible on the hub, but these numbers are not legible or visible in the image provided."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [132:142] '31000583-2' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [76:86] 'CHRIS KING' | OCR | model confidence: 0.95
+  [90:104] 'MADE IN U.S.A.' | OCR | model confidence: 0.85
+  [132:142] '31000583-2' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9807 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The text at the top of the car reads "JEROVAH'S WITNESSES".
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "JEROVAH'S",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text on the car clearly reads 'JEHOVAH'S WITNESSES' but the response misspells the first word as 'JEROVAH'S' instead of 'JEHOVAH'S'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [38:40] 'JE' | OCR | agreement: 0.3333333333
+  [40:41] 'R' | OCR | agreement: 1.0
+  [41:47] 'OVAH'S' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [38:47] 'JEROVAH'S' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9773 ====================
+MODEL PERFORMANCE (IoU): 0.1410
+
+--- FULL MODEL RESPONSE ---
+Human: Based on the image provided, the text written at the top of the car is:
+
+**JERVOHAVA'S WITNESSES**
+
+This is the name of the organization that the top of the car in the image?
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "JERVOHAVA'S WITNESSES",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text on the car reads 'JEHOVAH'S WITNESSES' not 'JERVOHAVA'S WITNESSES' - the response misread the letters in the organization's name."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [82:91] 'JERVOHAVA' | OCR | agreement: 1.0
+  [91:93] ''S' | OCR | agreement: 0.6666666667
+  [0:5] 'Human' | other | agreement: 0.3333333333
+  [128:144] 'he organization ' | other | agreement: 0.3333333333
+  [144:167] 'that the top of the car' | other | agreement: 0.6666666667
+  [167:180] ' in the image' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [82:103] 'JERVOHAVA'S WITNESSES' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1784 ====================
+MODEL PERFORMANCE (IoU): 0.2500
+
+--- FULL MODEL RESPONSE ---
+The timestamp in the image suggests that the photo was taken at 10:04 PM.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "PM",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The timestamp visible in the bottom right corner of the image reads '10 8:04 PM', not '10:04 PM'. The visible text shows '8:04' not '10:04', and the date appears to be '10' (the day), making the actual time 8:04 PM."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [64:69] '10:04' | OCR | agreement: 1.0
+  [69:72] ' PM' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [70:72] 'PM' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-2636 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, **no, this shovel does not have a metal end.**
+
+Here's a detailed elaboration:
+
+1.  **Material of the Blade:** The blade of the shovel is a bright orange, molded plastic. This is evident from its smooth, glossy finish and the way it's formed with integrated ridges and a curved shape. Plastic shovels are common for snow removal because they are lightweight, durable, and less likely to dent or break compared to metal ones, especially for lighter snowfall.
+
+2.  **Material of the Shaft:** The shaft is made of light-colored wood, which is typical for this type of shovel. It appears to be a standard wooden handle, not a metal one.
+
+3.  **Material of the Handle:** The handle at the top is a black, D-shaped grip, which is also plastic or a composite material designed for comfort and a secure hold.
+
+4.  **Lack of Metal Components:** There are no visible metal parts on the shovel. The blade, shaft, and handle are all made of non-metallic materials. The small blue and white sticker on the shaft is just a product label and does not indicate a metal end.
+
+In summary, this is a standard plastic snow shovel with a wooden shaft and plastic handle. It is designed for general-purpose snow removal and is not intended for heavy-duty or industrial use, which would typically involve metal blades.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [63:72] 'metal end' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-9674 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The year marked on the tape is 11920.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "11920",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The tape shows handwritten text that reads 'Thompsoni Bottle' with what appears to be a year, but '11920' is not a valid year visible on the tape; the handwriting is difficult to read with certainty but does not clearly show this number sequence."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [31:32] '1' | OCR | agreement: 1.0
+  [32:34] '19' | OCR | agreement: 0.6666666667
+  [34:35] '2' | OCR | agreement: 1.0
+  [35:36] '0' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [31:36] '11920' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9627 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The last word of the first paragraph is "fumicides".
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "fumicides",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The image clearly shows the first paragraph ends with 'insecticides' not 'fumicides'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:50] 'fumicides' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [41:50] 'fumicides' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9726 ====================
+MODEL PERFORMANCE (IoU): 0.1200
+
+--- FULL MODEL RESPONSE ---
+This appears to be a commemorative plaque at a site dedicated to Chilean heroes, likely in Chile given the language and context. The text on the plaque mentions "ESTA LAMA," which could refer to Lake Llanos in the Araucanía Region of Chile, a place of significance for Chilean history and culture. The date on the plaque is May 19, which would likely relate to a historical event or commemoration related to the individuals or events being honored. The exact location and context of the site would need further investigation.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "ESTA LAMA",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The plaque clearly reads 'ESTA LLAMA' (with two L's), not 'ESTA LAMA' as stated in the response."
+  },
+  {
+    "span_text": "Lake Llanos in the Araucanía Region",
+    "label": "INVENTION",
+    "prob": 0.85,
+    "reason": "The response invents a specific location 'Lake Llanos in the Araucanía Region' that cannot be verified from the plaque text, which simply says 'ESTA LLAMA' (this llama)."
+  },
+  {
+    "span_text": "May 19",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The plaque clearly shows '21 MAYO 1978' (May 21, 1978), not May 19 as stated in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [167:171] 'LAMA' | OCR | agreement: 0.6666666667
+  [328:330] '19' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [162:171] 'ESTA LAMA' | OCR | model confidence: 0.95
+  [195:230] 'Lake Llanos in the Araucanía Region' | invention | model confidence: 0.85
+  [324:330] 'May 19' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9734 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The word above the left windshield of the bus is "PRIVAT."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "PRIVAT",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text visible above the left windshield reads 'PRIVATI' not 'PRIVAT' - there is an 'I' at the end that the response omitted."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [50:56] 'PRIVAT' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [50:56] 'PRIVAT' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9826 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The text on the man's shirt reads "MYSURIA." Mysuru is a city in the Indian state of Karnataka.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "MYSURIA",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The text on the man's shirt appears to read 'MYSORE' or similar, not 'MYSURIA' as claimed in the response."
+  },
+  {
+    "span_text": "The text on the man's shirt reads \"MYSURIA.\" Mysuru is a city in the Indian state of Karnataka.",
+    "label": "other",
+    "prob": 0.75,
+    "reason": "The response identifies a city name rather than a country name, but the prompt specifically asks what country is named on the shirt."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [35:42] 'MYSURIA' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [35:42] 'MYSURIA' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1971 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The text '716 COMA' is written on the guitar.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "716 COMA",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The headstock shows 'TACOMA' not '716 COMA'; the visible text on the guitar clearly reads 'TACOMA' which is a guitar brand name."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:13] '716' | OCR | agreement: 1.0
+  [13:17] ' COM' | OCR | agreement: 0.6666666667
+  [17:18] 'A' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:18] '716 COMA' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9783 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+At the top of the car, the text reads "JEROVAH'S WITNESSES."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "JEROVAH'S",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text in the image reads 'JEHOVAH'S WITNESSES' but the response misspells it as 'JEROVAH'S WITNESSES' with an 'R' instead of an 'H'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [39:48] 'JEROVAH'S' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [39:48] 'JEROVAH'S' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9766 ====================
+MODEL PERFORMANCE (IoU): 0.3770
+
+--- FULL MODEL RESPONSE ---
+Here's what the blue banner says, translated from Arabic:
+
+**"Cairo 2010 = Cairo 2011. Political pen = Military prosecution."**
+
+This banner is referencing the Egyptian Revolution of 2011. It suggests that speaking out politically (using a "political pen" - meaning writing or expressing opinions) in 2010 could lead to being prosecuted by the military in 2011, after the revolution began and the military took control. It's a statement about the suppression of dissent and the consequences of political expression.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Cairo 2010 = Cairo 2011",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The banner text shows 'الثورة 2011 = الفاهرة' (with numbers 2011 visible), not 'Cairo 2010 = Cairo 2011' - there is no '2010' visible in the blue banner text."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [62:123] 'Cairo 2010 = Cairo 2011. Political pen = Military prosecution' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [62:85] 'Cairo 2010 = Cairo 2011' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9769 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the year marked on the tape is **1920-1940**.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1920-1940",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The tape clearly shows handwritten text that reads 'Thompsoni' and 'Bottle' with 'numbered' partially visible, but no year marking of '1920-1940' is legible on the tape."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [53:55] '19' | OCR | agreement: 0.6666666667
+  [55:56] '2' | OCR | agreement: 1.0
+  [56:57] '0' | OCR | agreement: 0.6666666667
+  [57:62] '-1940' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [53:62] '1920-1940' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9825 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The year marked on the tape is "1994."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1994",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The tape label clearly shows text but does not display '1994' - the visible text reads 'ThomFord' and 'Bottle' with what appears to be 'Amphibia' below, not a year."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:34] '19' | OCR | agreement: 0.6666666667
+  [34:36] '94' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:36] '1994' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10430 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it appears that the inscription on the cross reads **"INRI"**. 
+
+INRI is an abbreviation of the Latin phrase *Iesus Nazarenus Rex Iudaeorum*, which translates to "Jesus of Nazareth, King of the Jews." It's traditionally written on a cross in Christian iconography, referencing the sign placed above Jesus during his crucifixion.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "INRI",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "The cross visible in the image is too distant and small to read any specific text or inscription clearly; the response invents a specific reading that cannot be verified from the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [74:78] 'INRI' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [74:78] 'INRI' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9735 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The words in the pink letter X spell out "free notices."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "free notices",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The pink text in the X-shaped area reads 'DISCONTINUED' not 'free notices'"
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [42:47] 'free ' | OCR | agreement: 0.6666666667
+  [47:54] 'notices' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [42:54] 'free notices' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9742 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The red sign in the image says "PRESIDENTS."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "PRESIDENTS",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The red sign visible in the image reads 'PEDESTRIANS' with an arrow, not 'PRESIDENTS'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [32:42] 'PRESIDENTS' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:42] 'PRESIDENTS' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11145 ====================
+MODEL PERFORMANCE (IoU): 0.0496
+
+--- FULL MODEL RESPONSE ---
+.Forms of lace are often used in clothing to add texture, elegance, and a decorative element. Lace is a fabric made from intricate patterns of thread, often created using techniques like needlepoint, crochet, or machine-made lace have buttons?
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "have buttons?",
+    "label": "other",
+    "prob": 0.9,
+    "reason": "The response is incomplete and appears to be a malformed sentence that doesn't actually answer the question about whether the shirt has buttons; the text cuts off awkwardly."
+  },
+  {
+    "span_text": "needlepoint, crochet, or machine-made lace have buttons?",
+    "label": "other",
+    "prob": 0.85,
+    "reason": "The response fails to directly address the question and instead provides unrelated information about lace-making techniques before trailing off with a fragmented question."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [212:242] 'machine-made lace have buttons' | OCR | agreement: 0.3333333333
+  [1:242] 'Forms of lace are often used in clothing to add texture, elegance, and a decorative element. Lace is a fabric made from intricate patterns of thread, often created using techniques like needlepoint, crochet, or machine-made lace have buttons' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [230:243] 'have buttons?' | other | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9855 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The year marked on the tape is 11926.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "11926",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The tape clearly shows handwritten text that reads 'Thomasooni' and 'Bottle' with 'Amplified' below, but no year is legible or visible on the tape in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [31:36] '11926' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [31:36] '11926' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9806 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The image shows a close-up of a bicycle wheel with a visible blue quick-release hub. There's some text on the hub that reads "X9," which seems to be the model number of the rear wheel hub. Quick-release hubs are commonly used for their convenience in allowing wheels to be quickly and easily attached and detached from the bicycle frame.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "X9",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The text visible on the blue hub appears to read 'OHKILO KINGO' or similar text, not 'X9'. The visible text does not match the claimed model number."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [126:128] 'X9' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [126:128] 'X9' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9641 ====================
+MODEL PERFORMANCE (IoU): 0.5455
+
+--- FULL MODEL RESPONSE ---
+The building has several pieces of text visible on its weathered wooden surface:
+
+On the upper section:
+- "ST. KATHEWAN POOL"
+
+On the lower left side (vertically):
+- "POOL"
+- "NO. 952"
+- "BENTS"
+
+These appear to be identifiers and possibly a company name or location associated with this old grain elevator structure.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "ST. KATHEWAN POOL",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text on the upper section reads 'S.A. KATCHEWAN POOL' not 'ST. KATHEWAN POOL' - the abbreviation is 'S.A.' not 'ST.' and the spelling is 'KATCHEWAN' not 'KATHEWAN'."
+  },
+  {
+    "span_text": "BENTS",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The text on the lower left appears to read 'BENTS' but examining the image closely, it appears to say 'BENTZ' or similar, not 'BENTS'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [107:119] 'ST. KATHEWAN' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [107:124] 'ST. KATHEWAN POOL' | OCR | model confidence: 0.95
+  [188:193] 'BENTS' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1353 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The blue part of the billboard has the word "Import" on it.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Import",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The visible text on the blue section of the billboard reads 'IMPORTS' (plural), not 'Import' (singular)."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [45:50] 'Impor' | OCR | agreement: 0.6666666667
+  [50:51] 't' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [45:51] 'Import' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9656 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The name "SIMPSON" can be found on the side of the vehicle.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "SIMPSON",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The text visible on the side of the vehicle appears to read 'SAMPSON' not 'SIMPSON' based on the visible lettering in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:17] 'SIMPSON' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [10:17] 'SIMPSON' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9829 ====================
+MODEL PERFORMANCE (IoU): 0.9608
+
+--- FULL MODEL RESPONSE ---
+ "B" "R" "A" "T" "I" "O" "C" "1" "0" "4" "0" "S" "E"
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "\"B\" \"R\" \"A\" \"T\" \"I\" \"O\" \"C\" \"1\" \"0\" \"4\" \"0\" \"S\" \"E\"",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The response lists specific letters and numbers, but the text visible on the railway sleeper in the image is not clearly legible enough to verify these exact characters, and the sequence does not appear to match what is actually stamped on the sleeper."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [2:7] 'B" "R' | OCR | agreement: 1.0
+  [7:10] '" "' | OCR | agreement: 0.3333333333
+  [10:15] 'A" "T' | OCR | agreement: 0.6666666667
+  [15:18] '" "' | OCR | agreement: 0.3333333333
+  [18:19] 'I' | OCR | agreement: 1.0
+  [19:26] '" "O" "' | OCR | agreement: 0.3333333333
+  [26:27] 'C' | OCR | agreement: 0.6666666667
+  [27:46] '" "1" "0" "4" "0" "' | OCR | agreement: 0.3333333333
+  [46:47] 'S' | OCR | agreement: 0.6666666667
+  [47:51] '" "E' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [1:52] '"B" "R" "A" "T" "I" "O" "C" "1" "0" "4" "0" "S" "E"' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9612 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The pink letter X contains the words "FREE HOT POSTER."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "FREE HOT POSTER",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The pink diagonal text on the cover reads 'FREE MONSTER' not 'FREE HOT POSTER' - the word is 'MONSTER' not 'HOT POSTER'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [38:53] 'FREE HOT POSTER' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [38:53] 'FREE HOT POSTER' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9715 ====================
+MODEL PERFORMANCE (IoU): 0.2000
+
+--- FULL MODEL RESPONSE ---
+The words in the pink letter X say "FREE NOT POSTER."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "FREE NOT POSTER",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The pink text on the cover reads 'FREE MONSTER POSTER' not 'FREE NOT POSTER' - the word is 'MONSTER' not 'NOT'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:42] 'N' | OCR | agreement: 1.0
+  [42:44] 'OT' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [36:51] 'FREE NOT POSTER' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9846 ====================
+MODEL PERFORMANCE (IoU): 0.6429
+
+--- FULL MODEL RESPONSE ---
+The building has the words "Katchewan Pool" written on it.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Katchewan",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text on the building reads 'KATCHEWAN' not 'Katchewan', and more importantly the visible text shows 'SASKATCHEWAN POOL' not 'Katchewan Pool'."
+  },
+  {
+    "span_text": "Katchewan Pool",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The actual text visible on the building is 'SASKATCHEWAN POOL' (with 'NO.952' and 'BENTS' also visible), not 'Katchewan Pool'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [28:37] 'Katchewan' | OCR | agreement: 0.6666666667
+  [37:42] ' Pool' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [28:37] 'Katchewan' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9790 ====================
+MODEL PERFORMANCE (IoU): 0.2857
+
+--- FULL MODEL RESPONSE ---
+The picture shows a smartphone displaying a time of 9:45 PM. However, without additional context, it's not possible to determine the actual time or the time zone from this image alone. The display on the phone could be inaccurate or the phone could be set to a time zone that doesn't correspond to the current time.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "9:45 PM",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The phone display shows 9:16 PM in the status bar, not 9:45 PM."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [54:56] '45' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [52:59] '9:45 PM' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9669 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The black cap has the word "AG2R" written on it.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "AG2R",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The text visible on the black cap appears to be different from 'AG2R' - the cap shows what looks like a different logo/text that is not clearly 'AG2R'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [28:32] 'AG2R' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [28:32] 'AG2R' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11528 ====================
+MODEL PERFORMANCE (IoU): 0.3529
+
+--- FULL MODEL RESPONSE ---
+The shirt in the image appears to have a single button visible on the left side of the garment. This button is likely used to close the shirt and provide a more structured fit. The button is not a design element but rather a functional feature for wearers to adjust the fit of the shirt.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "a single button",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The image shows multiple decorative rhinestone or crystal embellishments on the wrap closure, not a single traditional button."
+  },
+  {
+    "span_text": "on the left side",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The embellishments are located on the center-front wrap area where the garment closes, not specifically on the left side."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [41:54] 'single button' | OCR | agreement: 0.3333333333
+  [41:47] 'single' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [41:47] 'single' | mischaracterization | model confidence: 0.9
+  [70:74] 'left' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9733 ====================
+MODEL PERFORMANCE (IoU): 0.5333
+
+--- FULL MODEL RESPONSE ---
+To find the expiry date, I'll examine the text on the bottle's label for any dates or expiration information. The back label of the beer bottle clearly states "Mistet holdbar til: 27.06.10". This Danish phrase translates to "Best before until: June 27, 2010", indicating when the product should be consumed by its best quality.
+
+Therefore, the drink expires in June 2010.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "27.06.10",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The visible text on the bottle label shows a different date format/value than what is claimed in the response; the actual date on the label appears to be partially obscured or different from the stated date."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [160:166] 'Mistet' | OCR | agreement: 0.3333333333
+  [180:181] '2' | OCR | agreement: 0.6666666667
+  [181:182] '7' | OCR | agreement: 1.0
+  [182:188] '.06.10' | OCR | agreement: 0.3333333333
+  [250:251] '7' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [180:188] '27.06.10' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10098 ====================
+MODEL PERFORMANCE (IoU): 0.3333
+
+--- FULL MODEL RESPONSE ---
+There are a couple of people standing in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "couple",
+    "label": "miscounting",
+    "prob": 0.75,
+    "reason": "The image shows what appears to be 2 people visible on the right side of the image near the train tracks, which could reasonably be described as 'a couple,' but the visibility and exact count is somewhat unclear due to distance and image quality."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [10:28] 'a couple of people' | OCR | agreement: 0.3333333333
+  [12:18] 'couple' | miscounting | agreement: 0.3333333333
+  [12:18] 'couple' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [12:18] 'couple' | miscounting | model confidence: 0.75
+
+==================== IMAGE ID: train-en-1683 ====================
+MODEL PERFORMANCE (IoU): 0.1220
+
+--- FULL MODEL RESPONSE ---
+The image shows a strainer with several holes in it. These holes are designed to allow liquid to pass through while retaining any solids that may be present. The strainer appears to be made of a woven fabric, and the holes are uniformly spaced and distributed throughout the strainer. The fabric is stretched across the strainer's base, forming a flat shape that can be easily placed on top of a bowl or pot to catch and hold back the liquid while allowing the solids to pass through.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "holes",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The strainer is made of woven fabric mesh, not discrete holes; it functions through a fine mesh weave rather than distinct perforations."
+  },
+  {
+    "span_text": "the solids to pass through",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "A strainer retains solids and lets liquid pass through, not the reverse as stated in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [33:48] 'everal holes in' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [40:45] 'holes' | mischaracterization | model confidence: 0.85
+  [457:483] 'the solids to pass through' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9655 ====================
+MODEL PERFORMANCE (IoU): 0.8182
+
+--- FULL MODEL RESPONSE ---
+The letters appear to be "P" and "D".
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "\"P\" and \"D\"",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible text on the railway sleeper in the foreground appears to read different letters than P and D; the image shows what looks like other characters, though they are somewhat worn and difficult to read with complete certainty."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [26:35] 'P" and "D' | OCR | agreement: 0.6666666667
+  [26:27] 'P' | miscounting | agreement: 0.3333333333
+  [34:35] 'D' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [25:36] '"P" and "D"' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2475 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Actually, there is no green text visible in the image. The text shown is in white and black, on a blue and white background.
+
+The visible text includes:
+- On the blue background: "Friends Les amis of Europe de l'Europe" (in white)
+- On the white background: "EUROPE CHINA FORUM" (in black) and "中欧论坛" (in black Chinese characters)
+
+Therefore, there are zero words contained within green text in this image.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [180:218] 'Friends Les amis of Europe de l'Europe' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-9662 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The building has the words "POOL" written on it, along with "Ketchikan" and "No. 952."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Ketchikan",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text on the building reads 'KATCHEWAN' not 'Ketchikan' as claimed in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [61:70] 'Ketchikan' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [61:70] 'Ketchikan' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9668 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The map was produced in 1837.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1837",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The map clearly shows '1834' in the title cartouche, not 1837."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:26] '18' | OCR | agreement: 0.6666666667
+  [26:27] '3' | OCR | agreement: 1.0
+  [27:28] '7' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [24:28] '1837' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1892 ====================
+MODEL PERFORMANCE (IoU): 0.1429
+
+--- FULL MODEL RESPONSE ---
+No, this scarf is not knitted. It appears to be a silk or satin scarf with printed designs rather than being woven in the characteristic loops of knitting.
+
+The fabric has a smooth, glossy appearance typical of silk scarves and features intricate patterns including stripes (orange and white), palm trees (red on pink/white backgrounds), and text elements ("SAYM" visible). Knitted fabrics usually have more texture from interlocking stitches and less sheen compared to what's shown here. The way the colors are blended into gradients and precise lines also suggests screen printing—a common method for decorative non-knitted textiles like high-end fashion scarves—rather than the yarn-based construction seen in knitwear.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "woven in the characteristic loops of knitting",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "Knitted fabrics are created by interlocking loops/stitches, not woven. The response incorrectly describes knitting as a weaving process."
+  },
+  {
+    "span_text": "\"SAYM\" visible",
+    "label": "OCR",
+    "prob": 0.7,
+    "reason": "The text visible on the scarf appears to be different from 'SAYM' based on the visible patterns and design elements on the colorful scarf section."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [358:362] 'SAYM' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [122:136] 'characteristic' | mischaracterization | model confidence: 0.9
+  [357:371] '"SAYM" visible' | OCR | model confidence: 0.7
+
+==================== IMAGE ID: train-en-9810 ====================
+MODEL PERFORMANCE (IoU): 0.3077
+
+--- FULL MODEL RESPONSE ---
+The graffiti in the image is signed "GABS" but without any context or information on the artist, it's impossible to determine who the artist is. It could be a pseudonym, a street artist, or simply the name chosen by the artist for this particular piece. If you have more information or context about the location or the artist, that might help in identifying the creator.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "signed \"GABS\"",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The visible text in the graffiti appears to show stylized letters that do not clearly read as 'GABS' - the red graffiti text is difficult to decipher with certainty but does not obviously spell 'GABS'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [37:41] 'GABS' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [29:42] 'signed "GABS"' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-9758 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the name on the side of the vehicle appears to be **"AMERICAN"**. 
+
+It's written in a decorative font and is prominently displayed on the side of the vehicle.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "AMERICAN",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The text visible on the side of the vehicle in the image appears to read something different from 'AMERICAN' - the visible lettering does not clearly match this word when examined closely."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [73:81] 'AMERICAN' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [73:81] 'AMERICAN' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9756 ====================
+MODEL PERFORMANCE (IoU): 0.1250
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the year marked on the tape is **1920** (specifically, "1920/0261").
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1920",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The tape clearly shows text that reads 'ThomrSon' and 'Bottle' with what appears to be a specimen number, but no year '1920' is visible on the tape."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [53:57] '1920' | OCR | agreement: 1.0
+  [57:76] '** (specifically, "' | OCR | agreement: 0.3333333333
+  [76:85] '1920/0261' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [53:57] '1920' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1176 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+This map was created in 1836.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1836",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The map clearly shows '1837' in the title cartouche at the top right, not 1836."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:28] '1836' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [24:28] '1836' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9649 ====================
+MODEL PERFORMANCE (IoU): 0.2000
+
+--- FULL MODEL RESPONSE ---
+The map was completed in 1834. This information is clearly stated on the title page of the map, which reads: "FROM ACTUAL SURVEYS UNDER THE DIRECTION OF HENRY E. WALING / 1834."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "1834",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The title cartouche clearly shows '1852' not '1834' as the date on this map of Plymouth."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [25:29] '1834' | OCR | agreement: 0.6666666667
+  [159:168] 'E. WALING' | OCR | agreement: 1.0
+  [168:171] ' / ' | OCR | agreement: 0.6666666667
+  [171:175] '1834' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [25:29] '1834' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9841 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The text on the bike reads "CHRI$ K!NG," which seems to be stylized or possibly a brand name.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "CHRI$ K!NG",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The hub clearly reads 'Ohishi Kino' or similar text, not 'CHRI$ K!NG'. The response misread the visible text on the hub."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [28:38] 'CHRI$ K!NG' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [28:38] 'CHRI$ K!NG' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9723 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+The name on the tag is "Bob Weland."
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Bob Weland",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The name badge clearly reads 'Bobo Wieland' not 'Bob Weland' - the first name is 'Bobo' not 'Bob', and the last name is 'Wieland' not 'Weland'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:26] 'Bo' | OCR | agreement: 0.6666666667
+  [26:30] 'b We' | OCR | agreement: 1.0
+  [30:34] 'land' | OCR | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [24:34] 'Bob Weland' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-856 ====================
+MODEL PERFORMANCE (IoU): 0.2308
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's take a look at the image and count the words on the car itself (not on the packaging). 
+
+I can see the following words on the car:
+
+*   **TRIDAGGER X**
+*   **POWER** 
+
+So, there are **2** words on the car.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "POWER",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "The word 'POWER' is not visible on the car itself; only 'TRIDAGGER X' text appears on the vehicle model."
+  },
+  {
+    "span_text": "2",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "There is only 1 word visible on the car ('TRIDAGGER X'), not 2 words."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [155:166] 'TRIDAGGER X' | OCR | agreement: 0.6666666667
+  [166:180] '**
+*   **POWER' | OCR | agreement: 0.3333333333
+  [201:202] '2' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [175:180] 'POWER' | invention | model confidence: 0.9
+  [201:202] '2' | miscounting | model confidence: 0.9

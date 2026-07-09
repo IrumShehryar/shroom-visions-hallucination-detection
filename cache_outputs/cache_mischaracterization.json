@@ -1,0 +1,1336 @@
+[
+  {
+    "id": "train-en-413",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 148,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      },
+      {
+        "start": 221,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 228
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"attached to the ceiling\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The cables are attached to the wall (visible at the top left), not the ceiling. The attachment point is clearly on the gray wall surface, not above.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-415",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 1,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 53,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 57
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-419",
+    "iou": 0.4545,
+    "pred_count": 0,
+    "gold_count": 6,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 56
+      },
+      {
+        "start": 56,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 75
+      },
+      {
+        "start": 97,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 101
+      },
+      {
+        "start": 26,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 31
+      },
+      {
+        "start": 31,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 34
+      },
+      {
+        "start": 34,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 41
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"one\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"There are multiple knobs/cylindrical objects visible on the surface - at least 3-4 dark cylindrical knobs are clearly visible in the upper portion of the image, not just one.\"\n  },\n  {\n    \"span_text\": \"on the tape measure\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The knobs visible in the image are not on a tape measure; they appear to be standalone cylindrical objects/knobs on the concrete surface, and the small light-colored object in the upper left does not appear to be a tape measure.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-433",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 44,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 49
+      },
+      {
+        "start": 63,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 83
+      },
+      {
+        "start": 137,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 199
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"small dog\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The dog in the foreground is not small; it appears to be a medium-to-large sized dog, likely a greyhound or similar breed. The dog in the background (being held) is smaller.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-437",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 151,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 156
+      },
+      {
+        "start": 156,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 162
+      },
+      {
+        "start": 162,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 185
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"girl's pocket\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows a person holding a memorial sign, but no visible pocket contents are discernible or the pocket area is not clearly visible in a way that would allow identification of contents.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-451",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 3,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 136,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 141
+      },
+      {
+        "start": 378,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 389
+      },
+      {
+        "start": 448,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 453
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-455",
+    "iou": 1.0,
+    "pred_count": 0,
+    "gold_count": 2,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 403,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 417
+      },
+      {
+        "start": 466,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 480
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-456",
+    "iou": 0.0,
+    "pred_count": 0,
+    "gold_count": 4,
+    "pred_labels": [],
+    "gold_labels": [
+      {
+        "start": 153,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 163
+      },
+      {
+        "start": 1006,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1029
+      },
+      {
+        "start": 1034,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1055
+      },
+      {
+        "start": 1098,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1124
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"FaÅŸist\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows 'FarÅŸist' but the response reads it as 'FaÅŸist' with different letter ordering.\"\n  },\n  {\n    \"span_text\": \"Devlet\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The image clearly shows 'DENIET' but the response reads it as 'Devlet', which is a different word entirely.\"\n  },\n  {\n    \"span_text\": \"Turkish words meaning \\\"Fascist\\\" and \\\"State\\\" respectively\",\n    \"label\": \"INVENTION\",\n    \"prob\": 0.85,\n    \"reason\": \"The response claims these are Turkish words with these meanings, but the actual text in the image ('FARÅžIST DENIET') does not clearly correspond to standard Turkish words with these meanings.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11650",
+    "gold_labels": [
+      {
+        "start": 224,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 231
+      },
+      {
+        "start": 231,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 238
+      },
+      {
+        "start": 238,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 259
+      },
+      {
+        "start": 460,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 463
+      },
+      {
+        "start": 414,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 444
+      },
+      {
+        "start": 679,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 680
+      },
+      {
+        "start": 680,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 687
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Counting the visible colored lights above the stage, there are clearly more than four distinct colored lights visible - yellow, pink/magenta, red, and blue lights are visible, but additional lights can be seen making the total higher than four.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10593",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 511
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10176",
+    "gold_labels": [
+      {
+        "start": 408,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 461
+      },
+      {
+        "start": 1157,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1419
+      },
+      {
+        "start": 1585,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1731
+      },
+      {
+        "start": 1776,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1787
+      },
+      {
+        "start": 1787,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 1832
+      },
+      {
+        "start": 1906,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 2261
+      },
+      {
+        "start": 408,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 496
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"eight separate 'wheels'\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The cart has four wheels total (two front, two back), not eight. The response incorrectly counts pairs of tires as separate wheels.\"\n  },\n  {\n    \"span_text\": \"four prominent main wheel assemblies\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The cart has four wheels total, not four 'assemblies' that could be interpreted as eight components. The response conflates wheel count with tire count.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11159",
+    "gold_labels": [
+      {
+        "start": 351,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 393
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"gills or spores underneath\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"Lion's mane mushrooms have tooth-like spines (icicles) hanging down, not gills or spores on the underside; the visible structure shows characteristic long, thin filaments, not gill plates or spore surfaces.\"\n  },\n  {\n    \"span_text\": \"gills or spores being especially prominent\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The prominent feature is the long, hair-like spines/icicles characteristic of lion's mane, not traditional gills or spores.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11148",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 40,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 45
+      },
+      {
+        "start": 115,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 125
+      },
+      {
+        "start": 125,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 129
+      },
+      {
+        "start": 129,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 134
+      },
+      {
+        "start": 151,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 210
+      },
+      {
+        "start": 217,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 226
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"black heads\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The penguins' heads are predominantly olive-green/yellowish-brown, not black; only portions of the head (around eyes and crown) have darker coloring, but the overall head is not black.\"\n  },\n  {\n    \"span_text\": \"dark brown to black\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.8,\n    \"reason\": \"The head coloring is primarily olive-green to yellowish-brown, not dark brown to black as the primary description.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2556",
+    "gold_labels": [
+      {
+        "start": 205,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 234
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11759",
+    "gold_labels": [
+      {
+        "start": 118,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 123
+      },
+      {
+        "start": 41,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 105
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"on top of the red cabinet\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The black remote is visible on the red cabinet itself (sitting on its surface), not positioned 'on top of' it in the way that phrasing suggests - it appears to be placed on the cabinet's top surface area rather than resting on top of the entire cabinet structure.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1681",
+    "gold_labels": [
+      {
+        "start": 35,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 39
+      },
+      {
+        "start": 163,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 167
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pink in color\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The pig in the image is clearly black, not pink. The entire body visible shows dark/black coloring with wrinkled skin characteristic of a pot-bellied pig.\"\n  },\n  {\n    \"span_text\": \"unusual for pigs\",\n    \"label\": \"other\",\n    \"prob\": 0.9,\n    \"reason\": \"The claim that pink coloration is unusual is based on the false premise that this pig is pink, when it is actually black, which is a common and normal coloring for pigs.\"\n  },\n  {\n    \"span_text\": \"pink hue\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The pig displays no pink hue; it is visibly black with dark gray/charcoal tones throughout.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11659",
+    "gold_labels": [
+      {
+        "start": 56,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 61
+      },
+      {
+        "start": 103,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 114
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"green\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The bananas in the image are clearly blue/blue-grey in color, not green as stated in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11652",
+    "gold_labels": [
+      {
+        "start": 59,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 64
+      },
+      {
+        "start": 100,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 105
+      },
+      {
+        "start": 205,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 218
+      },
+      {
+        "start": 368,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 373
+      },
+      {
+        "start": 373,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 399
+      },
+      {
+        "start": 912,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 918
+      },
+      {
+        "start": 924,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 929
+      },
+      {
+        "start": 1018,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1074
+      },
+      {
+        "start": 856,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 857
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"albinismism\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The word 'albinismism' is not a valid term; the correct term is 'albinism'. This appears to be a hallucinated or malformed word.\"\n  },\n  {\n    \"span_text\": \"less about about about genetic mutation\",\n    \"label\": \"other\",\n    \"prob\": 0.9,\n    \"reason\": \"The phrase contains a repetition error with 'about' repeated three times, which is grammatically incorrect and appears to be a hallucination/generation error.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10664",
+    "gold_labels": [
+      {
+        "start": 28,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 33
+      },
+      {
+        "start": 46,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 61
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-9745",
+    "gold_labels": [
+      {
+        "start": 88,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 91
+      },
+      {
+        "start": 280,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 340
+      },
+      {
+        "start": 88,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 91
+      },
+      {
+        "start": 304,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 307
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"ESA\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The red graffiti tag in the image appears to read 'GAL' or similar characters, not 'ESA' as claimed in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10836",
+    "gold_labels": [
+      {
+        "start": 1326,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1332
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"black and white\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The dog on the left is black, not black and white; there is no visible white coloring on this dog.\"\n  },\n  {\n    \"span_text\": \"red harness\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The harness on the left dog is orange, not red; it matches the color of the right dog's harness.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9699",
+    "gold_labels": [
+      {
+        "start": 19,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 23
+      },
+      {
+        "start": 19,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 20
+      },
+      {
+        "start": 20,
+        "prob": 0.6666666667,
+        "label": "other",
+        "end": 21
+      },
+      {
+        "start": 21,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 23
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"green and white sign\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible sign in the background appears to be yellow/gold colored, not green and white as claimed in the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-664",
+    "gold_labels": [
+      {
+        "start": 126,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 130
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"blue and white flowers\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The cup displays blue flowers with yellow/orange centers and green leaves, not blue and white flowers.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2495",
+    "gold_labels": [
+      {
+        "start": 163,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 168
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2648",
+    "gold_labels": [
+      {
+        "start": 257,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 264
+      },
+      {
+        "start": 682,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 689
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"razor clam\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The response states 'many other common clams, like the rounder quahog or the more angular razor clam, have different shell shapes' but the image shows razor clams, not a comparison group - these ARE the razor clams being examined.\"\n  },\n  {\n    \"span_text\": \"geoducks\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The response identifies these as 'geoducks or a similar type of large, elongated clam' but the filename and visual evidence indicate these are razor clams, not geoducks, which have distinctly different shell morphology.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11019",
+    "gold_labels": [
+      {
+        "start": 39,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 57
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"short, smooth coat\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The dog is a Mexican Hairless Dog (Xoloitzcuintli) with hairless/nearly hairless skin, not a short, smooth coat of fur.\"\n  },\n  {\n    \"span_text\": \"short-haired breeds\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"This is a hairless breed, not a short-haired breed; the dog has little to no fur, not short hair.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11188",
+    "gold_labels": [
+      {
+        "start": 109,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 122
+      },
+      {
+        "start": 957,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 965
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"melon or gourd\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows a lemon, not a melon or gourd, as evidenced by its characteristic yellow color, small size, and visible lemon calyx/sepals at the top.\"\n  },\n  {\n    \"span_text\": \"cucumber-like fruit\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The object is a lemon, not a cucumber-like fruit; it has the distinctive features of a lemon including its oval shape, yellow color, and botanical structure.\"\n  },\n  {\n    \"span_text\": \"heirloom squashes or unique melon cultivars\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows a lemon, which is a citrus fruit, not a squash or melon cultivar; this classification is entirely incorrect.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1363",
+    "gold_labels": [
+      {
+        "start": 146,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 154
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"greenish hue\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible whole lemons show a predominantly yellow-green exterior, not primarily greenish. The interior flesh is distinctly pink/salmon colored, not the typical pale yellow of standard lemons.\"\n  },\n  {\n    \"span_text\": \"typical for lemons when they are not fully ripe\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"These appear to be pink lemons (likely a specific variety like Ponderosa or a pink grapefruit hybrid), not unripe standard lemons. The pink/salmon interior flesh is a characteristic feature of the fruit variety, not a ripeness indicator.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1781",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1
+      },
+      {
+        "start": 34,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 43
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"spherical\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The peaches shown are distinctly oblate (flattened top and bottom) rather than spherical, with a visible seam running across the center and a flattened appearance overall.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10854",
+    "gold_labels": [
+      {
+        "start": 42,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 66
+      },
+      {
+        "start": 68,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 149
+      },
+      {
+        "start": 149,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 159
+      },
+      {
+        "start": 159,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 186
+      },
+      {
+        "start": 186,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 196
+      },
+      {
+        "start": 196,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 231
+      },
+      {
+        "start": 42,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 45
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"motorcycle\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The object is a steering wheel from a car or vehicle, not a motorcycle. The wooden rim and red spokes are characteristic of a classic car steering wheel, not motorcycle handlebars.\"\n  },\n  {\n    \"span_text\": \"motorcycle frame and engine in the background\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The background shows an indoor setting with people and windows, not visible motorcycle frame or engine components.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1868",
+    "gold_labels": [
+      {
+        "start": 9,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 12
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"No, this mug does not have a handle\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The image clearly shows a footed bowl/cup with a visible pedestal base, which is a defining characteristic of a handled tea bowl or cup form, though the exact handle attachment point may not be visible from this angle, the object is designed as a handled vessel.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10665",
+    "gold_labels": [
+      {
+        "start": 14,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 18
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"ants\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows slugs or snails, not ants; they are gastropods with characteristic slug morphology, not insects.\"\n  },\n  {\n    \"span_text\": \"two\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"While there appear to be two slug/snail-like creatures visible, they are not ants as claimed in the mischaracterization above.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11649",
+    "gold_labels": [
+      {
+        "start": 41,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 48
+      },
+      {
+        "start": 48,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 52
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pinkish hue\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The shrimp in the image are predominantly white/pale in color with some darker markings, not pinkish; they appear to be raw or uncooked shrimp rather than pink-hued.\"\n  },\n  {\n    \"span_text\": \"pink color in the flesh of some species of shrimp\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The response conflates the natural pink color that astaxanthin produces in cooked shrimp with these raw shrimp, which are visibly white/pale, not pink.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1369",
+    "gold_labels": [
+      {
+        "start": 43,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 56
+      },
+      {
+        "start": 56,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 67
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"yellow-orange coloration\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The cheetah in the image has a pale white or cream-colored coat with black spots, not yellow-orange coloration, which appears to be an albino or leucistic cheetah.\"\n  },\n  {\n    \"span_text\": \"black or dark brown spots on a yellowish-orange background\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The cheetah displays black spots on a white/cream background, not on a yellowish-orange background as described.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2675",
+    "gold_labels": [
+      {
+        "start": 836,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 861
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Left Side\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The chick is positioned in the center-bottom of the image, not on the left side where the adult flamingo's body is visible.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1501",
+    "gold_labels": [
+      {
+        "start": 38,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 43
+      },
+      {
+        "start": 65,
+        "prob": 1.0,
+        "label": "mischaracterization",
+        "end": 71
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Apple\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"The mobile phone held by the man is not clearly identifiable as an Apple iPhone from the image; the device's details are not distinct enough to confirm this brand.\"\n  },\n  {\n    \"span_text\": \"iPhone\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"The specific model cannot be reliably identified as an iPhone from the visible features in this image.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1554",
+    "gold_labels": [
+      {
+        "start": 16,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 33
+      },
+      {
+        "start": 33,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 46
+      },
+      {
+        "start": 46,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 58
+      },
+      {
+        "start": 374,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 396
+      },
+      {
+        "start": 396,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 402
+      },
+      {
+        "start": 402,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 416
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Syrian hamster\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The filename indicates this is a Roborovski dwarf hamster, not a Syrian hamster, which are much larger species with different characteristics.\"\n  },\n  {\n    \"span_text\": \"darker brown or black stripe down its back\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The hamster in the image does not display a visible darker stripe down its back; the coloring appears relatively uniform tan/cream without a prominent contrasting dorsal stripe.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11632",
+    "gold_labels": [
+      {
+        "start": 175,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 181
+      },
+      {
+        "start": 199,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 205
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Gentoo penguin chick\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The filename and visual characteristics (dark fluffy down, overall appearance) are consistent with an Adelie penguin chick, not a Gentoo penguin chick, which typically have distinctive white eye-rings and different markings.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-895",
+    "gold_labels": [
+      {
+        "start": 175,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 182
+      },
+      {
+        "start": 200,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 205
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"is a sheep, not a goat\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows a goat (specifically an Angora goat based on the filename and visible characteristics), not a sheep. The animal has the distinctive facial features and ear placement of a goat.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10442",
+    "gold_labels": [
+      {
+        "start": 65,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 69
+      },
+      {
+        "start": 69,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 75
+      },
+      {
+        "start": 75,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 78
+      },
+      {
+        "start": 90,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 99
+      },
+      {
+        "start": 99,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 105
+      },
+      {
+        "start": 105,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 136
+      },
+      {
+        "start": 157,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 170
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"light-colored\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The ivy cap visible in the image appears to be white or off-white, not light-colored in a way that would distinguish it; the description is vague but the cap is clearly white.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11820",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 26,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 29
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"it is a crochet infinity scarf\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The response claims this is an infinity scarf, but infinity scarves are continuous loops with no ends. The prompt explicitly asks if it has two ends, suggesting it is NOT an infinity scarf but rather a regular scarf or cowl with two distinct ends.\"\n  },\n  {\n    \"span_text\": \"An infinity scarf typically features one continuous loop without any distinct beginning or end point\",\n    \"label\": \"other\",\n    \"prob\": 0.9,\n    \"reason\": \"The response contradicts itself by first claiming the item is an infinity scarf, then explaining infinity scarves have no ends, while the prompt asks if THIS scarf has two ends—indicating it does have ends and is therefore not an infinity scarf.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2706",
+    "gold_labels": [
+      {
+        "start": 67,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 72
+      },
+      {
+        "start": 203,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 207
+      },
+      {
+        "start": 333,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 338
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11484",
+    "gold_labels": [
+      {
+        "start": 118,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 130
+      },
+      {
+        "start": 266,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 272
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pinkish-purple\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The berries are clearly pink/coral/salmon colored, not pinkish-purple. There is no purple hue visible in these berries.\"\n  },\n  {\n    \"span_text\": \"unripe or a cultivar that does not ripen to blue\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"These appear to be ripe berries of a pink/red variety (likely pink blueberries or similar), not unripe blue blueberries or an unusual cultivar. The berries show maturity features and have characteristic open star-shaped calyxes indicating ripeness.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1029",
+    "gold_labels": [
+      {
+        "start": 91,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 102
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"screws or adhesive\",\n    \"label\": \"invention\",\n    \"prob\": 0.75,\n    \"reason\": \"No visible screws or adhesive can be seen in the image; the mounting mechanism is not clearly visible or identifiable.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2685",
+    "gold_labels": [
+      {
+        "start": 300,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 308
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2320",
+    "gold_labels": [
+      {
+        "start": 55,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 71
+      },
+      {
+        "start": 355,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 376
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11309",
+    "gold_labels": [
+      {
+        "start": 8,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 17
+      },
+      {
+        "start": 57,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 63
+      },
+      {
+        "start": 63,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 72
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"cucumbers\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows potatoes, not cucumbers. The round, starchy appearance and characteristic potato skin with eyes/buds are clearly visible, not cucumber features.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11663",
+    "gold_labels": [
+      {
+        "start": 299,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 369
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10126",
+    "gold_labels": [
+      {
+        "start": 84,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 94
+      },
+      {
+        "start": 405,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 415
+      },
+      {
+        "start": 348,
+        "prob": 1.0,
+        "label": "miscounting",
+        "end": 349
+      },
+      {
+        "start": 375,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 379
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"3 times\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The response initially claims 'Nissan' appears 3 times, but then corrects itself to 2 times, making the opening statement incorrect.\"\n  },\n  {\n    \"span_text\": \"NISSAN GENISS\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The large text on the signage reads 'NISSAN GENISS' but the actual word shown is 'NISSAN GENISS' where 'GENISS' is the correct spelling visible in the image, not a misreading of the Nissan text itself.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-687",
+    "gold_labels": [
+      {
+        "start": 87,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 93
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-1612",
+    "gold_labels": [
+      {
+        "start": 118,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 133
+      },
+      {
+        "start": 189,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 209
+      }
+    ],
+    "haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11287",
+    "gold_labels": [
+      {
+        "start": 1,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 4
+      },
+      {
+        "start": 23,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 26
+      },
+      {
+        "start": 23,
+        "prob": 0.6666666667,
+        "label": "miscounting",
+        "end": 26
+      },
+      {
+        "start": 928,
+        "prob": 0.3333333333,
+        "label": "other",
+        "end": 971
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"One front wheel (visible on the left side of the image).\\n  - One rear wheel (visible on the right side of the image).\\n  - One additional wheel on the sidecar\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The Can-Am Spyder has two front wheels and one rear wheel (3-wheeled configuration), not one front wheel, one rear wheel, and one sidecar wheel as described.\"\n  },\n  {\n    \"span_text\": \"sidecar\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The vehicle shown is a Can-Am Spyder, which is a trike with two front wheels, not a motorcycle with a sidecar attachment.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2156",
+    "gold_labels": [
+      {
+        "start": 0,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 10,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 22
+      },
+      {
+        "start": 22,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 27
+      },
+      {
+        "start": 27,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 33
+      },
+      {
+        "start": 268,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 272
+      },
+      {
+        "start": 326,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 336
+      },
+      {
+        "start": 336,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 343
+      },
+      {
+        "start": 343,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 371
+      },
+      {
+        "start": 371,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 376
+      },
+      {
+        "start": 376,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 384
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"golden-yellow to tan background\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The cheetah's coat background appears more tan/beige with lighter cream coloring rather than golden-yellow; the golden tone is not prominently visible in this image.\"\n  },\n  {\n    \"span_text\": \"round or oval-shaped black \\\"teardrop\\\" spots\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.7,\n    \"reason\": \"While the cheetah does have spots, they are not primarily black teardrops; they appear as dark brown/black solid rounded spots without the distinctive teardrop shape characteristic of some cheetah descriptions.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2378",
+    "gold_labels": [
+      {
+        "start": 90,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 100
+      },
+      {
+        "start": 166,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 169
+      },
+      {
+        "start": 1,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 4
+      },
+      {
+        "start": 166,
+        "prob": 0.3333333333,
+        "label": "OCR",
+        "end": 169
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"GIF\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The sign in the upper right corner reads 'GIFT', not 'GIF'. The final letter is 'T', not just the letters 'GIF'.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11428",
+    "gold_labels": [
+      {
+        "start": 61,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 66
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"dried apricots\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The image shows dried prunes, not dried apricots, as indicated by the filename and the darker, more wrinkled appearance characteristic of prunes.\"\n  },\n  {\n    \"span_text\": \"golden-orange color\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The fruits in the image are a much darker, deeper brown-orange color typical of prunes, not the lighter golden-orange color of dried apricots.\"\n  },\n  {\n    \"span_text\": \"The apricots in the image\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.95,\n    \"reason\": \"The response repeatedly refers to the fruits as apricots when they are clearly prunes based on visual characteristics and the prompt context.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10031",
+    "gold_labels": [
+      {
+        "start": 80,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 86
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows only two visible flowers on the cake - one pink flower on the left side and one purple flower on the right side, not four.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11888",
+    "gold_labels": [
+      {
+        "start": 27,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 44
+      }
+    ],
+    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Spotted Eagle-Owl\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The bird is a Harpy Eagle, not a Spotted Eagle-Owl, as indicated by the distinctive morphology, size, posture, and facial structure visible in the image.\"\n  },\n  {\n    \"span_text\": \"Eagle-owls\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The bird is a Harpy Eagle (a true eagle), not an eagle-owl, so the subsequent claims about eagle-owl characteristics are misapplied to this species.\"\n  }\n]\n```"
+  }
+]

@@ -1,0 +1,438 @@
+OFFLINE ERROR ANALYSIS DIAGNOSTIC LOG (Alignment: All Gold Annotations)
+Generated: 2026-07-09 18:25:03.860357
+======================================================================
+
+--- IMAGE ID: train-en-411 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-412 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-413 ---
+MODEL PERFORMANCE (IoU): 0.2414
+GOLD LABELS (All Annotations):
+  [148:154] 'hidden' | mischaracterization | agreement: 0.3333333333
+  [221:228] 'ceiling' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [205:228] 'attached to the ceiling' | mischaracterization
+ | model confidence: 0.95
+
+--- IMAGE ID: train-en-414 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-415 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [53:57] 'Ford' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-416 ---
+MODEL PERFORMANCE (IoU): 0.4375
+GOLD LABELS (All Annotations):
+  [30:31] 'f' | miscounting | agreement: 0.6666666667
+  [31:34] 'our' | miscounting | agreement: 1.0
+  [34:39] ' legs' | miscounting | agreement: 0.3333333333
+  [80:84] 'four' | miscounting | agreement: 0.6666666667
+  [104:107] 'two' | miscounting | agreement: 0.6666666667
+PREDICTED LABELS:
+  [30:34] 'four' | miscounting
+ | model confidence: 0.85
+  [104:107] 'two' | miscounting
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-417 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [588:722] 'likely due to a condition called leucism, which results in reduced pigmentation. It is not an albino as it still has some pigmentation' | invention | agreement: 0.3333333333
+  [706:722] 'ome pigmentation' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [96:100] 'dark' | mischaracterization
+ | model confidence: 0.9
+
+--- IMAGE ID: train-en-418 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [146:153] 'bandeau' | invention | agreement: 0.3333333333
+PREDICTED LABELS:
+  [261:271] 'decorative' | mischaracterization
+ | model confidence: 0.75
+
+--- IMAGE ID: train-en-419 ---
+MODEL PERFORMANCE (IoU): 0.5116
+GOLD LABELS (All Annotations):
+  [51:56] 'It's ' | mischaracterization | agreement: 0.3333333333
+  [56:75] 'on the tape measure' | mischaracterization | agreement: 1.0
+  [97:101] 'left' | mischaracterization | agreement: 0.3333333333
+  [26:31] 'is **' | miscounting | agreement: 0.3333333333
+  [31:34] 'one' | miscounting | agreement: 1.0
+  [34:41] '** knob' | miscounting | agreement: 0.3333333333
+PREDICTED LABELS:
+  [31:34] 'one' | miscounting
+ | model confidence: 0.9
+  [56:75] 'on the tape measure' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-420 ---
+MODEL PERFORMANCE (IoU): 0.3137
+GOLD LABELS (All Annotations):
+  [127:143] 'porcelain garlic' | invention | agreement: 0.3333333333
+  [225:227] 'a ' | mischaracterization | agreement: 0.3333333333
+  [227:233] 'creamy' | mischaracterization | agreement: 0.6666666667
+  [233:239] ' white' | mischaracterization | agreement: 0.3333333333
+  [514:524] 'straw-like' | mischaracterization | agreement: 0.3333333333
+  [557:568] 'light brown' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [127:143] 'porcelain garlic' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-421 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-422 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [217:220] 'two' | miscounting
+ | model confidence: 0.95
+
+--- IMAGE ID: train-en-423 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-424 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [96:100] 'book' | mischaracterization
+ | model confidence: 0.9
+
+--- IMAGE ID: train-en-425 ---
+MODEL PERFORMANCE (IoU): 0.3077
+GOLD LABELS (All Annotations):
+  [72:76] 'face' | invention | agreement: 0.3333333333
+  [157:161] 'eyes' | invention | agreement: 0.3333333333
+  [168:173] 'mouth' | invention | agreement: 0.3333333333
+  [72:76] 'face' | mischaracterization | agreement: 0.6666666667
+  [112:136] 'It's a simple, somewhat ' | mischaracterization | agreement: 0.3333333333
+  [136:147] 'cartoonish ' | mischaracterization | agreement: 0.6666666667
+  [147:151] 'face' | mischaracterization | agreement: 1.0
+  [151:173] ' with eyes and a mouth' | mischaracterization | agreement: 0.6666666667
+PREDICTED LABELS:
+  [72:76] 'face' | mischaracterization
+ | model confidence: 0.85
+  [157:173] 'eyes and a mouth' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-426 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [236:239] 'log' | OCR | agreement: 0.3333333333
+  [269:276] 'sign on' | OCR | agreement: 0.6666666667
+  [305:311] 'verify' | OCR | agreement: 0.6666666667
+PREDICTED LABELS:
+  [115:185] 'A system that enables users to authenticate once to log in everywhere.' | OCR
+ | model confidence: 0.6
+
+--- IMAGE ID: train-en-427 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [601:605] 'next' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-431 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [114:224] 'These are likely **Black Spanish Radishes**. This variety is known for its dark skin and pungent, spicy flavor' | invention | agreement: 0.3333333333
+  [331:343] 'green radish' | invention | agreement: 0.3333333333
+  [80:86] 'purple' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-432 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-433 ---
+MODEL PERFORMANCE (IoU): 0.0575
+GOLD LABELS (All Annotations):
+  [44:49] 'small' | mischaracterization | agreement: 0.6666666667
+  [63:83] 'closer to the viewer' | mischaracterization | agreement: 0.3333333333
+  [137:199] 'It's wearing an orange harness with a sign that says "ADOPT ME' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [44:49] 'small' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-434 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [76:81] 'young' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-435 ---
+MODEL PERFORMANCE (IoU): 0.2542
+GOLD LABELS (All Annotations):
+  [0:43] 'Based on the image, this appears to be the ' | invention | agreement: 0.3333333333
+  [43:52] 'Devonport' | invention | agreement: 0.6666666667
+  [52:71] ' ferry terminal in ' | invention | agreement: 0.3333333333
+  [71:92] 'Auckland, New Zealand' | invention | agreement: 0.6666666667
+  [92:122] '. Therefore, the sea is the **' | invention | agreement: 0.3333333333
+  [122:134] 'Hauraki Gulf' | invention | agreement: 0.6666666667
+  [134:163] '**. 
+
+It's a large gulf near ' | invention | agreement: 0.3333333333
+  [163:171] 'Auckland' | invention | agreement: 0.6666666667
+  [171:240] ', and the ferry in the image is likely a ferry that travels across it' | invention | agreement: 0.3333333333
+  [43:52] 'Devonport' | mischaracterization | agreement: 0.3333333333
+  [71:91] 'Auckland, New Zealan' | mischaracterization | agreement: 0.3333333333
+  [122:134] 'Hauraki Gulf' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [43:92] 'Devonport ferry terminal in Auckland, New Zealand' | invention
+ | model confidence: 0.85
+  [122:134] 'Hauraki Gulf' | invention
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-437 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [151:156] 'phone' | mischaracterization | agreement: 0.6666666667
+  [156:162] ' or a ' | mischaracterization | agreement: 0.3333333333
+  [162:185] 'small electronic device' | mischaracterization | agreement: 0.6666666667
+PREDICTED LABELS:
+  [76:89] 'girl's pocket' | invention
+ | model confidence: 0.9
+
+--- IMAGE ID: train-en-438 ---
+MODEL PERFORMANCE (IoU): 0.4694
+GOLD LABELS (All Annotations):
+  [75:93] 'wheels at the back' | invention | agreement: 0.3333333333
+  [379:404] 'it has wheels on the rear' | invention | agreement: 0.3333333333
+  [89:93] 'back' | mischaracterization | agreement: 0.3333333333
+  [374:377] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [393:404] 'on the rear' | mischaracterization | agreement: 0.3333333333
+  [476:482] 'common' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [75:93] 'wheels at the back' | mischaracterization
+ | model confidence: 0.95
+  [374:448] 'Yes, it has wheels on the rear, but the front has been converted to tracks' | mischaracterization
+ | model confidence: 0.9
+
+--- IMAGE ID: train-en-439 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [257:260] 'two' | miscounting | agreement: 0.3333333333
+PREDICTED LABELS:
+  [134:147] 'striped skunk' | mischaracterization
+ | model confidence: 0.9
+  [261:270] 'prominent' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-440 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-441 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [437:442] 'green' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-442 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-443 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [184:192] 'cleavers' | mischaracterization
+ | model confidence: 0.6
+
+--- IMAGE ID: train-en-444 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-445 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-446 ---
+MODEL PERFORMANCE (IoU): 0.0510
+GOLD LABELS (All Annotations):
+  [51:135] 'They are lined up on the left side of the frame, near the lower portion of the image' | invention | agreement: 0.3333333333
+  [40:49] 'dumpsters' | mischaracterization | agreement: 0.3333333333
+  [32:37] 'three' | miscounting | agreement: 1.0
+PREDICTED LABELS:
+  [32:37] 'three' | miscounting
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-448 ---
+MODEL PERFORMANCE (IoU): 0.8108
+GOLD LABELS (All Annotations):
+  [217:221] 'each' | invention | agreement: 0.3333333333
+  [334:367] 'an FV433 Abbot Self-Propelled Gun' | invention | agreement: 0.3333333333
+PREDICTED LABELS:
+  [337:367] 'FV433 Abbot Self-Propelled Gun' | invention
+ | model confidence: 0.6
+
+--- IMAGE ID: train-en-449 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-450 ---
+MODEL PERFORMANCE (IoU): 0.0187
+GOLD LABELS (All Annotations):
+  [578:866] 'but the base has reddish undertones.
+
+This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present' | invention | agreement: 0.3333333333
+  [135:154] 'throughout its coat' | mischaracterization | agreement: 0.3333333333
+  [218:231] 'grizzled gray' | mischaracterization | agreement: 0.3333333333
+  [335:340] 'backs' | mischaracterization | agreement: 0.3333333333
+  [406:509] 'Undercoat:** Hints of reddish hues are visible in the undercoat, particularly around the neck and chest' | mischaracterization | agreement: 0.3333333333
+  [578:613] 'but the base has reddish undertones' | mischaracterization | agreement: 0.3333333333
+  [645:683] 'Gray Fox** ( *Urocyon cinereoargenteus' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [719:727] 'salt-and' | mischaracterization
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-451 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [136:141] 'green' | mischaracterization | agreement: 0.3333333333
+  [378:389] 'green tones' | mischaracterization | agreement: 0.3333333333
+  [448:453] 'green' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-452 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [187:217] 'rear flippers are also visible' | invention | agreement: 0.3333333333
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-454 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-455 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [403:417] 'vehicle number' | mischaracterization | agreement: 0.3333333333
+  [466:480] 'service record' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-456 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [153:163] 'be a child' | mischaracterization | agreement: 0.3333333333
+  [1006:1029] 'some level of education' | mischaracterization | agreement: 0.3333333333
+  [1034:1055] 'a political viewpoint' | mischaracterization | agreement: 0.3333333333
+  [1098:1124] 'an older child or teenager' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [266:272] 'Devlet' | OCR
+ | model confidence: 0.9
+  [735:791] 'Turkish words meaning "Fascist" and "State" respectively' | INVENTION
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-458 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [187:190] 'two' | miscounting
+ | model confidence: 0.95
+
+--- IMAGE ID: train-en-459 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-460 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+  [43:65] 'Palm Sunday procession' | invention | agreement: 0.6666666667
+  [731:783] 'likely a religious event commemorating this occasion' | invention | agreement: 0.3333333333
+  [229:284] 'Palm Sunday and represents Jesus's journey to Jerusalem' | mischaracterization | agreement: 0.3333333333
+  [609:633] 'a Palm Sunday procession' | mischaracterization | agreement: 0.3333333333
+PREDICTED LABELS:
+  [117:140] 'Person carrying a cross' | invention
+ | model confidence: 0.9
+  [292:305] 'Palm branches' | invention
+ | model confidence: 0.85
+
+--- IMAGE ID: train-en-461 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-462 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-463 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-464 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [683:696] 'Brown Pelican' | mischaracterization
+ | model confidence: 0.9
+
+--- IMAGE ID: train-en-465 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)
+
+--- IMAGE ID: train-en-466 ---
+MODEL PERFORMANCE (IoU): 0.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  [32:37] 'three' | miscounting
+ | model confidence: 0.9
+
+--- IMAGE ID: train-en-467 ---
+MODEL PERFORMANCE (IoU): 1.0000
+GOLD LABELS (All Annotations):
+PREDICTED LABELS:
+  (No spans predicted)

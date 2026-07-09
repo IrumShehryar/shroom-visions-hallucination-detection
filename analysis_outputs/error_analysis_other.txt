@@ -1,0 +1,1130 @@
+OFFLINE ERROR ANALYSIS: OTHER
+Generated: 2026-07-09 23:16:47.220600
+======================================================================
+SUMMARY
+  Samples:     50
+  Average IoU: 0.1188
+  Perfect (1.0): 2
+  Partial:       6
+  Zero (0.0):    42
+======================================================================
+
+==================== IMAGE ID: train-en-10609 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+鸟
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "鸟",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The response claims there is a bird at the top of the rock formation, but no bird is visible in the image — only a white/light-colored conical pile of sand or gravel."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:1] '鸟' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:1] '鸟' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10553 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: Based on the image, what is the title of the artwork?
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:59] 'Human: Based on the image, what is the title of the artwork' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11293 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Assistant
+Based on the image provided, the woman dressed as Wonder Woman has **three stars** on her golden tiara.
+
+The stars are arranged in a vertical line: one at the top, one in the middle, and one at the bottom.
+
+Therefore, the answer is **3**.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three stars",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The tiara visible on the woman's head displays only one star (red star at the center), not three stars arranged vertically."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:9] 'Assistant' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [79:84] 'three' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1239 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The vessel in the image does not have traditional m or mast structures commonly associated with sailing ships. This modern yacht is equipped with small antennas and radar domes on its roof, which are indicative of contemporary navigation and communication equipment. These features suggest that the yacht is motor-powered rather than sail-driven, lacking the tall m or mast structures needed for sail management.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "small antennas and radar domes on its roof",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The antennas and equipment are mounted on the upper deck/hardtop structure, not on a 'roof' - yachts do not have roofs in the traditional sense."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [359:365] 'tall m' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [146:151] 'small' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2623 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:511] '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2522 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 1.0
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-499 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Certainly! Let's analyze the size of the bear in the image.
+
+Based on the photo, these are **not large bears**. They appear to be **bear cubs** – young, immature bears. 
+
+Here's why:
+
+*   **Size and Proportions:** Their bodies are relatively small, and their limbs seem shorter in proportion to their bodies compared to a fully grown bear.
+*   **Facial Features:** They have a more rounded, "babyish" facial structure.
+*   **Behavior:** They are engaging in playful behavior (seemingly wrestling or playing), which is typical of cubs.
+*   **Coat:** Their fur appears softer and fluffier, which is common in younger bears.
+
+A fully grown grizzly or brown bear can weigh hundreds of pounds and stand several feet tall. These cubs are still developing and will grow significantly over time.
+
+Do you want to know more about bear cubs or the sizes of different bear species?
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "wrestling or playing",
+    "label": "mischaracterization",
+    "prob": 0.6,
+    "reason": "The bears appear to be interacting affectionately (one behind the other, possibly nuzzling), not wrestling or playing in an active sense."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [270:338] 'shorter in proportion to their bodies compared to a fully grown bear' | other | agreement: 0.3333333333
+  [392:399] 'babyish' | other | agreement: 0.3333333333
+  [458:474] 'playful behavior' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [486:506] 'wrestling or playing' | mischaracterization | model confidence: 0.6
+
+==================== IMAGE ID: train-en-10759 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+What is the color of the car on the right side of the image?
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:59] 'What is the color of the car on the right side of the image' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2048 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the orange in the center of the image is primarily a deep reddish-pink color on the inside. While oranges are typically known for their bright orange hue when cut open, this particular fruit appears to be a blood orange or a similar variety that naturally has red or pink flesh instead of traditional orange-colored segments. The outer peel (zest) surrounding the inner pulp does have a more typical orangish-yellow tone with some darker spots, which contrasts nicely with the vibrant red interior. So while it's called an "orange," its most striking feature—its juicy part—is indeed distinctly colored and not the standard orange shade we usually associate with citrus fruits like navel oranges or mandarins.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "reddish-pink",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The interior flesh is deep red/crimson, not reddish-pink; pink is too light a descriptor for this dark red color."
+  },
+  {
+    "span_text": "blood orange or a similar variety",
+    "label": "invention",
+    "prob": 0.7,
+    "reason": "While blood oranges can have red flesh, the filename hint 'cara cara' suggests this is a Cara Cara orange, a specific variety, not generically a blood orange."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [63:75] 'reddish-pink' | mischaracterization | model confidence: 0.85
+  [212:245] 'blood orange or a similar variety' | invention | model confidence: 0.7
+
+==================== IMAGE ID: train-en-10555 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10796 ====================
+MODEL PERFORMANCE (IoU): 0.7500
+
+--- FULL MODEL RESPONSE ---
+.com
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": ".com",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "The response '.com' does not identify an actual shoe store name; it only provides a domain extension that cannot be clearly read or verified from the blurry image, and no complete store name is visible."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [1:4] 'com' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:4] '.com' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1281 ====================
+MODEL PERFORMANCE (IoU): 0.8228
+
+--- FULL MODEL RESPONSE ---
+The bananas in the image appear to be overripe rather than rotten. Here’s a detailed look at the condition:
+
+1. **Color**: The bananas are mostly yellow with significant brown and black spots. This indicatesates that they are very ripe, as bananas typically turn brown as they age and become sweeter.
+
+2. **Texture**: Overripe bananas often develop dark spots and a softer texture due to the breakdown of chlorophyll and the accumulation of sugars. While we can't feel the texture, the color changes suggest it's softer inside.
+
+3. **Stem**: The top part of the bananas (the stem area) looks slightly dried and brown, which is common as bananas ripen.
+
+4. **Edibility**: While these bananas are past their prime for eating raw, they are often used in baking (like banana bread or smoothies) due to their sweet, mellow flavor and softer texture that breaks down well in cooking.
+
+In summary, these bananas are not "gone bad"; they are simply overripe and have reached the stage where they are best used in cooking or baking.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "The bananas in the image appear to be overripe rather than rotten.",
+    "label": "other",
+    "prob": 0.85,
+    "reason": "The prompt asks if the banana is long and to elaborate, but the response discusses ripeness/condition instead of addressing the length question asked."
+  },
+  {
+    "span_text": "indicatesates",
+    "label": "OCR",
+    "prob": 0.9,
+    "reason": "The word 'indicatesates' appears to be a typo/error in the response text itself (should be 'indicates')."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:65] 'The bananas in the image appear to be overripe rather than rotten' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:66] 'The bananas in the image appear to be overripe rather than rotten.' | other | model confidence: 0.85
+  [198:211] 'indicatesates' | OCR | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10276 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+In the image, the person on the left is wearing a ring on their finger.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "the person on the left is wearing a ring",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The person on the left is holding a circular sign/badge with a cake icon, not wearing a ring on their finger; no ring is visible on any of the three people in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [58:63] 'their' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [14:54] 'the person on the left is wearing a ring' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11173 ====================
+MODEL PERFORMANCE (IoU): 0.7042
+
+--- FULL MODEL RESPONSE ---
+ grapefruit is shown in the image, not a grapefruit.
+
+The fruit shown in the image is **not pink or red** — it is a **yellow** or **golden** variety.
+
+Here’s why:
+
+- The fruit on the left is a whole fruit with a smooth, yellowish-yellow rind.
+- The cut fruit on the right reveals a juicy, segmented pulp that is also yellowish-orange, not pink or red.
+
+**Pink or red grapefruit varieties** (like ‘Star Ruby’ or ‘Rio Red’) are known for their vibrant pink or red flesh, which is caused by high levels of lycopene and other pigments. These varieties are typically marketed for their sweeter, more complex flavor profile.
+
+The fruit in your image is likely a **white or yellow grapefruit** (such as ‘Marsh’ or ‘Dancy’), which have pale yellow or creamy white flesh. Yellow grapefruits are common and are often preferred for their milder, less tart flavor.
+
+**Conclusion: No, this is not a pink grapefruit. It is a yellow or golden grapefruit.**
+
+If you’re looking for a pink grapefruit, you’d need to look for varieties specifically labeled as such — they have distinct pink or red flesh and are usually more expensive and less common than yellow varieties.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "grapefruit is shown in the image, not a grapefruit",
+    "label": "other",
+    "prob": 0.95,
+    "reason": "This sentence is self-contradictory and incoherent — it states both that a grapefruit is shown and that it is not a grapefruit, which is logically impossible."
+  },
+  {
+    "span_text": "yellowish-orange",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The cut fruit clearly shows yellow segmented flesh, not orange or yellowish-orange; the color is distinctly yellow."
+  },
+  {
+    "span_text": "Dancy",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "Dancy is a tangerine variety, not a grapefruit variety; this is an incorrect fruit variety reference."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [1:51] 'grapefruit is shown in the image, not a grapefruit' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [1:51] 'grapefruit is shown in the image, not a grapefruit' | other | model confidence: 0.95
+  [317:333] 'yellowish-orange' | mischaracterization | model confidence: 0.85
+  [708:713] 'Dancy' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10223 ====================
+MODEL PERFORMANCE (IoU): 0.6049
+
+--- FULL MODEL RESPONSE ---
+Yes, the laptop is placed on a person's lap. The blue fabric visible around the edges of the image suggests that it’s resting comfortably there while they work or browse.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "The blue fabric visible around the edges of the image suggests that it's resting comfortably there",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The laptop is clearly placed on a wooden table/desk surface, not on a person's lap; there is no person visible in the image, only a laptop on furniture next to a beverage can."
+  },
+  {
+    "span_text": "the laptop is placed on a person's lap",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "No person is visible in the image; the laptop is positioned on a wooden surface (table/desk) with no human subject present."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [45:149] 'The blue fabric visible around the edges of the image suggests that it’s resting comfortably there while' | other | agreement: 0.6666666667
+  [149:169] ' they work or browse' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [5:43] 'the laptop is placed on a person's lap' | invention | model confidence: 0.9
+  [45:143] 'The blue fabric visible around the edges of the image suggests that it’s resting comfortably there' | invention | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11340 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: What is written on the man's black T-shirt?
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:7] 'Human: ' | other | agreement: 0.3333333333
+  [7:49] 'What is written on the man's black T-shirt' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10133 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: Based on the image provided, we can observe the following:
+
+- There are three men seated at a table in the foreground, each with a document in front of them.
+- The man on the left, wearing a dark suit and a red tie, is actively signing a document with a pen.
+- The man in the center, wearing a dark pinstripe suit
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "Only two men are actively writing/signing documents at the table in the foreground, not three."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+  [268:320] 'The man in the center, wearing a dark pinstripe suit' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [79:84] 'three' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9800 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The expiry date on the bottle label is "02.06.10," which likely indicates June 2, 2010. This suggests that the drink has long passed its expiry date.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "02.06.10",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible expiry date on the bottle label appears to show a different date format; the text is not clearly legible as '02.06.10' in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [126:148] 'passed its expiry date' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [40:48] '02.06.10' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10585 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response provided is incomplete - it only contains "Human:" with no actual content describing what is inside the pink bag/cover. Since there is no substantive response to evaluate against the image, there are no hallucinations to flag.
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2561 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "peacock",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The bird in the image is a peahen (female peacock), not a peacock (male), as indicated by the lack of elaborate tail feathers and the filename confirmation."
+  },
+  {
+    "span_text": "large tail",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The bird does not have a large or elaborate tail visible in the image; the tail appears modest and unremarkable, which is characteristic of a peahen rather than a male peacock."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10545 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+://www.etsy.com/listing/144628382/embroidered-paper-airplane-embroidery-pattern
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response provided is a URL/link rather than an answer to the question "What object is stitched?" While the URL appears to be from Etsy and mentions "embroidered-paper-airplane," I cannot evaluate it as a hallucination because it's not a descriptive claim about the image itself. The image clearly shows a paper airplane stitched in red thread on white fabric in an embroidery hoop, which matches the URL's reference to a paper airplane embroidery pattern. No specific factual claims about the image content are made in the response to contradict.
+
+GOLD LABELS (All Annotations):
+  [3:62] 'www.etsy.com/listing/144628382/embroidered-paper-airplane-e' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10757 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+.com
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response ".com" does not contain any descriptive claim about the microphone color or any other observable detail in the image. It appears to be a fragment or error rather than an attempted answer to the question. Since there are no actual factual claims made about the image content, there are no hallucinations to flag.
+
+GOLD LABELS (All Annotations):
+  [1:4] 'com' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10063 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+<|fim_suffix|>
+To determine the number of people standing near the wooden fence, we can examine the right side of the image. There is a group of people leaning on the railing, looking out at the view. Let's count them from right to left:
+
+- On the far right, there is one person with a black backpack.
+- To their left, there is another person wearing a white shirt with black stripes.
+- Next to them, there is a person with a pink backpack.
+- On the far left of the group, there is a person with a turquoise backpack.
+
+Counting them, we have 4 people.
+
+Therefore, there are 4 people standing near the wooden fence.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "white shirt with black stripes",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The person second from right appears to be wearing a dark/black colored shirt, not white with black stripes."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [2:12] 'fim_suffix' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [353:358] 'white' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-2621 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+://www.google.com/search?q=what+is+the+brand+of+this+cigarette+on+the+man%27s+mouth&tbm=isch
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [3:92] 'www.google.com/search?q=what+is+the+brand+of+this+cigarette+on+the+man%27s+mouth&tbm=isch' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10833 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Predicting the exact completion date of a construction project requires knowledge of several factors, including project scope, available resources, and the efficiency of the construction team. Here are some steps to help estimate when this construction project might finish:
+
+1
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [276:277] '1' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10598 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The image shows a colorful layered cake with various colored powder/dust coating its exterior and visible in the cross-section. However, the prompt asks whether the cake is eggless, and the response provided appears to be incomplete (just "Human:"). There is no actual response content to evaluate against the image. Without a complete response making factual claims about whether the cake is eggless, there are no spans to flag for hallucination.
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11574 ====================
+MODEL PERFORMANCE (IoU): 0.1818
+
+--- FULL MODEL RESPONSE ---
+The shrimp in the image are not pink; instead, they have a translucent, grayish color with some greenish and brownish stripes. Pink shrimp, such as the commonly known pink river shrimp (Palaemon elegans), typically display a vibrant pink hue, sometimes becoming more intense when cooked. These shrimp appear to be raw and are displayed on ice, which highlights their natural, unustral coloration.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "pink river shrimp (Palaemon elegans)",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The response invents a specific scientific name and common name that are not visible or identifiable in the image; the image shows only raw shrimp on ice without any labeling of species."
+  },
+  {
+    "span_text": "unustral",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "This appears to be a misspelling or garbled word in the response text itself; 'unustral' is not a valid English word and should likely be 'natural' or similar."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [376:384] 'unustral' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [167:203] 'pink river shrimp (Palaemon elegans)' | invention | model confidence: 0.85
+  [376:384] 'unustral' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1194 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The duck in the image has a distinctive appearance with a unique facial feature: a fleshy, knob-like structure on its head, which is characteristic of a shelduck, specifically the male shelduck (Tadorna variegata). This feature is not smooth; instead, it is rough and textured. 
+
+Let's break down the observations:
+
+1. **Facial Structure**: The duck has a prominent, knob-like protuberance on its head, which is far from smooth. This feature is often used by males during breeding displays and is rough to the touch.
+
+2. **Feather Pattern**: The head and neck of the duck have a dotted, speckled pattern which adds to the textured appearance of its face. This pattern is typical for camouflage and species identification.
+
+33\[ 
+\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[^\[
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Tadorna variegata",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "The response identifies this as a male shelduck (Tadorna variegata), but the bird's appearance—white underparts, dark upper parts, and distinctive head markings—is consistent with a Northern Pintail or similar dabbling duck, not a shelduck species."
+  },
+  {
+    "span_text": "male shelduck",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The bird does not appear to be a shelduck; the coloring and body structure are inconsistent with shelduck morphology."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [723:725] '33' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [180:184] 'male' | mischaracterization | model confidence: 0.85
+  [195:212] 'Tadorna variegata' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-2705 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+User
+
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response "User" does not contain any claims about eyewear brand names that can be evaluated against the image. The response appears to be incomplete or nonsensical rather than making a specific factual claim about a brand that could be verified or contradicted by the image.
+
+GOLD LABELS (All Annotations):
+  [0:4] 'User' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10794 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response provided is incomplete - it only contains "Human:" with no actual claim about where the lift is located. Since there is no substantive response to evaluate against the image, there are no hallucinations to flag.
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10558 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10070 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+<points x1="283" y1="778" x2="355" y2="795" x3="427" y3="853" alt="benches">benches</points>
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [1:7] 'points' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10062 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+user
+How many baseballs are visible in the image?
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:48] 'user
+How many baseballs are visible in the image' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-9831 ====================
+MODEL PERFORMANCE (IoU): 0.8750
+
+--- FULL MODEL RESPONSE ---
+Human: Based on the image, what is the brand name of the wallet?
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Based on the image, what is the brand name of the wallet?",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The response repeats the prompt but does not actually answer it with any brand name, and no clear brand name is legibly visible on the wallet in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:63] 'Human: Based on the image, what is the brand name of the wallet' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [7:64] 'Based on the image, what is the brand name of the wallet?' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11674 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+In the image, the girl on the right is wearing a black bracelet on her left wrist.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "black",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The bracelet visible on the girl's left wrist appears to be dark blue or navy, not black."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [23:35] 'on the right' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [49:54] 'black' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-10137 ====================
+MODEL PERFORMANCE (IoU): 1.0000
+
+--- FULL MODEL RESPONSE ---
+{100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The response contains a set of coordinate/numerical values that do not answer the question about how many benches are in the image; the actual image contains only 1 bench visible."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [1:509] '100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [1:509] '100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10888 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+.com
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [1:4] 'com' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1785 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+It appears that someone is taking a picture with a camera from behind the tennis net. The image captures a scene of people playing tennis, and it seems like a casual, possibly amateur match, with children and adults participating. The photographer has been careful not to be in the viewfinders of the players, keeping the focus on the game.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [269:308] 'to be in the viewfinders of the players' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2662 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Answer: No, this car does not have a traditional internal combustion engine or combustion-based powertrain.
+
+This vehicle is a solar-powered race car, specifically the **Sunswift IV**, built by students from the University of New South Wales (UNSW) for the **No, this car does not have a traditional internal combustion engine. It is a **fully electric vehicle powered entirely by solar energy**.
+
+Here’s a breakdown of why:
+
+1.  **Solar Panels:** The most obvious feature is the large array of photovoltaic (PV) solar panels covering the entire roof and extending over the rear of the car. These panels convert sunlight directly into electrical energy.
+
+2.  **Electric Motor:** The car is propelled by an electric motor, which is powered by the electricity generated by the solar panels (and likely supplemented by a small battery pack for energy storage and to handle periods of low sunlight or high power demand). This is a common design for solar cars, as electric motors are highly efficient and can be precisely controlled.
+
+3.  **Competition Context:** This vehicle is a **solar car** built for the **World Solar Challenge**, a long-distance race across Australia from Darwin to Adelaide. The goal of such competitions is to demonstrate the viability of solar-powered transportation. Teams must design cars that can run solely on solar energy, without any fuel or plug-in charging during the race (except for the initial setup).
+
+4.  **Sponsorship and Design:** The branding on the car, including "UNSW Engineering," "Sunswift," "3M," "Core Builders Composites," and "Michelin," all point to a student engineering project focused on renewable energy and sustainable transportation. The car’s aerodynamic design is also optimized for efficiency, which is crucial for maximizing the range from the limited solar power.
+
+In summary, while the car does have an electric motor, it does not have an engine in the conventional sense. The "engine" is the solar array, which generates the electricity that powers the motor. This makes it a true solar-electric vehicle.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "Sunswift IV",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible text on the car shows 'SUNSWIFT' but does not clearly display 'IV' as a model designation in the image."
+  },
+  {
+    "span_text": "Darwin to Adelaide",
+    "label": "INVENTION",
+    "prob": 0.6,
+    "reason": "While the World Solar Challenge does occur in Australia, the specific route cannot be verified from this image alone, making this a claim not visibly supported."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [249:256] 'for the' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [170:181] 'Sunswift IV' | OCR | model confidence: 0.85
+  [1176:1194] 'Darwin to Adelaide' | invention | model confidence: 0.6
+
+==================== IMAGE ID: train-en-2432 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+{user
+Based on the image provided, it is impossible to determine who clicked the picture.
+
+The image shows a cityscape, likely taken from a high vantage point inside a building, looking out through a window. The view includes several skyscrapers, some with illuminated signs, and a street with lights below, suggesting it was taken during twilight or early evening.
+
+However, the photograph does not contain any identifiable information about the person who took it. There are no visible watermarks, names, or other metadata that would reveal the photographer’s identity.
+
+Without additional context, such as a caption, social media post, or other identifying details, we cannot determine who clicked this picture.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [1:5] 'user' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-9772 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: imports
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "imports",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The blue section of the billboard reads 'Imports' (capital I), not lowercase 'imports'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [7:14] 'imports' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9777 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: What is the air force name on the side of the plane?
+
+--- RAW HAIKU REASONING ---
+[]
+
+
+The response does not contain any claims about what the air force name is. It only repeats/clarifies the question being asked. Since there is no factual assertion made about the air force name visible in the image, there is nothing to evaluate as accurate or inaccurate.
+
+GOLD LABELS (All Annotations):
+  [0:58] 'Human: What is the air force name on the side of the plane' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2319 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+ **No, the bottles in the image are not transparent or clear. They are opaque and white.
+
+Here’s a detailed breakdown:
+
+-   **Material and Appearance**: The bottles are made of a white, opaque plastic. You can see the shape and form of the bottles clearly, but you cannot see through them to see what is inside or what is behind them. The material scatters light, which is why they appear white and solid.
+
+-   **Contrast with Transparency**: A transparent object allows light to pass through it with minimal scattering, so you can see clearly through it (like a glass bottle or a clear plastic water bottle). An opaque object, like these bottles, does not allow light to pass through at all, so you cannot see through it.
+
+-   **Visual Evidence**: In the image, the bottle on the right has a slight gradient or shadow near its base, which is likely due to the lighting and the surface it's sitting on, but this does not indicate transparency. You cannot see the surface beneath the bottle or any contents inside.
+
+Therefore, these are **opaque white bottles**, not transparent ones.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [3:5] 'No' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10573 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: The person wearing the ivy cap is not wearing an ivy cap. The person wearing the ivy cap is wearing a white cap. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy cap is not visible in the image. The person wearing the ivy
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "The person wearing the ivy cap is not wearing an ivy cap.",
+    "label": "other",
+    "prob": 0.9,
+    "reason": "This is a self-contradictory statement that makes no logical sense and provides no meaningful answer to the question."
+  },
+  {
+    "span_text": "The person wearing the ivy cap is not visible in the image.",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "Multiple people wearing caps are clearly visible in the image, including at least one person visible wearing a white cap in the upper left area."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [361:418] 'he person wearing the ivy cap is not visible in the image' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [7:64] 'The person wearing the ivy cap is not wearing an ivy cap.' | other | model confidence: 0.9
+  [158:165] 'visible' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10551 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+{0, 600, 90, 630, 630, 640, 640, 650, 650, 660, 660, 670, 670, 680, 680, 690, 690, 700, 700, 710, 710, 720, 720, 730, 730, 740, 740, 750, 750, 760, 760, 770, 770, 780, 780, 790, 790, 800, 800, 810, 810, 820, 820, 830, 830, 840, 840, 850, 850, 860, 860, 870, 870, 880, 880, 890, 890, 900, 900, 910, 910, 920, 920, 930, 930, 940, 940, 950, 950, 960, 960, 970, 970, 980, 980, 990, 990, 1000, 1000, 1010, 1010, 1020, 1020, 1030, 1030, 1040, 1040, 1050, 1050, 1060, 1060, 1070, 1070, 1080, 1080, 1090, 1090, 1100, 11
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [1:511] '0, 600, 90, 630, 630, 640, 640, 650, 650, 660, 660, 670, 670, 680, 680, 690, 690, 700, 700, 710, 710, 720, 720, 730, 730, 740, 740, 750, 750, 760, 760, 770, 770, 780, 780, 790, 790, 800, 800, 810, 810, 820, 820, 830, 830, 840, 840, 850, 850, 860, 860, 870, 870, 880, 880, 890, 890, 900, 900, 910, 910, 920, 920, 930, 930, 940, 940, 950, 950, 960, 960, 970, 970, 980, 980, 990, 990, 1000, 1000, 1010, 1010, 1020, 1020, 1030, 1030, 1040, 1040, 1050, 1050, 1060, 1060, 1070, 1070, 1080, 1080, 1090, 1090, 1100, 11' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10765 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human:
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1059 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+To determine the number of lights on the Christmas tree, I will would:
+
+1. Identify the lights on the tree.
+ 1. Approximate how many lights are present in each section.
+
+Let's proceed with this plan.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [64:69] 'would' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2635 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+ bird perched on a bare tree branch against a cloudy sky. The bird has dark plumage and a bright orange beak, suggesting it was likely taken during the late afternoon or early evening, as the lighting appears soft and warm, casting gentle shadows. The sky is partly cloudy, with a mix of blue and white clouds, which is common during these times of day. The bare branches indicate it might be late fall or winter, when many trees have lost their leaves. Without more specific context or metadata, it’s hard to pinpoint an exact date, but the photo was likely captured during a cool, cloudy day in one of those seasons.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "bright orange beak",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The bird's beak appears to be red or reddish, not orange as stated in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [1:5] 'bird' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [90:96] 'bright' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10805 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: What brand of watch is the tall man on the left wearing?
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:62] 'Human: What brand of watch is the tall man on the left wearing' | other | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10065 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Human: There are 6 people standing in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "6",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "Counting the visible people in the image shows approximately 5 people standing in the group on the left side of the street, not 6."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [17:18] '6' | miscounting | model confidence: 0.85
