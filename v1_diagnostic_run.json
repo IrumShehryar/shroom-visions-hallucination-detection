@@ -1,0 +1,352 @@
+[
+  {
+    "id": "train-en-10593",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11663",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-1612",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 2,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10126",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 4,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"3 times\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The response initially claims 'Nissan' appears 3 times, but then corrects itself to 2 times; the initial count of 3 is incorrect.\"\n  },\n  {\n    \"span_text\": \"NISSAN GENISS\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The text on the signage reads 'NISSAN GENISS' but the vehicle model is 'NISSAN GENISS' with the correct spelling being 'Geniss' not 'Geniss'—however, examining the image closely shows the sign reads 'NISSAN GENISS' which matches the response, so this is actually correct.\"\n  }\n]\n```\n\nActually, let me reconsider. Looking at the response more carefully:\n\nThe response initially states \"3 times\" but then self-corrects to \"2 times.\" The initial claim of 3 times is the hallucination. The response then correctly identifies 2 occurrences: on the signage and on the car's grille emblem.\n\n```json\n[\n  {\n    \"span_text\": \"3 times\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The response initially claims 'Nissan' appears 3 times in the image, but there are only 2 visible instances (the signage and the grille emblem).\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-664",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"blue and white flowers\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The cup displays flowers that appear to be blue/dark colored with yellow/orange centers, not blue and white flowers.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11759",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 2,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"on top of the red cabinet\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The black remote (visible as a small dark object) is located on the red cabinet itself or beside it, not on top of it as a distinct elevated position.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1029",
+    "old_iou": 0.2609,
+    "new_iou": 0.2609,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"screws or adhesive\",\n    \"label\": \"invention\",\n    \"prob\": 0.75,\n    \"reason\": \"No visible screws or adhesive fastening points are evident in the image; the mounting mechanism cannot be determined from what is shown.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11649",
+    "old_iou": 0.1167,
+    "new_iou": 0.2059,
+    "delta": 0.0892,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 2,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pinkish hue\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The shrimp in the image display a pale whitish or translucent color with some gray/dark markings, not a pinkish hue.\"\n  },\n  {\n    \"span_text\": \"pink color in the flesh\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The visible shrimp flesh appears white or pale translucent, not pink as suggested by the response.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1363",
+    "old_iou": 0.5333,
+    "new_iou": 0.5714,
+    "delta": 0.0381,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"greenish hue\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The whole fruits visible in the image show a yellow-green to yellow color, not predominantly greenish; the interior flesh is pink/coral, not green.\"\n  },\n  {\n    \"span_text\": \"the lemon in the image is not yellow yet\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The exterior skin shows a clear yellow-green color with significant yellow tones, indicating the fruit has progressed beyond an unripe greenish stage.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1785",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10553",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```\n\nThe response does not provide a specific artwork title or name - it only restates the question asked by the human. Since no factual claims about the artwork are made in the response, there are no hallucinations to flag. The image shows botanical drawings but contains no visible text identifying the artwork title, so the response cannot be evaluated against specific claims."
+  },
+  {
+    "id": "train-en-2319",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10276",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-2048",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 2,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"reddish-pink\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The interior flesh of the citrus shown is distinctly deep red/crimson, not reddish-pink; the color is more saturated and darker than pink.\"\n  },\n  {\n    \"span_text\": \"red or pink flesh\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.80,\n    \"reason\": \"The flesh is clearly deep red/crimson rather than 'red or pink'—the pink descriptor is inaccurate for the dominant color visible.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10065",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"6\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.85,\n    \"reason\": \"Counting the visible people in the image, there appear to be approximately 5-6 people in the group on the left side, but the exact count is difficult due to partial occlusion and shadows; however, a careful count suggests closer to 5 distinctly visible people rather than 6.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-11574",
+    "old_iou": 0.1818,
+    "new_iou": 0.1818,
+    "delta": 0.0,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"pink river shrimp (Palaemon elegans)\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The response invents a specific scientific name and common name for a shrimp variety that is not visible or mentioned in the image; the image shows no text or identification of any particular shrimp species.\"\n  },\n  {\n    \"span_text\": \"unustral\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"This word appears to be a typo or misread—'unustral' is not a valid English word; the intended word was likely 'natural' or similar.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10796",
+    "old_iou": 0.75,
+    "new_iou": 0.75,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \".com\",\n    \"label\": \"invention\",\n    \"prob\": 0.9,\n    \"reason\": \"The response '.com' is a domain extension, not a shoe store name; no readable store name is clearly visible in this blurry image of a shoe display.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10681",
+    "old_iou": 0.0,
+    "new_iou": 1.0,
+    "delta": 1.0,
+    "old_pred_count": 1,
+    "new_pred_count": 0,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-9920",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"Only one picnic bench is clearly visible in the image, not three.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-422",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"two poles\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows only one overhead pantograph pole extending upward from the bus, not two poles.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2444",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"metallic ferrule\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The ferrule at the top appears to be brass or gold-colored, not metallic silver/steel as 'metallic' typically implies in standard usage.\"\n  },\n  {\n    \"span_text\": \"a replacement head that is designed to be attached to an existing handle\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"There is no visible text or clear indication in the image that this is specifically a replacement head product; this interpretation goes beyond what can be verified from the image alone.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2379",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"SEA FOOD\\\" (with a space between \\\"SEA\\\" and \\\"FOOD\\\")\",\n    \"label\": \"OCR\",\n    \"prob\": 0.85,\n    \"reason\": \"The image shows 'Sea Food' as two words, but the response incorrectly claims there is a space between 'SEA' and 'FOOD' when it appears to be written as 'Sea Food' without the emphasized spacing distinction the response describes.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-1245",
+    "old_iou": 1.0,
+    "new_iou": 0.0,
+    "delta": -1.0,
+    "old_pred_count": 0,
+    "new_pred_count": 1,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"#tourfever\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The visible text in the image shows '#tourfever' but the response states '#tourfever' when the actual hashtag displayed is '#tourfever' - wait, checking again: the image clearly shows '#tourfever' at the bottom right, which matches the response exactly.\"\n  }\n]\n```\n\nActually, let me re-examine this carefully:\n\nThe image shows text that reads \"#tourfever\" at the bottom.\nThe response claims the hashtag is \"#tourfever\".\n\nThese match exactly.\n\n```json\n[]\n```"
+  },
+  {
+    "id": "train-en-462",
+    "old_iou": 1.0,
+    "new_iou": 1.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 0,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-582",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-11658",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 3,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"a long, narrow pit chamber\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"The seed cavity visible in the cut avocado is clearly oval/rounded, not long and narrow as described.\"\n  },\n  {\n    \"span_text\": \"one large stone-like seed\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"While avocados do have one seed, the description of it being 'stone-like' is inaccurate; avocado seeds are more accurately described as large and round/spherical, not stone-like.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10588",
+    "old_iou": 0.0392,
+    "new_iou": 0.0392,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 10,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Mount Shasta\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"The response identifies the mountain as Mount Shasta, but the image shows no identifying markers, text, or definitive visual evidence that confirms this specific mountain's identity rather than another similar volcano.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-2475",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-9810",
+    "old_iou": 0.3077,
+    "new_iou": 1.0,
+    "delta": 0.6923,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"GABS\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The graffiti signature in the image reads 'GALS' not 'GABS' - the last letter is clearly an 'L' not a 'B'.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9627",
+    "old_iou": 1.0,
+    "new_iou": 1.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"fumicides\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The image clearly shows the first paragraph ends with 'insecticides' not 'fumicides'.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-9846",
+    "old_iou": 0.6429,
+    "new_iou": 0.9286,
+    "delta": 0.2857,
+    "old_pred_count": 1,
+    "new_pred_count": 2,
+    "gold_count": 2,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"Katchewan\",\n    \"label\": \"OCR\",\n    \"prob\": 0.95,\n    \"reason\": \"The text on the building reads 'KATCHEWAN' but the response spells it 'Katchewan' which is a misreading of the visible text on the grain elevator.\"\n  },\n  {\n    \"span_text\": \"Pool\",\n    \"label\": \"OCR\",\n    \"prob\": 0.9,\n    \"reason\": \"The visible text on the building reads 'POOL' (all caps), but more importantly, the full text visible includes 'SASKATCHEWAN POOL' and 'POOL' with 'NO. 952' and 'BENTS' also visible, so the response is incomplete in what is actually written.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-987",
+    "old_iou": 0.0,
+    "new_iou": 0.0,
+    "delta": 0.0,
+    "old_pred_count": 0,
+    "new_pred_count": 0,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[]\n```"
+  },
+  {
+    "id": "train-en-10001",
+    "old_iou": 0.0633,
+    "new_iou": 0.0758,
+    "delta": 0.0125,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"Only two people are clearly visible standing in the image - one in blue jacket on the left and one in dark clothing, not three as claimed.\"\n  },\n  {\n    \"span_text\": \"a young girl near the statue on the right side of the picture\",\n    \"label\": \"invention\",\n    \"prob\": 0.85,\n    \"reason\": \"There is no young girl visible near the statue on the right side; the person mentioned appears to be an adult, not a child.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-530",
+    "old_iou": 0.6471,
+    "new_iou": 0.4706,
+    "delta": -0.1765,
+    "old_pred_count": 2,
+    "new_pred_count": 2,
+    "gold_count": 4,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"20-30\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.75,\n    \"reason\": \"The image shows far fewer than 20-30 distinct individual trees; there appear to be roughly 5-10 clearly visible trees, with only a small cluster on the left side.\"\n  },\n  {\n    \"span_text\": \"10-15 trees\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.8,\n    \"reason\": \"The cluster on the left side contains noticeably fewer than 10-15 distinct trees; approximately 4-6 trees are visible in that area.\"\n  }\n]\n```"
+  },
+  {
+    "id": "train-en-10153",
+    "old_iou": 1.0,
+    "new_iou": 1.0,
+    "delta": 0.0,
+    "old_pred_count": 1,
+    "new_pred_count": 1,
+    "gold_count": 1,
+    "new_haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"three\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.9,\n    \"reason\": \"The image shows approximately 4-5 people visible outside the vehicles, not three.\"\n  }\n]\n```"
+  }
+]
