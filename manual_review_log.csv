@@ -1,0 +1,7 @@
+timestamp,id,category,iou,verdict,notes
+2026-07-12T15:42:37,train-en-10352,invention,0.0,correct_match,There si no person in the picture
+2026-07-12T15:43:33,train-en-10553,other,0.0,genuine_miss,haiku missed the question repeated about the kind of art in the picture
+2026-07-12T15:45:20,train-en-2623,other,0.0,genuine_miss,"the response conatins garbage 0000,which haiku didnt tag"
+2026-07-12T15:47:57,train-en-11340,other,0.0,genuine_miss,haiku failed to find the full halucinated question repeatd in the gld response
+2026-07-12T15:50:51,train-en-2561,other,0.0,correct_match,"correct match but hakiu missed the ""human"" written in the gold response as halluciantion"
+2026-07-12T15:55:12,train-en-10311,invention,0.0,genuine_miss,did not flag the entire content as halucinated span

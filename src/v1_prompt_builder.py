@@ -1,5 +1,5 @@
-def build_audit_prompt(prompt_text, response_text, filename_hint):
-    role = """You are a precise hallucination span detector analyzing 
+def build_audit_prompt(prompt_text,response_text,filename_hint):
+    role="""You are a precise hallucination span detector analyzing 
 outputs from vision-language models.
 
 You will be given:
@@ -18,30 +18,14 @@ IMPORTANT INSTRUCTIONS:
 - A response can be mostly right but contain specific wrong 
   details — your job is to find those details.
 - Pay attention to: specific names, varieties, brands, colors,
-  quantities, spatial relationships, and visible text.
-- If the response restates the same incorrect claim in different
-  words across multiple sentences, flag EACH restatement as its
-  own separate entry -- do not stop after the first one."""
-
-    # ONLY CHANGE vs. original: expanded INVENTION definition + one worked
-    # example, targeting the "missed abstract/unverifiable claim" pattern.
-    # Nothing else in this prompt differs from the final reverted version.
-    categories = """There are five hallucination categories:
+  quantities, spatial relationships, and visible text."""
+    
+    categories="""There are five hallucination categories:
         INVENTION: The response mentions something that does not 
-        exist in the image at all, OR states a fact, explanation, 
-        or piece of terminology that cannot be verified from the 
-        image and is not something a careful observer could 
-        determine just by looking. This includes invented locations, 
-        objects, invented technical/scientific explanations, and 
-        invented names for things.
-        Example (spatial): Claiming the image shows Auckland New 
-        Zealand when no location markers are visible.
-        Example (fabricated explanation): Claiming a bird's unusual 
-        white coloring is "due to a genetic condition called leucism" 
-        when nothing about genetics can be determined from a photo — 
-        this is a confidently-stated but unverifiable claim, which 
-        counts as invention even though it doesn't contradict anything 
-        visible.
+        exist in the image at all. This includes invented locations, 
+        objects, or facts that cannot be verified from the image.
+        Example: Claiming the image shows Auckland New Zealand 
+        when no location markers are visible.
 
         MISCHARACTERIZATION: Something real in the image is 
         described incorrectly. The object exists but a property 
@@ -53,16 +37,12 @@ IMPORTANT INSTRUCTIONS:
         something visible in the image.
         Example: Saying "four legs" when the animal has three.
 
-        OCR: The response misreads text that is visibly
+        OCR: The response misreads text that is visibly 
         written in the image.
         Example: Reading a slide as "sign on" when it says "log in".
+        When flagging spans follow these rules:
 
         OTHERS: Any other hallucination that does not fit the above categories.
-        This includes cases where the response fails to actually answer 
-        the prompt -- for example, if the response simply repeats or 
-        echoes the question back (e.g., "Human: what is X?") instead of 
-        providing a real answer. In such cases, flag the entire 
-        non-answering response as "other" with high confidence.
     """
     span_rules = """SPAN EXTRACTION RULES:
     
@@ -75,13 +55,11 @@ IMPORTANT INSTRUCTIONS:
     RULE 2 - MISCHARACTERIZATION: Extract ONLY the specific word or short property phrase that is false. Do NOT return full clauses or explanations.
     * CORRECT: "ceiling" or "the ceiling" (if it's attached to a wall)
     * INCORRECT: "cables attached to the ceiling"
-
-    RULE 3 - OCR: Extract ONLY the misread text exactly as it appears in the RESPONSE (the WRONG reading) -- not the correct text from the image, and not surrounding correct words.
-    * Example: if the response says "sign on" but the image actually reads "log in", the span_text is "sign on".
-
+    
     CRITICAL MANDATE: The "span_text" must be the shortest possible verbatim substring from the RESPONSE. If you include extra correct words surrounding the error, the evaluation system will penalize it with a 0 score."""
 
-    ocr_guide = """If the prompt asks about text visible in the image:
+        
+    ocr_guide="""If the prompt asks about text visible in the image:
         - Read the text in the image very carefully before 
         evaluating the response
         - Compare word by word against what the response claims
@@ -89,8 +67,8 @@ IMPORTANT INSTRUCTIONS:
         -If the image text is too blurry to read confidently, 
         do not flag OCR errors — assign low confidence only
         """
-
-    confidence_guide = """For each flagged span assign a confidence score between 0 and 1:
+    
+    confidence_guide="""For each flagged span assign a confidence score between 0 and 1:
 
         0.8 - 1.0: You are certain this is wrong. The image clearly 
         contradicts this claim. Any reasonable person 
@@ -113,18 +91,10 @@ IMPORTANT INSTRUCTIONS:
         clear visual evidence, do NOT flag it.
         Prefer returning empty [] over uncertain flags.
     """
-
+   
     output_format = """Return your answer as a JSON array only. No other markdown formatting, no conversational text.
     
     Before writing each "span_text", verify: Is this the absolute minimum string required to isolate the error? For numbers, is it just the digit/number word?
-
-    CRITICAL: Your entire response must be ONLY the JSON array -- nothing 
-    before it, nothing after it. Do not think out loud, do not write 
-    "wait, let me reconsider" or any re-examination in your output. If 
-    you are uncertain whether something should be flagged, resolve that 
-    uncertainty silently before writing the JSON -- only include a flag 
-    in the JSON if you are confident about it at the moment you write it. 
-    Never include a flag you go on to contradict or retract afterward.
     
     Each entry must have:
     - "span_text": the shortest exact substring from the response
@@ -132,7 +102,7 @@ IMPORTANT INSTRUCTIONS:
     - "prob": confidence score between 0 and 1
     - "reason": one sentence explanation
     """
-    input_section = f"""
+    input_section= f"""
     FILENAME HINT: {filename_hint}
     PROMPT: {prompt_text}
     RESPONSE: {response_text}

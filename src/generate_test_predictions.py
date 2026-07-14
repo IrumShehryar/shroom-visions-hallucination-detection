@@ -25,7 +25,7 @@ IMAGES_DIR = r"D:\SHROOM\distrib\images\shroom-vis-images"
 RAW_CACHE_PATH = r"D:\SHROOM\test_predictions_raw_cache.json"   # checkpoint, safe to resume
 SUBMISSION_OUT = r"D:\SHROOM\submission\en.jsonl"
 LANGUAGE = "en"
-TEST_LIMIT = 3   # set to None to run all 1201 samples
+TEST_LIMIT = None   # set to None to run all 1201 samples
 # ---------------------------------------------------------------------------
 
 
@@ -92,7 +92,8 @@ def run_predictions():
         try:
             _, raw_response = call_vision_llm(image_path, audit_prompt)
         except Exception as e:
-            print(f"  API call failed: {e}. Will retry on next run.")
+            print(f"  API call failed: {e}. Saving empty prediction.")
+            cache_data.append({"id": sample_id, "haiku_reasoning": "[]"})
             continue
 
         cache_data.append({"id": sample_id, "haiku_reasoning": raw_response})

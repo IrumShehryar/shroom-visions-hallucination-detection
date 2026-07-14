@@ -1,14 +1,1 @@
-[
-  {
-    "id": "test-en-428",
-    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"a \\\"hand\\\"\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The response claims the sundial has 'a hand' (singular), but the image shows two distinct gnomon/pointer structures, not one.\"\n  },\n  {\n    \"span_text\": \"The triangular piece\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The gnomon visible in the image appears to be a thin linear or blade-like structure rather than clearly triangular in shape.\"\n  }\n]\n```"
-  },
-  {
-    "id": "test-en-429",
-    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"tooth-like spines\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"The mushroom has thin, hair-like or icicle-like structures, not tooth-like spines. The formations are more delicate and needle-like rather than tooth-shaped.\"\n  }\n]\n```"
-  },
-  {
-    "id": "test-en-430",
-    "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"fir trees\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.75,\n    \"reason\": \"The trees visible in the image appear to be conifers (likely pines or firs), but the response specifically identifies them as 'fir trees' when they are more likely pine trees based on their appearance and the typical vegetation of high-altitude Sierra Nevada lakes.\"\n  }\n]\n```"
-  }
-]
+[]

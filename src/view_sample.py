@@ -27,7 +27,7 @@ def log_verdict(sample_id, category, iou, verdict, notes=""):
 
 
 def view_sample(sample_id,
-                results_path=r"D:\SHROOM\analysis_outputs\all_results.json",
+                results_path=r"D:\SHROOM\v1_analysis_outputs\all_results.json",
                 data_path=r"D:\SHROOM\shroom-visions-data\distrib\shroom-vision.train.en.labeled.jsonl",
                 images_dir=r"D:\SHROOM\distrib\images\shroom-vis-images",
                 interactive=True):
