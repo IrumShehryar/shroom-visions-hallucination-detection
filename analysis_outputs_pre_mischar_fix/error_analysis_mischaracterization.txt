@@ -1,0 +1,1363 @@
+OFFLINE ERROR ANALYSIS: MISCHARACTERIZATION
+Generated: 2026-07-12 23:55:23.233853
+======================================================================
+SUMMARY
+  Samples:     47
+  Average IoU: 0.1186
+  Perfect (1.0): 0
+  Partial:       22
+  Zero (0.0):    25
+======================================================================
+
+==================== IMAGE ID: train-en-2702 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, this duck does not have straight beaks. In fact, the duck in the image — a male Mallard (*Anas platyrhynchos*) — has a distinctly **curved beak**.
+
+Here’s a more detailed explanation:
+
+- **Beak Shape**: The Mallard’s beak is broad, flat, and slightly upturned at the tip. It curves gently upward from the base toward the tip, which is a common feature in many dabbling ducks. This curvature helps them scoop food from the water and mud more efficiently.
+
+- **Function**: The curved shape is adapted for filter-feeding — the duck can submerge its head and use its beak to strain small invertebrates, seeds, and plant matter from the water. The beak’s structure also helps in manipulating food.
+
+- **Sexual Dimorphism**: Male Mallards (drakes) typically have more pronounced beak curvature compared to females, though both sexes share the same general curved shape. The beak color is also different — males have a greenish-gray beak, while females have a more yellowish or brownish beak.
+
+- **Contrast with “Straight” Beaks**: Ducks with straight beaks are less common and usually belong to different species (e.g., some sea ducks or mergansers), which may have beaks adapted for different feeding strategies, such as catching fish or tearing apart larger prey.
+
+In summary, the Mallard in the photo has a classic curved beak — not straight — which is perfectly suited to its feeding habits and ecological niche.
+
+✅ **Answer: No, the duck does not have straight beaks — it has a curved beak, typical of Mallards.**
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "male Mallard",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The image shows a duck with distinctive features (dark head, white body coloring pattern) that cannot be definitively identified as a male Mallard species from the photo alone, and the filename suggests a 'hook-billed' duck rather than a standard Mallard."
+  },
+  {
+    "span_text": "greenish-gray beak",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "The visible beak in the image appears to be white or pale colored, not greenish-gray as described for male Mallards."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [255:263] 'upturned' | mischaracterization | agreement: 0.3333333333
+  [293:299] 'upward' | mischaracterization | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [79:91] 'male Mallard' | invention | model confidence: 0.85
+  [916:929] 'greenish-gray' | mischaracterization | model confidence: 0.75
+
+==================== IMAGE ID: train-en-11180 ====================
+MODEL PERFORMANCE (IoU): 0.5000
+
+--- FULL MODEL RESPONSE ---
+The shovel in the image does not appear to have a metal end. Instead, it has a wooden head. The wooden head is typically made from hardwoods such as ash, maple, or hickory, which are durable and long-lasting. The wooden head is usually attached to a metal handle, which is not visible in this image. The wooden head is designed to dig into the ground, and the curved end is used to scrape or lift the soil.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "wooden head",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The shovel head appears to be made of wood, not metal, but the response repeatedly calls it a 'wooden head' when it should be described as a 'wooden blade' or 'wooden shovel head' - more critically, the flat blade surface is not typically called a 'head' in standard shovel terminology."
+  },
+  {
+    "span_text": "metal handle, which is not visible in this image",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "The response claims a metal handle is present but not visible, which is an unverifiable invention; the entire tool visible is wooden, and no metal handle is apparent or can be confirmed from the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [24:32] 'does not' | mischaracterization | agreement: 0.3333333333
+  [79:85] 'wooden' | mischaracterization | agreement: 0.3333333333
+  [273:298] 'not visible in this image' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [79:85] 'wooden' | mischaracterization | model confidence: 0.85
+  [250:298] 'metal handle, which is not visible in this image' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1684 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, the wine bottles are displayed on shelves in a grocery store.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [47:52] 'in a ' | mischaracterization | agreement: 0.3333333333
+  [52:65] 'grocery store' | mischaracterization | agreement: 1.0
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2156 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, this cheetah has small spots. Cheetahs are known for their distinctive coat pattern of numerous round or oval-shaped black "teardrop" spots on a golden-yellow to tan background. The image clearly shows these characteristic markings: the body is covered with many tiny, dark spots that vary slightly in size but generally appear as smaller rounded shapes rather than large patches. This dense spotting helps them blend into their savanna habitat among grasses and dappled light, which is essential for hunting prey at high speeds while remaining camouflaged.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "teardrop",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The spots visible on this cheetah are small and rounded, not teardrop-shaped as claimed in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [10:22] 'cheetah has ' | mischaracterization | agreement: 0.3333333333
+  [22:27] 'small' | mischaracterization | agreement: 0.6666666667
+  [27:33] ' spots' | mischaracterization | agreement: 0.3333333333
+  [268:272] 'tiny' | mischaracterization | agreement: 0.3333333333
+  [326:336] 'appear as ' | mischaracterization | agreement: 0.3333333333
+  [336:343] 'smaller' | mischaracterization | agreement: 0.6666666667
+  [343:371] ' rounded shapes rather than ' | mischaracterization | agreement: 0.3333333333
+  [371:376] 'large' | mischaracterization | agreement: 0.6666666667
+  [376:384] ' patches' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [129:137] 'teardrop' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1384 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+In the background of the photo, on the chair, there is a metal pitcher.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "on the chair",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The metal pitcher is clearly positioned at the base of the pole/stand, not on the chair. The chair is visible in the background but the pitcher is in the foreground at ground level."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [57:63] 'metal ' | mischaracterization | agreement: 0.6666666667
+  [63:70] 'pitcher' | mischaracterization | agreement: 1.0
+
+PREDICTED LABELS:
+  [32:44] 'on the chair' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9930 ====================
+MODEL PERFORMANCE (IoU): 0.3125
+
+--- FULL MODEL RESPONSE ---
+There are three flowers on the cake. Two pink ones, one located near the bottom left and another towards the right side of the image, as well as a purple flower with a yellow center positioned slightly above them in the middle area.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows only two flowers on the cake - one pink flower on the left side and one purple flower with yellow center on the right side."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [202:212] 'above them' | mischaracterization | agreement: 0.3333333333
+  [10:15] 'three' | miscounting | agreement: 1.0
+  [145:146] 'a' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [10:15] 'three' | miscounting | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1836 ====================
+MODEL PERFORMANCE (IoU): 0.2745
+
+--- FULL MODEL RESPONSE ---
+Yes, the scarf is worn around the neck. The image clearly shows a woman with her head and shoulders visible from about mid-neck down to just above the knees. Draped over this upper body area is a large piece of fabric that wraps comfortably across her chest and back, characteristic of how scarves are typically styled for warmth or fashion when draped around the neck.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "around the neck",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The scarf is draped over the shoulders as a shawl/wrap, not worn around the neck; it covers the shoulders and upper body rather than encircling the neck."
+  },
+  {
+    "span_text": "from about mid-neck down to just above the knees",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "The visible portion of the woman extends from approximately the chin/lower face down to mid-thigh or knee area, not specifically 'mid-neck down to just above the knees'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [90:107] 'shoulders visible' | mischaracterization | agreement: 0.3333333333
+  [119:127] 'mid-neck' | mischaracterization | agreement: 0.3333333333
+  [136:156] 'just above the knees' | mischaracterization | agreement: 0.3333333333
+  [346:368] 'draped around the neck' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [23:38] 'around the neck' | mischaracterization | model confidence: 0.85
+  [108:156] 'from about mid-neck down to just above the knees' | mischaracterization | model confidence: 0.75
+
+==================== IMAGE ID: train-en-2556 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+ing from the sky and clouds, the weather appears to be **partly cloudy**.
+
+Here's the reasoning:
+
+- The sky is not completely clear; there are distinct white clouds visible, particularly on the right side and near the top of the frame.
+- The clouds appear bright and well-defined against the sky, suggesting it's a partly cloudy day.
+- The lighting on the buildings indicates the sun is out, casting strong shadows and illuminating parts of the glass facade.
+
+Therefore, the weather is **partly cloudy**.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [205:234] 'and near the top of the frame' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1855 ====================
+MODEL PERFORMANCE (IoU): 0.2468
+
+--- FULL MODEL RESPONSE ---
+No, this bathtub is not white. The image shows a large wooden structure with vertical planks of light brown wood arranged in a cylindrical shape. There are also horizontal metal bands securing the construction and some visible text on one of them that reads 'LUXWE Superior Quality'.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "some visible text on one of them that reads 'LUXWE Superior Quality'",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "No visible text reading 'LUXWE Superior Quality' can be seen on the metal bands in the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [62:71] 'structure' | mischaracterization | agreement: 0.3333333333
+  [232:246] 'on one of them' | mischaracterization | agreement: 0.3333333333
+  [259:264] 'LUXWE' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [214:282] 'some visible text on one of them that reads 'LUXWE Superior Quality'' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1339 ====================
+MODEL PERFORMANCE (IoU): 0.2381
+
+--- FULL MODEL RESPONSE ---
+In the image, the girl in the foreground is holding a sign with a picture of a bird on it. As she is standing outdoors, she appears to be carrying a small handbag, which is tucked in under her arm. However, it is not possible to see the contents of the handbag from this angle. The photo focuses on the girl holding the sign and the crowd of people behind her.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "handbag, which is tucked in under her arm",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The girl in the foreground is not carrying a handbag under her arm; she is holding a memorial sign with both hands in front of her body."
+  },
+  {
+    "span_text": "it is not possible to see the contents of the handbag from this angle",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "There is no handbag visible in the image, so this claim about not being able to see its contents is based on a non-existent object."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [18:22] 'girl' | mischaracterization | agreement: 0.3333333333
+  [149:155] 'small ' | mischaracterization | agreement: 0.3333333333
+  [155:162] 'handbag' | mischaracterization | agreement: 0.6666666667
+  [237:260] 'contents of the handbag' | mischaracterization | agreement: 0.3333333333
+  [349:355] 'behind' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [155:196] 'handbag, which is tucked in under her arm' | mischaracterization | model confidence: 0.85
+  [207:276] 'it is not possible to see the contents of the handbag from this angle' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-11736 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The chair in the image has a distinctive design: it appears to have a circular base that is not visible from the current angle, suggesting it may be a stand or pedestal. The chair is suspended from a hook by a chain, and the design allows the chair to rotate around its base. This is a modern and unique design, often associated with the "egg chair" or similar types of hanging chairs.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "circular base that is not visible from the current angle",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The base is clearly visible and is not circular but rather an oval/elongated footprint, and it is fully visible in the image."
+  },
+  {
+    "span_text": "the chair to rotate around its base",
+    "label": "invention",
+    "prob": 0.75,
+    "reason": "While hanging chairs can rotate, the response claims a specific design feature (rotation around its base) that cannot be verified from a static image and overstates what is demonstrable from the visual alone."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [92:126] 'not visible from the current angle' | mischaracterization | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [70:78] 'circular' | mischaracterization | model confidence: 0.85
+  [239:274] 'the chair to rotate around its base' | invention | model confidence: 0.75
+
+==================== IMAGE ID: train-en-1834 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+This rattle does not have a handle. It is an egg-shaped toy, typically designed for babies or young children to hold and shake as part of their sensory exploration during early development stages. The smooth surface allows small hands to easily grasp it securely without the need for additional handles.
+
+The lack of a traditional handle means that this type of baby toy relies entirely on its shape and texture for grip. This can be beneficial in developing fine motor skills since infants must use different parts of their hand to manipulate objects like this one effectively while also experiencing various sounds produced by internal components when shaken.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [238:244] 'easily' | mischaracterization | agreement: 0.3333333333
+  [254:302] 'securely without the need for additional handles' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10868 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, this dog does have a tail.
+
+Upon close inspection of the image, you can see the dog’s tail is present and is short and stubby, which is characteristic of the Boxer breed. It is located at the rear of the dog’s body, extending from the base of the spine, just behind the hind legs. The tail is slightly curled or carried low, and it appears to be covered in the same brindle and white coat as the rest of the dog’s body.
+
+It’s worth noting that Boxers are known for having a short, muscular tail that is often carried close to the body, sometimes with a slight upward curve. The tail is not long or fluffy like some other breeds, but it is definitely there — you can see the base of the tail and its short length extending from the dog’s hindquarters.
+
+So, yes — this Boxer has a tail, and it is a normal, breed-appropriate feature.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [286:298] 'The tail is ' | mischaracterization | agreement: 0.3333333333
+  [298:313] 'slightly curled' | mischaracterization | agreement: 0.6666666667
+  [313:328] ' or carried low' | mischaracterization | agreement: 0.3333333333
+  [802:835] 'normal, breed-appropriate feature' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2240 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The word above the left windshield of the bus is "FELIX".
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "FELIX",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The text visible above the left windshield reads 'HEUX' not 'FELIX'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [19:23] 'left' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [50:55] 'FELIX' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10313 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The guitarist on the right is playing a red electric guitar. The vibrant color stands out against the stage's dark, smoky atmosphere and his own bright red outfit.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "red electric guitar",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The guitarist on the right appears to be holding a guitar that is not clearly red; it appears to be darker in color, possibly black or dark gray, not red as stated."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [79:89] 'stands out' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [40:43] 'red' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-920 ====================
+MODEL PERFORMANCE (IoU): 0.2895
+
+--- FULL MODEL RESPONSE ---
+Yes, the rifle in the image has a long barrel. 
+
+To elaborate, the barrel is one of the key components of a firearm, significantly influencing its performance characteristics such as accuracy, range, and recoil. Here are some specific details that confirm the long barrel on this rifle:
+
+1. **Length**: The barrel appears to be considerably long, extending well beyond the typical length found on compact or subcompact rifles. The extended barrel contributes to increased accuracy and a flatter trajectory.
+
+2. **Receiver and Bolt System**: The presence of a long barrel is consistent with a receiver and bolt system designed to accommodate longer cartridges and longer barrels. The receiver is robust, supporting the weight and length of the barrel.
+
+3. **Optics Mounting**:**: The scope is mounted well forward, which is common with rifles that have long barrels. This setup helps maintain a balanced shooting stance and ensures that the shooter’s eye aligns properly with the sights and the scope.
+
+4. **Stock and Ergonomics**:**: The rifle features a full-length, collapsible stock, which is typical for longer-barreled rifles. This design allows shooters to maintain proper posture and leverage, crucial for stability when using a longer barrel.
+
+5. **Barrel Shroud**:**: The presence of a barrel shroud or a foregrip indicates that the barrel is long enough to benefit from stabilization and recoil management.
+
+In summary, the rifle's design elements, optic mounting, stock configuration, and overall build all point to the presence of a long barrel, enhancing its precision and performance capabilities.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "long barrel",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "This is a bullpup rifle design where the barrel is actually relatively short compared to traditional rifle configurations; the bullpup platform places the action near the stock, resulting in a compact overall length despite the barrel length being moderate."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [34:38] 'long' | mischaracterization | agreement: 0.6666666667
+  [38:45] ' barrel' | mischaracterization | agreement: 0.3333333333
+  [341:345] 'long' | mischaracterization | agreement: 0.3333333333
+  [431:439] 'extended' | mischaracterization | agreement: 0.3333333333
+  [559:563] 'long' | mischaracterization | agreement: 0.3333333333
+  [805:812] 'forward' | mischaracterization | agreement: 0.3333333333
+  [1545:1549] 'long' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [34:45] 'long barrel' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-9682 ====================
+MODEL PERFORMANCE (IoU): 0.1667
+
+--- FULL MODEL RESPONSE ---
+The large letters visible on the railway sleeper in the middle of the image are 'PASO'. These appear to be part of a larger inscription or marking, possibly indicating location information related to the track's maintenance or construction.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "PASO",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible text on the railway sleeper in the foreground appears to read 'APODOLOHIYA' or similar, not 'PASO'."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [168:188] 'location information' | mischaracterization | agreement: 0.3333333333
+  [81:85] 'PASO' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [81:85] 'PASO' | OCR | model confidence: 0.85
+
+==================== IMAGE ID: train-en-10195 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it's difficult to determine if there are stars visible, let alone their brightness. The photo appears to be taken indoors, likely at a concert or performance, with a dark background and stage lighting. The bright lights along the top are stage lights, not stars. 
+
+Therefore, I cannot assess the brightness of stars in the sky from this image.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [134:141] 'indoors' | mischaracterization | agreement: 0.3333333333
+  [258:270] 'stage lights' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-2320 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Assistant
+Based on the image provided, the blouse does not have sleeves.
+
+Here's a detailed breakdown:
+
+- The blouse is a sleeveless design. The fabric of the blouse ends at the shoulders, leaving the arms completely exposed.
+- The blouse is designed with a wide, open back, revealing the model's entire back and shoulders.
+- The neckline appears to be a square or wide V-neck, and the fabric is gathered or tied at the back, but there are no fabric extensions covering the upper arms or forearms.
+
+This style is common in many traditional South Asian blouse designs, especially those meant to be worn with sarees or other draped garments, where the focus is on the back and neckline, and the arms are left free for movement or aesthetic appeal.
+
+Therefore, the blouse is sleeveless.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [55:71] 'not have sleeves' | mischaracterization | agreement: 0.3333333333
+  [355:376] 'square or wide V-neck' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-10824 ====================
+MODEL PERFORMANCE (IoU): 0.0870
+
+--- FULL MODEL RESPONSE ---
+The image shows a forest with tall pine trees. This type of forest is often referred to as a pine forest or pine woodland. Some common examples include:
+
+1. **Pinus Sylvestris** (European Pine Forests)
+2. **Pinus Taeda** (Loblolly Pine Forests, found in the southeastern United States)
+3. **Pinus Sabiniana** (Dwarf Western White Pine Forests, found in California)
+
+The exact species can depend on the geographical location.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "The image shows a forest with tall pine trees.",
+    "label": "invention",
+    "prob": 0.7,
+    "reason": "The response identifies the trees as pine trees, but the tall, straight trees with dark bark visible in the image appear to be deciduous or mixed forest trees rather than distinctly identifiable as pine trees."
+  },
+  {
+    "span_text": "pine forest or pine woodland",
+    "label": "mischaracterization",
+    "prob": 0.6,
+    "reason": "The trees in the image do not clearly exhibit the characteristic needle foliage or branching patterns typical of pine forests; they appear to be a mixed or deciduous forest type."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [35:39] 'pine' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:46] 'The image shows a forest with tall pine trees.' | invention | model confidence: 0.7
+
+==================== IMAGE ID: train-en-10547 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image provided, the person on the right is wearing a bracelet on their left wrist.
+
+The bracelet appears to be **black**.
+
+It is a simple, solid-colored band, which contrasts with the red lighting of the stage and the person's clothing.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "black",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The bracelet visible on the person on the right appears to be dark colored but in the red stage lighting it is not clearly black; the color cannot be definitively determined to be black rather than another dark color under the red lighting conditions."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [84:88] 'left' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [126:131] 'black' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11472 ====================
+MODEL PERFORMANCE (IoU): 0.4167
+
+--- FULL MODEL RESPONSE ---
+Yes, the penguin in the image is predominantly black. It has a dark brown to nearly black plumage covering its body and head, which gives it a uniformly dark appearance typical of many juvenile or early-stage adult penguin species like Adélie Penguins before they develop their more distinctive white underparts as they mature.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "black",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The penguin chick is predominantly gray, not black; its plumage is a medium to dark gray color throughout."
+  },
+  {
+    "span_text": "dark brown to nearly black",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The plumage is gray in color, not dark brown or black; describing it as 'dark brown to nearly black' mischaracterizes the actual gray coloration visible."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [47:52] 'black' | mischaracterization | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [47:52] 'black' | mischaracterization | model confidence: 0.9
+  [63:67] 'dark' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1767 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+This swan is predominantly white, with a distinctive black head and a red beak. The black coloration on its head is quite striking and is a characteristic feature of certain species of swan. The red beak is also a common color for swans, particularly in the male or "cob" of the species. These colors are often used to identify different species of swan.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "red beak",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The swan's beak is pink/pale colored, not red as stated in the response."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [74:78] 'beak' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [14:17] 'red' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-979 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The penguin in the image does not have a smooth head. Here are some observations to elaborate:
+
+1. Feathers: The head of of the penguin is covered in numerous small, individual feathers. These feathers appear slightly ruffled and textured rather than smooth.
+ 
+  - Coloration: The head features a distinctive pattern with black and white feathers, and a striking yellow crest. This coloration and crest are naturally formed due to the arrangement and texture of the feathers.
+
+  - Texture Detail: Upon close inspection, the feathers on the head look interlocked and have a slightly raised texture, contributing to the overall appearance of a textured surface rather than a smooth one.
+
+ In summary, the presence of numerous individual feathers, the natural patterning, and the visible texture all contribute to the penguin's head not being smooth.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "of of",
+    "label": "other",
+    "prob": 0.95,
+    "reason": "The response contains a duplicate word 'of of' which is a typographical error."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [332:337] 'white' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [118:123] 'of of' | other | model confidence: 0.95
+
+==================== IMAGE ID: train-en-2669 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, this crab does not have symmetrical claws — in fact, it has a classic example of **asymmetrical claws**, which is very common in many crab species, especially those that are predatory or forage for food.
+
+In this image, you can clearly see:
+
+- **One large, prominent claw** (the major cheliped) — it is bright red, heavily textured, and has a large, white, toothed inner surface. This is the crab’s “crusher” or “grappler” claw, used for catching and breaking prey.
+- **A much smaller, slender claw** — the minor cheliped — which is less robust, more delicate, and appears more functional for manipulation or feeding.
+
+This asymmetry is a key adaptation for many crabs. The large claw allows them to overpower prey, while the smaller claw can be used for finer tasks like handling food, digging, or defense. The crab in the photo appears to be a **mud crab** or a **fiddler crab** (possibly *Sesarma* or *Callinectes* genus), both of which are known for this asymmetry.
+
+It’s worth noting that while the claws themselves are not symmetrical, the crab’s overall body plan — including the eyes and legs — is bilaterally symmetrical. The asymmetry is limited to the claws, which is a common evolutionary trait that provides functional advantages.
+
+So, to answer your question directly: **No, the crab does not have symmetrical claws — it has one large and one small claw, which is typical for many crab species.**
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "mud crab",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The filename and visual characteristics (bright red coloring, distinctive eyestalks, body proportions) indicate this is a fiddler crab, not a mud crab. The response lists fiddler crab as a possibility but presents mud crab as equally likely without clear evidence."
+  },
+  {
+    "span_text": "Callinectes",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "Callinectes is a genus of blue crabs with different morphology; this crab's appearance (coloring, eyestalk structure, overall body shape) does not match Callinectes species and is clearly a fiddler crab."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [1100:1104] 'legs' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [852:860] 'mud crab' | invention | model confidence: 0.85
+  [909:920] 'Callinectes' | invention | model confidence: 0.9
+
+==================== IMAGE ID: train-en-11322 ====================
+MODEL PERFORMANCE (IoU): 0.2857
+
+--- FULL MODEL RESPONSE ---
+Yes, each fork in the image has four prongs. You can see the prongs at the top of each fork, which are designed to grip food. The handles are decorative, featuring a marble-like design with silver ferrules connecting the handles to the metal forks.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "four prongs",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The forks in the image have three prongs each, not four, which is clearly visible at the top of each fork."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [32:36] 'four' | OCR | agreement: 0.3333333333
+  [32:36] 'four' | miscounting | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [32:43] 'four prongs' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-595 ====================
+MODEL PERFORMANCE (IoU): 0.0472
+
+--- FULL MODEL RESPONSE ---
+Yes, the shovel in the image does have a wide blade. 
+
+Here's what leads me to that conclusion:
+
+*   **Shape:** The blade is noticeably broader than a typical pointed shovel. It's more rectangular or square in shape.
+*   **Purpose:** Shovels with wide blades like this are specifically designed for moving large amounts of loose materials like mulch, gravel, or snow. The wider surface area allows you to scoop up more with each pass.
+*   **Brand/Type:** This looks like a "drainage shovel" or "square point shovel" which are known for their wide blades.
+
+So, it's not just *a* wide blade, it's a shovel *designed* with a wide blade for a specific purpose.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "rectangular or square in shape",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The blade is clearly narrow and pointed/tapered, not rectangular or square—it appears to be a narrow trenching or pointed shovel blade."
+  },
+  {
+    "span_text": "drainage shovel",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The visible text on the shovel and its narrow, pointed blade design indicate this is a trenching shovel, not a drainage shovel, which would have a wider blade."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [41:45] 'wide' | mischaracterization | agreement: 1.0
+  [45:50] ' blad' | mischaracterization | agreement: 0.6666666667
+  [50:51] 'e' | mischaracterization | agreement: 0.3333333333
+  [125:136] 'noticeably ' | mischaracterization | agreement: 0.3333333333
+  [136:143] 'broader' | mischaracterization | agreement: 1.0
+  [143:173] ' than a typical pointed shovel' | mischaracterization | agreement: 0.3333333333
+  [234:268] 'Shovels with wide blades like this' | mischaracterization | agreement: 0.3333333333
+  [455:553] 'This looks like a "drainage shovel" or "square point shovel" which are known for their wide blades' | mischaracterization | agreement: 0.3333333333
+  [560:575] 'it's not just *' | mischaracterization | agreement: 0.3333333333
+  [575:582] 'a* wide' | mischaracterization | agreement: 0.6666666667
+  [582:620] ' blade, it's a shovel *designed* with ' | mischaracterization | agreement: 0.3333333333
+  [620:632] 'a wide blade' | mischaracterization | agreement: 0.6666666667
+  [632:655] ' for a specific purpose' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [185:215] 'rectangular or square in shape' | mischaracterization | model confidence: 0.85
+  [474:489] 'drainage shovel' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-1327 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The person in the image is wearing traditional or folk-style clothing, which includes a patterned top with embroidery and a veil. This attire is often associated with cultural or traditional events rather than a costume party. It seems more likely that she is attending a cultural celebration, folk event, or possibly a religious ceremony. The setting appears to be indoors, with wooden elements in the background, suggesting a formal or traditional environment.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [35:69] 'traditional or folk-style clothing' | mischaracterization | agreement: 0.3333333333
+  [88:97] 'patterned' | mischaracterization | agreement: 0.3333333333
+  [122:128] 'a veil' | mischaracterization | agreement: 0.3333333333
+  [167:197] 'cultural or traditional events' | mischaracterization | agreement: 0.3333333333
+  [272:338] 'cultural celebration, folk event, or possibly a religious ceremony' | mischaracterization | agreement: 0.3333333333
+  [366:373] 'indoors' | mischaracterization | agreement: 0.3333333333
+  [428:461] 'formal or traditional environment' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-1959 ====================
+MODEL PERFORMANCE (IoU): 0.3478
+
+--- FULL MODEL RESPONSE ---
+No, this belt is not thin. It appears to be a wide leather belt or possibly a waist cinch, characterized by its broad width and substantial appearance. The multiple layers of thick brown leather combined with large metal buckles contribute to its robust look rather than a slim profile.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "multiple layers of thick brown leather",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The belt is a single piece of leather wrapped around, not multiple stacked layers; the structure shows one continuous leather piece with belt straps attached."
+  },
+  {
+    "span_text": "large metal buckles",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The buckles are silver/metallic but are medium-sized, not notably large; describing them as 'large' misrepresents their actual proportions relative to the belt."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [156:174] 'multiple layers of' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [156:164] 'multiple' | mischaracterization | model confidence: 0.85
+  [209:214] 'large' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-683 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, this eel is **not grey** in color. 
+
+It is predominantly **dark brown to black** with striking **white or pale yellow bands** running horizontally along its body. The bands create a very contrasting striped pattern. 
+
+While the darker areas might *appear* greyish in certain lighting conditions, the overall coloration is much richer and darker than a typical grey. The contrast between the dark and light stripes is its most defining feature.
+
+This is likely a **Zebra Moray Eel** (*Gymnomuraena zebra*), which is known for its distinctive black and white banding.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "white or pale yellow bands",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The bands are distinctly white, not pale yellow; describing them as 'pale yellow' mischaracterizes their actual color."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [63:76] 'dark brown to' | mischaracterization | agreement: 0.3333333333
+  [107:121] 'or pale yellow' | mischaracterization | agreement: 0.3333333333
+  [138:150] 'horizontally' | mischaracterization | agreement: 0.3333333333
+  [232:238] 'darker' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [101:106] 'white' | mischaracterization | model confidence: 0.85
+
+==================== IMAGE ID: train-en-11143 ====================
+MODEL PERFORMANCE (IoU): 0.5556
+
+--- FULL MODEL RESPONSE ---
+Yes, the car in the image has four wheels. It appears to be a small, red vehicle with a two-door body style. The wheels are positioned at the corners of the vehicle, which is typical for most cars with four wheels.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "four wheels",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The vehicle visible in the image is a three-wheeled vehicle (Reliant Regal Supervan III style), not a four-wheeled car, as evidenced by the single wheel visible at the rear and two wheels at the front."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [0:3] 'Yes' | mischaracterization | agreement: 0.3333333333
+  [30:34] 'four' | mischaracterization | agreement: 0.3333333333
+  [0:3] 'Yes' | miscounting | agreement: 0.3333333333
+  [30:34] 'four' | miscounting | agreement: 0.6666666667
+  [34:40] ' wheel' | miscounting | agreement: 0.3333333333
+  [202:206] 'four' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [30:41] 'four wheels' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-10132 ====================
+MODEL PERFORMANCE (IoU): 0.0769
+
+--- FULL MODEL RESPONSE ---
+Human: Based on the image provided, there are **three** knobs or similar round, knob-like objects visible.
+
+Here's a breakdown of what I see:
+
+1.  **On the right side of the image, on the pinkish surface:** There are three distinct, round, knob-like objects. Two of them are grayish and appear to be the ends of pipes or fittings. The third is a darker, possibly black or dark gray, round objects on the right side of the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.85,
+    "reason": "The image shows more than three knob-like objects visible on the surface. There appear to be at least 4-5 round objects/knobs scattered across the top surface of the structure."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [287:304] 'appear to be the ' | mischaracterization | agreement: 0.3333333333
+  [304:329] 'ends of pipes or fittings' | mischaracterization | agreement: 0.6666666667
+  [363:368] 'black' | mischaracterization | agreement: 0.6666666667
+  [48:53] 'three' | miscounting | agreement: 1.0
+  [217:222] 'three' | miscounting | agreement: 0.6666666667
+  [259:262] 'Two' | miscounting | agreement: 0.3333333333
+  [0:5] 'Human' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [48:53] 'three' | miscounting | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1517 ====================
+MODEL PERFORMANCE (IoU): 0.1111
+
+--- FULL MODEL RESPONSE ---
+The image shows a blue SUV parked in a lot, and there is no red car visible. There are no people visible in the image either. If you have more details or a different image, please let me know!
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "no red car visible",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "There is a red car visible in the background on the right side of the image, partially visible next to other vehicles."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [57:75] 'no red car visible' | mischaracterization | agreement: 0.6666666667
+  [48:75] 'there is no red car visible' | miscounting | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [60:63] 'red' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-9860 ====================
+MODEL PERFORMANCE (IoU): 0.1667
+
+--- FULL MODEL RESPONSE ---
+Yes, the bus has an electric engine. Here are some details to elaborate:
+
+110% Electric Bus" prominently displayed on its side, indicating that it runs solely on electric power.
+
+ - The bus is equipped with overhead charging infrastructure, which suggests it is an electric bus designed to be charged while in operation or during breaks. This charging system replenishes the battery's electric motor.
+
+ - There is no visible exhaust pipe, which is typical for diesel or gasoline-powered buses. Electric buses usually do not have these as they do not emit exhaust fumes.
+
+ - The design and large windows suggest it is built for passenger transport, typical of city or public transport buses.
+
+Overall, these bus is powered by an electric motor and uses battery power to operate, making it 100% electric.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "electric engine",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "Electric buses use electric motors, not engines; the term 'engine' typically refers to internal combustion engines in traditional vehicles."
+  },
+  {
+    "span_text": "110%",
+    "label": "OCR",
+    "prob": 0.95,
+    "reason": "The bus clearly displays '100%' not '110%' in the yellow text on its side."
+  },
+  {
+    "span_text": "this bus is powered by an electric motor",
+    "label": "mischaracterization",
+    "prob": 0.8,
+    "reason": "The response contradicts its own opening statement that the bus 'has an electric engine' by later correctly calling it an 'electric motor'; motors and engines are different terms."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [29:35] 'engine' | mischaracterization | agreement: 0.3333333333
+  [74:77] '110' | OCR | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [20:28] 'electric' | mischaracterization | model confidence: 0.85
+  [74:78] '110%' | OCR | model confidence: 0.95
+
+==================== IMAGE ID: train-en-1584 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The image you've provided shows a fruit that appears to be a lemon, and it indeed has a yellow color. However, it's not a typical bright yellow color that you'd expect from a ripe lemon. The lemon in the photo has a yellow-green hue, which is a common and natural color variation in lemons.
+
+This variation in color is due to the presence of chlorophyll in the fruit, even after it has ripened. The chlorophyll, which is responsible for the green color, is gradually broken down as the fruit ripens. In the case of this lemon, it seems to have ripened with some residual green color, resulting in the yellow-green hue.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "This variation in color is due to the presence of chlorophyll in the fruit, even after it has ripened. The chlorophyll, which is responsible for the green color, is gradually broken down as the fruit ripens.",
+    "label": "invention",
+    "prob": 0.7,
+    "reason": "The response provides a scientific explanation about chlorophyll breakdown that cannot be verified from the image alone and appears to be invented technical explanation rather than observable fact."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [245:289] 'common and natural color variation in lemons' | mischaracterization | agreement: 0.3333333333
+  [500:617] 'In the case of this lemon, it seems to have ripened with some residual green color, resulting in the yellow-green hue' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [292:499] 'This variation in color is due to the presence of chlorophyll in the fruit, even after it has ripened. The chlorophyll, which is responsible for the green color, is gradually broken down as the fruit ripens.' | invention | model confidence: 0.7
+
+==================== IMAGE ID: train-en-761 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, it appears the restaurant name is **Compagnie**. This is visible on the glass the man in the center is holding.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "visible on the glass the man in the center is holding",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The image shows a man holding a glass, but no restaurant name is legible or visible on the glass itself; the response invents a reading that cannot be verified from the image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [31:46] 'the restaurant ' | mischaracterization | agreement: 0.3333333333
+  [46:50] 'name' | mischaracterization | agreement: 0.6666666667
+  [50:53] ' is' | mischaracterization | agreement: 0.3333333333
+  [56:65] 'Compagnie' | OCR | agreement: 1.0
+
+PREDICTED LABELS:
+  [77:130] 'visible on the glass the man in the center is holding' | invention | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11080 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+No, the walrus in the image does not have tusks.
+
+Here’s why:
+
+- **Tuskless Appearance:** The walrus shown is clearly missing the prominent, long, ivory-colored tusks that are a defining feature of the species. In the photograph, only its head, whiskers (vibrissae), and wrinkled, dark skin are visible above the water.
+- **Tusk Development:** Walrus tusks are elongated upper incisors that grow continuously throughout the animal’s life. They are most prominent in adult males, who can have tusks reaching several feet in length. Females typically have shorter, less pronounced tusks.
+- **Possible Reasons for Absence:**
+  - **Age or Sex:** This could be a young walrus (juvenile or subadult) that has not yet developed its tusks, or a female whose tusks are not as prominent.
+  - **Genetic or Developmental Factors:** While rare, some walruses may be born without tusks or have them that are malformed or broken off.
+  - **Photographic Angle:** It’s possible the tusks are present but hidden from view, perhaps tucked under the head or obscured by the angle of the shot. However, given the clear view of the head, this is unlikely.
+
+In summary, based on the visual evidence, this walrus does not have tusks. It appears to be either a female or a young male that has not yet grown its tusks.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "No, the walrus in the image does not have tusks.",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The walrus clearly has visible tusks - long ivory-colored tusks are prominently visible protruding from the side of its head/mouth area."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [952:960] 'possible' | mischaracterization | agreement: 0.3333333333
+  [1013:1034] 'tucked under the head' | mischaracterization | agreement: 0.3333333333
+  [1050:1071] 'the angle of the shot' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [0:48] 'No, the walrus in the image does not have tusks.' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11870 ====================
+MODEL PERFORMANCE (IoU): 0.0882
+
+--- FULL MODEL RESPONSE ---
+The object in the image you provided appears to be a fruit rather than a vegetable. It has a more rounded shape, with a slight taper at the top, which is typical of many cucurbitaceae like squash and melons. While some varieties of cucumber can be cylindrical, the fruit in the image does not have the characteristic long, cylindrical shape of a cucumber.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "appears to be a fruit rather than a vegetable",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The image clearly shows a melon (likely a honeydew or similar variety based on the yellow color and netted pattern), which is botanically a fruit but culinarily classified as a vegetable in culinary contexts; however, the more significant issue is that the prompt explicitly asks about a cucumber, and the response incorrectly dismisses it as not being a cucumber when the filename and visual evidence suggest this is actually a melon, not a cucumber at all."
+  },
+  {
+    "span_text": "does not have the characteristic long, cylindrical shape of a cucumber",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "The response uses this phrase to answer the prompt about whether 'this cucumber' is cylindrical, but the prompt presupposes the object is a cucumber while the response argues it is not a cucumber—this is a logical inconsistency rather than addressing whether the presented object is cylindrical."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [53:82] 'fruit rather than a vegetable' | mischaracterization | agreement: 0.3333333333
+  [140:143] 'top' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [73:82] 'vegetable' | mischaracterization | model confidence: 0.9
+  [284:354] 'does not have the characteristic long, cylindrical shape of a cucumber' | invention | model confidence: 0.85
+
+==================== IMAGE ID: train-en-1579 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+The image shows a collection of items on a shelf. There are various bottles, decorative items, and possibly some personal memorabilia. The frame above the shelf contains a fish, and the surface of the shelf is covered with various items.
+
+However, I am unable to provide specific details about what is written on the frame, as the content of the frame is not clearly visible in the image.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "The frame above the shelf contains a fish",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The frame above the shelf contains fish-shaped decorative items (mounted fish), not a single fish inside the frame itself."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [355:374] 'not clearly visible' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [135:176] 'The frame above the shelf contains a fish' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-523 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+It's difficult to determine the exact price of the keyboard from just the image. However, based on its appearance, it looks like an **Apple Wireless Keyboard (original)**. 
+
+Here's what I can tell you about its pricing:
+
+*   **Original Retail Price:** When it was originally sold by Apple, it cost around **$79-$99 USD**.
+*   **Current Price (Used/Refurbished):** Since it's an older model, it's no longer sold new by Apple. You can find them used or refurbished online (eBay, etc.) for anywhere between **$20-$50 USD** depending on condition.
+
+**Please note:** Prices can vary significantly based on the seller and condition of the keyboard.
+
+--- RAW HAIKU REASONING ---
+[]
+
+GOLD LABELS (All Annotations):
+  [134:167] 'Apple Wireless Keyboard (original' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  (No spans predicted)
+
+==================== IMAGE ID: train-en-11398 ====================
+MODEL PERFORMANCE (IoU): 0.5909
+
+--- FULL MODEL RESPONSE ---
+The shrimp in the image appear to be pinkish, with some shades of orange or brown as well. This coloration is often the result of the shrimp's natural pigments and can be influenced by the type of shrimp, their environment, and their diet. The color can also change during the cooking process, as the shrimp's skin and flesh can become more opaque and pinker when cooked. The exact shade of pink can vary depending on the species, as different shrimp species have different natural pigments.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "pinkish",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The shrimp in the image display predominantly grayish, greenish, and purplish tones with red/burgundy accents, not pinkish coloring."
+  },
+  {
+    "span_text": "orange or brown",
+    "label": "mischaracterization",
+    "prob": 0.75,
+    "reason": "While some tan/beige tones are visible, the dominant secondary colors are greenish and purplish, not orange or brown."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [37:44] 'pinkish' | mischaracterization | agreement: 1.0
+  [66:72] 'orange' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [37:44] 'pinkish' | mischaracterization | model confidence: 0.85
+  [66:81] 'orange or brown' | mischaracterization | model confidence: 0.75
+
+==================== IMAGE ID: train-en-666 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Based on the image, the rake does **not** have particularly long prongs. 
+
+Here's why:
+
+*   **Length relative to handle:** The prongs appear to be roughly a third of the length of the handle. This suggests a moderate prong length, suitable for general yard work.
+*   **Type of rake:** This looks like a leaf rake or a lawn rake, designed for gathering leaves, grass clippings, or light debris. These types of rakes typically have shorter, more flexible prongs.
+*   **Compared to other rakes:** Garden rakes, used for leveling soil or removing rocks, often have much longer and more rigid prongs. This one doesn't fit that description.
+
+So, while the prongs are of a reasonable length for its intended purpose, they aren't "long" in the sense of being extra-extended for heavy-duty tasks.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "leaf rake or a lawn rake",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The image shows a landscape/garden rake with straight, rigid prongs arranged in a comb-like pattern, not a flexible leaf rake which would have curved or fan-shaped tines."
+  },
+  {
+    "span_text": "shorter, more flexible prongs",
+    "label": "mischaracterization",
+    "prob": 0.9,
+    "reason": "The prongs visible in the image are rigid and straight, not flexible; flexibility is not a characteristic of this rake type."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [157:162] 'third' | mischaracterization | agreement: 1.0
+  [162:190] ' of the length of the handle' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [303:307] 'leaf' | mischaracterization | model confidence: 0.85
+  [444:452] 'flexible' | mischaracterization | model confidence: 0.9
+
+==================== IMAGE ID: train-en-11309 ====================
+MODEL PERFORMANCE (IoU): 0.3750
+
+--- FULL MODEL RESPONSE ---
+No, the cucumbers in the image does not have green skin. These cucumbers have a yellowish to pale skin, which is less common compared to the typical green-skinned cucumbers. The skin also appears to have small, dark speckles.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "cucumbers",
+    "label": "mischaracterization",
+    "prob": 0.95,
+    "reason": "The image shows potatoes, not cucumbers. The round, starchy vegetables with small dark speckles and yellowish skin are characteristic of yellow potatoes, not cucumbers."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [8:17] 'cucumbers' | mischaracterization | agreement: 0.6666666667
+  [57:63] 'These ' | mischaracterization | agreement: 0.3333333333
+  [63:72] 'cucumbers' | mischaracterization | agreement: 0.6666666667
+
+PREDICTED LABELS:
+  [8:17] 'cucumbers' | mischaracterization | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11167 ====================
+MODEL PERFORMANCE (IoU): 0.0741
+
+--- FULL MODEL RESPONSE ---
+The image shows a fruit that appears to be a lemon, which is typically yellow in color. Lemons are known for their bright, yellow skin that is often free of any significant blemishes. The color of a lemon can be related to its ripeness and also to the variety of the fruit. Some varieties of lemons can have a slightly different hue, such as a more orange-yellow color, but yellow is the most common color for lemons.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "bright, yellow skin that is often free of any significant blemishes",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The lemon in the image has a distinctly textured, bumpy skin with visible green patches and markings, not a smooth, blemish-free yellow surface as described."
+  },
+  {
+    "span_text": "yellow is the most common color for lemons",
+    "label": "invention",
+    "prob": 0.75,
+    "reason": "The response does not address that this particular fruit has a green-yellow variegated skin, and instead makes a generic claim about typical lemon color that doesn't accurately reflect what is shown in this image."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [71:77] 'yellow' | mischaracterization | agreement: 0.3333333333
+  [149:182] 'free of any significant blemishes' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [71:77] 'yellow' | mischaracterization | model confidence: 0.85
+  [374:416] 'yellow is the most common color for lemons' | invention | model confidence: 0.75
+
+==================== IMAGE ID: train-en-11652 ====================
+MODEL PERFORMANCE (IoU): 0.2653
+
+--- FULL MODEL RESPONSE ---
+The tiger in the image displays a variation of orange with black stripes, though it appears to be a white or cream-colored Bengal tiger. Here’s a detailed breakdown:
+
+1. **Base Color**: The tiger's fur is predominantly a creamy white or light beige, which is a less common coloration known as leucismism or albinismism in tigers.
+ 
+ 2. **Stripes**: The characteristic black stripes are still present but contrast less sharply against the lighter fur. In typical orange Bengal tigers, the stripes are darker and more prominent against the orange background. Here, they appear more as darker lines on a lighter canvas.
+
+3. **Facial Markings**: The face retains the typical tiger markings, with a distinctive stripe running from the forehead down to the nose, and subtle striping around the eyes and muzzle, maintaining the recognizable feline pattern.
+
+4. **E** 
+
+Overall, while the traditional orange coloring is absent, the black stripes remain, maintaining the tiger’s unique and iconic appearance. This variation is less about about about genetic mutation than it is about a rare coloration within the species.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "leucismism or albinismism",
+    "label": "invention",
+    "prob": 0.9,
+    "reason": "These are not real medical terms; the correct terms are 'leucism' and 'albinism' without the repeated suffixes."
+  },
+  {
+    "span_text": "less about about about genetic mutation",
+    "label": "other",
+    "prob": 0.95,
+    "reason": "The word 'about' is repeated three times, which is a clear error in the response text."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [59:64] 'black' | mischaracterization | agreement: 0.3333333333
+  [100:105] 'white' | mischaracterization | agreement: 0.3333333333
+  [205:218] 'predominantly' | mischaracterization | agreement: 0.3333333333
+  [368:373] 'black' | mischaracterization | agreement: 1.0
+  [373:399] ' stripes are still present' | mischaracterization | agreement: 0.3333333333
+  [912:918] 'absent' | mischaracterization | agreement: 0.3333333333
+  [924:929] 'black' | mischaracterization | agreement: 0.6666666667
+  [1018:1074] 'less about about about genetic mutation than it is about' | mischaracterization | agreement: 0.3333333333
+  [856:857] 'E' | other | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [293:318] 'leucismism or albinismism' | invention | model confidence: 0.9
+  [1018:1057] 'less about about about genetic mutation' | other | model confidence: 0.95
+
+==================== IMAGE ID: train-en-11598 ====================
+MODEL PERFORMANCE (IoU): 0.0588
+
+--- FULL MODEL RESPONSE ---
+The image shows a crab with five visible legs. Crabs have ten legs in total, but they are often folded back into their body when the crab is not walking or moving. In this case, the crab seems to be in a restful or relaxed state, with its legs folded back into its shell.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "five",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image clearly shows more than five legs visible - there are at least 8-10 leg segments visible extending from the crab's body in the crate."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [204:228] 'restful or relaxed state' | mischaracterization | agreement: 0.3333333333
+  [230:244] 'with its legs ' | mischaracterization | agreement: 0.3333333333
+  [244:250] 'folded' | mischaracterization | agreement: 0.6666666667
+  [250:256] ' back ' | mischaracterization | agreement: 0.3333333333
+  [256:270] 'into its shell' | mischaracterization | agreement: 0.6666666667
+  [28:32] 'five' | miscounting | agreement: 1.0
+
+PREDICTED LABELS:
+  [28:32] 'five' | miscounting | model confidence: 0.95
+
+==================== IMAGE ID: train-en-642 ====================
+MODEL PERFORMANCE (IoU): 0.0000
+
+--- FULL MODEL RESPONSE ---
+Yes, there is a teapot on the table in the image. It's positioned in the center of the table, between the two figures.
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "teapot",
+    "label": "mischaracterization",
+    "prob": 0.85,
+    "reason": "The object on the table appears to be a pitcher or jug, not a teapot; it lacks the characteristic spout and lid configuration of a typical teapot."
+  }
+]
+
+GOLD LABELS (All Annotations):
+  [50:73] 'It's positioned in the ' | mischaracterization | agreement: 0.3333333333
+  [73:79] 'center' | mischaracterization | agreement: 0.6666666667
+  [79:92] ' of the table' | mischaracterization | agreement: 0.3333333333
+
+PREDICTED LABELS:
+  [16:22] 'teapot' | mischaracterization | model confidence: 0.85

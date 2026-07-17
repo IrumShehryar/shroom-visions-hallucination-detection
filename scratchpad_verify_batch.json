@@ -1,0 +1,101 @@
+{
+  "fp": [
+    [
+      "train-en-2657",
+      "There are no words in green text in the image",
+      0.9
+    ],
+    [
+      "train-en-2037",
+      "not composed of circular tubes",
+      0.85
+    ],
+    [
+      "train-en-1766",
+      "white stripes on its back",
+      0.85
+    ],
+    [
+      "train-en-2271",
+      "strawberry",
+      0.85
+    ],
+    [
+      "train-en-11473",
+      "The wings and upper body are a mix of dark brown and grayish-brown",
+      0.85
+    ],
+    [
+      "train-en-11409",
+      "paraglider wing",
+      0.85
+    ],
+    [
+      "train-en-992",
+      "green flooring",
+      0.85
+    ],
+    [
+      "train-en-1693",
+      "bralette",
+      0.85
+    ],
+    [
+      "train-en-1478",
+      "gold ring",
+      0.85
+    ],
+    [
+      "train-en-11050",
+      "Pumpkins are usually green or orange",
+      0.7
+    ]
+  ],
+  "tp": [
+    [
+      "train-en-11357",
+      "It extends from the shoulder to the elbow area, covering the upper arm",
+      0.95
+    ],
+    [
+      "train-en-9860",
+      "electric engine",
+      0.85
+    ],
+    [
+      "train-en-11736",
+      "circular base that is not visible from the current angle",
+      0.85
+    ],
+    [
+      "train-en-560",
+      "This is a modern compound crossbow",
+      0.9
+    ],
+    [
+      "train-en-920",
+      "long barrel",
+      0.85
+    ],
+    [
+      "train-en-1959",
+      "multiple layers of thick brown leather",
+      0.85
+    ],
+    [
+      "train-en-11472",
+      "black",
+      0.9
+    ],
+    [
+      "train-en-1602",
+      "crayfish",
+      0.95
+    ],
+    [
+      "train-en-11886",
+      "primarily black",
+      0.85
+    ]
+  ]
+}

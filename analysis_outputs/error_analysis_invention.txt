@@ -1,16 +1,16 @@
 OFFLINE ERROR ANALYSIS: INVENTION
-Generated: 2026-07-12 23:55:23.233853
+Generated: 2026-07-15 01:17:30.419899
 ======================================================================
 SUMMARY
   Samples:     45
-  Average IoU: 0.2061
-  Perfect (1.0): 0
-  Partial:       37
+  Average IoU: 0.2588
+  Perfect (1.0): 4
+  Partial:       33
   Zero (0.0):    8
 ======================================================================
 
 ==================== IMAGE ID: train-en-11127 ====================
-MODEL PERFORMANCE (IoU): 0.1600
+MODEL PERFORMANCE (IoU): 0.2759
 
 --- FULL MODEL RESPONSE ---
 Yes, this fork has four prongs. 
@@ -58,9 +58,11 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [19:23] 'four' | miscounting | model confidence: 0.95
+  [123:127] 'four' | miscounting | model confidence: 0.95
+  [666:670] 'four' | miscounting | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10760 ====================
-MODEL PERFORMANCE (IoU): 0.8333
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 Human:
@@ -80,7 +82,7 @@ GOLD LABELS (All Annotations):
   [0:5] 'Human' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:6] 'Human:' | other | model confidence: 0.95
+  [0:5] 'Human' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-450 ====================
 MODEL PERFORMANCE (IoU): 0.0748
@@ -131,7 +133,7 @@ PREDICTED LABELS:
   [659:683] 'Urocyon cinereoargenteus' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1739 ====================
-MODEL PERFORMANCE (IoU): 0.3774
+MODEL PERFORMANCE (IoU): 0.3514
 
 --- FULL MODEL RESPONSE ---
 The cup in the image appears to have a handle on the side. This is a common design for take-away coffee cups, which often have a sleeve that fits around the cup to keep the drink warm and protect the hand from the heat. The handle provides a comfortable grip for holding the cup while drinking.
@@ -163,7 +165,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [37:57] 'a handle on the side' | mischaracterization | model confidence: 0.95
-  [242:253] 'comfortable' | mischaracterization | model confidence: 0.95
+  [220:258] 'The handle provides a comfortable grip' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-903 ====================
 MODEL PERFORMANCE (IoU): 0.0136
@@ -205,7 +207,7 @@ PREDICTED LABELS:
   [943:951] 'ten legs' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-11535 ====================
-MODEL PERFORMANCE (IoU): 0.1017
+MODEL PERFORMANCE (IoU): 0.6912
 
 --- FULL MODEL RESPONSE ---
 Yes, the corn on the cob in the image is yellow in color. The yellow color is typical for certain varieties of corn, such as sweet corn, which is often harvested at an immature stage to prevent it from becoming too starchy. The red and purple hues sometimes seen on corn are due to the presence of anthocyanins, which are pigments that can be present in various fruits and vegetables, including corn. However, the yellow corn in the image is not a variety with anthocyanins; it is a variety with a yellow color, which could be due to carotenoids or other pigments.
@@ -228,10 +230,10 @@ GOLD LABELS (All Annotations):
   [498:504] 'yellow' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [41:47] 'yellow' | mischaracterization | model confidence: 0.95
+  [0:56] 'Yes, the corn on the cob in the image is yellow in color' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1032 ====================
-MODEL PERFORMANCE (IoU): 0.9773
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 The song that the dancers are moving to is "Scho," a song by the artist Angelique Kidjo. Angelique Kidjo is a renowned singer from Benin and is known for her rich, powerful voice and contributions to African music. This song, likely performed in a live setting or dance performance, showcases her distinctive style and the dynamic energy of her music. The performance seems to capture the essence of her cultural and musical expression, which often blends traditional African rhythms with contemporary sounds.
@@ -252,7 +254,7 @@ GOLD LABELS (All Annotations):
   [44:48] 'Scho' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [43:87] '"Scho," a song by the artist Angelique Kidjo' | invention | model confidence: 0.85
+  [44:87] 'Scho," a song by the artist Angelique Kidjo' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-2356 ====================
 MODEL PERFORMANCE (IoU): 0.0939
@@ -486,7 +488,7 @@ PREDICTED LABELS:
   [28:32] 'ARGO' | OCR | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-11171 ====================
-MODEL PERFORMANCE (IoU): 0.2698
+MODEL PERFORMANCE (IoU): 0.3810
 
 --- FULL MODEL RESPONSE ---
 The camel in the image appears to have two humps on its back, which is characteristic of Bactrian camels (Camelus bactrianus). Bactrian camels are known for their two humps, which are stored fat that helps the animal survive in arid environments. The Arabian camel (Camelus dromedarius), on the other hand, typically has a single hump. The humps are essential for camels as they provide energy and water during periods of food and water scarcity.
@@ -519,7 +521,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [39:48] 'two humps' | mischaracterization | model confidence: 0.95
-  [89:97] 'Bactrian' | mischaracterization | model confidence: 0.95
+  [89:104] 'Bactrian camels' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-697 ====================
 MODEL PERFORMANCE (IoU): 0.0345
@@ -551,7 +553,7 @@ PREDICTED LABELS:
   [48:51] '4-0' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-2083 ====================
-MODEL PERFORMANCE (IoU): 0.1475
+MODEL PERFORMANCE (IoU): 0.1441
 
 --- FULL MODEL RESPONSE ---
 This wasp does not appear to have visible wings in the image. The photograph shows a close-up of its body, which is predominantly bright red with black markings and covered in fine hairs. Its head features long, slender antennae and large compound eyes, but no wing structures are evident on the thorax or abdomen where wings would typically be located.
@@ -584,11 +586,11 @@ GOLD LABELS (All Annotations):
   [737:849] 'definitively conclude whether these insects possess hidden or undeveloped wings elsewhere that aren't shown here' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [34:41] 'visible' | mischaracterization | model confidence: 0.95
-  [421:510] 'either this particular individual has lost its wings (a rare occurrence for many species)' | invention | model confidence: 0.85
+  [0:47] 'This wasp does not appear to have visible wings' | mischaracterization | model confidence: 0.95
+  [421:509] 'either this particular individual has lost its wings (a rare occurrence for many species' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1210 ====================
-MODEL PERFORMANCE (IoU): 0.8571
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 The deer in the image appears to be resting, as it is lying down in a grassy area. When a deer is in this relaxed posture, it is not considered fast at that moment. However, deer are generally known for their speed and agility. When threatened or trying to escape danger, they can run very quickly, with some species reaching speeds up to 30-50 miles per hour (48-80 kilometers per hour). Their long legs and muscular build enable powerful strides, and their large lung capacity supports swift movement. Butter. In their natural habitat, they rely on such speed, combined with their keen sense of hearing and vision, to evade predators. In this specific image, though, the deer is not displaying any signs of movement or urgency, so it's simply taking a rest.
@@ -608,7 +610,7 @@ GOLD LABELS (All Annotations):
   [504:510] 'Butter' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [504:511] 'Butter.' | other | model confidence: 0.95
+  [504:510] 'Butter' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-2426 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -664,8 +666,8 @@ GOLD LABELS (All Annotations):
   [25:35] 'has scales' | invention | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [65:70] 'green' | mischaracterization | model confidence: 0.85
-  [204:212] 'colorful' | mischaracterization | model confidence: 0.9
+  [65:82] 'green, wavy lines' | mischaracterization | model confidence: 0.85
+  [202:247] 'a colorful row of fabric "scales" on its back' | mischaracterization | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-1146 ====================
 MODEL PERFORMANCE (IoU): 0.3667
@@ -722,7 +724,7 @@ PREDICTED LABELS:
   [69:121] 'two dorsal fins, one on the back and one on the tail' | invention | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-11198 ====================
-MODEL PERFORMANCE (IoU): 0.0495
+MODEL PERFORMANCE (IoU): 0.1667
 
 --- FULL MODEL RESPONSE ---
 The airplane in the image appears to be a single-engine, single-seat aircraft, specifically labeled as an Australian Defence Force aircraft. It is not designed to transport passengers. The design of this aircraft is more suited for a single pilot, and it is likely used for military purposes, such as reconnaissance, surveillance, or training exercises. The lack of multiple seating areas, windows, or doors suggests that this airplane is not intended for passenger transport.
@@ -756,10 +758,10 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [57:68] 'single-seat' | mischaracterization | model confidence: 0.95
-  [366:374] 'multiple' | mischaracterization | model confidence: 0.92
+  [354:407] 'The lack of multiple seating areas, windows, or doors' | mischaracterization | model confidence: 0.92
 
 ==================== IMAGE ID: train-en-10318 ====================
-MODEL PERFORMANCE (IoU): 0.0937
+MODEL PERFORMANCE (IoU): 0.0942
 
 --- FULL MODEL RESPONSE ---
 To answer this, I'll first identify the street's name visible in the background of the image. Then, I'll use that information to determine its location and subsequently pinpoint which specific road or avenue it is.
@@ -796,8 +798,8 @@ GOLD LABELS (All Annotations):
   [877:892] 'Buckingham Road' | invention | agreement: 0.6666666667
 
 PREDICTED LABELS:
-  [331:479] 'The text "Buckingham Rd." can be clearly made out from what appears to be an address plate attached to a lamppost or similar structure near the car.' | invention | model confidence: 0.95
-  [502:627] 'Buckingham Road (often referred to as 'Buckingham Rd.') runs through Virginia Tech University campus in Blacksburg, Virginia.' | invention | model confidence: 0.9
+  [331:478] 'The text "Buckingham Rd." can be clearly made out from what appears to be an address plate attached to a lamppost or similar structure near the car' | invention | model confidence: 0.95
+  [502:626] 'Buckingham Road (often referred to as 'Buckingham Rd.') runs through Virginia Tech University campus in Blacksburg, Virginia' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-10909 ====================
 MODEL PERFORMANCE (IoU): 0.0485
@@ -833,7 +835,7 @@ PREDICTED LABELS:
   [0:45] 'The mug in the image appears to have a handle' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10389 ====================
-MODEL PERFORMANCE (IoU): 0.0521
+MODEL PERFORMANCE (IoU): 0.0524
 
 --- FULL MODEL RESPONSE ---
 The image shows a football game being broadcast on ESPN. The playground is located on the field where the players are playing. The playground is typically located near the sidelines of the field and includes a variety of play equipment for children. However, the specific location of the playground in this image is not visible.
@@ -852,10 +854,10 @@ GOLD LABELS (All Annotations):
   [61:71] 'playground' | invention | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [57:249] 'The playground is located on the field where the players are playing. The playground is typically located near the sidelines of the field and includes a variety of play equipment for children.' | invention | model confidence: 0.95
+  [57:248] 'The playground is located on the field where the players are playing. The playground is typically located near the sidelines of the field and includes a variety of play equipment for children' | invention | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10221 ====================
-MODEL PERFORMANCE (IoU): 0.5625
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 The cross is adorned with a blue banner displaying the word 'Jesus'.
@@ -882,11 +884,11 @@ GOLD LABELS (All Annotations):
   [61:66] 'Jesus' | OCR | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [28:32] 'blue' | mischaracterization | model confidence: 0.85
+  [28:39] 'blue banner' | mischaracterization | model confidence: 0.85
   [61:66] 'Jesus' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-805 ====================
-MODEL PERFORMANCE (IoU): 0.2819
+MODEL PERFORMANCE (IoU): 0.2793
 
 --- FULL MODEL RESPONSE ---
 Based on the image, this kettle is **not** made of stainless steel. It appears to be made of **cast iron**, specifically **tetsubin** (Japanese cast iron). 
@@ -922,7 +924,7 @@ GOLD LABELS (All Annotations):
 Tetsubin kettles are valued for their ability to retain heat well and impart a unique flavor to the water. They are a traditional Japanese method for heating water for tea' | invention | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [794:900] 'Tetsubin kettles are valued for their ability to retain heat well and impart a unique flavor to the water.' | invention | model confidence: 0.75
+  [794:899] 'Tetsubin kettles are valued for their ability to retain heat well and impart a unique flavor to the water' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-2612 ====================
 MODEL PERFORMANCE (IoU): 0.3352
@@ -964,7 +966,7 @@ PREDICTED LABELS:
   [703:762] 'most commonly found in the Timbavati region of South Africa' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-589 ====================
-MODEL PERFORMANCE (IoU): 0.7561
+MODEL PERFORMANCE (IoU): 0.4928
 
 --- FULL MODEL RESPONSE ---
 Based on the image, this vehicle doesn't have traditional propellers like you'd see on a conventional helicopter. 
@@ -996,7 +998,7 @@ GOLD LABELS (All Annotations):
   [352:355] 'two' | miscounting | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [356:361] 'large' | mischaracterization | model confidence: 0.9
+  [352:388] 'two large ducted fans on either side' | mischaracterization | model confidence: 0.9
   [430:463] 'a smaller ducted fan on the front' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-2485 ====================
@@ -1046,7 +1048,7 @@ PREDICTED LABELS:
   [5:17] 'these spoons' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1397 ====================
-MODEL PERFORMANCE (IoU): 0.2171
+MODEL PERFORMANCE (IoU): 0.2552
 
 --- FULL MODEL RESPONSE ---
 The bus in the image appears to be a double-decker bus, which typically has one engine at the rear. It's common for these buses to have a single engine driving the rear wheels, which then powers the wheels through a drivetrain system. The engine might be a diesel or a gasoline engine, depending on the specific model and the region where the bus is in operation.
@@ -1083,8 +1085,8 @@ GOLD LABELS (All Annotations):
   [856:923] 'generally have a single engine at the rear, driving the rear wheels' | invention | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [138:144] 'single' | mischaracterization | model confidence: 0.9
   [257:284] 'diesel or a gasoline engine' | mischaracterization | model confidence: 0.9
+  [450:476] 'single rear-mounted engine' | mischaracterization | model confidence: 0.9
   [478:586] 'The engine drives the rear wheels, and the bus uses a separate transmission system to drive the front wheels' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1602 ====================
@@ -1124,7 +1126,7 @@ PREDICTED LABELS:
   [521:638] 'get their color from the molted exoskeleton of their ancestors, which is shed during the transformation into an adult' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-10858 ====================
-MODEL PERFORMANCE (IoU): 0.0492
+MODEL PERFORMANCE (IoU): 0.4745
 
 --- FULL MODEL RESPONSE ---
 Yes, the blender in the image has a container. Here's a detailed explanation:
@@ -1174,11 +1176,11 @@ GOLD LABELS (All Annotations):
   [702:711] 'container' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [192:197] 'black' | mischaracterization | model confidence: 0.9
-  [844:852] 'built-in' | mischaracterization | model confidence: 0.95
+  [188:279] 'The black, cylindrical top part of the device is the container where ingredients are placed' | mischaracterization | model confidence: 0.9
+  [838:887] 'has a built-in container in the black top section' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1542 ====================
-MODEL PERFORMANCE (IoU): 0.0640
+MODEL PERFORMANCE (IoU): 0.1920
 
 --- FULL MODEL RESPONSE ---
 The train in the image appears to be a multiple-unit train, often referred to as a "push-pull" train. The first car is typically a locomotive, which is the engine of the train. It is responsible for providing the power to move the train along the tracks.
@@ -1231,9 +1233,9 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [84:93] 'push-pull' | mischaracterization | model confidence: 0.85
-  [106:111] 'first' | mischaracterization | model confidence: 0.9
-  [131:141] 'locomotive' | mischaracterization | model confidence: 0.8
+  [102:175] 'The first car is typically a locomotive, which is the engine of the train' | mischaracterization | model confidence: 0.9
   [375:450] 'passenger cars do not have engines and are instead pulled by the locomotive' | mischaracterization | model confidence: 0.9
+  [467:519] 'connected to the locomotive via a series of couplers' | mischaracterization | model confidence: 0.8
 
 ==================== IMAGE ID: train-en-2415 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1292,6 +1294,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [241:244] 'two' | miscounting | model confidence: 0.95
+  [1182:1185] 'two' | miscounting | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-9982 ====================
 MODEL PERFORMANCE (IoU): 0.0964
@@ -1432,7 +1435,7 @@ GOLD LABELS (All Annotations):
   [419:486] 'provides leverage when aiming or launching the weapon at its target' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [291:304] 'anchor-shaped' | mischaracterization | model confidence: 0.85
+  [291:309] 'anchor-shaped head' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-488 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1509,7 +1512,7 @@ PREDICTED LABELS:
   [770:785] 'Candiac, Quebec' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-10803 ====================
-MODEL PERFORMANCE (IoU): 0.0054
+MODEL PERFORMANCE (IoU): 0.0242
 
 --- FULL MODEL RESPONSE ---
 Human: Based on the image provided, the writing on the bright yellow ornament is not legible. The ornament is a small, round, yellow object with a red ribbon tied around it, hanging from a Christmas tree branch. The text appears to be in a cursive font, but the resolution and angle of the photograph make it impossible to discern any specific words or phrases. The ornament’s design is simple, with a red ribbon and a small, possibly red, circular tag attached to it, but the text is not legible in the image.
@@ -1576,11 +1579,11 @@ The ornament’s design is simple, with a red ribbon and a small, possibly red, 
 The ornament is a small, round, yellow object with a red ribbon tied around it, hanging from a Christmas tree branch. The text appears to be in a cursive font, but the resolution and angle of' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [62:68] 'yellow' | mischaracterization | model confidence: 0.85
-  [112:117] 'small' | mischaracterization | model confidence: 0.85
+  [55:77] 'bright yellow ornament' | mischaracterization | model confidence: 0.85
+  [112:139] 'small, round, yellow object' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-9663 ====================
-MODEL PERFORMANCE (IoU): 0.0455
+MODEL PERFORMANCE (IoU): 0.2727
 
 --- FULL MODEL RESPONSE ---
 The price is reduced up to 75% at the store on the right side of the image, which has a large "SALE" sign in its window. The sign is prominently displayed, indicating a significant discount.
@@ -1601,10 +1604,10 @@ GOLD LABELS (All Annotations):
   [95:99] 'SALE' | OCR | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [51:56] 'right' | mischaracterization | model confidence: 0.85
+  [44:74] 'on the right side of the image' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-11218 ====================
-MODEL PERFORMANCE (IoU): 0.0396
+MODEL PERFORMANCE (IoU): 0.1126
 
 --- FULL MODEL RESPONSE ---
 Yes, this tricycle is likely slow. Here’s why:  
@@ -1657,12 +1660,12 @@ GOLD LABELS (All Annotations):
   [290:293] 'two' | miscounting | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [136:141] 'large' | mischaracterization | model confidence: 0.9
-  [294:299] 'small' | mischaracterization | model confidence: 0.85
-  [652:659] 'smaller' | mischaracterization | model confidence: 0.9
+  [132:173] 'two large rear wheels and one front wheel' | mischaracterization | model confidence: 0.9
+  [290:337] 'two small front wheels connected by a frame bar' | mischaracterization | model confidence: 0.85
+  [648:677] 'The smaller front wheels here' | mischaracterization | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-560 ====================
-MODEL PERFORMANCE (IoU): 0.1051
+MODEL PERFORMANCE (IoU): 0.1574
 
 --- FULL MODEL RESPONSE ---
 Certainly! Let's analyze the image. 
@@ -1724,6 +1727,6 @@ GOLD LABELS (All Annotations):
   [533:547] 'bent backwards' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [213:219] 'modern' | mischaracterization | model confidence: 0.9
+  [203:237] 'This is a modern compound crossbow' | mischaracterization | model confidence: 0.9
   [316:376] 'compound crossbows have a complex system of cams and pulleys' | invention | model confidence: 0.85
   [657:688] 'The string is between the limbs' | mischaracterization | model confidence: 0.95

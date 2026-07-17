@@ -1,0 +1,379 @@
+{
+  "train-en-11035": [
+    {
+      "span_text": "the roots and the lower part of the stems may have a slight green tint, especially around the base",
+      "label": "mischaracterization",
+      "prob": 0.7,
+      "reason": "The roots and lower stem base in the image appear pale/tan, not green."
+    },
+    {
+      "span_text": "have a green base, indicating the transition from root to stalk",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "The base of the stalks near the roots appears white/tan rather than green."
+    },
+    {
+      "span_text": "green leaves and white stems with a green base",
+      "label": "mischaracterization",
+      "prob": 0.5,
+      "reason": "Restates the unsupported claim that the stem base is green when it appears white/tan."
+    }
+  ],
+  "train-en-9982": [
+    {
+      "span_text": "two kids",
+      "label": "miscounting",
+      "prob": 0.9,
+      "reason": "Only one person is visible inside the car in the image."
+    },
+    {
+      "span_text": "two visible figures",
+      "label": "miscounting",
+      "prob": 0.9,
+      "reason": "Only one figure (the driver) is visible in the car."
+    }
+  ],
+  "train-en-2023": [
+    {
+      "span_text": "WORLDFIELD.COM",
+      "label": "OCR",
+      "prob": 0.9,
+      "reason": "This text is not visible anywhere in the image; the actual visible text includes 'WGN' related signage, not 'WORLDFIELD.COM'."
+    },
+    {
+      "span_text": "Indianapolis Motor Speedway",
+      "label": "invention",
+      "prob": 0.95,
+      "reason": "The image shows a baseball stadium (with light towers and stands resembling Wrigley Field), not a motor speedway; this is a fabricated conclusion."
+    },
+    {
+      "span_text": "Indianapolis Motor Speedway",
+      "label": "invention",
+      "prob": 0.95,
+      "reason": "Repeated fabricated claim about the stadium being a motor speedway."
+    },
+    {
+      "span_text": "The speedway frequently hosts various entertainment events in its infield area when not used for racing.",
+      "label": "invention",
+      "prob": 0.8,
+      "reason": "This is an unverified fabricated explanation not supported by the image."
+    }
+  ],
+  "train-en-10352": [
+    {
+      "span_text": "The person on the street is wearing a white shirt and black pants.",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "No person is visible on the street in the image."
+    }
+  ],
+  "train-en-10909": [
+    {
+      "span_text": "appears to have a handle that is integrated into the body of the mug itself",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "The bowls shown are handleless Japanese-style tea bowls with no visible handle or protrusion."
+    },
+    {
+      "span_text": "The handle is not separate from the mug and is part of the overall design of the mug",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "No handle or handle-like protrusion is visible on the bowls in the image."
+    },
+    {
+      "span_text": "It's a common style for some types of ceramic or pottery mugs where the handle is not a separate piece but rather a protrusion from the mug's body.",
+      "label": "invention",
+      "prob": 0.85,
+      "reason": "This describes a handle feature that does not exist on the depicted handleless tea bowls."
+    }
+  ],
+  "train-en-11586": [
+    {
+      "span_text": "Eastern Freshwater Mussel (Anodonta sp.)",
+      "label": "invention",
+      "prob": 0.97,
+      "reason": "The image shows a geoduck clam, not a freshwater mussel."
+    },
+    {
+      "span_text": "Anodonta crosseana",
+      "label": "invention",
+      "prob": 0.97,
+      "reason": "Fabricated species name not supported by the image."
+    },
+    {
+      "span_text": "Freshwater mussels are bivalves that live attached to submerged surfaces like rocks and logs in rivers and lakes.",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "Fabricated biological explanation unrelated to the actual geoduck clam shown."
+    },
+    {
+      "span_text": "They do not possess \"siphons\" as seen in saltwater clams",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "Incorrect and fabricated claim; the organism shown is a saltwater clam with a large siphon."
+    },
+    {
+      "span_text": "inhalant siphon",
+      "label": "invention",
+      "prob": 0.6,
+      "reason": "Fabricated anatomical detail not verifiable from the image."
+    },
+    {
+      "span_text": "exhalant siphon",
+      "label": "invention",
+      "prob": 0.6,
+      "reason": "Fabricated anatomical detail not verifiable from the image."
+    },
+    {
+      "span_text": "The large, elongated structure you see extending upward is the mussel's muscular foot",
+      "label": "mischaracterization",
+      "prob": 0.95,
+      "reason": "The elongated structure is actually the geoduck's siphon, not a mussel's foot."
+    },
+    {
+      "span_text": "which anchors it firmly to its substrate underwater",
+      "label": "invention",
+      "prob": 0.85,
+      "reason": "Fabricated function; the structure shown is a siphon used for feeding/respiration, not anchoring."
+    },
+    {
+      "span_text": "those functions rely on the smaller internal siphons inside the shell itself",
+      "label": "invention",
+      "prob": 0.85,
+      "reason": "Fabricated claim inconsistent with the visible large external siphon."
+    },
+    {
+      "span_text": "adapted for life anchored to muddy or rocky riverbeds",
+      "label": "invention",
+      "prob": 0.8,
+      "reason": "Fabricated habitat description; geoducks live in marine tidal flats, not riverbeds."
+    }
+  ],
+  "train-en-11858": [],
+  "train-en-1611": [
+    {
+      "span_text": "looking at a smartphone",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "The man's gaze appears directed away/upward, not down at the object in his hands."
+    },
+    {
+      "span_text": "focused on the screen",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "His eyes are not oriented toward the small object he holds, suggesting he's not looking at a screen."
+    },
+    {
+      "span_text": "possibly reading or interacting with the device",
+      "label": "invention",
+      "prob": 0.5,
+      "reason": "This is speculative and not verifiable from the image."
+    },
+    {
+      "span_text": "open-air market",
+      "label": "invention",
+      "prob": 0.5,
+      "reason": "No clear evidence of a market; the background shows buildings and a cart, not identifiable market stalls."
+    }
+  ],
+  "train-en-1389": [
+    {
+      "span_text": "The frame does not have any visible text.",
+      "label": "mischaracterization",
+      "prob": 0.8,
+      "reason": "There is a framed certificate visible with the word 'Recognition' and other text legible in the image."
+    }
+  ],
+  "train-en-727": [
+    {
+      "span_text": "Shelby's Bar",
+      "label": "OCR",
+      "prob": 0.97,
+      "reason": "No such text appears; the visible signage reads 'Keno City Snack Bar' and 'Tufts Arctic Soda Water', not 'Shelby's Bar'."
+    },
+    {
+      "span_text": "Shelby's Bar",
+      "label": "OCR",
+      "prob": 0.95,
+      "reason": "Repeated incorrect reading of store name text that does not exist in the image."
+    }
+  ],
+  "train-en-10540": [
+    {
+      "span_text": "It's very difficult to definitively identify the make and model of the car in the image due to its distance, the angle, and the image quality.",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "No car is visible anywhere in the image; the scene shows a church, tree, and market building."
+    },
+    {
+      "span_text": "late 1970s or early 1980s General Motors (GM) X-body",
+      "label": "invention",
+      "prob": 0.95,
+      "reason": "There is no car visible in the image to identify as any make or model."
+    },
+    {
+      "span_text": "Body shape:** The overall shape and size are consistent with the X-body cars.",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "Fabricated description of a car that does not appear in the image."
+    },
+    {
+      "span_text": "Headlights and Grille:** The front end design, though blurry, suggests the style common in those models.",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "No headlights, grille, or car front end are visible in the image."
+    },
+    {
+      "span_text": "Buick Skylark, Oldsmobile Omega, Pontiac Phoenix, and Chevrolet Citation",
+      "label": "invention",
+      "prob": 0.9,
+      "reason": "These specific car models are fabricated guesses with no visual basis, as no car is present in the image."
+    }
+  ],
+  "train-en-2555": [
+    {
+      "span_text": "there is no visible sign board",
+      "label": "invention",
+      "prob": 0.3,
+      "reason": "Small plant tags/labels appear near the potted plants at bottom left which could be considered small signs, making a blanket denial questionable."
+    }
+  ],
+  "train-en-11652": [
+    {
+      "span_text": "black stripes",
+      "label": "mischaracterization",
+      "prob": 0.7,
+      "reason": "The stripes are actually brown/tan, not black."
+    },
+    {
+      "span_text": "black stripes are still present",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "Stripes are brown/tan colored, not black."
+    },
+    {
+      "span_text": "black stripes remain",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "Stripes are brown/tan colored, not black."
+    },
+    {
+      "span_text": "white or cream-colored",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "The tiger's coat is golden/tan, not white or cream."
+    },
+    {
+      "span_text": "leucismism or albinismism",
+      "label": "invention",
+      "prob": 0.8,
+      "reason": "These are garbled, invented terms not real conditions and not verifiable from the image."
+    },
+    {
+      "span_text": "less about about about genetic mutation",
+      "label": "invention",
+      "prob": 0.6,
+      "reason": "Repeated garbled text and unverifiable claim about genetic cause."
+    }
+  ],
+  "train-en-2378": [
+    {
+      "span_text": "the store name is **GIF**",
+      "label": "invention",
+      "prob": 0.7,
+      "reason": "The visible text is only a fragment of a partially cut-off sign reading 'GIF', likely part of 'GIFT SHOP', not confirmed to be the actual store name."
+    },
+    {
+      "span_text": "This appears to be the store name.",
+      "label": "invention",
+      "prob": 0.6,
+      "reason": "There is no clear evidence that this fragment is the store's name rather than part of a larger sign."
+    }
+  ],
+  "train-en-11761": [
+    {
+      "span_text": "transparent crystalline structure",
+      "label": "mischaracterization",
+      "prob": 0.5,
+      "reason": "The salt lamp appears translucent/opaque with light glowing through cracks, not transparent."
+    },
+    {
+      "span_text": "modern and minimalist aesthetic",
+      "label": "invention",
+      "prob": 0.6,
+      "reason": "The natural, rough-hewn salt rock lamp is not typically described as modern or minimalist; this is an unsupported characterization."
+    }
+  ],
+  "train-en-11811": [
+    {
+      "span_text": "Yes, the hoe in the image has a long handle.",
+      "label": "mischaracterization",
+      "prob": 0.8,
+      "reason": "The tool is a short hand hoe with a compact grip handle, not a long-handled tool."
+    },
+    {
+      "span_text": "The handle of the hoe extends significantly in length",
+      "label": "mischaracterization",
+      "prob": 0.75,
+      "reason": "The handle is short, typical of a hand tool, not significantly long."
+    },
+    {
+      "span_text": "The extended handle helps in distributing the weight more evenly.",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "Restates the false claim that the handle is extended/long."
+    },
+    {
+      "span_text": "A longer handle provides leverage",
+      "label": "mischaracterization",
+      "prob": 0.6,
+      "reason": "Again incorrectly describes the handle as long."
+    },
+    {
+      "span_text": "hoe in the image has a long handle, which is long in length",
+      "label": "mischaracterization",
+      "prob": 0.7,
+      "reason": "Repeats the inaccurate claim that the handle is long."
+    },
+    {
+      "span_text": "The circular attachment near the end of the handle could be a practical addition for attaching accessories or for storage purposes.",
+      "label": "invention",
+      "prob": 0.7,
+      "reason": "The circular object is a product label/tag, not a functional attachment for accessories or storage."
+    }
+  ],
+  "train-en-433": [
+    {
+      "span_text": "wearing an orange harness with a sign that says \"ADOPT ME\"",
+      "label": "mischaracterization",
+      "prob": 0.85,
+      "reason": "The 'ADOPT ME' harness is worn by the black greyhound in the background, not the dog closer to the viewer."
+    }
+  ],
+  "train-en-1102": [
+    {
+      "span_text": "derived from their diet rich in carotenoid pigments",
+      "label": "invention",
+      "prob": 0.6,
+      "reason": "This dietary explanation for coloration cannot be verified from the image alone."
+    },
+    {
+      "span_text": "folded against its body",
+      "label": "mischaracterization",
+      "prob": 0.4,
+      "reason": "The background feathers appear spread/raised rather than folded flat against the body."
+    },
+    {
+      "span_text": "flight (to some extent)",
+      "label": "invention",
+      "prob": 0.5,
+      "reason": "Flight capability is not something that can be determined from a still image."
+    },
+    {
+      "span_text": "buoyancy in water",
+      "label": "invention",
+      "prob": 0.5,
+      "reason": "Buoyancy in water is an unverifiable claim not shown in the image."
+    }
+  ]
+}

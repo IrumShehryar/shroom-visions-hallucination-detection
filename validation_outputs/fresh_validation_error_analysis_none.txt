@@ -1,0 +1,110 @@
+FRESH VALIDATION ERROR ANALYSIS: NONE
+Generated: 2026-07-16 13:48:04.735039
+======================================================================
+SUMMARY
+  Samples: 9
+  Average IoU: 0.5556
+  Perfect (1.0): 5
+  Partial: 0
+  Zero (0.0): 4
+======================================================================
+
+==================== ID: train-en-1821 ====================
+IoU: 0.0000
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "prune plums (also known as dried plums)",
+    "label": "invention",
+    "prob": 0.85,
+    "reason": "Prune plums are a specific variety used for drying; the response presents this as an identification of the fruit in the image based on flesh color alone, which cannot be definitively determined from appearance."
+  },
+  {
+    "span_text": "Damson Plums and Mirabelle Plums",
+    "label": "invention",
+    "prob": 0.75,
+    "reason": "The response names specific plum varieties as identification based solely on the red flesh visible, but no clear identifying characteristics of these particular varieties are visible in the image."
+  }
+]
+
+==================== ID: train-en-11783 ====================
+IoU: 0.0000
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "green",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The image shows no green coloration on the statue; the discoloration visible is brown/tan/yellow from water runoff and weathering, not green."
+  },
+  {
+    "span_text": "green hues",
+    "label": "invention",
+    "prob": 0.95,
+    "reason": "The response claims green hues are present on the statue, but the visible discoloration is brown and tan, not green."
+  }
+]
+
+==================== ID: train-en-10224 ====================
+IoU: 0.0000
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "one orange pen",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "There is clearly one orange/reddish pen visible on the clipboard in the top right area, but the response should have counted only '1' or 'one' without the descriptor - however, the core issue is that there appear to be multiple pens/writing instruments on the papers (visible on the left side of the table), not just one."
+  },
+  {
+    "span_text": "one",
+    "label": "miscounting",
+    "prob": 0.9,
+    "reason": "The image shows multiple pens/writing instruments placed on the papers on the left side of the work surface, not just a single pen."
+  }
+]
+
+==================== ID: train-en-1571 ====================
+IoU: 1.0000
+
+--- RAW HAIKU REASONING ---
+[]
+
+==================== ID: train-en-10839 ====================
+IoU: 1.0000
+
+--- RAW HAIKU REASONING ---
+[]
+
+==================== ID: train-en-10287 ====================
+IoU: 1.0000
+
+--- RAW HAIKU REASONING ---
+[]
+
+==================== ID: train-en-1115 ====================
+IoU: 1.0000
+
+--- RAW HAIKU REASONING ---
+[]
+
+==================== ID: train-en-797 ====================
+IoU: 1.0000
+
+--- RAW HAIKU REASONING ---
+[]
+
+==================== ID: train-en-10110 ====================
+IoU: 0.0000
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "three",
+    "label": "miscounting",
+    "prob": 0.95,
+    "reason": "The image shows no beach umbrellas at all; it depicts a pub building with a green roof and palm trees, not a beach scene."
+  }
+]

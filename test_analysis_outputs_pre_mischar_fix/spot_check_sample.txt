@@ -1,0 +1,742 @@
+TEST SET SPOT-CHECK SAMPLE (random subset, no gold labels)
+Up to 8 random samples per predicted-label bucket, seed=7
+======================================================================
+
+
+######################################################################
+BUCKET: MISCHARACTERIZATION (8 of 488 total)
+######################################################################
+
+==================== ID: test-en-20392 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\skateboard_One-wheel_skateboard_Onewheel-Pint-Electric-Skateboard-Sa.jpg
+IMAGE EXISTS: True
+PROMPT: Does this skateboard have four wheels?
+
+--- FULL RESPONSE ---
+Yes, the skateboard shown in the picture, the brand "pint", has four wheels.
+
+PREDICTED SPANS:
+  [64:75] 'four wheels' | mischaracterization | confidence: 0.95
+    reason: The image clearly shows a one-wheel electric skateboard (Onewheel Pint), not a four-wheeled skateboard.
+
+==================== ID: test-en-11882 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\lobster_Spiny_lobster_caribbean-spiny-lobster-panulirus-ar-1.jpg
+IMAGE EXISTS: True
+PROMPT: Does this lobster have claws? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes, this lobster clearly possesses claws. In the image, you can see several prominent appendages extending from its body that are characteristic of a clawed crustacean.
+
+The most noticeable features indicating it's a clawed lobster include:
+
+* **Large Chelipeds (Claws):** The two largest front legs on either side of the head are highly developed and thickened at the tips, forming powerful pincers or chelipeds. These are used for defense, capturing prey, and manipulating objects.
+* **Segmented Limbs:**  While not all limbs show distinct claws in detail due to perspective, many other segments along the lobster's body exhibit jointed structures typical of arthropod limbs which often end in small pinching claws even if less pronounced than the main set.
+
+The presence of these large chelipeds is definitive evidence that this particular species belongs to one of the various types of clawed lobsters found worldwide.
+
+PREDICTED SPANS:
+  [36:41] 'claws' | mischaracterization | confidence: 0.95
+    reason: This is a spiny lobster (Panulirus species) which lacks the large chelipeds/claws characteristic of true clawed lobsters; spiny lobsters have antennae and walking legs but no prominent claws.
+  [282:289] 'largest' | mischaracterization | confidence: 0.95
+    reason: The spiny lobster in the image has long antennae and segmented walking legs, not thickened claws or pincers at the head; what appears to be the front appendages are antennae and walking legs without prominent chelipeds.
+  [891:906] 'clawed lobsters' | mischaracterization | confidence: 0.95
+    reason: This is a spiny lobster, not a clawed lobster; spiny lobsters are a distinct group that lack the large claws present in true clawed lobsters.
+
+==================== ID: test-en-804 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\596530791_c660cf5d5f_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is written on the sign board?
+
+--- FULL RESPONSE ---
+Here's what is written on the sign board in the image:
+
+**REFEREES ONLY**
+
+There's also a soccer ball graphic with black, red, and yellow sections on the top part of the sign. 
+
+
+
+PREDICTED SPANS:
+  [115:120] 'black' | mischaracterization | confidence: 0.85
+    reason: The soccer ball graphic on the sign shows red and yellow sections, but there is no visible black section in the ball design itself.
+
+==================== ID: test-en-18978 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\lobster_Spiny_lobster_caribbean-spiny-lobster-panulirus-ar-1.jpg
+IMAGE EXISTS: True
+PROMPT: Does this lobster have claws? Please elaborate.
+
+--- FULL RESPONSE ---
+This lobster has two claws that the person is grasping. The lobster is alive, as is apparent by its dark green color.
+
+PREDICTED SPANS:
+  [17:26] 'two claws' | mischaracterization | confidence: 0.95
+    reason: The image shows a spiny lobster which has multiple walking legs and antennae but no large claws; the prominent appendages visible are long antennae and segmented walking legs, not claws.
+  [105:110] 'green' | mischaracterization | confidence: 0.9
+    reason: The lobster displays a reddish-brown or rust-colored coloration, not dark green.
+
+==================== ID: test-en-20384 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\10770600044_95d6bc5eb6_o.jpg
+IMAGE EXISTS: True
+PROMPT: What's in the book on the podium?
+
+--- FULL RESPONSE ---
+The picture shows an important person who is about to give a speech. On the book on the podium you can read: "Steves 2013”
+
+PREDICTED SPANS:
+  [76:80] 'book' | mischaracterization | confidence: 0.9
+    reason: The object on the podium appears to be a clear acrylic/glass podium surface, not a book; there is no visible book on the podium.
+  [110:121] 'Steves 2013' | invention | confidence: 0.85
+    reason: While 'STEVIES' logos are visible in the background on the backdrop, no text reading 'Steves 2013' can be read on the podium itself.
+
+==================== ID: test-en-20260 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8_7215_7194219556_269015b3fe_o.jpg
+IMAGE EXISTS: True
+PROMPT: What color is the wire connected to the guitar?
+
+--- FULL RESPONSE ---
+The cable connected to the guitar is completely black.
+
+PREDICTED SPANS:
+  [48:53] 'black' | mischaracterization | confidence: 0.85
+    reason: The cable/wire visible in the image connecting to the guitar appears to be dark purple or black with purple tones under the stage lighting, not completely black as stated.
+
+==================== ID: test-en-11558 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\skateboard_Longboard_81gTbph0knL._AC_SL1500_.jpg
+IMAGE EXISTS: True
+PROMPT: Is this skateboard short? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes, the skateboard in the image appears to be short. Here are some characteristics that indicate it is a shortboard:
+
+1. **Length**: Shortboards are generally shorter than standard skateboards, typically ranging from 7.5 to 8.5 inches in length. This skateboard seems to fall within that range, which is shorter compared to the usual 8 to 9.5 inches for a longboard or longboard.
+
+ b. **Shape**: The skateboard has a pointed nose and tail, which is a common feature of shortboards designed for tricks and agility rather than cruising.
+
+ c. **Grip Tape and Trucks**: The trucks (the metal part to which the wheels are attached) are closer to the deck, indicating a shorter overall length. The grip tape also covers a smaller surface area, which is typical for shortboards aimed at skilled riders performing maneuvers.
+
+ Shortboards are favored by skateboarders who enjoy skatepark tricks and more dynamic riding styles due to their maneuverability and responsiveness.
+
+PREDICTED SPANS:
+  [47:52] 'short' | mischaracterization | confidence: 0.95
+    reason: The image shows a longboard, not a shortboard; this is visibly a long, extended deck design typical of longboards, not a short skateboard.
+  [106:116] 'shortboard' | mischaracterization | confidence: 0.95
+    reason: The skateboard in the image is clearly a longboard based on its extended length and shape, not a shortboard.
+  [218:235] '7.5 to 8.5 inches' | invention | confidence: 0.9
+    reason: These dimensions are fabricated; the image shows a longboard which is significantly longer than 8.5 inches, typically in the 35-50+ inch range.
+  [426:430] 'nose' | mischaracterization | confidence: 0.85
+    reason: The skateboard has a rounded/blunt nose and tail typical of longboards, not pointed ends characteristic of shortboards.
+  [820:887] 'Shortboards are favored by skateboarders who enjoy skatepark tricks' | mischaracterization | confidence: 0.9
+    reason: This is describing a shortboard's purpose, but the image shows a longboard which is designed for cruising, not tricks.
+
+==================== ID: test-en-20164 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\3186674064_0e69fc4151_o.jpg
+IMAGE EXISTS: True
+PROMPT: Is this tree in a military area?
+
+--- FULL RESPONSE ---
+The tree full of fruits is in the center of the picture, and there are no obvious signs nearby indicating that it is in a military area, so I can't determine it.
+
+PREDICTED SPANS:
+  [9:13] 'full' | mischaracterization | confidence: 0.9
+    reason: The tree displays autumn foliage (golden and brown leaves), not fruits. The visible features are leaves in various stages of fall coloration, not fruits.
+
+
+######################################################################
+BUCKET: INVENTION (8 of 239 total)
+######################################################################
+
+==================== ID: test-en-1838 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\celery_Red_celery_Giant_Red_Celery.jpg
+IMAGE EXISTS: True
+PROMPT: Is this celery green in color? Please elaborate.
+
+--- FULL RESPONSE ---
+No, this celery is not green in color. The image showcases a vibrant variety of celery known as 'Red Celery.' This particular type has striking red or purplish stems and leaves, which contrasts with the more common light to dark green varieties typically found in grocery stores.
+
+The deep purple hue seen here suggests it might be an heirloom or specialty cultivar that retains its pigmentation even after harvesting. While many people are familiar with standard green celery used for snacking or salads, Red Celery offers both aesthetic appeal and potential nutritional benefits from higher anthocyanin content—antioxidants responsible for plant colors ranging from blue to violet.
+
+In culinary applications, Red Celery can add visual interest to dishes like soups, stews, stir-fries, or fresh salads while providing similar crisp texture and mild flavor profile expected from traditional celery types.
+
+PREDICTED SPANS:
+  [97:107] 'Red Celery' | invention | confidence: 0.7
+    reason: The response names this as a specific cultivar called 'Red Celery' with quotation marks suggesting a formal variety name, but this cannot be verified from the image alone—it is an unverifiable claim presented as fact.
+  [335:365] 'heirloom or specialty cultivar' | invention | confidence: 0.6
+    reason: The response speculates about the celery being an heirloom or specialty cultivar based on pigmentation, but this classification cannot be determined visually from the image and is an unverifiable inference.
+  [586:682] 'higher anthocyanin content—antioxidants responsible for plant colors ranging from blue to violet' | invention | confidence: 0.75
+    reason: The response makes a scientific claim about anthocyanin content and nutritional benefits that cannot be verified from a photograph alone and represents invented technical explanation.
+
+==================== ID: test-en-20378 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\11825536965_4e16bd209a_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the name of the river?
+
+--- FULL RESPONSE ---
+The image shows a screenshot captured from a video game. The river in question is called Skyrim, as seen from the sign on the left of the bridge.
+
+PREDICTED SPANS:
+  [89:144] 'Skyrim, as seen from the sign on the left of the bridge' | invention | confidence: 0.95
+    reason: No visible sign on the left of the bridge identifies the river as 'Skyrim' or any other name; this text cannot be read in the image.
+
+==================== ID: test-en-1360 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8663_16113816254_6eb179594b_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are in the picture?
+
+--- FULL RESPONSE ---
+There is a person present in the picture, standing near the trees. However, there are no other people visible in the image.
+
+PREDICTED SPANS:
+  [0:40] 'There is a person present in the picture' | invention | confidence: 0.95
+    reason: No person is visible anywhere in the image; the scene shows only an empty field with trees, a building, and no people present.
+
+==================== ID: test-en-2166 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\spinach_Red_spinach_red-spinach-isolated-white-backgroun-1.jpg
+IMAGE EXISTS: True
+PROMPT: Is this spinach green in color? Please elaborate.
+
+--- FULL RESPONSE ---
+No, this is not spinach. The plant shown in the image appears to be a type of red amaranth or red spinach (Amaranthus tricolor), which has vibrant purple-red leaves instead of the typical green color associated with common spinach varieties like Spinacia oleracea. Red amaranth's striking crimson foliage sets it apart from regular spinach and makes it visually distinctive for culinary use.
+
+PREDICTED SPANS:
+  [78:126] 'red amaranth or red spinach (Amaranthus tricolor' | invention | confidence: 0.6
+    reason: The response identifies the plant with a specific scientific name that cannot be verified from the image alone; this is an unverifiable botanical identification presented as fact.
+  [246:263] 'Spinacia oleracea' | invention | confidence: 0.5
+    reason: While this is a real species name, citing it as a reference point requires botanical knowledge beyond what the image shows and is not verifiable from visual inspection alone.
+
+==================== ID: test-en-11251 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\zebra_Golden_zebra_1554114976-cover-image-l.png
+IMAGE EXISTS: True
+PROMPT: Is this zebra black and white in color? Please elaborate.
+
+--- FULL RESPONSE ---
+The zebra in the image is not black and white; it has a unique coloration of brown and white. Typically, zebras are known for their classic black and white stripes, but this one appears to have a variation where the stripes are more subdued, resulting in a brownish hue. This could be due to a genetic variation or a condition affecting its pigmentation.
+
+PREDICTED SPANS:
+  [271:353] 'This could be due to a genetic variation or a condition affecting its pigmentation' | invention | confidence: 0.85
+    reason: The response speculates about genetic causes for the coloration without any visual evidence that this is a pathological condition or genetic variation rather than normal individual variation in zebra coloring.
+
+==================== ID: test-en-11716 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\zebra_Golden_zebra_1554114976-cover-image-l.png
+IMAGE EXISTS: True
+PROMPT: Is this zebra black and white in color? Please elaborate.
+
+--- FULL RESPONSE ---
+No, this zebra is not black and white! It's a very rare example of a "golden zebra." 
+
+Here's what's going on:
+
+*   **Melanism:** This zebra has a genetic mutation called melanism. Melanism causes an increase in melanin production, the pigment responsible for dark coloration. However, in this case, the mutation isn’t causing darker stripes, but rather a change in how the stripes are expressed.
+*   **Golden Coloration:** Instead of the typical black stripes, this zebra has a golden or reddish-brown hue. The base coat is a lighter shade of brown, and the stripes are a similar, but slightly lighter, shade.
+*   **Rarity:** Golden zebras are extremely rare. They've been observed in Africa, but are not commonly seen.
+
+So, while it still *has* stripes like a zebra, it's not the classic black and white pattern we're used to! It's a beautiful and unusual variation.
+
+
+
+
+
+PREDICTED SPANS:
+  [118:126] 'Melanism' | invention | confidence: 0.85
+    reason: The response claims melanism is the cause of the coloration, but melanism produces darker pigmentation, not golden/reddish-brown coloring; this is an unverifiable and contradictory genetic explanation.
+  [181:395] 'Melanism causes an increase in melanin production, the pigment responsible for dark coloration. However, in this case, the mutation isn’t causing darker stripes, but rather a change in how the stripes are expressed' | invention | confidence: 0.8
+    reason: The explanation contradicts the definition of melanism (which increases dark pigmentation) by claiming it produces lighter coloration instead; this is a fabricated and contradictory genetic explanation not verifiable from the image.
+  [627:659] 'Golden zebras are extremely rare' | invention | confidence: 0.75
+    reason: The claim that 'golden zebras' are a recognized rare zebra variety is unverifiable from the image and appears to be an invented zebra classification.
+
+==================== ID: test-en-10162 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5254670889_8eb1cb7f9f_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is on the 11th candle?
+
+--- FULL RESPONSE ---
+Based on the image, there are only 9 candles visible. It's not possible to determine what is on the 11th candle because it isn't in the picture. 
+
+However, looking at the visible candles, they all have small designs on them—stars, apples, and other shapes—and they are each a different color of the rainbow.
+
+PREDICTED SPANS:
+  [100:104] '11th' | invention | confidence: 0.95
+    reason: The response correctly identifies that there are only 9 candles visible, making the concept of an '11th candle' a non-existent reference that cannot be addressed.
+
+==================== ID: test-en-20230 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\7990015078_740c2d207e_o.jpg
+IMAGE EXISTS: True
+PROMPT: What's the name of the concert?
+
+--- FULL RESPONSE ---
+It's an excerpt from a Patrick Bruel concert called "So Look".
+
+PREDICTED SPANS:
+  [23:36] 'Patrick Bruel' | invention | confidence: 0.3
+    reason: Cannot verify the identity of the performer from the image alone; no identifying information visible that confirms this is Patrick Bruel.
+  [53:60] 'So Look' | invention | confidence: 0.4
+    reason: No concert name or title is visible in the image that would confirm this is the name of the concert.
+
+
+######################################################################
+BUCKET: MISCOUNTING (8 of 190 total)
+######################################################################
+
+==================== ID: test-en-19008 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\apple_golden_delicious_apples_golden-delicious-apples-1.jpg
+IMAGE EXISTS: True
+PROMPT: Is this apple red in color? Please elaborate.
+
+--- FULL RESPONSE ---
+This apple is very yellow not red in color. There are two apples in this image.
+
+PREDICTED SPANS:
+  [54:57] 'two' | miscounting | confidence: 0.95
+    reason: The image clearly shows three yellow apples, not two.
+
+==================== ID: test-en-20189 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\rake_Shrub_rake_Grass-Rake-Tool-Shrub-Turf-Yard-Rake.jpg
+IMAGE EXISTS: True
+PROMPT: Does this rake have a long handle? Please explain in detail.
+
+--- FULL RESPONSE ---
+Although this rake has 16 tines, it does not have a long handle.
+
+PREDICTED SPANS:
+  [23:25] '16' | miscounting | confidence: 0.9
+    reason: The rake visible in the image has significantly more than 16 tines extending from the head; counting the visible teeth/tines shows approximately 30+ individual tines.
+
+==================== ID: test-en-20281 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\12446104425_704401d522_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many lights are on the ceiling?
+
+--- FULL RESPONSE ---
+There are four lights hanging from the ceiling in this restaurant image.
+
+PREDICTED SPANS:
+  [10:14] 'four' | miscounting | confidence: 0.95
+    reason: The image shows three pendant lights hanging from the ceiling, not four.
+
+==================== ID: test-en-10213 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\4_3405_3584523553_44fffb72d0_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many battery bars are left on the phone's screenshot?
+
+--- FULL RESPONSE ---
+To determine the number of battery bars, I'll first locate the phone's status indicators in the image. The top left corner typically displays network and signal strength information, while the top right usually shows connectivity details like Wi-Fi or 3G alongside system icons such as time and notifications. However, for a smartphone interface shown on this screen, standard conventions place essential status elements at both ends.
+
+Upon examining the upper section carefully, specifically towards the far right side above the application grid, I can identify several small symbols. Among them, there is an icon that resembles two horizontal lines stacked vertically; these are commonly recognized as battery indicator bars indicating charge level.
+
+Counting those vertical segments visually present next to '12:15' confirms their quantity.
+</think>
+
+To determine the number of battery bars, I examine the top-right area of the screenshot where typical mobile device status icons (like battery) are located. There are three visible horizontal battery bars displayed near the "12:15" timestamp.
+
+
+3
+
+PREDICTED SPANS:
+  [1021:1026] 'three' | miscounting | confidence: 0.9
+    reason: The image shows a battery icon in the top right corner that appears to display a full or nearly full battery indicator, not specifically three discrete bars that can be counted as stated.
+
+==================== ID: test-en-1909 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\2489_4105317300_24001db7d7_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many framed artworks appear in the photo?
+
+--- FULL RESPONSE ---
+There is one framed artwork visible in the photo. It appears to be a picture or painting hanging on the wall near the window with striped curtains, adding an artistic touch to the room where the bride-to-be tries on her wedding dress.
+
+PREDICTED SPANS:
+  [9:12] 'one' | miscounting | confidence: 0.95
+    reason: The image shows multiple framed artworks - there are at least two or three visible garment bags with clear plastic covers hanging on the walls, and there appears to be additional framed artwork on the walls beyond just one piece.
+
+==================== ID: test-en-9902 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\94_229074806_c189d2e86b_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many tires are fully visible in the image?
+
+--- FULL RESPONSE ---
+Based on the image provided, we can identify the following:
+
+- There is a front tire on the right side of the car, which is fully visible.
+- There is a rear tire on the left side of the car, which is also fully visible.
+- The other two tires (the other front and the other rear) are either partially obscured by the car's bodywork or not fully in the frame.
+
+Therefore, there are **2** fully visible tires in the image.
+
+PREDICTED SPANS:
+  [382:383] '2' | miscounting | confidence: 0.9
+    reason: The image shows the Formula 1 car from the side, with at least 3 tires clearly visible: the front right tire, the rear right tire, and the rear left tire are all fully visible in the frame.
+
+==================== ID: test-en-11132 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\table_Wall-mounted_table_6058dea13bb95a4c0e1939517ce862e7.jpg
+IMAGE EXISTS: True
+PROMPT: Does this table have four legs? Please elaborate.
+
+--- FULL RESPONSE ---
+This table has a unique design with a combination of three visible legs and a support structure that extends from the table's back to the wall. 
+
+The three visible legs appear to be of a traditional design, providing stability to the table. However, the support structure that connects the table to the wall also plays a significant role in the table's stability. This design allows the table to be securely mounted to the wall, providing additional support and preventing it from tipping over.
+
+In summary, while the table has only three visible legs, it is actually supported by a combination of the visible legs and the wall-mounted support structure.
+
+PREDICTED SPANS:
+  [53:58] 'three' | miscounting | confidence: 0.95
+    reason: The table appears to have two visible legs (the black metal folding legs visible in the front), not three legs.
+
+==================== ID: test-en-10009 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\9122036520_6f253f7509_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the total number of oranges in the box?
+
+--- FULL RESPONSE ---
+There are six oranges in the box.
+
+PREDICTED SPANS:
+  [10:13] 'six' | miscounting | confidence: 0.9
+    reason: The image shows five oranges stacked in the left portion of the display box, not six.
+
+
+######################################################################
+BUCKET: NONE_PREDICTED (8 of 177 total)
+######################################################################
+
+==================== ID: test-en-2251 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5592662283_48a22761cf_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is written on black badge?
+
+--- FULL RESPONSE ---
+Based on the image provided, the name written on the black name badge is **EASTERLING**.
+
+This name is clearly visible on the name tag pinned to the left side of the chest of the soldier in the dark blue uniform on the left. The name is printed in white, capital letters.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-11844 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\apple_Granny_smith_apple_XUHgDBdiLTZ7gG4cbQ8aHB.jpg
+IMAGE EXISTS: True
+PROMPT: Is this apple red in color? Please elaborate.
+
+--- FULL RESPONSE ---
+The apple in the image appears to be green, which is a common characteristic of certain varieties of apples, such as Granny Smith or Fuji apples. The red color often associated with apples comes from anthocyanins, a type of pigment found in many fruits and vegetables. However, some apple varieties are naturally green, and they are not uncommon. The presence of green apples is a testament to the diversity of apple varieties, each with its own unique color, flavor, and texture.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-9677 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\14099284829_a08f1b7f32_o.jpg
+IMAGE EXISTS: True
+PROMPT: Who painted the wall with spray?
+
+--- FULL RESPONSE ---
+To answer this, I'll first identify the visible text on the walls. On the right side of the image, there's a distinctive patterned wallpaper with graffiti-style markings in blue and red paint. The most prominent marking is 'WIE', which appears to be part of larger words or tags. 
+
+Considering that such wall art typically signifies an artist's tag or name, especially when it stands out like this against worn-out decor, we can infer who created these painted marks. While other areas have faded patterns (like the circular designs) from previous decoration, only one section clearly shows deliberate spray-painted letters.
+
+Therefore, based on the visual evidence of the sprayed "WIE" mark on the decorated wall, WIE likely refers to the person or group responsible for painting those specific sections using spray paint.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-20405 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\duck_Duckling_08715-Yellow-duckling-swimming.jpg
+IMAGE EXISTS: True
+PROMPT: Does this duck have feathers?
+
+--- FULL RESPONSE ---
+Yes, the duck shown in the image has feathers, like all ducks. Do you want more information about this animal species?
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-2091 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\cat_Sphynx_cat_sphynx.jpg
+IMAGE EXISTS: True
+PROMPT: Does this cat have fur? Please elaborate.
+
+--- FULL RESPONSE ---
+This cat does not have fur. It is a Sphynx cat, which is known for its unique characteristic of being nearly hairless. The skin on the body appears smooth and wrinkled in some areas, with only small patches (like around the ears) showing minimal hair or fine vellus hairs that are barely visible to the naked eye. This breed's lack of coat gives it a distinctive look, resembling more of an animal with exposed skin rather than typical furry cats.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-2423 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\12446104425_704401d522_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the restaurant name?
+
+--- FULL RESPONSE ---
+Based on the visual information in the image, the restaurant's name is not explicitly displayed.
+
+The image shows the interior of a restaurant with several distinctive features:
+- Several hanging paper lanterns.
+- A chalkboard menu listing ice cream flavors and prices.
+- Decorative tapestries and a mounted animal head on the wall.
+- A view into another room with a person wearing a striped hat.
+
+However, there is no visible sign, logo, or text that clearly identifies the restaurant's name.
+
+Therefore, the name of the restaurant cannot be determined from the provided image.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-20159 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8110671469_c2e0bc5997_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are in the building?
+
+--- FULL RESPONSE ---
+I can see about 15 people inside the building.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-768 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\shovel_plastic_shovel_RPSHOV.png
+IMAGE EXISTS: True
+PROMPT: Does this shovel have a metal end? Please elaborate.
+
+--- FULL RESPONSE ---
+Based on the image, the shovel appears to be made entirely of plastic. There is no visible evidence of a metal end or any metal components at all. 
+
+The shovel's blade and handle are both the same bright blue color and have a plastic-like texture. It's likely a lightweight, plastic snow shovel or a similar tool designed for moving lighter materials like sand or grain.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+
+######################################################################
+BUCKET: OCR (8 of 92 total)
+######################################################################
+
+==================== ID: test-en-9791 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\9658708158_d91f1867fb_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is title of the book?
+
+--- FULL RESPONSE ---
+The book in the image appears to be titled "SOUND RECORDING" with the subtitle "A Handbook for Sound Engineers" and the author's name "by R. L. Schoenberg." Below the title, there's a text that reads "Seventh Edition," which suggests that this is a revised version of the original publication. The book is likely a textbook or manual regarding the technical aspects of sound recording, covering topics such as acoustics, microphone design, recording techniques, and possibly post-production processes.
+
+PREDICTED SPANS:
+  [44:59] 'SOUND RECORDING' | OCR | confidence: 0.85
+    reason: The visible text on the book spine appears to read "SOLDIER'S" not "SOUND RECORDING"; the image shows what looks like a military-related document or handbook.
+  [80:110] 'A Handbook for Sound Engineers' | OCR | confidence: 0.8
+    reason: The subtitle visible on the book does not match this description; the actual text appears to be "RELEASE BOOK" based on what is legible in the image.
+  [135:154] 'by R. L. Schoenberg' | invention | confidence: 0.75
+    reason: No author name "R. L. Schoenberg" is legible or visible on the book cover shown in the image.
+  [201:216] 'Seventh Edition' | invention | confidence: 0.7
+    reason: No edition information is clearly visible or legible on the book in the image.
+
+==================== ID: test-en-18930 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\4500385829_1ba428e269_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are sitting in the stadium?
+
+--- FULL RESPONSE ---
+This picture was taken in a large baseball stadium, and there are too many people for me to count accurately. The main clue appears to be the sign on the right side of the image, which reads "Pemway Park". If you need a more accurate estimate of the size of the crowd, I can try to identify where this park is located and check what its capacity is.
+
+PREDICTED SPANS:
+  [192:203] 'Pemway Park' | OCR | confidence: 0.95
+    reason: The sign on the right side of the image reads 'Fenway Park', not 'Pemway Park'.
+
+==================== ID: test-en-9640 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\16338928063_e3c17a3a7c_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the event name?
+
+--- FULL RESPONSE ---
+The event name is HROOPO. This can be seen on the podium where the speaker is standing, which has a sign with "HROOPO" and an image of someone holding skis or snowboard equipment.
+
+PREDICTED SPANS:
+  [18:24] 'HROOPO' | OCR | confidence: 0.95
+    reason: The visible text on the podium sign reads 'HALL OF CHAMPIONS', not 'HROOPO'.
+  [143:178] 'holding skis or snowboard equipment' | mischaracterization | confidence: 0.85
+    reason: The image on the podium sign shows a basketball player, not someone holding skis or snowboard equipment.
+
+==================== ID: test-en-20343 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5154568857_081a390018_o.jpg
+IMAGE EXISTS: True
+PROMPT: On which river is the boat going?
+
+--- FULL RESPONSE ---
+In the image there is a boat whose side has the writing "WaterCraft". Unfortunately, from the information shown in the image, I cannot identify the name of the river in question, can I help you with something else?
+
+PREDICTED SPANS:
+  [57:67] 'WaterCraft' | OCR | confidence: 0.9
+    reason: The boat's side reads 'MasterCraft' not 'WaterCraft' based on visible text in the image.
+
+==================== ID: test-en-2529 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\2416620406_a0ceb4a317_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the name of the restaurant?
+
+--- FULL RESPONSE ---
+Based on the visual evidence in the image, the name of the restaurant is **Taiwan**.
+
+Here's the reasoning:
+
+1.  **The Glassware:** The most direct evidence is the clear glass cups on the table. They have green text printed on them.
+    *   The characters **"台灣" (Táiwān)** are clearly visible. This is the Chinese name for Taiwan.
+    *   Below the Chinese characters, the word **"TAIWAN"** is printed in English.
+    *   The text "迎您臨" (yíng nín lín), which translates to "Welcome you to visit," is also visible, which is a common phrase used in restaurant signage.
+
+2.  **The Context:** The dish being eaten is a type of Taiwanese stir-fry, likely a variation of "Taiwanese-style stir-fried noodles" or "Taiwanese stir-fried rice noodles," which is a very popular dish in Taiwan. The overall setting, with the specific glassware and the food, strongly suggests a Taiwanese restaurant.
+
+Therefore, the name of the restaurant is **Taiwan**.
+
+PREDICTED SPANS:
+  [433:436] '迎您臨' | OCR | confidence: 0.85
+    reason: The text on the glasses appears to show different characters than what is claimed; the exact characters are difficult to read with certainty in this image quality, making the specific OCR claim questionable.
+  [475:495] 'Welcome you to visit' | invention | confidence: 0.75
+    reason: While Chinese text is visible on the glasses, the specific translation provided cannot be verified from the image alone and appears to be an invention not directly readable or verifiable from the visual evidence.
+
+==================== ID: test-en-20407 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\knife_Throwing_knife_ziel_wurfmesser_gross.jpg
+IMAGE EXISTS: True
+PROMPT: Does this knife have a handle?
+
+--- FULL RESPONSE ---
+The image shows a Zenith knife, as seen from the name engraved on the blade. Specifically the knife has a handle that is attached directly to the blade and made of the same material.
+
+PREDICTED SPANS:
+  [18:30] 'Zenith knife' | OCR | confidence: 0.9
+    reason: The engraving on the blade appears to read 'ZIEL' not 'Zenith', which is consistent with the filename 'ziel wurfmesser' (German throwing knife).
+  [168:172] 'same' | mischaracterization | confidence: 0.85
+    reason: The handle is clearly made of leather (brown/tan colored leather with visible stitching and texture), while the blade is made of metal, so they are not made of the same material.
+
+==================== ID: test-en-9741 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5131272328_5a7a847b3f_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is written on the stone behind chapis tombstone?
+
+--- FULL RESPONSE ---
+The text on the stone behind chapis tombstone reads "Chapis".
+
+PREDICTED SPANS:
+  [53:59] 'Chapis' | OCR | confidence: 0.95
+    reason: The stone behind CHAPIS tombstone reads 'D.E.P.' and 'La Tía...' not 'Chapis' — the response misread the text visible on the gravestone.
+
+==================== ID: test-en-18922 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\16338928063_e3c17a3a7c_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the event name?
+
+--- FULL RESPONSE ---
+That's a tricky question! Let me analyze the image carefully for clues.
+
+* The image depicts a convention or some sort of **public speaking event**. One speaker is standing on a stage next to a podium, and is addressing a large crowd, with a slideshow presentation being projected behind him.
+* A person with a T-shirt that says "COACH" is sat in the first row next to cameras recording the event. They might a technical staff member in charge of the logistics of the event.
+* There appears to be a **large banner** over the stage that says "Hall of Champions". The **podium** itself appears to have the same text inside a shield-like logo.
+* The **slide** currently being project on screen reads "Success of content is about content", but doesn't appear to have any specific mark indicating which event it is for.
+
+The most likely answer to your question is that this event is called "Hall of Champions", but the evidence in the image isn't definitive.
+
+PREDICTED SPANS:
+  [698:733] 'Success of content is about content' | OCR | confidence: 0.9
+    reason: The text visible on the projected slide reads 'SUCCESS CONTENT' and 'ALL ABOUT CONTEXT' (or similar), not 'Success of content is about content' as stated in the response.
+
+
+######################################################################
+BUCKET: OTHER (8 of 15 total)
+######################################################################
+
+==================== ID: test-en-1565 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\3928975334_4538cc1773_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many bagels are turned on its side in the image?
+
+--- FULL RESPONSE ---
+The image shows a tray with bagels. However, without seeing the entire tray, it's not possible for me to determine the exact number of bagels that are turned on their side. The bagels appear to be arranged in rows, which suggests that they might have been turned to one side to make it easier to stack and store them.
+
+PREDICTED SPANS:
+  [45:131] 'without seeing the entire tray, it's not possible for me to determine the exact number' | other | confidence: 0.85
+    reason: The entire tray is clearly visible in the image, making this claim that the tray cannot be fully seen contradictory to what is shown.
+
+==================== ID: test-en-10874 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\ship_Yachts_and_luxury_vessel_DL-YACHTS-LUXURY-YACHT-DREAMLINE-26M.jpg
+IMAGE EXISTS: True
+PROMPT: Does this ship have sails? Please elaborate.
+
+--- FULL RESPONSE ---
+://www.google.com/search?q=Delivered+in+2023+by+Oceanco+and+named+Dreamline+28+in+the+image+provided
+
+PREDICTED SPANS:
+  [3:100] 'www.google.com/search?q=Delivered+in+2023+by+Oceanco+and+named+Dreamline+28+in+the+image+provided' | other | confidence: 0.95
+    reason: The response is a Google search URL rather than an actual answer to the question about whether the ship has sails.
+
+==================== ID: test-en-10869 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\bathtub_Wooden_tub_Custom-Made-Wooden-Tub.jpg
+IMAGE EXISTS: True
+PROMPT: Is this bathtub white in color? Please elaborate.
+
+--- FULL RESPONSE ---
+.com
+
+PREDICTED SPANS:
+  [1:4] 'com' | other | confidence: 0.95
+    reason: The response '.com' does not answer the prompt about whether the bathtub is white in color; it is not a meaningful response to the question.
+
+==================== ID: test-en-2624 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\7484704068_77788c27f6_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the name of the person standing?
+
+--- FULL RESPONSE ---
+{100, 100, 25, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1
+
+PREDICTED SPANS:
+  [1:511] '100, 100, 25, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1' | other | confidence: 0.99
+    reason: The response is a numeric array instead of providing the name of the person standing, failing to answer the prompt entirely.
+
+==================== ID: test-en-9989 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\6477223005_f6c25e7b51_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are standing?
+
+--- FULL RESPONSE ---
+In the image, there are several individuals standing. However, without more specific information from the image, it would be difficult to provide an exact count. If you need a more precise number, please provide more details or clarify your question.
+
+PREDICTED SPANS:
+  [113:160] 'it would be difficult to provide an exact count' | other | confidence: 0.9
+    reason: The response fails to answer the straightforward question by claiming an exact count is difficult when the people in the image are clearly countable and visible.
+
+==================== ID: test-en-20301 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\cat_Sphynx_cat_sphynx.jpg
+IMAGE EXISTS: True
+PROMPT: Does this cat have a mustache?
+
+--- FULL RESPONSE ---
+Yes, cats have whiskers to help them keep their balance.
+
+PREDICTED SPANS:
+  [0:3] 'Yes' | other | confidence: 0.95
+    reason: The response answers 'Yes' to whether the cat has a mustache, but the image shows no visible mustache on this Sphynx cat's face.
+
+==================== ID: test-en-10945 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\knife_Throwing_knife_ab182a65a998036886a38e7e6c1d7802.jpg
+IMAGE EXISTS: True
+PROMPT: Does this knife have a handle? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes, the knife in the image does have a handle. 
+
+To elaborate:
+
+1. **Material and Texture**: The handle appears to be made of a light-colored material, contrasting with the dark, cracked texture of the background surface. This light coloration is consistent with materials like bone, wood, or certain types of synthetic composites often used in knife handles.
+
+2. **Shape and Design**: The handle is elongated and tapers slightly towards one end, which is typical of ergonomic knife designs meant for comfortable gripping. The shape is rectangular with rounded edges, providing a balance between strength and ease of use.
+
+33 **Pommel and Hole**: At one end of the handle, there is a distinct rounded protrusion known as the pommel. This is a common feature in many many knife handles, often used to provide a better grip or to attach a lanyard or sheath. Additionally, there is a hole near this end, which could be for mounting the knife to a sheath or for attaching a lanyard, adding to its practical design.
+
+3. **Construction**: The handle appears to be securely attached to the blade, suggesting a well-constructed knife. The seamless transition from handle to blade indicates good craftsmanship, ensuring the knife is both functional and durable.
+
+In summary, the knife has a handle characterized by its light color, ergonomic shape, rounded pommel, and attachment hole, making it both practical and user-friendly.
+
+PREDICTED SPANS:
+  [762:771] 'many many' | other | confidence: 0.9
+    reason: The response contains a duplicate word 'many many' which appears to be a typing error rather than an accurate description.
+  [1341:1355] 'rounded pommel' | mischaracterization | confidence: 0.85
+    reason: The pommel/end of the handle appears to be more oval or flattened rather than distinctly rounded as described.
+
+==================== ID: test-en-2476 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8085512417_a12a9d9ff3_o.jpg
+IMAGE EXISTS: True
+PROMPT: At what time was the picture taken?
+
+--- FULL RESPONSE ---
+What time of day was the artificial lighting in the ceiling?
+
+PREDICTED SPANS:
+  [0:60] 'What time of day was the artificial lighting in the ceiling?' | other | confidence: 0.95
+    reason: The response does not answer the prompt; it rephrases the question instead of providing a time when the picture was taken.

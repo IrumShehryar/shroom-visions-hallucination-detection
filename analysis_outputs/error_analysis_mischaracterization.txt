@@ -1,12 +1,12 @@
 OFFLINE ERROR ANALYSIS: MISCHARACTERIZATION
-Generated: 2026-07-12 23:55:23.233853
+Generated: 2026-07-15 01:17:30.453579
 ======================================================================
 SUMMARY
   Samples:     47
-  Average IoU: 0.1186
+  Average IoU: 0.1608
   Perfect (1.0): 0
-  Partial:       22
-  Zero (0.0):    25
+  Partial:       25
+  Zero (0.0):    22
 ======================================================================
 
 ==================== IMAGE ID: train-en-2702 ====================
@@ -51,10 +51,10 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [79:91] 'male Mallard' | invention | model confidence: 0.85
-  [916:929] 'greenish-gray' | mischaracterization | model confidence: 0.75
+  [916:934] 'greenish-gray beak' | mischaracterization | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-11180 ====================
-MODEL PERFORMANCE (IoU): 0.5000
+MODEL PERFORMANCE (IoU): 0.4627
 
 --- FULL MODEL RESPONSE ---
 The shovel in the image does not appear to have a metal end. Instead, it has a wooden head. The wooden head is typically made from hardwoods such as ash, maple, or hickory, which are durable and long-lasting. The wooden head is usually attached to a metal handle, which is not visible in this image. The wooden head is designed to dig into the ground, and the curved end is used to scrape or lift the soil.
@@ -81,7 +81,7 @@ GOLD LABELS (All Annotations):
   [273:298] 'not visible in this image' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [79:85] 'wooden' | mischaracterization | model confidence: 0.85
+  [79:90] 'wooden head' | mischaracterization | model confidence: 0.85
   [250:298] 'metal handle, which is not visible in this image' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-1684 ====================
@@ -235,7 +235,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-1855 ====================
-MODEL PERFORMANCE (IoU): 0.2468
+MODEL PERFORMANCE (IoU): 0.2500
 
 --- FULL MODEL RESPONSE ---
 No, this bathtub is not white. The image shows a large wooden structure with vertical planks of light brown wood arranged in a cylindrical shape. There are also horizontal metal bands securing the construction and some visible text on one of them that reads 'LUXWE Superior Quality'.
@@ -256,7 +256,7 @@ GOLD LABELS (All Annotations):
   [259:264] 'LUXWE' | OCR | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [214:282] 'some visible text on one of them that reads 'LUXWE Superior Quality'' | invention | model confidence: 0.95
+  [214:281] 'some visible text on one of them that reads 'LUXWE Superior Quality' | invention | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1339 ====================
 MODEL PERFORMANCE (IoU): 0.2381
@@ -292,7 +292,7 @@ PREDICTED LABELS:
   [207:276] 'it is not possible to see the contents of the handbag from this angle' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-11736 ====================
-MODEL PERFORMANCE (IoU): 0.0000
+MODEL PERFORMANCE (IoU): 0.3736
 
 --- FULL MODEL RESPONSE ---
 The chair in the image has a distinctive design: it appears to have a circular base that is not visible from the current angle, suggesting it may be a stand or pedestal. The chair is suspended from a hook by a chain, and the design allows the chair to rotate around its base. This is a modern and unique design, often associated with the "egg chair" or similar types of hanging chairs.
@@ -317,7 +317,7 @@ GOLD LABELS (All Annotations):
   [92:126] 'not visible from the current angle' | mischaracterization | agreement: 0.6666666667
 
 PREDICTED LABELS:
-  [70:78] 'circular' | mischaracterization | model confidence: 0.85
+  [70:126] 'circular base that is not visible from the current angle' | mischaracterization | model confidence: 0.85
   [239:274] 'the chair to rotate around its base' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-1834 ====================
@@ -404,7 +404,7 @@ GOLD LABELS (All Annotations):
   [79:89] 'stands out' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [40:43] 'red' | mischaracterization | model confidence: 0.85
+  [40:59] 'red electric guitar' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-920 ====================
 MODEL PERFORMANCE (IoU): 0.2895
@@ -517,7 +517,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-10824 ====================
-MODEL PERFORMANCE (IoU): 0.0870
+MODEL PERFORMANCE (IoU): 0.0548
 
 --- FULL MODEL RESPONSE ---
 The image shows a forest with tall pine trees. This type of forest is often referred to as a pine forest or pine woodland. Some common examples include:
@@ -548,7 +548,8 @@ GOLD LABELS (All Annotations):
   [35:39] 'pine' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:46] 'The image shows a forest with tall pine trees.' | invention | model confidence: 0.7
+  [0:45] 'The image shows a forest with tall pine trees' | invention | model confidence: 0.7
+  [93:121] 'pine forest or pine woodland' | mischaracterization | model confidence: 0.6
 
 ==================== IMAGE ID: train-en-10547 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -577,7 +578,7 @@ PREDICTED LABELS:
   [126:131] 'black' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-11472 ====================
-MODEL PERFORMANCE (IoU): 0.4167
+MODEL PERFORMANCE (IoU): 0.1471
 
 --- FULL MODEL RESPONSE ---
 Yes, the penguin in the image is predominantly black. It has a dark brown to nearly black plumage covering its body and head, which gives it a uniformly dark appearance typical of many juvenile or early-stage adult penguin species like Adélie Penguins before they develop their more distinctive white underparts as they mature.
@@ -604,10 +605,10 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [47:52] 'black' | mischaracterization | model confidence: 0.9
-  [63:67] 'dark' | mischaracterization | model confidence: 0.85
+  [63:89] 'dark brown to nearly black' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1767 ====================
-MODEL PERFORMANCE (IoU): 0.0000
+MODEL PERFORMANCE (IoU): 0.5000
 
 --- FULL MODEL RESPONSE ---
 This swan is predominantly white, with a distinctive black head and a red beak. The black coloration on its head is quite striking and is a characteristic feature of certain species of swan. The red beak is also a common color for swans, particularly in the male or "cob" of the species. These colors are often used to identify different species of swan.
@@ -626,7 +627,7 @@ GOLD LABELS (All Annotations):
   [74:78] 'beak' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [14:17] 'red' | mischaracterization | model confidence: 0.95
+  [70:78] 'red beak' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-979 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -794,7 +795,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-1959 ====================
-MODEL PERFORMANCE (IoU): 0.3478
+MODEL PERFORMANCE (IoU): 0.3158
 
 --- FULL MODEL RESPONSE ---
 No, this belt is not thin. It appears to be a wide leather belt or possibly a waist cinch, characterized by its broad width and substantial appearance. The multiple layers of thick brown leather combined with large metal buckles contribute to its robust look rather than a slim profile.
@@ -819,11 +820,11 @@ GOLD LABELS (All Annotations):
   [156:174] 'multiple layers of' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [156:164] 'multiple' | mischaracterization | model confidence: 0.85
-  [209:214] 'large' | mischaracterization | model confidence: 0.9
+  [156:194] 'multiple layers of thick brown leather' | mischaracterization | model confidence: 0.85
+  [209:228] 'large metal buckles' | mischaracterization | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-683 ====================
-MODEL PERFORMANCE (IoU): 0.0000
+MODEL PERFORMANCE (IoU): 0.2456
 
 --- FULL MODEL RESPONSE ---
 No, this eel is **not grey** in color. 
@@ -851,7 +852,7 @@ GOLD LABELS (All Annotations):
   [232:238] 'darker' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [101:106] 'white' | mischaracterization | model confidence: 0.85
+  [101:127] 'white or pale yellow bands' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-11143 ====================
 MODEL PERFORMANCE (IoU): 0.5556
@@ -913,7 +914,7 @@ PREDICTED LABELS:
   [48:53] 'three' | miscounting | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1517 ====================
-MODEL PERFORMANCE (IoU): 0.1111
+MODEL PERFORMANCE (IoU): 0.6667
 
 --- FULL MODEL RESPONSE ---
 The image shows a blue SUV parked in a lot, and there is no red car visible. There are no people visible in the image either. If you have more details or a different image, please let me know!
@@ -933,10 +934,10 @@ GOLD LABELS (All Annotations):
   [48:75] 'there is no red car visible' | miscounting | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [60:63] 'red' | mischaracterization | model confidence: 0.95
+  [57:75] 'no red car visible' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-9860 ====================
-MODEL PERFORMANCE (IoU): 0.1667
+MODEL PERFORMANCE (IoU): 0.4737
 
 --- FULL MODEL RESPONSE ---
 Yes, the bus has an electric engine. Here are some details to elaborate:
@@ -978,7 +979,7 @@ GOLD LABELS (All Annotations):
   [74:77] '110' | OCR | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [20:28] 'electric' | mischaracterization | model confidence: 0.85
+  [20:35] 'electric engine' | mischaracterization | model confidence: 0.85
   [74:78] '110%' | OCR | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1584 ====================
@@ -1004,7 +1005,7 @@ GOLD LABELS (All Annotations):
   [500:617] 'In the case of this lemon, it seems to have ripened with some residual green color, resulting in the yellow-green hue' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [292:499] 'This variation in color is due to the presence of chlorophyll in the fruit, even after it has ripened. The chlorophyll, which is responsible for the green color, is gradually broken down as the fruit ripens.' | invention | model confidence: 0.7
+  [292:498] 'This variation in color is due to the presence of chlorophyll in the fruit, even after it has ripened. The chlorophyll, which is responsible for the green color, is gradually broken down as the fruit ripens' | invention | model confidence: 0.7
 
 ==================== IMAGE ID: train-en-761 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1064,10 +1065,10 @@ GOLD LABELS (All Annotations):
   [1050:1071] 'the angle of the shot' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:48] 'No, the walrus in the image does not have tusks.' | mischaracterization | model confidence: 0.95
+  [0:47] 'No, the walrus in the image does not have tusks' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-11870 ====================
-MODEL PERFORMANCE (IoU): 0.0882
+MODEL PERFORMANCE (IoU): 0.2458
 
 --- FULL MODEL RESPONSE ---
 The object in the image you provided appears to be a fruit rather than a vegetable. It has a more rounded shape, with a slight taper at the top, which is typical of many cucurbitaceae like squash and melons. While some varieties of cucumber can be cylindrical, the fruit in the image does not have the characteristic long, cylindrical shape of a cucumber.
@@ -1093,7 +1094,7 @@ GOLD LABELS (All Annotations):
   [140:143] 'top' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [73:82] 'vegetable' | mischaracterization | model confidence: 0.9
+  [37:82] 'appears to be a fruit rather than a vegetable' | mischaracterization | model confidence: 0.9
   [284:354] 'does not have the characteristic long, cylindrical shape of a cucumber' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1579 ====================
@@ -1207,8 +1208,8 @@ GOLD LABELS (All Annotations):
   [162:190] ' of the length of the handle' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [303:307] 'leaf' | mischaracterization | model confidence: 0.85
-  [444:452] 'flexible' | mischaracterization | model confidence: 0.9
+  [303:327] 'leaf rake or a lawn rake' | mischaracterization | model confidence: 0.85
+  [430:459] 'shorter, more flexible prongs' | mischaracterization | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-11309 ====================
 MODEL PERFORMANCE (IoU): 0.3750
@@ -1235,7 +1236,7 @@ PREDICTED LABELS:
   [8:17] 'cucumbers' | mischaracterization | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-11167 ====================
-MODEL PERFORMANCE (IoU): 0.0741
+MODEL PERFORMANCE (IoU): 0.2870
 
 --- FULL MODEL RESPONSE ---
 The image shows a fruit that appears to be a lemon, which is typically yellow in color. Lemons are known for their bright, yellow skin that is often free of any significant blemishes. The color of a lemon can be related to its ripeness and also to the variety of the fruit. Some varieties of lemons can have a slightly different hue, such as a more orange-yellow color, but yellow is the most common color for lemons.
@@ -1261,7 +1262,7 @@ GOLD LABELS (All Annotations):
   [149:182] 'free of any significant blemishes' | mischaracterization | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [71:77] 'yellow' | mischaracterization | model confidence: 0.85
+  [115:182] 'bright, yellow skin that is often free of any significant blemishes' | mischaracterization | model confidence: 0.85
   [374:416] 'yellow is the most common color for lemons' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-11652 ====================

@@ -1,5 +1,5 @@
 OFFLINE ERROR ANALYSIS: NONE
-Generated: 2026-07-12 23:55:23.249238
+Generated: 2026-07-15 01:17:30.462940
 ======================================================================
 SUMMARY
   Samples:     48
@@ -140,7 +140,7 @@ Human: Based on the image provided, the lady on the left is not wearing any shoe
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [137:142] 'rocky' | mischaracterization | model confidence: 0.85
+  [137:149] 'rocky ground' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10750 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -330,7 +330,7 @@ The hose inside the red box is not composed of circular tubes. Instead, it appea
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [47:55] 'circular' | mischaracterization | model confidence: 0.85
+  [31:61] 'not composed of circular tubes' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1478 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -598,8 +598,8 @@ In summary, while not all of its feathers are brown, the owl’s coloration is d
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [296:301] 'upper' | mischaracterization | model confidence: 0.85
-  [408:413] 'owl’s' | mischaracterization | model confidence: 0.75
+  [282:348] 'The wings and upper body are a mix of dark brown and grayish-brown' | mischaracterization | model confidence: 0.85
+  [404:510] 'The owl’s head is predominantly black, but the feathers around the eyes and on the cheeks are a dark brown' | mischaracterization | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-1786 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -640,7 +640,7 @@ The berries in the image are red, not blue. Blueberries are typically small, rou
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [44:113] 'Blueberries are typically small, round, and blue or purple when ripe.' | invention | model confidence: 0.9
+  [44:112] 'Blueberries are typically small, round, and blue or purple when ripe' | invention | model confidence: 0.9
   [160:223] 'which is different from the characteristic color of blueberries' | invention | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-11837 ====================
@@ -715,7 +715,7 @@ The pumpkin in the image is not orange in color. It appears to have a pale, almo
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [154:159] 'green' | mischaracterization | model confidence: 0.7
+  [133:169] 'Pumpkins are usually green or orange' | mischaracterization | model confidence: 0.7
 
 ==================== IMAGE ID: train-en-2587 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -863,8 +863,8 @@ The image you provided appears to show a skunk with black fur and white stripes 
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [66:71] 'white' | mischaracterization | model confidence: 0.85
-  [158:191] 'striped skunk (Mephitis mephitis)' | invention | model confidence: 0.75
+  [66:91] 'white stripes on its back' | mischaracterization | model confidence: 0.85
+  [158:190] 'striped skunk (Mephitis mephitis' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-2110 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -906,7 +906,7 @@ The context provided does not include any information about tools or a toolbox. 
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [0:79] 'The context provided does not include any information about tools or a toolbox.' | other | model confidence: 0.95
+  [0:78] 'The context provided does not include any information about tools or a toolbox' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-11532 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -955,7 +955,7 @@ No, this photo does not appear to be taken inside a museum. The background shows
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [119:124] 'green' | mischaracterization | model confidence: 0.85
+  [119:133] 'green flooring' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-11136 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -978,7 +978,7 @@ The design of the head is more primitive compared to modern shovels, which typic
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [96:102] 'single' | mischaracterization | model confidence: 0.85
+  [51:116] 'The head of the tool appears to be made of a single piece of wood' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1499 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1005,8 +1005,8 @@ The belt in the image appears to be a wide belt. It is sash-like and has a thick
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [38:42] 'wide' | mischaracterization | model confidence: 0.95
-  [75:80] 'thick' | mischaracterization | model confidence: 0.85
+  [38:47] 'wide belt' | mischaracterization | model confidence: 0.95
+  [75:99] 'thick, sturdy appearance' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-1693 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1034,7 +1034,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [47:55] 'bralette' | mischaracterization | model confidence: 0.85
-  [394:400] 'smooth' | mischaracterization | model confidence: 0.8
+  [384:404] 'seamless, smooth cup' | mischaracterization | model confidence: 0.8
 
 ==================== IMAGE ID: train-en-2657 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1059,7 +1059,7 @@ The image contains text in white and black, but no green text is visible. Theref
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [29:34] 'green' | mischaracterization | model confidence: 0.9
+  [7:52] 'There are no words in green text in the image' | mischaracterization | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-9762 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1111,5 +1111,5 @@ The fruit depicted in the image is not cylindrical. It has a rounded, almost hea
 GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
-  [77:87] 'heart-like' | mischaracterization | model confidence: 0.85
+  [77:93] 'heart-like shape' | mischaracterization | model confidence: 0.85
   [224:232] 'cucumber' | invention | model confidence: 0.95

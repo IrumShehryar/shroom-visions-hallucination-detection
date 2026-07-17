@@ -1,11 +1,11 @@
 OFFLINE ERROR ANALYSIS: OCR
-Generated: 2026-07-12 23:55:23.249238
+Generated: 2026-07-15 01:17:30.462940
 ======================================================================
 SUMMARY
   Samples:     48
-  Average IoU: 0.6843
-  Perfect (1.0): 25
-  Partial:       20
+  Average IoU: 0.6866
+  Perfect (1.0): 26
+  Partial:       19
   Zero (0.0):    3
 ======================================================================
 
@@ -191,7 +191,7 @@ GOLD LABELS (All Annotations):
   [53:65] 'outer shells' | OCR | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [312:317] 'brown' | mischaracterization | model confidence: 0.85
+  [273:329] 'some of which is still attached to the brown inner shell' | mischaracterization | model confidence: 0.85
   [481:540] 'fragments of the inner shell accumulating below the machine' | mischaracterization | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-9807 ====================
@@ -244,7 +244,7 @@ PREDICTED LABELS:
   [53:62] '1920-1940' | OCR | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1892 ====================
-MODEL PERFORMANCE (IoU): 0.1429
+MODEL PERFORMANCE (IoU): 0.0690
 
 --- FULL MODEL RESPONSE ---
 No, this scarf is not knitted. It appears to be a silk or satin scarf with printed designs rather than being woven in the characteristic loops of knitting.
@@ -271,8 +271,8 @@ GOLD LABELS (All Annotations):
   [358:362] 'SAYM' | OCR | agreement: 0.6666666667
 
 PREDICTED LABELS:
-  [122:136] 'characteristic' | mischaracterization | model confidence: 0.85
-  [357:371] '"SAYM" visible' | invention | model confidence: 0.75
+  [109:154] 'woven in the characteristic loops of knitting' | mischaracterization | model confidence: 0.85
+  [358:371] 'SAYM" visible' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-1381 ====================
 MODEL PERFORMANCE (IoU): 0.0055
@@ -295,7 +295,7 @@ GOLD LABELS (All Annotations):
   [130:131] '1' | OCR | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [61:243] 'This is not the same as "Manitoba," which is a province in Canada. "T1BUR" is a specific combination of letters and numbers that is part of the licensing system in the United States.' | invention | model confidence: 0.95
+  [61:242] 'This is not the same as "Manitoba," which is a province in Canada. "T1BUR" is a specific combination of letters and numbers that is part of the licensing system in the United States' | invention | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-9735 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -677,7 +677,7 @@ PREDICTED LABELS:
   [24:28] '1836' | OCR | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-9655 ====================
-MODEL PERFORMANCE (IoU): 0.8182
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 The letters appear to be "P" and "D".
@@ -698,7 +698,7 @@ GOLD LABELS (All Annotations):
   [34:35] 'D' | miscounting | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [25:36] '"P" and "D"' | OCR | model confidence: 0.85
+  [26:35] 'P" and "D' | OCR | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10430 ====================
 MODEL PERFORMANCE (IoU): 0.0656

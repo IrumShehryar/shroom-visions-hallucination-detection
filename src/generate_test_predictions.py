@@ -26,6 +26,13 @@ RAW_CACHE_PATH = r"D:\SHROOM\test_predictions_raw_cache.json"   # checkpoint, sa
 SUBMISSION_OUT = r"D:\SHROOM\submission\en.jsonl"
 LANGUAGE = "en"
 TEST_LIMIT = None   # set to None to run all 1201 samples
+
+# Sonnet second-opinion filter on mischaracterization flags (src/verify_mischaracterization.py).
+# Confirmed net-positive on both a curated batch and a genuinely random natural-composition
+# sample (Cor +0.086, Cor+Lbl +0.087 on touched rows) -- see validation_outputs/ and
+# src/verify_natural_composition.py. Costs one extra Sonnet call per mischaracterization flag
+# (~815 flags on the full test set, ~$5-6) -- OFF by default; flip explicitly before a real run.
+ENABLE_SONNET_VERIFICATION = True
 # ---------------------------------------------------------------------------
 
 
@@ -112,8 +119,19 @@ def build_submission(rows, cache_data):
     response_by_id = {r["id"]: r.get("response", "") for r in rows}
     cache_by_id = {item["id"]: item for item in cache_data}
 
+    if ENABLE_SONNET_VERIFICATION:
+        n_mischar = 0
+        for item in cache_data:
+            raw = item.get("haiku_reasoning", "[]").replace("```json", "").replace("```", "").strip()
+            try:
+                n_mischar += sum(1 for e in json.loads(raw) if str(e.get("label", "")).lower() == "mischaracterization")
+            except json.JSONDecodeError:
+                pass
+        print(f"\nSonnet verification ENABLED: up to {n_mischar} mischaracterization flags may need a Sonnet call "
+              f"(cached verdicts in sonnet_verify_cache.json are reused, so re-runs only pay for new ones).")
+
     submission_rows = []
-    for row in rows:
+    for i, row in enumerate(rows, 1):
         sample_id = row["id"]
         response_text = response_by_id[sample_id]
         raw = cache_by_id.get(sample_id, {}).get("haiku_reasoning", "[]")
@@ -123,7 +141,13 @@ def build_submission(rows, cache_data):
         except json.JSONDecodeError:
             llm_output = []
 
-        pred_labels = map_spans_to_characters(llm_output, response_text)
+        image_path = os.path.join(IMAGES_DIR, row.get("image_name", ""))
+        pred_labels = map_spans_to_characters(
+            llm_output, response_text,
+            sample_id=sample_id, image_path=image_path, verify_mischar=ENABLE_SONNET_VERIFICATION,
+        )
+        if ENABLE_SONNET_VERIFICATION and i % 50 == 0:
+            print(f"  ...verified {i}/{len(rows)} rows")
         clean_labels = [
             {
                 "start": int(p["start"]),

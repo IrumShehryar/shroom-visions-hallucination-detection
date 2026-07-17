@@ -1,0 +1,734 @@
+TEST SET SPOT-CHECK SAMPLE (random subset, no gold labels)
+Up to 8 random samples per predicted-label bucket, seed=7
+======================================================================
+
+
+######################################################################
+BUCKET: MISCHARACTERIZATION (8 of 482 total)
+######################################################################
+
+==================== ID: test-en-11431 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\caterpillar_Pipevine_swallowtail_caterpillar_Pipevine-Swallowtail-Caterpillar-102.jpg
+IMAGE EXISTS: True
+PROMPT: Is this caterpillar green in color? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes, the caterpillar in the image is green in color. The green color is common for caterpillars in the early stages of growth, as it helps them blend in with their environment, which is often vegetation. This green color is particularly useful for caterpillars that feed on leaves, as it helps them avoid being noticed by predators.
+
+The caterpillar in the image is a larva of a moth, and its green color is typical for larvae of many moth species. It will eventually transform into a different form, known as a pupa, before emerging as an adult moth. The color of the pupa and the adult moth is usually different from the caterpillar.
+
+PREDICTED SPANS:
+  [37:51] 'green in color' | mischaracterization | confidence: 0.95
+    reason: The caterpillar in the image is clearly red/orange in color, not green.
+  [53:68] 'The green color' | mischaracterization | confidence: 0.95
+    reason: The caterpillar is red/orange, not green.
+  [377:383] 'a moth' | invention | confidence: 0.85
+    reason: This is a pipevine swallowtail caterpillar, which is a butterfly larva, not a moth larva.
+
+==================== ID: test-en-20243 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\spear_Iklwa_zulu-iklwa-assegai-unkhonto-spear-19.jpg
+IMAGE EXISTS: True
+PROMPT: Does this spear have a long handle?
+
+--- FULL RESPONSE ---
+You can actually see a spear with a long handle on the picture.
+
+PREDICTED SPANS:
+  [36:47] 'long handle' | mischaracterization | confidence: 0.85
+    reason: The handle visible in the image is wrapped in dark cord/binding and appears to be of moderate length, not particularly long relative to the blade.
+
+==================== ID: test-en-804 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\596530791_c660cf5d5f_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is written on the sign board?
+
+--- FULL RESPONSE ---
+Here's what is written on the sign board in the image:
+
+**REFEREES ONLY**
+
+There's also a soccer ball graphic with black, red, and yellow sections on the top part of the sign. 
+
+
+
+PREDICTED SPANS:
+  [115:137] 'black, red, and yellow' | mischaracterization | confidence: 0.85
+    reason: The soccer ball graphic on the sign shows red and yellow sections, but there is no visible black section in the ball design itself.
+
+==================== ID: test-en-18960 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\6187_6082674528_7255495df3_o.jpg
+IMAGE EXISTS: True
+PROMPT: What color of socks is the speaker wearing?
+
+--- FULL RESPONSE ---
+The main speaker in front of the microphone appears to be wearing white or off-white socks, matching the colors of his shirt.
+
+PREDICTED SPANS:
+  [66:90] 'white or off-white socks' | mischaracterization | confidence: 0.95
+    reason: The speaker in the beige/tan suit is wearing brown shoes with no visible socks, not white or off-white socks.
+
+==================== ID: test-en-20384 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\10770600044_95d6bc5eb6_o.jpg
+IMAGE EXISTS: True
+PROMPT: What's in the book on the podium?
+
+--- FULL RESPONSE ---
+The picture shows an important person who is about to give a speech. On the book on the podium you can read: "Steves 2013”
+
+PREDICTED SPANS:
+  [76:80] 'book' | mischaracterization | confidence: 0.9
+    reason: The object on the podium appears to be a clear acrylic/glass podium surface, not a book; there is no visible book on the podium.
+  [110:121] 'Steves 2013' | invention | confidence: 0.85
+    reason: While 'STEVIES' logos are visible in the background on the backdrop, no text reading 'Steves 2013' can be read on the podium itself.
+
+==================== ID: test-en-19006 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\van_Six-wheeled_van_carspotting_0251_resized.jpg
+IMAGE EXISTS: True
+PROMPT: Does this van have four wheels? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes this van has four wheels, of which three are visible.
+
+PREDICTED SPANS:
+  [17:28] 'four wheels' | mischaracterization | confidence: 0.95
+    reason: The van is clearly a six-wheeled vehicle (dual rear wheels on each side), not a four-wheeled vehicle as stated in the response.
+  [39:56] 'three are visible' | mischaracterization | confidence: 0.85
+    reason: More than three wheels are visible in this front/side angle view of the six-wheeled van; at minimum the two front wheels and both sets of dual rear wheels are visible or partially visible.
+
+==================== ID: test-en-11583 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\belt_Braided_belt_andersons-braided-stretch-belt-dark-.jpg
+IMAGE EXISTS: True
+PROMPT: Does this belt have holes? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes, the belt has holes. They are evenly spaced along the brown leather section, allowing for size adjustment.
+
+PREDICTED SPANS:
+  [18:23] 'holes' | mischaracterization | confidence: 0.9
+    reason: The belt features a buckle with a pin/prong mechanism for fastening, not traditional holes for adjustment; the braided leather construction does not show visible adjustment holes.
+
+==================== ID: test-en-20228 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\14478853620_247c662e3d_o.jpg
+IMAGE EXISTS: True
+PROMPT: Name all the instruments on the stage?
+
+--- FULL RESPONSE ---
+You see a pretty classical music group, you can see a violin, a piano and a guitar.
+
+PREDICTED SPANS:
+  [64:69] 'piano' | mischaracterization | confidence: 0.9
+    reason: The instrument on the right appears to be a stringed instrument (possibly a viola or cello) being held by the seated musician, not a piano.
+  [76:82] 'guitar' | mischaracterization | confidence: 0.85
+    reason: The stringed instrument on the right is held vertically and appears to be a viola or cello, not a guitar.
+
+
+######################################################################
+BUCKET: INVENTION (8 of 242 total)
+######################################################################
+
+==================== ID: test-en-11390 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\rice_Red_rice_pngtree-red-rice-png-transparent-lay.png
+IMAGE EXISTS: True
+PROMPT: Is this rice brown or white in color? Please elaborate.
+
+--- FULL RESPONSE ---
+The rice in the image is red or brownish-red, not white. The grains exhibit a rich reddish hue with some variations—some are more intense and darker while others appear lighter due to natural coloration differences among individual kernels.
+
+This type of rice typically comes from specific varieties like red rice (also known as purple rice) which naturally has this distinctive reddish-orange color when uncooked. White rice would be much paler, almost off-white or yellowish in appearance before cooking.
+
+So yes, it's definitely neither plain white nor standard brown; these are characteristic features of certain specialty rices such as red rice or wild rice that have retained their bran layer during processing, giving them unique nutritional benefits and flavor profiles distinct from common white or polished brown rice types.
+
+PREDICTED SPANS:
+  [329:340] 'purple rice' | invention | confidence: 0.75
+    reason: The response claims red rice is 'also known as purple rice,' but the image shows distinctly reddish-orange grains, not purple rice, which would appear purple/dark violet in color.
+  [653:662] 'wild rice' | invention | confidence: 0.65
+    reason: The response mentions 'wild rice' as a characteristic example of this type, but the image shows red rice grains with no visual evidence connecting them to wild rice, which has a different appearance and origin.
+
+==================== ID: test-en-2661 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\skateboard_One-wheel_skateboard_ac17d11d15d9a5dcbfba8b8de4597183.jpg
+IMAGE EXISTS: True
+PROMPT: Does this skateboard have four wheels? Please elaborate.
+
+--- FULL RESPONSE ---
+ only one wheel. It is a **one-wheel electric skateboard** (also known as an electric unicycle or e-uno).
+
+Here’s why:
+
+1.  **Visual Evidence:** The image clearly shows only one large wheel attached to the board. The board is designed with a single wheel mounted under the center of the deck, which is typical for this type of vehicle.
+
+2.  **Design and Function:** This is not a traditional skateboard with four wheels. It is a **single-wheel electric skateboard** (or e-uno). The single wheel is driven by an electric motor, and the rider controls it by shifting their weight, similar to how you balance a unicycle.
+
+3.  **Branding and Features:** The visible branding includes "VANS" and "Hoosier" (a tire brand), which are common on skateboards and scooters. The "XR" logo and the LED lights on the front are also typical features of modern electric skateboards or unicycles.
+
+In summary, this is a **one-wheel electric skateboard**, not a four-wheel skateboard. The design is specifically for a single wheel, which is what makes it unique and different from traditional skateboards.
+
+PREDICTED SPANS:
+  [37:56] 'electric skateboard' | invention | confidence: 0.85
+    reason: The image shows a toy/model car from the Pixar 'Cars' franchise (specifically Jackson Storm), not an actual electric skateboard or unicycle device.
+  [98:103] 'e-uno' | invention | confidence: 0.85
+    reason: This is a toy car model, not a functional electric skateboard or e-uno device.
+  [431:463] 'single-wheel electric skateboard' | invention | confidence: 0.85
+    reason: This is a Pixar Cars toy model, not an electric unicycle or e-uno device.
+  [511:525] 'electric motor' | invention | confidence: 0.8
+    reason: This is a toy/diecast model car, not a functional vehicle with an electric motor.
+  [785:808] 'LED lights on the front' | mischaracterization | confidence: 0.75
+    reason: The visible lights appear to be part of the toy car's design/paint scheme, not functional LED lights on an electric vehicle.
+
+==================== ID: test-en-10380 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\4516256186_479733df8f_o.jpg
+IMAGE EXISTS: True
+PROMPT: Is the beverage hot?
+
+--- FULL RESPONSE ---
+The image you've provided shows a person holding a cup that appears to contain a hot beverage, likely tea or coffee, given its color and the context. The steam rising from the cup suggests that the beverage is indeed hot when it was captured.
+
+PREDICTED SPANS:
+  [150:179] 'The steam rising from the cup' | invention | confidence: 0.9
+    reason: No visible steam is rising from the cup in the image; the cup appears to contain a beverage but no steam is discernible.
+
+==================== ID: test-en-18940 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\2025139127_bd1d8e41ec_o.jpg
+IMAGE EXISTS: True
+PROMPT: Where is this hiking spot?
+
+--- FULL RESPONSE ---
+The map on the right side of the picture clearly indicates that this park is situated in the state of Alabama. Given the vegetation, this could be the **Cathedral Caverns State Park**, **Monte Sano State Park** or some other hiking spot in northern Alabama.
+
+PREDICTED SPANS:
+  [0:109] 'The map on the right side of the picture clearly indicates that this park is situated in the state of Alabama' | invention | confidence: 0.9
+    reason: While there is a sign/map visible on the right side, the text is not legible enough in the image to definitively determine it indicates Alabama or any specific location.
+
+==================== ID: test-en-11175 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\turtle_Leatherback_turtle_close-up-of-dermochelys-coriacea-lea.jpg
+IMAGE EXISTS: True
+PROMPT: Does this turtle have a hard shell? Please elaborate.
+
+--- FULL RESPONSE ---
+Certainly! Let's take a look at the image.
+
+That is not a turtle, but an **Elephant Seal**. 
+
+As you can see, it doesn't have a hard shell like a typical turtle. Instead, it has a thick layer of blubber and skin. Elephant Seals are marine mammals, belonging to the same group as whales and dolphins, and they do not possess shells. 
+
+The bumpy appearance you see on its skin is likely due to barnacles and other marine organisms that attach to its body.
+
+If you'd like, you can show me another image and I'll happily help you identify it!
+
+PREDICTED SPANS:
+  [44:90] 'That is not a turtle, but an **Elephant Seal**' | invention | confidence: 0.95
+    reason: The image clearly shows a sea turtle (consistent with the filename indicating leatherback turtle), not an elephant seal, which is a completely different marine mammal with distinct morphology.
+  [110:160] 'it doesn't have a hard shell like a typical turtle' | mischaracterization | confidence: 0.9
+    reason: A leatherback sea turtle does have a shell, though it is leathery rather than hard like other turtle species—the response incorrectly claims it lacks a shell entirely.
+  [213:298] 'Elephant Seals are marine mammals, belonging to the same group as whales and dolphins' | invention | confidence: 0.85
+    reason: This taxonomic claim about elephant seals is irrelevant since the animal in the image is a sea turtle, not an elephant seal; the response is misidentifying the animal entirely.
+
+==================== ID: test-en-2532 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\16362622853_bffc4b2d05_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the name of the player?
+
+--- FULL RESPONSE ---
+Based on the visual information in the image, it is not possible to determine the player's name.
+
+Here's why:
+- The player's jersey has the number **29** on the back.
+- The logo on the sleeve is the **Michigan State Spartans** logo (a Spartan helmet).
+- However, the player's name is not printed on the back of the jersey, which is standard for most baseball uniforms.
+
+Without a name tag or additional context (like a team roster or player database), the name of this specific player cannot be identified from the image alone.
+
+PREDICTED SPANS:
+  [201:224] 'Michigan State Spartans' | invention | confidence: 0.85
+    reason: The logo visible on the sleeve appears to be a green Spartan helmet, but there is no visible text on the jersey or logo that definitively identifies this as Michigan State Spartans rather than another team with a similar Spartan logo.
+
+==================== ID: test-en-1360 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8663_16113816254_6eb179594b_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are in the picture?
+
+--- FULL RESPONSE ---
+There is a person present in the picture, standing near the trees. However, there are no other people visible in the image.
+
+PREDICTED SPANS:
+  [0:40] 'There is a person present in the picture' | invention | confidence: 0.95
+    reason: No person is visible anywhere in the image; the scene shows only an empty field with trees, a building, and no people present.
+
+==================== ID: test-en-10350 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\11484364375_b6441d9601_o.jpg
+IMAGE EXISTS: True
+PROMPT: Is there a pen on the floor?
+
+--- FULL RESPONSE ---
+Yes, there is a pen on the floor. It's located towards the bottom right of the image, near some other tools or equipment lying next to the wooden shelf unit.
+
+PREDICTED SPANS:
+  [16:32] 'pen on the floor' | invention | confidence: 0.9
+    reason: No pen is visible on the floor in the image; the yellow object visible is a tool (appears to be a level or similar instrument), not a pen.
+
+
+######################################################################
+BUCKET: MISCOUNTING (8 of 191 total)
+######################################################################
+
+==================== ID: test-en-10052 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\890127666_8c5f165142_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are sitting in the image?
+
+--- FULL RESPONSE ---
+Based on the image, there are **three** people sitting at the table. There is also a partial view of a fourth person standing in the background.
+
+PREDICTED SPANS:
+  [32:37] 'three' | miscounting | confidence: 0.95
+    reason: Only two people are clearly sitting at the table; the woman in the green shirt on the left and the woman in the rainbow striped dress in the center, plus a small child sitting next to them, making either 2 or 3 adults depending on whether the toddler counts, but not 'three' seated adults as implied.
+
+==================== ID: test-en-10488 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\4_3405_3584523553_44fffb72d0_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many battery bars are left on the phone's screenshot?
+
+--- FULL RESPONSE ---
+Based on the screenshot, there is **one** battery bar illuminated on the phone. It appears to be at a low charge level.
+
+PREDICTED SPANS:
+  [36:39] 'one' | miscounting | confidence: 0.95
+    reason: The battery indicator in the top-right corner of the phone screen shows approximately three or four bars illuminated, not one.
+
+==================== ID: test-en-1909 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\2489_4105317300_24001db7d7_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many framed artworks appear in the photo?
+
+--- FULL RESPONSE ---
+There is one framed artwork visible in the photo. It appears to be a picture or painting hanging on the wall near the window with striped curtains, adding an artistic touch to the room where the bride-to-be tries on her wedding dress.
+
+PREDICTED SPANS:
+  [9:12] 'one' | miscounting | confidence: 0.95
+    reason: The image shows multiple framed artworks - there are at least two or three visible garment bags with clear plastic covers hanging on the walls, and there appears to be additional framed artwork on the walls beyond just one piece.
+
+==================== ID: test-en-20231 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8188_8115223663_cfb4d1f473_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people can you see in this picture?
+
+--- FULL RESPONSE ---
+We can count six people in the photo.
+
+PREDICTED SPANS:
+  [13:16] 'six' | miscounting | confidence: 0.95
+    reason: The image clearly shows seven people total: two seated in the foreground and five standing in the background.
+
+==================== ID: test-en-9864 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8188_8115223663_cfb4d1f473_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many people are visible in this picture?
+
+--- FULL RESPONSE ---
+There are seven people visible in the picture.
+
+PREDICTED SPANS:
+  [10:15] 'seven' | miscounting | confidence: 0.95
+    reason: Counting the visible individuals in the image shows 8 people total (4 standing, 3 seated, 1 partially visible), not seven.
+
+==================== ID: test-en-20357 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8292612020_e09ac8bfff_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many columns are completely visible in the image?
+
+--- FULL RESPONSE ---
+The image was probably taken inside a library, as two black-covered books are visible in the foreground, and there are several bookshelves in the background. In the image, two white columns are completely visible.
+
+PREDICTED SPANS:
+  [50:53] 'two' | miscounting | confidence: 0.85
+    reason: The columns visible in the background appear to be light gray or off-white structural columns, but the response's characterization of them as 'white' is imprecise; more importantly, the columns do not appear to be completely visible as they extend beyond the frame.
+  [172:189] 'two white columns' | mischaracterization | confidence: 0.95
+    reason: The image shows more than two columns visible in the background; there appear to be multiple white/light gray structural columns visible across the depth of the space.
+
+==================== ID: test-en-20277 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\9122036520_6f253f7509_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the total number of oranges in the box?
+
+--- FULL RESPONSE ---
+There are two oranges in this box.
+
+PREDICTED SPANS:
+  [10:13] 'two' | miscounting | confidence: 0.95
+    reason: The image shows at least four oranges visible on the left side of the display box, not two.
+
+==================== ID: test-en-20203 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\cat_Two-legged_cat_Mercury-the-Two-Legged-Cat.jpg
+IMAGE EXISTS: True
+PROMPT: Does this cat have four legs? Please explain in detail.
+
+--- FULL RESPONSE ---
+I can confirm that this cat has four legs, with the two legs below already extended, and I can clearly see the cat's claws.
+
+PREDICTED SPANS:
+  [32:36] 'four' | miscounting | confidence: 0.95
+    reason: The cat is standing on its hind legs with only two visible legs extended beneath it; the front legs are not visible as separate standing legs in this upright posture.
+  [48:83] 'the two legs below already extended' | mischaracterization | confidence: 0.85
+    reason: The cat appears to be standing upright on hind legs, but describing them as 'the two legs below' is misleading as they appear to be rear/hind legs, not front legs, and the posture is abnormal/standing upright rather than a normal four-legged stance.
+
+
+######################################################################
+BUCKET: NONE_PREDICTED (8 of 179 total)
+######################################################################
+
+==================== ID: test-en-2601 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\58323348_b08f01538a_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is he drinking?
+
+--- FULL RESPONSE ---
+You can't tell for sure from the image, but it's likely a milkshake or a smoothie.
+
+Here's why:
+
+*   **The Container:** He's drinking from a white plastic cup, which is very common for milkshakes and smoothies, especially in casual or street food settings.
+*   **The Straw:** The green straw is often used for thicker drinks like milkshakes or smoothies.
+*   **The Appearance:** The drink looks creamy and opaque, which is characteristic of a milkshake or a blended smoothie (like a banana or chocolate one).
+*   **The Setting:** The environment looks like a hawker center or food court, where milkshakes and smoothies are popular and often served in plastic cups.
+
+It could also be a thick yogurt drink or a blended fruit juice, but milkshake or smoothie is the most probable answer based on the visual evidence.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-20209 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8110671469_c2e0bc5997_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is written on the green board?
+
+--- FULL RESPONSE ---
+The green board says "Gruene Mansion Inn Bed & Breakfast," and it also mentions "20 Rooms," indicating that this building is used as a guesthouse that provides accommodation and meals for tourists.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-11413 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\donkey_Donkeys_that_are_albino_71c0711200d8a93f2a8a784c5502c085.jpg
+IMAGE EXISTS: True
+PROMPT: Is this donkey grey in color? Please elaborate.
+
+--- FULL RESPONSE ---
+To determine if the donkey is grey, I'll first identify its color in the image. The main subject of the photo—a white donkey—is clearly visible up close and prominently positioned towards the foreground. Its fur appears uniformly light-colored.
+
+Now, let's consider what 'grey' means in this context. Grey typically refers to a neutral tone that lies between black and white on the color spectrum. However, it can also describe shades like silver or off-white when referring to animals with lighter coats. In contrast, pure white is distinctly different from any shade of grey—grey would generally have subtle hints of blue or brown mixed into its appearance.
+
+Upon careful observation, all the other donkeys present in the background share the same pale hue as the central one. There are no discernible variations within their coat colors suggesting even a slight tint of another pigment such as yellow, pink, or tan which could imply anything beyond just plain white.
+
+Therefore, based on the visual evidence provided by the clear whiteness of both the primary animal and those around it under bright daylight conditions against an outdoor setting, there’s nothing about these creatures’ coloring indicating they possess any characteristics associated with ‘grey’. They appear entirely white.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-2510 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\grapefruit_Seedless_grapefruit_marsh_white_grapefruit.webp
+IMAGE EXISTS: True
+PROMPT: Is this grapefruit pink in color? Please elaborate.
+
+--- FULL RESPONSE ---
+No, the grapefruit in the image is not pink in color — it is yellow.
+
+Here’s a detailed elaboration:
+
+- **Visual Evidence**: The fruits in the photo are a bright, uniform yellow-orange hue. This is characteristic of many common grapefruit varieties, especially when fully ripe. The yellow coloration is clearly visible on all the fruits, from the largest ones in the foreground to those partially obscured by leaves.
+
+- **Grapefruit Color Varieties**: Grapefruit comes in several color varieties:
+  - **White grapefruit**: Pale, creamy white flesh.
+  - **Pink grapefruit**: Flesh ranges from pale pink to deep pink or red, often with a sweeter taste.
+  - **Red grapefruit**: Deep red flesh, often more intensely flavored.
+  - **Yellow grapefruit**: Bright yellow flesh, typically more tart and citrusy than pink or red varieties.
+
+- **Why the Confusion?** The term “pink grapefruit” is often used to describe the popular pink-fleshed variety, which is widely marketed and consumed. However, yellow grapefruit is equally common, especially in regions with warm climates like Florida, California, and parts of South America — which is likely the origin of the photo’s setting.
+
+- **Context of the Image**: The photo shows a tree laden with ripe, yellow grapefruit against a clear blue sky. The leaves are green, and the fruit appears plump and healthy. There are no signs of pink or red flesh visible — the color is entirely external and yellow.
+
+In conclusion, while pink grapefruit is a well-known and popular variety, the grapefruit in this image is clearly yellow. The image showcases a classic yellow grapefruit harvest, which is just as valid and delicious as its pink counterpart.
+
+✅ **Answer: No, the grapefruit in the image is yellow, not pink.**
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-878 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\dolphin_Irrawaddy_dolphin_irrawaddy-dolphin-1.jpg
+IMAGE EXISTS: True
+PROMPT: Does this dolphin have a long nose? Please elaborate.
+
+--- FULL RESPONSE ---
+The dolphin in the image has a short, rounded snout rather than a long nose. Dolphins typically have a blunt, rounded appearance on their rostrum (the front part of their head), which is what we see here. This characteristic helps with hydrodynamics and other sensory functions.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-2568 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\16439734162_bcf2a50dbd_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many cars are parked?
+
+--- FULL RESPONSE ---
+Based on the image provided, it is not possible to give an exact count of the parked cars.
+
+Here's why:
+
+*   **Scale and Distance:** The photograph is taken from a high vantage point, and the parking lots are far away. This makes it impossible to distinguish individual vehicles with certainty.
+*   **Visual Clarity:** While you can see large areas designated for parking, the cars are too small and too far away to be counted accurately. They appear as tiny, indistinct shapes.
+*   **Complexity:** The parking areas are large and irregularly shaped, with multiple sections and possibly different types of vehicles. Trying to count them would be an extremely time-consuming and inaccurate task.
+
+**What you can see:**
+
+*   There are several large parking lots, particularly one near the marina and another near the bridge's approach.
+*   The lots are filled with vehicles, indicating a high volume of traffic or visitors.
+*   There are also cars visible on the road leading towards the bridge.
+
+In conclusion, while we can see that there are many parked cars, an exact number cannot be determined from the image.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-1637 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\4904264373_09884e1811_o.jpg
+IMAGE EXISTS: True
+PROMPT: Is he wearing sports shoes?
+
+--- FULL RESPONSE ---
+The person in the image is wearing a vest and a button-up shirt, and they do not appear to be wearing sports shoes. The style of clothing suggests a more formal attire, which is typical for a store or retail setting.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+==================== ID: test-en-10648 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\11484364375_b6441d9601_o.jpg
+IMAGE EXISTS: True
+PROMPT: Is there a pen on the floor?
+
+--- FULL RESPONSE ---
+No, there isn't a pen on the floor in the image you provided. The floor appears to be carpeted, and there's a bicycle with a black wheel and a white cabinet or drawer underneath it.
+
+PREDICTED: (no spans flagged -- pipeline judged this response clean)
+
+
+######################################################################
+BUCKET: OCR (8 of 92 total)
+######################################################################
+
+==================== ID: test-en-20182 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\fork_Fondue_fork_fondue-fork-red-plastic-handle-isola.jpg
+IMAGE EXISTS: True
+PROMPT: Does this fork have four tines? Please explain in detail.
+
+--- FULL RESPONSE ---
+This image is from the Internet, taken by Antan Starikov. The fork in this image has only two tines.
+
+PREDICTED SPANS:
+  [42:56] 'Antan Starikov' | OCR | confidence: 0.9
+    reason: The fork visible in the image clearly has more than two tines; it appears to have multiple prongs/tines, not just two.
+  [85:99] 'only two tines' | mischaracterization | confidence: 0.95
+    reason: The watermark in the image reads 'Anton Starikov', not 'Antan Starikov'.
+
+==================== ID: test-en-19000 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\34396215_07d605fd05_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the concert name?
+
+--- FULL RESPONSE ---
+This s a concert given by a traditional Gaelic folk band with a singer, a fiddle, a guitar, and traditional bodhran drum.
+
+PREDICTED SPANS:
+  [0:8] 'This s a' | OCR | confidence: 0.95
+    reason: The response contains a typo 'This s a' which should be 'This is a' - this appears to be a transcription or generation error rather than reading from the image.
+
+==================== ID: test-en-20382 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\3620397387_c65e13fc7b_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the name of the playground?
+
+--- FULL RESPONSE ---
+In the image, several people are shown playing baseball. In particular, the image does not show a real playground, but rather probably a stadium for an amateur team, considering that on the blue sign present at the top of the image it says: "www.superthunder.com / tickets and info"
+
+PREDICTED SPANS:
+  [242:281] 'www.superthunder.com / tickets and info' | OCR | confidence: 0.85
+    reason: The text on the blue sign is not clearly legible as this exact phrase in the image; the response appears to have invented or misread the specific website and text shown on the sign.
+
+==================== ID: test-en-18941 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\skateboard_Penny_board_b431500fe1cbcbf3618ebef7db1efe4d.jpg
+IMAGE EXISTS: True
+PROMPT: Is this skateboard made of wood? Please elaborate.
+
+--- FULL RESPONSE ---
+The picture appears to be of a small, skateboard-like object, with the brand name "B m V" roughly in the center of the plank. This is likely a toy skateboard, and seems to be primarily made of plastic and metal.
+
+PREDICTED SPANS:
+  [83:88] 'B m V' | OCR | confidence: 0.85
+    reason: The visible text on the skateboard deck appears to be a single word/brand name, not 'B m V' as three separate letters with spaces.
+  [193:210] 'plastic and metal' | mischaracterization | confidence: 0.75
+    reason: The deck appears to be made of a rubberized or textured material with a diamond/grid pattern, not primarily plastic as stated.
+
+==================== ID: test-en-9666 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5948605331_5080a8e604_o.jpg
+IMAGE EXISTS: True
+PROMPT: What is the brand name of the swim goggles?
+
+--- FULL RESPONSE ---
+The goggles are branded "TYR".
+
+PREDICTED SPANS:
+  [25:28] 'TYR' | OCR | confidence: 0.85
+    reason: The text on the goggles appears to show a different brand name than 'TYR' based on the visible lettering on the green goggles, though the exact text is partially obscured by the angle and wetness of the goggles.
+
+==================== ID: test-en-20386 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5037577763_561313d3c9_o.jpg
+IMAGE EXISTS: True
+PROMPT: On which card is the web page running?
+
+--- FULL RESPONSE ---
+The image shows the screen of a phone on a web page, and you can easily see the first part of the link where the tab is, which says, "www.google.com".
+
+PREDICTED SPANS:
+  [134:148] 'www.google.com' | OCR | confidence: 0.95
+    reason: The URL visible in the address bar shows 'www.worldsbk.com/en...' not 'www.google.com'; the Google search box is a secondary element on the page, not the main URL.
+
+==================== ID: test-en-18934 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\6187_6082674528_7255495df3_o.jpg
+IMAGE EXISTS: True
+PROMPT: What color shoes is the woman in the blue dress wearing?
+
+--- FULL RESPONSE ---
+This picture shows a crowd of well-dressed people surrounding a public speaker, standing next to a microphone, under a blue tent roof that appears to have the work "Wocê da pax" written on its side.
+While there might be more than one woman wearing a blue dress in the crowd, the most obvious woman wearing a blue dress is on the right side of the picture and does not appear to be wearing socks.
+
+PREDICTED SPANS:
+  [155:176] 'the work "Wocê da pax' | OCR | confidence: 0.9
+    reason: The text on the blue tent is not clearly legible as 'Wocê da pax' in the image; the response appears to have misread or fabricated this text.
+  [359:394] 'does not appear to be wearing socks' | invention | confidence: 0.85
+    reason: The response addresses whether the woman is wearing socks, but the original prompt asked specifically about shoe color, and the response never actually answers what color shoes she is wearing.
+
+==================== ID: test-en-20347 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\tractor_Tracked_tractor_JOHN_DEERE_9RX_TRACKED_TRACTOR-4632-.jpg
+IMAGE EXISTS: True
+PROMPT: Does this tractor have wheels?
+
+--- FULL RESPONSE ---
+In the image, a green tractor, of the brand "John Ford" as visible in the writing on it, is visible. In particular, the tractor does not have wheels, but tracks.
+
+PREDICTED SPANS:
+  [45:54] 'John Ford' | OCR | confidence: 0.95
+    reason: The visible text on the tractor reads 'John Deere' not 'John Ford'.
+
+
+######################################################################
+BUCKET: OTHER (8 of 15 total)
+######################################################################
+
+==================== ID: test-en-2498 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\15989716873_b58913cf62_o.jpg
+IMAGE EXISTS: True
+PROMPT: Is there any car parked in front of the building?
+
+--- FULL RESPONSE ---
+'t look at the image carefully. The building is the main focus, and I can see a tree on the right side of the image?
+
+PREDICTED SPANS:
+  [68:115] 'I can see a tree on the right side of the image' | other | confidence: 0.9
+    reason: The response fails to answer the prompt about whether a car is parked in front of the building; instead it makes an unrelated claim about a tree and provides a non-responsive answer to the question asked.
+
+==================== ID: test-en-10589 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\4904264373_09884e1811_o.jpg
+IMAGE EXISTS: True
+PROMPT: What colour watch is the lady wearing?
+
+--- FULL RESPONSE ---
+What is the color of the watch on the lady's wrist?
+
+PREDICTED SPANS:
+  [0:51] 'What is the color of the watch on the lady's wrist?' | other | confidence: 0.95
+    reason: The response simply rephrases the question instead of providing an answer about the watch color visible in the image.
+
+==================== ID: test-en-1565 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\3928975334_4538cc1773_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many bagels are turned on its side in the image?
+
+--- FULL RESPONSE ---
+The image shows a tray with bagels. However, without seeing the entire tray, it's not possible for me to determine the exact number of bagels that are turned on their side. The bagels appear to be arranged in rows, which suggests that they might have been turned to one side to make it easier to stack and store them.
+
+PREDICTED SPANS:
+  [45:131] 'without seeing the entire tray, it's not possible for me to determine the exact number' | other | confidence: 0.85
+    reason: The entire tray is clearly visible in the image, making this claim that the tray cannot be fully seen contradictory to what is shown.
+
+==================== ID: test-en-10945 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\knife_Throwing_knife_ab182a65a998036886a38e7e6c1d7802.jpg
+IMAGE EXISTS: True
+PROMPT: Does this knife have a handle? Please elaborate.
+
+--- FULL RESPONSE ---
+Yes, the knife in the image does have a handle. 
+
+To elaborate:
+
+1. **Material and Texture**: The handle appears to be made of a light-colored material, contrasting with the dark, cracked texture of the background surface. This light coloration is consistent with materials like bone, wood, or certain types of synthetic composites often used in knife handles.
+
+2. **Shape and Design**: The handle is elongated and tapers slightly towards one end, which is typical of ergonomic knife designs meant for comfortable gripping. The shape is rectangular with rounded edges, providing a balance between strength and ease of use.
+
+33 **Pommel and Hole**: At one end of the handle, there is a distinct rounded protrusion known as the pommel. This is a common feature in many many knife handles, often used to provide a better grip or to attach a lanyard or sheath. Additionally, there is a hole near this end, which could be for mounting the knife to a sheath or for attaching a lanyard, adding to its practical design.
+
+3. **Construction**: The handle appears to be securely attached to the blade, suggesting a well-constructed knife. The seamless transition from handle to blade indicates good craftsmanship, ensuring the knife is both functional and durable.
+
+In summary, the knife has a handle characterized by its light color, ergonomic shape, rounded pommel, and attachment hole, making it both practical and user-friendly.
+
+PREDICTED SPANS:
+  [762:771] 'many many' | other | confidence: 0.9
+    reason: The response contains a duplicate word 'many many' which appears to be a typing error rather than an accurate description.
+  [1341:1355] 'rounded pommel' | mischaracterization | confidence: 0.85
+    reason: The pommel/end of the handle appears to be more oval or flattened rather than distinctly rounded as described.
+
+==================== ID: test-en-10869 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\bathtub_Wooden_tub_Custom-Made-Wooden-Tub.jpg
+IMAGE EXISTS: True
+PROMPT: Is this bathtub white in color? Please elaborate.
+
+--- FULL RESPONSE ---
+.com
+
+PREDICTED SPANS:
+  [1:4] 'com' | other | confidence: 0.95
+    reason: The response '.com' does not answer the prompt about whether the bathtub is white in color; it is not a meaningful response to the question.
+
+==================== ID: test-en-10566 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\7633062824_3d761e4edd_o.jpg
+IMAGE EXISTS: True
+PROMPT: How many dish tv antennas are visible in the image?
+
+--- FULL RESPONSE ---
+Human:
+
+PREDICTED SPANS:
+  [0:5] 'Human' | other | confidence: 0.95
+    reason: The response does not actually answer the prompt about dish TV antennas; it only repeats the prompt format without providing an answer.
+
+==================== ID: test-en-2476 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\8085512417_a12a9d9ff3_o.jpg
+IMAGE EXISTS: True
+PROMPT: At what time was the picture taken?
+
+--- FULL RESPONSE ---
+What time of day was the artificial lighting in the ceiling?
+
+PREDICTED SPANS:
+  [0:60] 'What time of day was the artificial lighting in the ceiling?' | other | confidence: 0.95
+    reason: The response does not answer the prompt; it rephrases the question instead of providing a time when the picture was taken.
+
+==================== ID: test-en-10577 ====================
+IMAGE: D:\SHROOM\distrib\images\shroom-vis-images\5959621521_761b3d7949_o.jpg
+IMAGE EXISTS: True
+PROMPT: Where can you see white background with red dots?
+
+--- FULL RESPONSE ---
+://i.imgur.com/7ZJzqJk.jpg
+
+Based on the image provided, the white background with red dots is not visible. The image shows a room with several potted plants, a window, and a rack with colorful folders or pouches. There is no white background with red dots in the image.
+
+It seems there might be a misunderstanding or a misinterpretation of the image. The image does not contain a white background with red dots. The only colorful elements are the folders or pouches on the rack, which have various patterns and colors, but none of them appear to be a white background with red dots.
+
+If you are referring to the image you provided, please double-check the details. The image does not contain the described pattern.
+
+PREDICTED SPANS:
+  [3:26] 'i.imgur.com/7ZJzqJk.jpg' | other | confidence: 0.95
+    reason: The response begins with a URL instead of answering the prompt about where to see white background with red dots in the image.
+  [413:582] 'The only colorful elements are the folders or pouches on the rack, which have various patterns and colors, but none of them appear to be a white background with red dots' | mischaracterization | confidence: 0.85
+    reason: The colorful items visible on the left side of the image do appear to include at least one item with a white background and red/pink dots pattern, contradicting the claim that none have this pattern.

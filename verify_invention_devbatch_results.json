@@ -1,0 +1,736 @@
+[
+  {
+    "id": "train-en-2083",
+    "span": "either this particular individual has lost its wings (a rare occurrence for many species)",
+    "start": 421,
+    "end": 509,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 584,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 653
+      },
+      {
+        "start": 5,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 9
+      },
+      {
+        "start": 428,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 473
+      },
+      {
+        "start": 543,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 567
+      },
+      {
+        "start": 737,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 849
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.9,
+      "reason": "The image shows a velvet ant, whose females are naturally wingless due to sexual dimorphism, not due to individual wing loss as speculated in the response."
+    }
+  },
+  {
+    "id": "train-en-1766",
+    "span": "striped skunk (Mephitis mephitis)",
+    "start": 158,
+    "end": 190,
+    "is_tp": false,
+    "gold": [],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.9,
+      "reason": "The animal shows a spotted/broken-stripe pattern typical of a spotted skunk (Spilogale), not the simple two-stripe pattern of the striped skunk (Mephitis mephitis)."
+    }
+  },
+  {
+    "id": "train-en-1892",
+    "span": "\"SAYM\" visible",
+    "start": 358,
+    "end": 371,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 358,
+        "prob": 0.6666666667,
+        "label": "OCR",
+        "end": 362
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.75,
+      "reason": "The visible text on the scarf reads 'SAYNA', not 'SAYM', so the model misread the text."
+    }
+  },
+  {
+    "id": "train-en-11459",
+    "span": "true seals, like elephant seals, have **no external ear flaps** — they have small, internal ear openings — and they have **shorter, more compact snouts** than sea lions",
+    "start": 987,
+    "end": 1155,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 45,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 58
+      },
+      {
+        "start": 75,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 84
+      },
+      {
+        "start": 174,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 264
+      },
+      {
+        "start": 428,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 477
+      },
+      {
+        "start": 1741,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1750
+      },
+      {
+        "start": 1844,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1853
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.95,
+      "reason": "The flagged text claims true seals have shorter, more compact snouts than sea lions, which contradicts both the image (showing a clearly long snout) and the response's own subsequent statement that elephant seals have the longest snouts of any seal species."
+    }
+  },
+  {
+    "id": "train-en-1821",
+    "span": "Damson Plums and Mirabelle Plums",
+    "start": 372,
+    "end": 404,
+    "is_tp": false,
+    "gold": [],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.9,
+      "reason": "The image shows no distinguishing features that would allow identification of specific cultivars like Damson or Mirabelle plums, especially since Mirabelle plums are actually small and yellow, not red-fleshed like the fruit shown, making this an invented/incorrect identification."
+    }
+  },
+  {
+    "id": "train-en-11736",
+    "span": "the chair to rotate around its base",
+    "start": 239,
+    "end": 274,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 92,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 126
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "reason": "The image is static and shows no evidence of rotation capability; this is an unverifiable claim about a dynamic feature inferred beyond what is visually demonstrable.",
+      "confidence": 0.85
+    }
+  },
+  {
+    "id": "train-en-2669",
+    "span": "Callinectes",
+    "start": 909,
+    "end": 920,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 1100,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 1104
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.9,
+      "reason": "The crab shown has one greatly enlarged claw typical of a fiddler crab (Uca) rather than the two similarly-sized swimming claws and paddle-like legs characteristic of Callinectes (blue crabs), so citing Callinectes as a possible genus is incorrect."
+    }
+  },
+  {
+    "id": "train-en-11105",
+    "span": "a variety of blueberry that ripen to a pink or red hue",
+    "start": 192,
+    "end": 246,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 124,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 147
+      },
+      {
+        "start": 313,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 322
+      }
+    ],
+    "verdict": {
+      "verdict": "reject",
+      "confidence": 0.85,
+      "reason": "The image shows a genuine pink blueberry cultivar (e.g., 'Pink Lemonade'), which have the characteristic calyx crown and cluster structure of blueberries, not arbutus/myrtle family berries."
+    }
+  },
+  {
+    "id": "train-en-761",
+    "span": "visible on the glass the man in the center is holding",
+    "start": 77,
+    "end": 130,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 31,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 46
+      },
+      {
+        "start": 46,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 50
+      },
+      {
+        "start": 50,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 53
+      },
+      {
+        "start": 56,
+        "prob": 1.0,
+        "label": "OCR",
+        "end": 65
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.85,
+      "reason": "The glass has some small text on it but it is too blurry/illegible to read 'Compagnie' or any restaurant name, so the claim is an invented reading."
+    }
+  },
+  {
+    "id": "train-en-11402",
+    "span": "Grapefruits are typically round or ovular in shape",
+    "start": 48,
+    "end": 98,
+    "is_tp": false,
+    "gold": [
+      {
+        "start": 15,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 21
+      },
+      {
+        "start": 36,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 46
+      }
+    ],
+    "verdict": {
+      "verdict": "reject",
+      "confidence": 0.9,
+      "reason": "The claim that grapefruits are typically round is factually accurate general knowledge and consistent with the round shape shown in the image, so it's not an invention or error."
+    }
+  },
+  {
+    "id": "train-en-11161",
+    "span": "three-wheeled vehicle such as a trike",
+    "start": 256,
+    "end": 293,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 168,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 180
+      },
+      {
+        "start": 180,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 192
+      },
+      {
+        "start": 192,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 220
+      },
+      {
+        "start": 220,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 293
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.9,
+      "reason": "The image only shows a close-up of a vintage wooden steering wheel with blurred background, with no visible wheels or evidence of a three-wheeled vehicle/trike."
+    }
+  },
+  {
+    "id": "train-en-805",
+    "span": "Tetsubin kettles are valued for their ability to retain heat well and impart a unique flavor to the water.",
+    "start": 794,
+    "end": 899,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 108,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 153
+      },
+      {
+        "start": 274,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 312
+      },
+      {
+        "start": 672,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 965
+      }
+    ],
+    "verdict": {
+      "verdict": "reject",
+      "confidence": 0.85,
+      "reason": "The claim is a general factual statement about tetsubin kettles' known properties, not something meant to be visually verified from the image, so flagging it as an 'invention' unverifiable from the image is misapplying the standard since such general knowledge claims are commonly accepted about cast iron tetsubin."
+    }
+  },
+  {
+    "id": "train-en-1397",
+    "span": "the engine drives the rear wheels, and the bus uses a separate transmission system to drive the front wheels",
+    "start": 478,
+    "end": 586,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 56,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 233
+      },
+      {
+        "start": 426,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 680
+      },
+      {
+        "start": 856,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 923
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.97,
+      "reason": "The image clearly shows trolley poles connecting to overhead wires, indicating this is an electric trolleybus, not an engine-driven vehicle with a transmission driving front wheels as claimed."
+    }
+  },
+  {
+    "id": "train-en-10318",
+    "span": "The text \"Buckingham Rd.\" can be clearly made out from what appears to be an address plate attached to a lamppost or similar structure near the car.",
+    "start": 331,
+    "end": 478,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 254,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 256
+      },
+      {
+        "start": 256,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 260
+      },
+      {
+        "start": 260,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 329
+      },
+      {
+        "start": 341,
+        "prob": 1.0,
+        "label": "invention",
+        "end": 354
+      },
+      {
+        "start": 408,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 421
+      },
+      {
+        "start": 436,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 444
+      },
+      {
+        "start": 877,
+        "prob": 0.6666666667,
+        "label": "invention",
+        "end": 892
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.98,
+      "reason": "There is no visible street sign or address plate reading 'Buckingham Rd.' in the image; the background shows only trees, grass, a brick wall, and a car."
+    }
+  },
+  {
+    "id": "train-en-2356",
+    "span": "Hampshire",
+    "start": 716,
+    "end": 725,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 610,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 929
+      },
+      {
+        "start": 1460,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1567
+      },
+      {
+        "start": 642,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 655
+      },
+      {
+        "start": 665,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 678
+      },
+      {
+        "start": 716,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 725
+      },
+      {
+        "start": 733,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 738
+      },
+      {
+        "start": 788,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 797
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "reason": "Hampshire pigs have short, sleek coats and a distinct black body with white belt, which contradicts the curly-coated pig shown (likely a Mangalitsa), so the Hampshire suggestion is an unsupported invention.",
+      "confidence": 0.9
+    }
+  },
+  {
+    "id": "train-en-10310",
+    "span": "Fossil",
+    "start": 37,
+    "end": 43,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 37,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 43
+      },
+      {
+        "start": 37,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 43
+      },
+      {
+        "start": 151,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 158
+      },
+      {
+        "start": 181,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 191
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.98,
+      "reason": "The belt buckle shows no visible text or logo identifying it as 'Fossil', making this brand claim an unsupported invention."
+    }
+  },
+  {
+    "id": "train-en-2356",
+    "span": "Kune Kune pig",
+    "start": 642,
+    "end": 655,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 610,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 929
+      },
+      {
+        "start": 1460,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 1567
+      },
+      {
+        "start": 642,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 655
+      },
+      {
+        "start": 665,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 678
+      },
+      {
+        "start": 716,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 725
+      },
+      {
+        "start": 733,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 738
+      },
+      {
+        "start": 788,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 797
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "reason": "The pig's curly wool coat resembles a Mangalitsa pig rather than a Kune Kune, and breed identification from a single image is inherently unverifiable and speculative.",
+      "confidence": 0.75
+    }
+  },
+  {
+    "id": "train-en-1602",
+    "span": "get their color from the molted exoskeleton of their ancestors, which is shed during the transformation into an adult",
+    "start": 521,
+    "end": 638,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 546,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 567
+      },
+      {
+        "start": 585,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 638
+      },
+      {
+        "start": 18,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 26
+      },
+      {
+        "start": 42,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 50
+      },
+      {
+        "start": 83,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 88
+      },
+      {
+        "start": 115,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 125
+      },
+      {
+        "start": 144,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 152
+      },
+      {
+        "start": 492,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 500
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.97,
+      "reason": "The claim that crayfish get their color from ancestors' molted exoskeletons is biologically nonsensical and fabricated, not a real explanation of crustacean pigmentation."
+    }
+  },
+  {
+    "id": "train-en-10389",
+    "span": "The playground is located on the field where the players are playing. The playground is typically located near the sidelines of the field and includes a variety of play equipment for children.",
+    "start": 57,
+    "end": 248,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 61,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 71
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.99,
+      "reason": "The image shows a football field with players in a game; there is no playground or play equipment visible, so the claim is a fabrication."
+    }
+  },
+  {
+    "id": "train-en-10245",
+    "span": "feeding basket attached to one of the trees",
+    "start": 381,
+    "end": 424,
+    "is_tp": true,
+    "gold": [
+      {
+        "start": 24,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 33
+      },
+      {
+        "start": 309,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 355
+      },
+      {
+        "start": 381,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 465
+      },
+      {
+        "start": 473,
+        "prob": 0.3333333333,
+        "label": "invention",
+        "end": 536
+      },
+      {
+        "start": 0,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 3
+      },
+      {
+        "start": 3,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 17
+      },
+      {
+        "start": 17,
+        "prob": 0.6666666667,
+        "label": "mischaracterization",
+        "end": 33
+      },
+      {
+        "start": 318,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 355
+      },
+      {
+        "start": 381,
+        "prob": 0.3333333333,
+        "label": "mischaracterization",
+        "end": 395
+      },
+      {
+        "start": 51,
+        "prob": 0.3333333333,
+        "label": "miscounting",
+        "end": 54
+      }
+    ],
+    "verdict": {
+      "verdict": "confirm",
+      "confidence": 0.9,
+      "reason": "There is no visible feeding basket attached to a tree in the image; only a wire mesh object near the bottom right corner that is not clearly a feeding basket, and no such object near any tree on the right edge."
+    }
+  }
+]

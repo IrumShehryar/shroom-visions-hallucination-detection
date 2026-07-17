@@ -1,9 +1,9 @@
 OFFLINE ERROR ANALYSIS: MISCOUNTING
-Generated: 2026-07-12 23:55:23.233853
+Generated: 2026-07-15 01:17:30.453579
 ======================================================================
 SUMMARY
   Samples:     48
-  Average IoU: 0.6540
+  Average IoU: 0.6484
   Perfect (1.0): 27
   Partial:       13
   Zero (0.0):    8
@@ -100,7 +100,7 @@ PREDICTED LABELS:
   [10:15] 'three' | miscounting | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-11099 ====================
-MODEL PERFORMANCE (IoU): 0.1087
+MODEL PERFORMANCE (IoU): 0.0526
 
 --- FULL MODEL RESPONSE ---
 Yes, this shirt does have buttons! 
@@ -132,7 +132,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [82:87] 'three' | miscounting | model confidence: 0.95
-  [131:141] 'functional' | mischaracterization | model confidence: 0.9
+  [131:190] 'functional, likely used to close the slight keyhole opening' | mischaracterization | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-9923 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -560,7 +560,7 @@ PREDICTED LABELS:
   [41:42] '7' | miscounting | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-530 ====================
-MODEL PERFORMANCE (IoU): 0.3053
+MODEL PERFORMANCE (IoU): 0.3579
 
 --- FULL MODEL RESPONSE ---
 Based on the image, it's tricky to give an exact number, but I can estimate. It looks like there are **around 20-30 trees** visible. 
@@ -603,6 +603,7 @@ GOLD LABELS (All Annotations):
 PREDICTED LABELS:
   [103:121] 'around 20-30 trees' | miscounting | model confidence: 0.7
   [175:247] 'a cluster of trees on the left side of the image, with about 10-15 trees' | miscounting | model confidence: 0.75
+  [338:343] '10-15' | miscounting | model confidence: 0.7
 
 ==================== IMAGE ID: train-en-1208 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1104,7 +1105,7 @@ PREDICTED LABELS:
   [10:12] '12' | miscounting | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10017 ====================
-MODEL PERFORMANCE (IoU): 0.6250
+MODEL PERFORMANCE (IoU): 0.3333
 
 --- FULL MODEL RESPONSE ---
 Based on the image, there are **three** visible coloured lights. They appear as red lights above the stage.
@@ -1130,10 +1131,10 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [32:37] 'three' | miscounting | model confidence: 0.9
-  [53:56] 'red' | mischaracterization | model confidence: 0.85
+  [53:63] 'red lights' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10168 ====================
-MODEL PERFORMANCE (IoU): 0.0906
+MODEL PERFORMANCE (IoU): 0.1127
 
 --- FULL MODEL RESPONSE ---
 .Forms a question that is not answerable from the image.
@@ -1246,14 +1247,14 @@ GOLD LABELS (All Annotations):
 - Ther' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [30:40] 'answerable' | mischaracterization | model confidence: 0.95
-  [109:460] 'There is one wheel at the front (on the left side of the cart, visible in the image.
+  [1:55] 'Forms a question that is not answerable from the image' | mischaracterization | model confidence: 0.95
+  [109:458] 'There is one wheel at the front (on the left side of the cart, visible in the image.
 
 - There is one wheel at the rear (on the right side of the cart, visible in the image).
 
 - There is one wheel at the front (on the left side of the cart, visible in the image).
 
-- There is one wheel at the rear (on the right side of the cart, visible in the image).' | other | model confidence: 0.85
+- There is one wheel at the rear (on the right side of the cart, visible in the image' | other | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-987 ====================
 MODEL PERFORMANCE (IoU): 0.0000

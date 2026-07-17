@@ -1,0 +1,23 @@
+FRESH VALIDATION ERROR ANALYSIS: OCR
+Generated: 2026-07-16 13:48:04.735039
+======================================================================
+SUMMARY
+  Samples: 1
+  Average IoU: 1.0000
+  Perfect (1.0): 1
+  Partial: 0
+  Zero (0.0): 0
+======================================================================
+
+==================== ID: train-en-942 ====================
+IoU: 1.0000
+
+--- RAW HAIKU REASONING ---
+[
+  {
+    "span_text": "45",
+    "label": "OCR",
+    "prob": 0.85,
+    "reason": "The visible number on the yellow t-shirt appears to be partially visible but the response claims it is '45' when the actual printed number is not clearly readable as such from this angle and distance."
+  }
+]

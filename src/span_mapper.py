@@ -63,17 +63,11 @@ def isolate_span(span_text, label, response_text):
                 return w
         return span_text  # couldn't confidently isolate a number; don't guess
 
-    if label == "mischaracterization":
-        try:
-            tagged = nltk.pos_tag(words)
-        except Exception:
-            tagged = [(w, "UNK") for w in words]
-        for w, tag in tagged:
-            if tag in ("JJ", "JJR", "JJS"):
-                return w
-        return span_text  # no adjective found; don't guess
-
-    # invention / OCR / other: the hallucination IS the phrase, don't shrink
+    # mischaracterization / invention / OCR / other: the hallucination IS
+    # the phrase Haiku reported -- don't try to algorithmically guess which
+    # word within it is "the" wrong one. Tested against labeled data:
+    # POS-tagging for an adjective and returning just that word measurably
+    # regresses IoU relative to trusting the reported span verbatim.
     return span_text
 
 
@@ -93,7 +87,19 @@ def _find_unused_occurrence(haystack, needle, already_used):
         start = idx + 1
 
 
-def map_spans_to_characters(llm_output, response_text):
+def map_spans_to_characters(llm_output, response_text, sample_id=None, image_path=None, verify_mischar=False):
+    # Local import: relabel_miscounting imports NUMBER_WORDS/_tokenize_words
+    # from this module, so a top-level import here would be circular.
+    from src.relabel_miscounting import relabel_miscounting
+    llm_output = relabel_miscounting(llm_output)
+
+    # Optional Sonnet second-opinion filter on remaining mischaracterization
+    # flags -- costs real API calls, so it only runs when explicitly enabled
+    # with an image_path. See src/verify_mischaracterization.py for why.
+    if verify_mischar and image_path:
+        from src.verify_mischaracterization import verify_mischaracterization_flags
+        llm_output = verify_mischaracterization_flags(sample_id, llm_output, image_path, response_text)
+
     mapped = []
     already_used = []
     normalized_response = normalize_text(response_text)

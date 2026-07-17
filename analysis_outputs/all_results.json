@@ -1,7 +1,7 @@
 [
   {
     "id": "train-en-11127",
-    "iou": 0.16,
+    "iou": 0.27586206896551724,
     "gold_labels": [
       {
         "start": 0,
@@ -52,13 +52,25 @@
         "end": 23,
         "label": "miscounting",
         "prob": 0.95
+      },
+      {
+        "start": 123,
+        "end": 127,
+        "label": "miscounting",
+        "prob": 0.95
+      },
+      {
+        "start": 666,
+        "end": 670,
+        "label": "miscounting",
+        "prob": 0.95
       }
     ],
     "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"four\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The fork in the image clearly has three prongs/tines, not four, which is visible in the upper portion of the fork.\"\n  },\n  {\n    \"span_text\": \"four tines (prongs)\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The fork visibly displays three tines/prongs, not four.\"\n  },\n  {\n    \"span_text\": \"four prongs\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.95,\n    \"reason\": \"The fork has three prongs visible in the image, not four.\"\n  }\n]\n```"
   },
   {
     "id": "train-en-10760",
-    "iou": 0.8333333333333334,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 0,
@@ -76,7 +88,7 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 6,
+        "end": 5,
         "label": "other",
         "prob": 0.95
       }
@@ -148,7 +160,7 @@
   },
   {
     "id": "train-en-1739",
-    "iou": 0.37735849056603776,
+    "iou": 0.35135135135135137,
     "gold_labels": [
       {
         "start": 37,
@@ -201,8 +213,8 @@
         "prob": 0.95
       },
       {
-        "start": 242,
-        "end": 253,
+        "start": 220,
+        "end": 258,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -280,7 +292,7 @@
   },
   {
     "id": "train-en-11535",
-    "iou": 0.1016949152542373,
+    "iou": 0.6911764705882353,
     "gold_labels": [
       {
         "start": 0,
@@ -315,8 +327,8 @@
     ],
     "pred_labels": [
       {
-        "start": 41,
-        "end": 47,
+        "start": 0,
+        "end": 56,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -325,7 +337,7 @@
   },
   {
     "id": "train-en-1032",
-    "iou": 0.9772727272727273,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 44,
@@ -348,7 +360,7 @@
     ],
     "pred_labels": [
       {
-        "start": 43,
+        "start": 44,
         "end": 87,
         "label": "invention",
         "prob": 0.85
@@ -634,7 +646,7 @@
   },
   {
     "id": "train-en-11171",
-    "iou": 0.2698412698412698,
+    "iou": 0.38095238095238093,
     "gold_labels": [
       {
         "start": 89,
@@ -694,7 +706,7 @@
       },
       {
         "start": 89,
-        "end": 97,
+        "end": 104,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -742,7 +754,7 @@
   },
   {
     "id": "train-en-2083",
-    "iou": 0.14754098360655737,
+    "iou": 0.14411764705882352,
     "gold_labels": [
       {
         "start": 584,
@@ -777,14 +789,14 @@
     ],
     "pred_labels": [
       {
-        "start": 34,
-        "end": 41,
+        "start": 0,
+        "end": 47,
         "label": "mischaracterization",
         "prob": 0.95
       },
       {
         "start": 421,
-        "end": 510,
+        "end": 509,
         "label": "invention",
         "prob": 0.85
       }
@@ -793,7 +805,7 @@
   },
   {
     "id": "train-en-1210",
-    "iou": 0.8571428571428571,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 504,
@@ -811,7 +823,7 @@
     "pred_labels": [
       {
         "start": 504,
-        "end": 511,
+        "end": 510,
         "label": "other",
         "prob": 0.95
       }
@@ -876,13 +888,13 @@
     "pred_labels": [
       {
         "start": 65,
-        "end": 70,
+        "end": 82,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
-        "start": 204,
-        "end": 212,
+        "start": 202,
+        "end": 247,
         "label": "mischaracterization",
         "prob": 0.9
       }
@@ -993,7 +1005,7 @@
   },
   {
     "id": "train-en-11198",
-    "iou": 0.049479166666666664,
+    "iou": 0.16666666666666666,
     "gold_labels": [
       {
         "start": 106,
@@ -1058,8 +1070,8 @@
         "prob": 0.95
       },
       {
-        "start": 366,
-        "end": 374,
+        "start": 354,
+        "end": 407,
         "label": "mischaracterization",
         "prob": 0.92
       }
@@ -1068,7 +1080,7 @@
   },
   {
     "id": "train-en-10318",
-    "iou": 0.09366391184573003,
+    "iou": 0.09418282548476455,
     "gold_labels": [
       {
         "start": 254,
@@ -1116,13 +1128,13 @@
     "pred_labels": [
       {
         "start": 331,
-        "end": 479,
+        "end": 478,
         "label": "invention",
         "prob": 0.95
       },
       {
         "start": 502,
-        "end": 627,
+        "end": 626,
         "label": "invention",
         "prob": 0.9
       }
@@ -1218,7 +1230,7 @@
   },
   {
     "id": "train-en-10389",
-    "iou": 0.052083333333333336,
+    "iou": 0.05235602094240838,
     "gold_labels": [
       {
         "start": 61,
@@ -1230,7 +1242,7 @@
     "pred_labels": [
       {
         "start": 57,
-        "end": 249,
+        "end": 248,
         "label": "invention",
         "prob": 0.95
       }
@@ -1239,7 +1251,7 @@
   },
   {
     "id": "train-en-10221",
-    "iou": 0.5625,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 28,
@@ -1263,7 +1275,7 @@
     "pred_labels": [
       {
         "start": 28,
-        "end": 32,
+        "end": 39,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -1278,7 +1290,7 @@
   },
   {
     "id": "train-en-805",
-    "iou": 0.28191489361702127,
+    "iou": 0.27925531914893614,
     "gold_labels": [
       {
         "start": 108,
@@ -1302,7 +1314,7 @@
     "pred_labels": [
       {
         "start": 794,
-        "end": 900,
+        "end": 899,
         "label": "invention",
         "prob": 0.75
       }
@@ -1338,7 +1350,7 @@
   },
   {
     "id": "train-en-589",
-    "iou": 0.7560975609756098,
+    "iou": 0.4927536231884058,
     "gold_labels": [
       {
         "start": 432,
@@ -1355,8 +1367,8 @@
     ],
     "pred_labels": [
       {
-        "start": 356,
-        "end": 361,
+        "start": 352,
+        "end": 388,
         "label": "mischaracterization",
         "prob": 0.9
       },
@@ -1464,7 +1476,7 @@
   },
   {
     "id": "train-en-1397",
-    "iou": 0.21714285714285714,
+    "iou": 0.25523809523809526,
     "gold_labels": [
       {
         "start": 56,
@@ -1487,14 +1499,14 @@
     ],
     "pred_labels": [
       {
-        "start": 138,
-        "end": 144,
+        "start": 257,
+        "end": 284,
         "label": "mischaracterization",
         "prob": 0.9
       },
       {
-        "start": 257,
-        "end": 284,
+        "start": 450,
+        "end": 476,
         "label": "mischaracterization",
         "prob": 0.9
       },
@@ -1578,7 +1590,7 @@
   },
   {
     "id": "train-en-10858",
-    "iou": 0.04924242424242424,
+    "iou": 0.4744525547445255,
     "gold_labels": [
       {
         "start": 0,
@@ -1679,14 +1691,14 @@
     ],
     "pred_labels": [
       {
-        "start": 192,
-        "end": 197,
+        "start": 188,
+        "end": 279,
         "label": "mischaracterization",
         "prob": 0.9
       },
       {
-        "start": 844,
-        "end": 852,
+        "start": 838,
+        "end": 887,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -1695,7 +1707,7 @@
   },
   {
     "id": "train-en-1542",
-    "iou": 0.064,
+    "iou": 0.1920374707259953,
     "gold_labels": [
       {
         "start": 60,
@@ -1778,22 +1790,22 @@
         "prob": 0.85
       },
       {
-        "start": 106,
-        "end": 111,
+        "start": 102,
+        "end": 175,
         "label": "mischaracterization",
         "prob": 0.9
-      },
-      {
-        "start": 131,
-        "end": 141,
-        "label": "mischaracterization",
-        "prob": 0.8
       },
       {
         "start": 375,
         "end": 450,
         "label": "mischaracterization",
         "prob": 0.9
+      },
+      {
+        "start": 467,
+        "end": 519,
+        "label": "mischaracterization",
+        "prob": 0.8
       }
     ],
     "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"push-pull\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.85,\n    \"reason\": \"This is a light rail vehicle (LRV) or articulated tram, not a push-pull train configuration. Push-pull refers to a specific locomotive-hauled configuration, which does not apply to this self-propelled multiple-unit vehicle.\"\n  },\n  {\n    \"span_text\": \"The first car is typically a locomotive, which is the engine of the train.\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"This vehicle is a self-propelled multiple-unit train with distributed power throughout the consist, not a traditional locomotive-hauled train. Each unit has its own motors; there is no separate locomotive engine.\"\n  },\n  {\n    \"span_text\": \"passenger cars do not have engines and are instead pulled by the locomotive\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.9,\n    \"reason\": \"In a multiple-unit train like this light rail vehicle, all cars are powered units with their own motors, not unpowered cars being pulled by a single locomotive.\"\n  },\n  {\n    \"span_text\": \"connected to the locomotive via a series of couplers\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.8,\n    \"reason\": \"Light rail vehicles use articulated connections or standard couplers, but the description of cars being 'connected to the locomotive' misrepresents the distributed power architecture of this multiple-unit vehicle.\"\n  }\n]\n```"
@@ -1915,6 +1927,12 @@
       {
         "start": 241,
         "end": 244,
+        "label": "miscounting",
+        "prob": 0.95
+      },
+      {
+        "start": 1182,
+        "end": 1185,
         "label": "miscounting",
         "prob": 0.95
       }
@@ -2189,7 +2207,7 @@
     "pred_labels": [
       {
         "start": 291,
-        "end": 304,
+        "end": 309,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -2323,7 +2341,7 @@
   },
   {
     "id": "train-en-10803",
-    "iou": 0.005440158259149357,
+    "iou": 0.02423343224530168,
     "gold_labels": [
       {
         "start": 55,
@@ -2382,14 +2400,14 @@
     ],
     "pred_labels": [
       {
-        "start": 62,
-        "end": 68,
+        "start": 55,
+        "end": 77,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
         "start": 112,
-        "end": 117,
+        "end": 139,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -2398,7 +2416,7 @@
   },
   {
     "id": "train-en-9663",
-    "iou": 0.045454545454545456,
+    "iou": 0.2727272727272727,
     "gold_labels": [
       {
         "start": 44,
@@ -2421,8 +2439,8 @@
     ],
     "pred_labels": [
       {
-        "start": 51,
-        "end": 56,
+        "start": 44,
+        "end": 74,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -2431,7 +2449,7 @@
   },
   {
     "id": "train-en-11218",
-    "iou": 0.039603960396039604,
+    "iou": 0.1126005361930295,
     "gold_labels": [
       {
         "start": 671,
@@ -2538,20 +2556,20 @@
     ],
     "pred_labels": [
       {
-        "start": 136,
-        "end": 141,
+        "start": 132,
+        "end": 173,
         "label": "mischaracterization",
         "prob": 0.9
       },
       {
-        "start": 294,
-        "end": 299,
+        "start": 290,
+        "end": 337,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
-        "start": 652,
-        "end": 659,
+        "start": 648,
+        "end": 677,
         "label": "mischaracterization",
         "prob": 0.9
       }
@@ -2560,7 +2578,7 @@
   },
   {
     "id": "train-en-560",
-    "iou": 0.10509554140127389,
+    "iou": 0.1574074074074074,
     "gold_labels": [
       {
         "start": 78,
@@ -2691,8 +2709,8 @@
     ],
     "pred_labels": [
       {
-        "start": 213,
-        "end": 219,
+        "start": 203,
+        "end": 237,
         "label": "mischaracterization",
         "prob": 0.9
       },
@@ -2737,7 +2755,7 @@
       },
       {
         "start": 916,
-        "end": 929,
+        "end": 934,
         "label": "mischaracterization",
         "prob": 0.75
       }
@@ -2746,7 +2764,7 @@
   },
   {
     "id": "train-en-11180",
-    "iou": 0.5,
+    "iou": 0.4626865671641791,
     "gold_labels": [
       {
         "start": 24,
@@ -2770,7 +2788,7 @@
     "pred_labels": [
       {
         "start": 79,
-        "end": 85,
+        "end": 90,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -3005,7 +3023,7 @@
   },
   {
     "id": "train-en-1855",
-    "iou": 0.24675324675324675,
+    "iou": 0.25,
     "gold_labels": [
       {
         "start": 62,
@@ -3029,7 +3047,7 @@
     "pred_labels": [
       {
         "start": 214,
-        "end": 282,
+        "end": 281,
         "label": "invention",
         "prob": 0.95
       }
@@ -3089,7 +3107,7 @@
   },
   {
     "id": "train-en-11736",
-    "iou": 0.0,
+    "iou": 0.37362637362637363,
     "gold_labels": [
       {
         "start": 92,
@@ -3101,7 +3119,7 @@
     "pred_labels": [
       {
         "start": 70,
-        "end": 78,
+        "end": 126,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -3201,7 +3219,7 @@
     "pred_labels": [
       {
         "start": 40,
-        "end": 43,
+        "end": 59,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -3334,7 +3352,7 @@
   },
   {
     "id": "train-en-10824",
-    "iou": 0.08695652173913043,
+    "iou": 0.0547945205479452,
     "gold_labels": [
       {
         "start": 35,
@@ -3346,9 +3364,15 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 46,
+        "end": 45,
         "label": "invention",
         "prob": 0.7
+      },
+      {
+        "start": 93,
+        "end": 121,
+        "label": "mischaracterization",
+        "prob": 0.6
       }
     ],
     "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"The image shows a forest with tall pine trees.\",\n    \"label\": \"invention\",\n    \"prob\": 0.7,\n    \"reason\": \"The response identifies the trees as pine trees, but the tall, straight trees with dark bark visible in the image appear to be deciduous or mixed forest trees rather than distinctly identifiable as pine trees.\"\n  },\n  {\n    \"span_text\": \"pine forest or pine woodland\",\n    \"label\": \"mischaracterization\",\n    \"prob\": 0.6,\n    \"reason\": \"The trees in the image do not clearly exhibit the characteristic needle foliage or branching patterns typical of pine forests; they appear to be a mixed or deciduous forest type.\"\n  }\n]\n```"
@@ -3376,7 +3400,7 @@
   },
   {
     "id": "train-en-11472",
-    "iou": 0.4166666666666667,
+    "iou": 0.14705882352941177,
     "gold_labels": [
       {
         "start": 0,
@@ -3400,7 +3424,7 @@
       },
       {
         "start": 63,
-        "end": 67,
+        "end": 89,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -3409,7 +3433,7 @@
   },
   {
     "id": "train-en-1767",
-    "iou": 0.0,
+    "iou": 0.5,
     "gold_labels": [
       {
         "start": 74,
@@ -3420,8 +3444,8 @@
     ],
     "pred_labels": [
       {
-        "start": 14,
-        "end": 17,
+        "start": 70,
+        "end": 78,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -3666,7 +3690,7 @@
   },
   {
     "id": "train-en-1959",
-    "iou": 0.34782608695652173,
+    "iou": 0.3157894736842105,
     "gold_labels": [
       {
         "start": 156,
@@ -3678,13 +3702,13 @@
     "pred_labels": [
       {
         "start": 156,
-        "end": 164,
+        "end": 194,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
         "start": 209,
-        "end": 214,
+        "end": 228,
         "label": "mischaracterization",
         "prob": 0.9
       }
@@ -3693,7 +3717,7 @@
   },
   {
     "id": "train-en-683",
-    "iou": 0.0,
+    "iou": 0.24561403508771928,
     "gold_labels": [
       {
         "start": 63,
@@ -3723,7 +3747,7 @@
     "pred_labels": [
       {
         "start": 101,
-        "end": 106,
+        "end": 127,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -3840,7 +3864,7 @@
   },
   {
     "id": "train-en-1517",
-    "iou": 0.1111111111111111,
+    "iou": 0.6666666666666666,
     "gold_labels": [
       {
         "start": 57,
@@ -3857,8 +3881,8 @@
     ],
     "pred_labels": [
       {
-        "start": 60,
-        "end": 63,
+        "start": 57,
+        "end": 75,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -3867,7 +3891,7 @@
   },
   {
     "id": "train-en-9860",
-    "iou": 0.16666666666666666,
+    "iou": 0.47368421052631576,
     "gold_labels": [
       {
         "start": 29,
@@ -3885,7 +3909,7 @@
     "pred_labels": [
       {
         "start": 20,
-        "end": 28,
+        "end": 35,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -3918,7 +3942,7 @@
     "pred_labels": [
       {
         "start": 292,
-        "end": 499,
+        "end": 498,
         "label": "invention",
         "prob": 0.7
       }
@@ -3990,7 +4014,7 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 48,
+        "end": 47,
         "label": "mischaracterization",
         "prob": 0.95
       }
@@ -3999,7 +4023,7 @@
   },
   {
     "id": "train-en-11870",
-    "iou": 0.08823529411764706,
+    "iou": 0.2457627118644068,
     "gold_labels": [
       {
         "start": 53,
@@ -4016,7 +4040,7 @@
     ],
     "pred_labels": [
       {
-        "start": 73,
+        "start": 37,
         "end": 82,
         "label": "mischaracterization",
         "prob": 0.9
@@ -4118,13 +4142,13 @@
     "pred_labels": [
       {
         "start": 303,
-        "end": 307,
+        "end": 327,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
-        "start": 444,
-        "end": 452,
+        "start": 430,
+        "end": 459,
         "label": "mischaracterization",
         "prob": 0.9
       }
@@ -4166,7 +4190,7 @@
   },
   {
     "id": "train-en-11167",
-    "iou": 0.07407407407407407,
+    "iou": 0.28695652173913044,
     "gold_labels": [
       {
         "start": 71,
@@ -4183,8 +4207,8 @@
     ],
     "pred_labels": [
       {
-        "start": 71,
-        "end": 77,
+        "start": 115,
+        "end": 182,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -4442,7 +4466,7 @@
   },
   {
     "id": "train-en-11099",
-    "iou": 0.10869565217391304,
+    "iou": 0.05263157894736842,
     "gold_labels": [
       {
         "start": 32,
@@ -4472,7 +4496,7 @@
       },
       {
         "start": 131,
-        "end": 141,
+        "end": 190,
         "label": "mischaracterization",
         "prob": 0.9
       }
@@ -4922,7 +4946,7 @@
   },
   {
     "id": "train-en-530",
-    "iou": 0.30526315789473685,
+    "iou": 0.35789473684210527,
     "gold_labels": [
       {
         "start": 103,
@@ -4961,6 +4985,12 @@
         "end": 247,
         "label": "miscounting",
         "prob": 0.75
+      },
+      {
+        "start": 338,
+        "end": 343,
+        "label": "miscounting",
+        "prob": 0.7
       }
     ],
     "haiku_reasoning": "```json\n[\n  {\n    \"span_text\": \"around 20-30 trees\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.7,\n    \"reason\": \"The image shows significantly fewer than 20-30 distinct, clearly visible trees; there appear to be roughly 5-10 identifiable trees, with most vegetation being shrubs and grasses rather than trees.\"\n  },\n  {\n    \"span_text\": \"a cluster of trees on the left side of the image, with about 10-15 trees\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.75,\n    \"reason\": \"The left side shows a small group of conifers that appears to be approximately 3-5 trees, not 10-15.\"\n  },\n  {\n    \"span_text\": \"10-15\",\n    \"label\": \"miscounting\",\n    \"prob\": 0.7,\n    \"reason\": \"The scattered trees visible along shoreline and hillsides appear to number fewer than 10-15; the landscape is predominantly grassland and shrubs.\"\n  }\n]\n```"
@@ -5439,7 +5469,7 @@
   },
   {
     "id": "train-en-10017",
-    "iou": 0.625,
+    "iou": 0.3333333333333333,
     "gold_labels": [
       {
         "start": 32,
@@ -5457,7 +5487,7 @@
       },
       {
         "start": 53,
-        "end": 56,
+        "end": 63,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -5466,7 +5496,7 @@
   },
   {
     "id": "train-en-10168",
-    "iou": 0.09063745019920319,
+    "iou": 0.11266201395812563,
     "gold_labels": [
       {
         "start": 84,
@@ -5501,14 +5531,14 @@
     ],
     "pred_labels": [
       {
-        "start": 30,
-        "end": 40,
+        "start": 1,
+        "end": 55,
         "label": "mischaracterization",
         "prob": 0.95
       },
       {
         "start": 109,
-        "end": 460,
+        "end": 458,
         "label": "other",
         "prob": 0.85
       }
@@ -5619,7 +5649,7 @@
     "pred_labels": [
       {
         "start": 137,
-        "end": 142,
+        "end": 149,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -5715,8 +5745,8 @@
     "gold_labels": [],
     "pred_labels": [
       {
-        "start": 47,
-        "end": 55,
+        "start": 31,
+        "end": 61,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -5870,14 +5900,14 @@
     "gold_labels": [],
     "pred_labels": [
       {
-        "start": 296,
-        "end": 301,
+        "start": 282,
+        "end": 348,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
-        "start": 408,
-        "end": 413,
+        "start": 404,
+        "end": 510,
         "label": "mischaracterization",
         "prob": 0.75
       }
@@ -5898,7 +5928,7 @@
     "pred_labels": [
       {
         "start": 44,
-        "end": 113,
+        "end": 112,
         "label": "invention",
         "prob": 0.9
       },
@@ -5951,8 +5981,8 @@
     "gold_labels": [],
     "pred_labels": [
       {
-        "start": 154,
-        "end": 159,
+        "start": 133,
+        "end": 169,
         "label": "mischaracterization",
         "prob": 0.7
       }
@@ -6020,13 +6050,13 @@
     "pred_labels": [
       {
         "start": 66,
-        "end": 71,
+        "end": 91,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
         "start": 158,
-        "end": 191,
+        "end": 190,
         "label": "invention",
         "prob": 0.75
       }
@@ -6054,7 +6084,7 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 79,
+        "end": 78,
         "label": "other",
         "prob": 0.95
       }
@@ -6088,7 +6118,7 @@
     "pred_labels": [
       {
         "start": 119,
-        "end": 124,
+        "end": 133,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -6101,8 +6131,8 @@
     "gold_labels": [],
     "pred_labels": [
       {
-        "start": 96,
-        "end": 102,
+        "start": 51,
+        "end": 116,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -6116,13 +6146,13 @@
     "pred_labels": [
       {
         "start": 38,
-        "end": 42,
+        "end": 47,
         "label": "mischaracterization",
         "prob": 0.95
       },
       {
         "start": 75,
-        "end": 80,
+        "end": 99,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -6141,8 +6171,8 @@
         "prob": 0.85
       },
       {
-        "start": 394,
-        "end": 400,
+        "start": 384,
+        "end": 404,
         "label": "mischaracterization",
         "prob": 0.8
       }
@@ -6155,8 +6185,8 @@
     "gold_labels": [],
     "pred_labels": [
       {
-        "start": 29,
-        "end": 34,
+        "start": 7,
+        "end": 52,
         "label": "mischaracterization",
         "prob": 0.9
       }
@@ -6184,7 +6214,7 @@
     "pred_labels": [
       {
         "start": 77,
-        "end": 87,
+        "end": 93,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -6366,8 +6396,8 @@
     ],
     "pred_labels": [
       {
-        "start": 312,
-        "end": 317,
+        "start": 273,
+        "end": 329,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -6454,7 +6484,7 @@
   },
   {
     "id": "train-en-1892",
-    "iou": 0.14285714285714285,
+    "iou": 0.06896551724137931,
     "gold_labels": [
       {
         "start": 358,
@@ -6465,13 +6495,13 @@
     ],
     "pred_labels": [
       {
-        "start": 122,
-        "end": 136,
+        "start": 109,
+        "end": 154,
         "label": "mischaracterization",
         "prob": 0.85
       },
       {
-        "start": 357,
+        "start": 358,
         "end": 371,
         "label": "invention",
         "prob": 0.75
@@ -6481,7 +6511,7 @@
   },
   {
     "id": "train-en-1381",
-    "iou": 0.00546448087431694,
+    "iou": 0.005494505494505495,
     "gold_labels": [
       {
         "start": 54,
@@ -6499,7 +6529,7 @@
     "pred_labels": [
       {
         "start": 61,
-        "end": 243,
+        "end": 242,
         "label": "invention",
         "prob": 0.95
       }
@@ -6922,7 +6952,7 @@
   },
   {
     "id": "train-en-9655",
-    "iou": 0.8181818181818182,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 26,
@@ -6945,8 +6975,8 @@
     ],
     "pred_labels": [
       {
-        "start": 25,
-        "end": 36,
+        "start": 26,
+        "end": 35,
         "label": "OCR",
         "prob": 0.85
       }
@@ -7569,7 +7599,7 @@
       },
       {
         "start": 146,
-        "end": 151,
+        "end": 188,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -7599,7 +7629,7 @@
   },
   {
     "id": "train-en-2522",
-    "iou": 0.8333333333333334,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 0,
@@ -7611,7 +7641,7 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 6,
+        "end": 5,
         "label": "other",
         "prob": 0.95
       }
@@ -7695,7 +7725,7 @@
   },
   {
     "id": "train-en-10555",
-    "iou": 0.8333333333333334,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 0,
@@ -7707,7 +7737,7 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 6,
+        "end": 5,
         "label": "other",
         "prob": 0.95
       }
@@ -7716,7 +7746,7 @@
   },
   {
     "id": "train-en-10796",
-    "iou": 0.75,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 1,
@@ -7727,7 +7757,7 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
+        "start": 1,
         "end": 4,
         "label": "other",
         "prob": 0.95
@@ -7772,7 +7802,7 @@
   },
   {
     "id": "train-en-11173",
-    "iou": 0.746268656716418,
+    "iou": 0.7575757575757576,
     "gold_labels": [
       {
         "start": 1,
@@ -7784,7 +7814,7 @@
     "pred_labels": [
       {
         "start": 1,
-        "end": 52,
+        "end": 51,
         "label": "other",
         "prob": 0.95
       },
@@ -7799,7 +7829,7 @@
   },
   {
     "id": "train-en-10223",
-    "iou": 0.7607361963190185,
+    "iou": 0.7654320987654321,
     "gold_labels": [
       {
         "start": 45,
@@ -7823,7 +7853,7 @@
       },
       {
         "start": 45,
-        "end": 170,
+        "end": 169,
         "label": "invention",
         "prob": 0.9
       }
@@ -7935,7 +7965,7 @@
   },
   {
     "id": "train-en-10545",
-    "iou": 0.7468354430379747,
+    "iou": 0.7763157894736842,
     "gold_labels": [
       {
         "start": 3,
@@ -7946,7 +7976,7 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
+        "start": 3,
         "end": 79,
         "label": "other",
         "prob": 0.95
@@ -7956,7 +7986,7 @@
   },
   {
     "id": "train-en-10757",
-    "iou": 0.75,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 1,
@@ -7967,7 +7997,7 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
+        "start": 1,
         "end": 4,
         "label": "other",
         "prob": 0.95
@@ -7989,7 +8019,7 @@
     "pred_labels": [
       {
         "start": 353,
-        "end": 358,
+        "end": 383,
         "label": "mischaracterization",
         "prob": 0.85
       },
@@ -8004,7 +8034,7 @@
   },
   {
     "id": "train-en-2621",
-    "iou": 0.967391304347826,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 3,
@@ -8015,7 +8045,7 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
+        "start": 3,
         "end": 92,
         "label": "other",
         "prob": 0.95
@@ -8053,7 +8083,7 @@
   },
   {
     "id": "train-en-11574",
-    "iou": 0.18181818181818182,
+    "iou": 0.18604651162790697,
     "gold_labels": [
       {
         "start": 376,
@@ -8065,7 +8095,7 @@
     "pred_labels": [
       {
         "start": 167,
-        "end": 203,
+        "end": 202,
         "label": "invention",
         "prob": 0.85
       },
@@ -8162,7 +8192,7 @@
   },
   {
     "id": "train-en-10070",
-    "iou": 0.06521739130434782,
+    "iou": 0.06666666666666667,
     "gold_labels": [
       {
         "start": 1,
@@ -8173,8 +8203,8 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
-        "end": 92,
+        "start": 1,
+        "end": 91,
         "label": "other",
         "prob": 0.95
       }
@@ -8246,7 +8276,7 @@
   },
   {
     "id": "train-en-10137",
-    "iou": 0.996078431372549,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 1,
@@ -8257,8 +8287,8 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
-        "end": 510,
+        "start": 1,
+        "end": 509,
         "label": "other",
         "prob": 0.95
       }
@@ -8267,7 +8297,7 @@
   },
   {
     "id": "train-en-10888",
-    "iou": 0.75,
+    "iou": 1.0,
     "gold_labels": [
       {
         "start": 1,
@@ -8278,7 +8308,7 @@
     ],
     "pred_labels": [
       {
-        "start": 0,
+        "start": 1,
         "end": 4,
         "label": "other",
         "prob": 0.95
@@ -8409,8 +8439,8 @@
     ],
     "pred_labels": [
       {
-        "start": 40,
-        "end": 51,
+        "start": 7,
+        "end": 60,
         "label": "mischaracterization",
         "prob": 0.85
       }
@@ -8468,7 +8498,7 @@
   },
   {
     "id": "train-en-1059",
-    "iou": 0.07142857142857142,
+    "iou": 0.07246376811594203,
     "gold_labels": [
       {
         "start": 64,
@@ -8480,7 +8510,7 @@
     "pred_labels": [
       {
         "start": 0,
-        "end": 70,
+        "end": 69,
         "label": "other",
         "prob": 0.95
       }
@@ -8501,7 +8531,7 @@
     "pred_labels": [
       {
         "start": 90,
-        "end": 96,
+        "end": 108,
         "label": "mischaracterization",
         "prob": 0.85
       }

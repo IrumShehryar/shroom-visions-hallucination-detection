@@ -1,0 +1,772 @@
+[
+  {
+    "id": "train-en-11127",
+    "span": "Yes",
+    "context": "Yes, this fork has four pron"
+  },
+  {
+    "id": "train-en-10760",
+    "span": "Human",
+    "context": "Human:"
+  },
+  {
+    "id": "train-en-450",
+    "span": "but the base has reddish undertones.\n\nThis fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present",
+    "context": " appears to have a darker, almost black tip, but the base has reddish undertones.  This fox is specifically a **Gray Fox** ( *Urocyon cinereoargenteus*), and they are known for having a salt-and-pepper gray coat with reddish flanks and legs. They are not as brightly colored as a Red Fox, but the reddish tones are definitely present.  If you'd like, you can"
+  },
+  {
+    "id": "train-en-1739",
+    "span": "a ",
+    "context": "The cup in the image appears to have a handle on the side. This "
+  },
+  {
+    "id": "train-en-1739",
+    "span": "handle",
+    "context": "The cup in the image appears to have a handle on the side. This is a c"
+  },
+  {
+    "id": "train-en-1739",
+    "span": " on the side",
+    "context": "The cup in the image appears to have a handle on the side. This is a common design"
+  },
+  {
+    "id": "train-en-1739",
+    "span": "common design",
+    "context": "ears to have a handle on the side. This is a common design for take-away coffee cup"
+  },
+  {
+    "id": "train-en-1739",
+    "span": "handle",
+    "context": "warm and protect the hand from the heat. The handle provides a comfortable g"
+  },
+  {
+    "id": "train-en-903",
+    "span": "the typical number of legs for a decapod",
+    "context": "The crab in the image appears to have the typical number of legs for a decapod, which is eight. Crabs a"
+  },
+  {
+    "id": "train-en-903",
+    "span": "Crabs are a type of decapod, and as such, they generally possess eight legs in addition to two claws",
+    "context": "umber of legs for a decapod, which is eight. Crabs are a type of decapod, and as such, they generally possess eight legs in addition to two claws.   There are several rea"
+  },
+  {
+    "id": "train-en-903",
+    "span": "2. **Anatomical Structure**: Decapods, which include crabs, typically have this standard number of legs. The two claws (chelae) are not counted as legs but are specialized appendages used for various functions such as feeding and defense",
+    "context": "Each pair constitutes a total of eight legs. 2. **Anatomical Structure**: Decapods, which include crabs, typically have this standard number of legs. The two claws (chelae) are not counted as legs but are specialized appendages used for various functions such as feeding and defense. 33 3: **Color and Textu"
+  },
+  {
+    "id": "train-en-903",
+    "span": "which is a common misconception",
+    "context": "summary, the crab in the image has ten legs, which is a common misconception. In reality, it has eigh"
+  },
+  {
+    "id": "train-en-903",
+    "span": ". In reality, it has eight legs and two claws, totaling ten appendages. This aligns with the typical anatomy of crabs as members of the decapod order",
+    "context": "has ten legs, which is a common misconception. In reality, it has eight legs and two claws, totaling ten appendages. This aligns with the typical anatomy of crabs as members of the decapod order."
+  },
+  {
+    "id": "train-en-11535",
+    "span": "Yes",
+    "context": "Yes, the corn on the cob in "
+  },
+  {
+    "id": "train-en-1032",
+    "span": "Scho,\" a song",
+    "context": "The song that the dancers are moving to is \"Scho,\" a song by the artist Angelique "
+  },
+  {
+    "id": "train-en-1032",
+    "span": " by the artist Angelique Kidjo",
+    "context": "t the dancers are moving to is \"Scho,\" a song by the artist Angelique Kidjo. Angelique Kidjo is a re"
+  },
+  {
+    "id": "train-en-2356",
+    "span": "This pig strongly resembles a **Kune Kune pig** or a **Berkshire pig** with a curly coat, or possibly a **Hampshire** or **Duroc** with a curly variant, but most likely it’s a **Kune Kune**, which is well-known for its distinctive shaggy, woolly coat. Some Kune Kune pigs are even described as “looking like a furry dog",
+    "context": "ed coat at all.  - **Breed Identification**: This pig strongly resembles a **Kune Kune pig** or a **Berkshire pig** with a curly coat, or possibly a **Hampshire** or **Duroc** with a curly variant, but most likely it’s a **Kune Kune**, which is well-known for its distinctive shaggy, woolly coat. Some Kune Kune pigs are even described as “looking like a furry dog.”  - **Contrast with Com"
+  },
+  {
+    "id": "train-en-2356",
+    "span": "particularly heritage or ornamental breeds like the Kune Kune, which are prized for their unique appearance",
+    "context": " characteristic trait of certain pig breeds, particularly heritage or ornamental breeds like the Kune Kune, which are prized for their unique appearance."
+  },
+  {
+    "id": "train-en-788",
+    "span": "Yes",
+    "context": "Yes, this crossbow does have"
+  },
+  {
+    "id": "train-en-788",
+    "span": "does have a string",
+    "context": "Yes, this crossbow does have a string, though it is not immedi"
+  },
+  {
+    "id": "train-en-772",
+    "span": "sandy desert",
+    "context": "loration, which helps them blend in with the sandy desert environments they inhabi"
+  },
+  {
+    "id": "train-en-11161",
+    "span": "vehicle has ",
+    "context": "els, one in front of the other, whereas this vehicle has three wheels in a triangl"
+  },
+  {
+    "id": "train-en-11161",
+    "span": "three wheels",
+    "context": "front of the other, whereas this vehicle has three wheels in a triangluar arrangem"
+  },
+  {
+    "id": "train-en-11161",
+    "span": " in a triangluar arrangement",
+    "context": " other, whereas this vehicle has three wheels in a triangluar arrangement, which is more character"
+  },
+  {
+    "id": "train-en-11161",
+    "span": ", which is more characteristic of a three-wheeled vehicle such as a trike",
+    "context": " has three wheels in a triangluar arrangement, which is more characteristic of a three-wheeled vehicle such as a trike."
+  },
+  {
+    "id": "train-en-10099",
+    "span": "one slightly to the side in the background",
+    "context": "ates on the table: one in the foreground and one slightly to the side in the background."
+  },
+  {
+    "id": "train-en-10830",
+    "span": "The black cap has the word \"ARGO\" written on it",
+    "context": "The black cap has the word \"ARGO\" written on it."
+  },
+  {
+    "id": "train-en-11171",
+    "span": "Bactrian camels (Camelus bactrianus",
+    "context": "umps on its back, which is characteristic of Bactrian camels (Camelus bactrianus). Bactrian camels are kn"
+  },
+  {
+    "id": "train-en-697",
+    "span": "the score of the match is **",
+    "context": "Based on the image, the score of the match is **4-0**.   This is indicate"
+  },
+  {
+    "id": "train-en-697",
+    "span": "4-0",
+    "context": "ed on the image, the score of the match is **4-0**.   This is indicated b"
+  },
+  {
+    "id": "train-en-2083",
+    "span": "angle and focus of the photo simply do not capture any existing wings",
+    "context": " or brachypterous subspecies, or perhaps the angle and focus of the photo simply do not capture any existing wings if they are present at a"
+  },
+  {
+    "id": "train-en-1210",
+    "span": "Butter",
+    "context": "large lung capacity supports swift movement. Butter. In their natural habita"
+  },
+  {
+    "id": "train-en-2426",
+    "span": "looking out through a large window",
+    "context": "** The photo is taken from inside the store, looking out through a large window. We can see the wooden c"
+  },
+  {
+    "id": "train-en-2426",
+    "span": "window display in the background",
+    "context": "the wooden counter in the foreground and the window display in the background. *   **The Window Displa"
+  },
+  {
+    "id": "train-en-2426",
+    "span": "Through the ",
+    "context": "lated merchandise. *   **The View Outside:** Through the window, we can see a refl"
+  },
+  {
+    "id": "train-en-2426",
+    "span": "window, we can see a reflection of the street and some lights",
+    "context": "ndise. *   **The View Outside:** Through the window, we can see a reflection of the street and some lights, but no specific landmar"
+  },
+  {
+    "id": "train-en-11178",
+    "span": "has scales",
+    "context": "Yes, the plush alligator has scales. They are represented by"
+  },
+  {
+    "id": "train-en-1146",
+    "span": "The event name is \"",
+    "context": "The event name is \"NEXT Berlin.\""
+  },
+  {
+    "id": "train-en-1146",
+    "span": "NEXT Berlin",
+    "context": "The event name is \"NEXT Berlin.\""
+  },
+  {
+    "id": "train-en-11385",
+    "span": "and one on the tail",
+    "context": "lphins have two dorsal fins, one on the back and one on the tail. The back fin is always "
+  },
+  {
+    "id": "train-en-11385",
+    "span": "always pointed",
+    "context": "he back and one on the tail. The back fin is always pointed, whereas the tail fin ca"
+  },
+  {
+    "id": "train-en-11198",
+    "span": "Australian Defence Force aircraft",
+    "context": "le-seat aircraft, specifically labeled as an Australian Defence Force aircraft. It is not designed to t"
+  },
+  {
+    "id": "train-en-10318",
+    "span": "a ",
+    "context": "t is.  Looking closely at the scene, there's a sign partially obscured b"
+  },
+  {
+    "id": "train-en-10318",
+    "span": "sign",
+    "context": "is.  Looking closely at the scene, there's a sign partially obscured by tr"
+  },
+  {
+    "id": "train-en-10318",
+    "span": " partially obscured by trees on the right side behind the individuals",
+    "context": " Looking closely at the scene, there's a sign partially obscured by trees on the right side behind the individuals. The text \"Buckingham Rd"
+  },
+  {
+    "id": "train-en-10318",
+    "span": "Buckingham Rd",
+    "context": "right side behind the individuals. The text \"Buckingham Rd.\" can be clearly made ou"
+  },
+  {
+    "id": "train-en-10318",
+    "span": "address plate",
+    "context": " clearly made out from what appears to be an address plate attached to a lamppost o"
+  },
+  {
+    "id": "train-en-10318",
+    "span": "lamppost",
+    "context": "appears to be an address plate attached to a lamppost or similar structure nea"
+  },
+  {
+    "id": "train-en-10318",
+    "span": "Buckingham Road",
+    "context": "Tech.  Therefore, the people are standing on Buckingham Road."
+  },
+  {
+    "id": "train-en-10909",
+    "span": "to have a ",
+    "context": "The mug in the image appears to have a handle that is integrated"
+  },
+  {
+    "id": "train-en-10909",
+    "span": "handle",
+    "context": "The mug in the image appears to have a handle that is integrated into "
+  },
+  {
+    "id": "train-en-10909",
+    "span": " that is ",
+    "context": "The mug in the image appears to have a handle that is integrated into the body "
+  },
+  {
+    "id": "train-en-10909",
+    "span": "integrated into the body of the mug",
+    "context": "n the image appears to have a handle that is integrated into the body of the mug itself. The handle is no"
+  },
+  {
+    "id": "train-en-10909",
+    "span": " itself. The ",
+    "context": "e that is integrated into the body of the mug itself. The handle is not separate fr"
+  },
+  {
+    "id": "train-en-10909",
+    "span": "handle",
+    "context": "egrated into the body of the mug itself. The handle is not separate from the"
+  },
+  {
+    "id": "train-en-10909",
+    "span": " is not separate from the mug and is ",
+    "context": "d into the body of the mug itself. The handle is not separate from the mug and is part of the overall desig"
+  },
+  {
+    "id": "train-en-10909",
+    "span": "part of the overall design",
+    "context": "e handle is not separate from the mug and is part of the overall design of the mug. It's a commo"
+  },
+  {
+    "id": "train-en-10909",
+    "span": " of the mug. It's a common style for some types of ceramic or pottery mugs where the handle is not a separate piece but rather a ",
+    "context": "rom the mug and is part of the overall design of the mug. It's a common style for some types of ceramic or pottery mugs where the handle is not a separate piece but rather a protrusion from the mug's"
+  },
+  {
+    "id": "train-en-10909",
+    "span": "protrusion",
+    "context": " handle is not a separate piece but rather a protrusion from the mug's body."
+  },
+  {
+    "id": "train-en-10909",
+    "span": " from the mug's body",
+    "context": " not a separate piece but rather a protrusion from the mug's body."
+  },
+  {
+    "id": "train-en-10389",
+    "span": "playground",
+    "context": "a football game being broadcast on ESPN. The playground is located on the field "
+  },
+  {
+    "id": "train-en-10221",
+    "span": "blue banner",
+    "context": "The cross is adorned with a blue banner displaying the word 'Jes"
+  },
+  {
+    "id": "train-en-805",
+    "span": "specifically **tetsubin** (Japanese cast iron",
+    "context": "eel. It appears to be made of **cast iron**, specifically **tetsubin** (Japanese cast iron).   Here's why:  *   **T"
+  },
+  {
+    "id": "train-en-805",
+    "span": "which is typical of cast iron tetsubin",
+    "context": "ured surface with a detailed floral pattern, which is typical of cast iron tetsubin. Stainless steel usually"
+  },
+  {
+    "id": "train-en-805",
+    "span": "Tetsubin are often coated with enamel on the inside to prevent rusting, but the exterior is typically left as cast iron.\n\nTetsubin kettles are valued for their ability to retain heat well and impart a unique flavor to the water. They are a traditional Japanese method for heating water for tea",
+    "context": "ristic of tetsubin. *   **Rust Prevention:** Tetsubin are often coated with enamel on the inside to prevent rusting, but the exterior is typically left as cast iron.  Tetsubin kettles are valued for their ability to retain heat well and impart a unique flavor to the water. They are a traditional Japanese method for heating water for tea.    "
+  },
+  {
+    "id": "train-en-2612",
+    "span": "they are a rare color variant of the African lion (*Panthera leo*), most commonly found in the Timbavati region of South Africa",
+    "context": "ns are not a separate species or subspecies; they are a rare color variant of the African lion (*Panthera leo*), most commonly found in the Timbavati region of South Africa.  *   **Visual Confirmat"
+  },
+  {
+    "id": "train-en-589",
+    "span": "smaller ducted fan on the front",
+    "context": "e of the craft in the image. There is also a smaller ducted fan on the front.   Therefore, while it f"
+  },
+  {
+    "id": "train-en-2485",
+    "span": "The patterns on the inside are visible across the entire surface of the scoop",
+    "context": "n the image, the bowls are clearly not deep. The patterns on the inside are visible across the entire surface of the scoop, which would not be poss"
+  },
+  {
+    "id": "train-en-1397",
+    "span": "which typically has one engine at the rear. It's common for these buses to have a single engine driving the rear wheels, which then powers the wheels through a drivetrain system",
+    "context": "the image appears to be a double-decker bus, which typically has one engine at the rear. It's common for these buses to have a single engine driving the rear wheels, which then powers the wheels through a drivetrain system. The engine might be a d"
+  },
+  {
+    "id": "train-en-1397",
+    "span": "the Routemaster, have a single rear-mounted engine. The engine drives the rear wheels, and the bus uses a separate transmission system to drive the front wheels. The design of the bus, with seating and an open rear platform, is unique to this type of bus",
+    "context": "xample, the most iconic double-decker buses, the Routemaster, have a single rear-mounted engine. The engine drives the rear wheels, and the bus uses a separate transmission system to drive the front wheels. The design of the bus, with seating and an open rear platform, is unique to this type of bus.  Without more specific "
+  },
+  {
+    "id": "train-en-1397",
+    "span": "generally have a single engine at the rear, driving the rear wheels",
+    "context": "system it uses. However, double-decker buses generally have a single engine at the rear, driving the rear wheels."
+  },
+  {
+    "id": "train-en-1602",
+    "span": "molted exoskeleton of",
+    "context": " on the other hand, get their color from the molted exoskeleton of their ancestors, which i"
+  },
+  {
+    "id": "train-en-1602",
+    "span": "which is shed during the transformation into an adult",
+    "context": "m the molted exoskeleton of their ancestors, which is shed during the transformation into an adult."
+  },
+  {
+    "id": "train-en-10858",
+    "span": "Yes",
+    "context": "Yes, the blender in the imag"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "a ",
+    "context": "Yes, the blender in the image has a container. Here's a detai"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "container",
+    "context": "Yes, the blender in the image has a container. Here's a detailed expla"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "black, cylindrical top part of the device is the ",
+    "context": " blender, also known as a stick blender. The black, cylindrical top part of the device is the container where ingredien"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "container",
+    "context": "k, cylindrical top part of the device is the container where ingredients are pl"
+  },
+  {
+    "id": "train-en-10858",
+    "span": " where ingredients are placed",
+    "context": "rical top part of the device is the container where ingredients are placed.  2. **Blending Elements"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "container",
+    "context": "s are placed.  2. **Blending Elements**: The container is designed to hold liqu"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "container",
+    "context": "and Stem**: The silver stem extends from the container and houses the motor and"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "motor",
+    "context": "em extends from the container and houses the motor and blades, which are us"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "container",
+    "context": "ip**: The person in the image is holding the container part, indicating its rol"
+  },
+  {
+    "id": "train-en-10858",
+    "span": " part",
+    "context": " person in the image is holding the container part, indicating its role in "
+  },
+  {
+    "id": "train-en-10858",
+    "span": "indicating its role in holding the ingredients securely during the blending process",
+    "context": " in the image is holding the container part, indicating its role in holding the ingredients securely during the blending process.  In summary, the immers"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "built-in ",
+    "context": "ss.  In summary, the immersion blender has a built-in container in the black to"
+  },
+  {
+    "id": "train-en-10858",
+    "span": "container",
+    "context": "ummary, the immersion blender has a built-in container in the black top section"
+  },
+  {
+    "id": "train-en-10858",
+    "span": " in the black top section",
+    "context": "he immersion blender has a built-in container in the black top section, which is essential for "
+  },
+  {
+    "id": "train-en-1542",
+    "span": "often referred to as a \"push-pull\" train. The first car is typically a locomotive, which is the engine of the train. It is responsible for providing the power to move the train along the tracks",
+    "context": "e image appears to be a multiple-unit train, often referred to as a \"push-pull\" train. The first car is typically a locomotive, which is the engine of the train. It is responsible for providing the power to move the train along the tracks.  In a multiple-unit tra"
+  },
+  {
+    "id": "train-en-1542",
+    "span": "locomotive",
+    "context": "e locomotive.  In the image, you can see the locomotive at the front with the nu"
+  },
+  {
+    "id": "train-en-1542",
+    "span": "it is the engine of the train",
+    "context": " number \"1068\" visible, which indicates that it is the engine of the train. The passenger cars are "
+  },
+  {
+    "id": "train-en-1542",
+    "span": "and are being moved along the track by this engine",
+    "context": "p behind the locomotive, connected together, and are being moved along the track by this engine."
+  },
+  {
+    "id": "train-en-2415",
+    "span": "often seen in electric vehicles",
+    "context": "and has a glowing blue rim, a design feature often seen in electric vehicles.  2.  **Vehicle Design:*"
+  },
+  {
+    "id": "train-en-2415",
+    "span": "stability on three wheels",
+    "context": "e overall structure suggests it is built for stability on three wheels, which is common for veh"
+  },
+  {
+    "id": "train-en-9982",
+    "span": "There are ",
+    "context": "There are two kids in the car, as i"
+  },
+  {
+    "id": "train-en-9982",
+    "span": "two kids",
+    "context": "There are two kids in the car, as indicated"
+  },
+  {
+    "id": "train-en-9982",
+    "span": " in the car, as indicated by the ",
+    "context": "There are two kids in the car, as indicated by the two visible figures in th"
+  },
+  {
+    "id": "train-en-9982",
+    "span": "two visible figures",
+    "context": "are two kids in the car, as indicated by the two visible figures in the image."
+  },
+  {
+    "id": "train-en-9982",
+    "span": " in the image",
+    "context": " car, as indicated by the two visible figures in the image."
+  },
+  {
+    "id": "train-en-2283",
+    "span": "visible layer of condensation on the outside of the glass",
+    "context": "ere's why:  1.  **Condensation:** There is a visible layer of condensation on the outside of the glass, particularly around the"
+  },
+  {
+    "id": "train-en-2283",
+    "span": "strong indicator that the glass is colder than the surrounding air, causing moisture from the air to condense on its surface",
+    "context": "icularly around the bowl and stem. This is a strong indicator that the glass is colder than the surrounding air, causing moisture from the air to condense on its surface.  2.  **Beer Serving Sty"
+  },
+  {
+    "id": "train-en-2283",
+    "span": "beer",
+    "context": "ing and appreciating the aroma and flavor of beer. Beer is typically serve"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "Yes",
+    "context": "Yes, the hoe in the image ha"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "long",
+    "context": "Yes, the hoe in the image has a long handle. Let's break down"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "extends significantly",
+    "context": "sign and Dimensions**: The handle of the hoe extends significantly in length, which is evid"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "proportion",
+    "context": "icantly in length, which is evident from the proportion relative to the blade. T"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "substantial",
+    "context": "lade. The length of the handle appears to be substantial, making it easy to grip "
+  },
+  {
+    "id": "train-en-11811",
+    "span": "extended",
+    "context": "d periods.   3. **Weight Distribution**: The extended handle helps in distribu"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "longer",
+    "context": "d and less tiring.   4. **Practical Use**: A longer handle provides leverage"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "could be a practical addition for attaching accessories or for storage purposes. This feature, combined with the ",
+    "context": "rcular attachment near the end of the handle could be a practical addition for attaching accessories or for storage purposes. This feature, combined with the length, indicates thought"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "length",
+    "context": "ge purposes. This feature, combined with the length, indicates thoughtful de"
+  },
+  {
+    "id": "train-en-11811",
+    "span": ", indicates thoughtful design for convenience and functionality",
+    "context": "poses. This feature, combined with the length, indicates thoughtful design for convenience and functionality.  In conclusion, the hoe"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "long",
+    "context": ".  In conclusion, the hoe in the image has a long handle, which is long in"
+  },
+  {
+    "id": "train-en-11811",
+    "span": "long in length",
+    "context": "hoe in the image has a long handle, which is long in length and ergonomically design"
+  },
+  {
+    "id": "train-en-11678",
+    "span": "clearly shows that ",
+    "context": "es, this spear does have a handle. The image clearly shows that the upper portion of the "
+  },
+  {
+    "id": "train-en-11678",
+    "span": "the upper portion of the object extends upwards from the pointed metal tip and has a cylindrical shape characteristic of a wooden or composite shaft",
+    "context": " have a handle. The image clearly shows that the upper portion of the object extends upwards from the pointed metal tip and has a cylindrical shape characteristic of a wooden or composite shaft used to grip while throw"
+  },
+  {
+    "id": "train-en-11678",
+    "span": " used to grip while throwing or thrusting spears",
+    "context": "characteristic of a wooden or composite shaft used to grip while throwing or thrusting spears.  The visible part above"
+  },
+  {
+    "id": "train-en-11678",
+    "span": "handle",
+    "context": "onsistent with what would be considered the 'handle' in traditional terms fo"
+  },
+  {
+    "id": "train-en-488",
+    "span": "It appears to be a breed known for its fiber production, like an Angora or Cashmere goat",
+    "context": " the goat's coat is very **curly and wavy**. It appears to be a breed known for its fiber production, like an Angora or Cashmere goat. These breeds have long,"
+  },
+  {
+    "id": "train-en-10186",
+    "span": "This is the name of the event",
+    "context": "eads \"SPEEDTHEORY TRIATHLON DECONSTRUCTED™\". This is the name of the event.  2.  **Event Type:** Th"
+  },
+  {
+    "id": "train-en-10186",
+    "span": "Candid\" is a well-known triathlon race series that takes place in Canada",
+    "context": "below it, the name **\"CANDID\"** is printed. \"Candid\" is a well-known triathlon race series that takes place in Canada. The race is specificall"
+  },
+  {
+    "id": "train-en-10186",
+    "span": ". The race is specifically called the \"",
+    "context": "athlon race series that takes place in Canada. The race is specifically called the \"Candid 70.3\" and is held "
+  },
+  {
+    "id": "train-en-10186",
+    "span": "Candid 70.3",
+    "context": "Canada. The race is specifically called the \"Candid 70.3\" and is held annually in"
+  },
+  {
+    "id": "train-en-10186",
+    "span": "\" and is held annually in **Candiac, Quebec",
+    "context": " race is specifically called the \"Candid 70.3\" and is held annually in **Candiac, Quebec**.  4.  **Supporting Evi"
+  },
+  {
+    "id": "train-en-10186",
+    "span": "the location of this event is **Candiac, Quebec, Canada**. The event is the **Candid 70.3 Triathlon",
+    "context": "n event in a Canadian city.  ---  Therefore, the location of this event is **Candiac, Quebec, Canada**. The event is the **Candid 70.3 Triathlon**."
+  },
+  {
+    "id": "train-en-10803",
+    "span": "bright yellow ornament",
+    "context": "ed on the image provided, the writing on the bright yellow ornament is not legible. The orna"
+  },
+  {
+    "id": "train-en-10803",
+    "span": "small, round, yellow object with a r",
+    "context": "w ornament is not legible. The ornament is a small, round, yellow object with a red ribbon tied around it,"
+  },
+  {
+    "id": "train-en-10803",
+    "span": "ed ribbon tied",
+    "context": "ent is a small, round, yellow object with a red ribbon tied around it, hanging from "
+  },
+  {
+    "id": "train-en-10803",
+    "span": " around i",
+    "context": ", round, yellow object with a red ribbon tied around it, hanging from a Christm"
+  },
+  {
+    "id": "train-en-10803",
+    "span": "text",
+    "context": "t, hanging from a Christmas tree branch. The text appears to be in a cursi"
+  },
+  {
+    "id": "train-en-10803",
+    "span": "cursive font",
+    "context": "mas tree branch. The text appears to be in a cursive font, but the resolution and "
+  },
+  {
+    "id": "train-en-10803",
+    "span": "red ribbon",
+    "context": "ses. The ornament’s design is simple, with a red ribbon and a small, possibly re"
+  },
+  {
+    "id": "train-en-10803",
+    "span": "small, possibly red, circular tag attached to it",
+    "context": "’s design is simple, with a red ribbon and a small, possibly red, circular tag attached to it, but the text is not leg"
+  },
+  {
+    "id": "train-en-9663",
+    "span": "on the right side of the image, which has a large \"SALE\" sign in its window. The sign is prominently displayed",
+    "context": "The price is reduced up to 75% at the store on the right side of the image, which has a large \"SALE\" sign in its window. The sign is prominently displayed, indicating a significan"
+  },
+  {
+    "id": "train-en-11218",
+    "span": "s",
+    "context": "es can slow movement. The smaller front wheels here would have less sur"
+  },
+  {
+    "id": "train-en-11218",
+    "span": "s",
+    "context": "ower transfer through those small front wheels. It seems more suited fo"
+  },
+  {
+    "id": "train-en-560",
+    "span": "does have a ",
+    "context": "e.   Based on the photo, **yes, the crossbow does have a string**, but it's not im"
+  },
+  {
+    "id": "train-en-560",
+    "span": "string",
+    "context": "n the photo, **yes, the crossbow does have a string**, but it's not immediat"
+  },
+  {
+    "id": "train-en-560",
+    "span": "crossbow",
+    "context": "Crossbow Design:** This is a modern compound crossbow. Unlike traditional cros"
+  },
+  {
+    "id": "train-en-560",
+    "span": "Unlike",
+    "context": "esign:** This is a modern compound crossbow. Unlike traditional crossbows wh"
+  },
+  {
+    "id": "train-en-560",
+    "span": "string",
+    "context": "ve a complex system of cams and pulleys. The string itself is largely hidden"
+  },
+  {
+    "id": "train-en-560",
+    "span": "largely hidden",
+    "context": "em of cams and pulleys. The string itself is largely hidden within the limbs and fra"
+  },
+  {
+    "id": "train-en-560",
+    "span": "the ",
+    "context": "ssbow. *   **Limb Orientation:** You can see the limbs are in a \"drawn\" po"
+  },
+  {
+    "id": "train-en-560",
+    "span": "limbs",
+    "context": "w. *   **Limb Orientation:** You can see the limbs are in a \"drawn\" positio"
+  },
+  {
+    "id": "train-en-560",
+    "span": "drawn\" position",
+    "context": "ientation:** You can see the limbs are in a \"drawn\" position (bent backwards). This m"
+  },
+  {
+    "id": "train-en-560",
+    "span": " (bent backwards",
+    "context": "u can see the limbs are in a \"drawn\" position (bent backwards). This means the string "
+  },
+  {
+    "id": "train-en-560",
+    "span": "string",
+    "context": "n\" position (bent backwards). This means the string is currently pulled back"
+  },
+  {
+    "id": "train-en-560",
+    "span": "latching mechanism, ready for release",
+    "context": "s currently pulled back and engaged with the latching mechanism, ready for release. The string is between t"
+  },
+  {
+    "id": "train-en-560",
+    "span": "string is between the limbs",
+    "context": "e latching mechanism, ready for release. The string is between the limbs.  If you look closely at"
+  },
+  {
+    "id": "train-en-560",
+    "span": "the ",
+    "context": "s between the limbs.  If you look closely at the area between the limbs, y"
+  },
+  {
+    "id": "train-en-560",
+    "span": "area between the limbs",
+    "context": "tween the limbs.  If you look closely at the area between the limbs, you can faintly see the"
+  },
+  {
+    "id": "train-en-560",
+    "span": "see the ",
+    "context": " the area between the limbs, you can faintly see the darker line that is the s"
+  },
+  {
+    "id": "train-en-560",
+    "span": "darker line",
+    "context": "a between the limbs, you can faintly see the darker line that is the string.  Let"
+  },
+  {
+    "id": "train-en-560",
+    "span": " that is the string",
+    "context": "he limbs, you can faintly see the darker line that is the string.  Let me know if you wou"
+  }
+]

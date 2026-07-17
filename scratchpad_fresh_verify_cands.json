@@ -1,0 +1,121 @@
+{
+  "fp": [
+    [
+      "train-en-477",
+      "lighter, almost white or lavender stripes",
+      0.9
+    ],
+    [
+      "train-en-477",
+      "variegated appearance",
+      0.85
+    ],
+    [
+      "train-en-2371",
+      "cracked asphalt or concrete",
+      0.85
+    ],
+    [
+      "train-en-2057",
+      "propellers",
+      0.9
+    ],
+    [
+      "train-en-2057",
+      "two large rotor systems",
+      0.85
+    ],
+    [
+      "train-en-2073",
+      "orange rubber-like bumper or cushion",
+      0.75
+    ],
+    [
+      "train-en-2073",
+      "soft rubber part",
+      0.75
+    ],
+    [
+      "train-en-1828",
+      "The yellow and teal containers hold whole coconut fruits that still possess their hard outer shell",
+      0.85
+    ],
+    [
+      "train-en-1828",
+      "you can see shredded remnants of these removed shells falling below",
+      0.75
+    ],
+    [
+      "train-en-11101",
+      "blue SUV",
+      0.85
+    ],
+    [
+      "train-en-830",
+      "bright",
+      0.75
+    ],
+    [
+      "train-en-469",
+      "does not appear to have stitching",
+      0.85
+    ]
+  ],
+  "tp": [
+    [
+      "train-en-1261",
+      "brown patches, particularly visible on its back and head",
+      0.9
+    ],
+    [
+      "train-en-876",
+      "still has its skin on",
+      0.95
+    ],
+    [
+      "train-en-876",
+      "The skin appears to be intact and on",
+      0.95
+    ],
+    [
+      "train-en-876",
+      "light brown coloration",
+      0.9
+    ],
+    [
+      "train-en-876",
+      "The potato being held in the hand clearly displays the skin contrasted against its yellow flesh",
+      0.95
+    ],
+    [
+      "train-en-1483",
+      "rectangular blade",
+      0.9
+    ],
+    [
+      "train-en-11139",
+      "rose or a floral pattern",
+      0.85
+    ],
+    [
+      "train-en-11089",
+      "black",
+      0.85
+    ],
+    [
+      "train-en-2207",
+      "grayish areas around its neck",
+      0.85
+    ],
+    [
+      "train-en-1727",
+      "suspended from the ceiling by chains or straps",
+      0.9
+    ],
+    [
+      "train-en-9671",
+      "blue and red text",
+      0.85
+    ]
+  ]
+}

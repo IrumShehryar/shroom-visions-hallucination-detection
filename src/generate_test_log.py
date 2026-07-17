@@ -70,14 +70,45 @@ def build_records():
     return records
 
 
-def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    records = build_records()
+def write_sample_block(log, r):
+    row = r["row"]
+    sample_id = r["id"]
+    response = row.get("response", "")
+    image_path = os.path.join(IMAGES_DIR, row.get("image_name", ""))
 
+    log.write(f"\n{'=' * 20} ID: {sample_id} {'=' * 20}\n")
+    log.write(f"IMAGE: {image_path}\n")
+    log.write(f"IMAGE EXISTS: {os.path.exists(image_path)}\n")
+    log.write(f"PROMPT: {row.get('prompt', '')}\n")
+    log.write(f"\n--- FULL RESPONSE ---\n{response}\n")
+
+    if not r["pred_labels"]:
+        log.write("\nPREDICTED: (no spans flagged -- pipeline judged this response clean)\n")
+    else:
+        log.write("\nPREDICTED SPANS:\n")
+        # match each mapped span back to its raw entry (same order) to surface "reason"
+        for mapped, raw_entry in zip(r["pred_labels"], r["llm_output"]):
+            span_text = response[mapped["start"]:mapped["end"]]
+            reason = raw_entry.get("reason", "(no reason given)")
+            log.write(
+                f"  [{mapped['start']}:{mapped['end']}] '{span_text}' | "
+                f"{mapped['label']} | confidence: {mapped['prob']}\n"
+                f"    reason: {reason}\n"
+            )
+
+
+def group_by_bucket(records):
     by_bucket = defaultdict(list)
     for r in records:
         bucket = primary_predicted_label(r["pred_labels"])
         by_bucket[bucket].append(r)
+    return by_bucket
+
+
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    records = build_records()
+    by_bucket = group_by_bucket(records)
 
     log_path = os.path.join(OUTPUT_DIR, "full_prediction_log.txt")
     with open(log_path, "w", encoding="utf-8") as log:
@@ -93,30 +124,7 @@ def main():
         for bucket, items in sorted(by_bucket.items(), key=lambda kv: -len(kv[1])):
             log.write(f"\n\n{'#' * 70}\nBUCKET: {bucket.upper()} ({len(items)} samples)\n{'#' * 70}\n")
             for r in items:
-                row = r["row"]
-                sample_id = r["id"]
-                response = row.get("response", "")
-                image_path = os.path.join(IMAGES_DIR, row.get("image_name", ""))
-
-                log.write(f"\n{'=' * 20} ID: {sample_id} {'=' * 20}\n")
-                log.write(f"IMAGE: {image_path}\n")
-                log.write(f"IMAGE EXISTS: {os.path.exists(image_path)}\n")
-                log.write(f"PROMPT: {row.get('prompt', '')}\n")
-                log.write(f"\n--- FULL RESPONSE ---\n{response}\n")
-
-                if not r["pred_labels"]:
-                    log.write("\nPREDICTED: (no spans flagged -- pipeline judged this response clean)\n")
-                else:
-                    log.write("\nPREDICTED SPANS:\n")
-                    # match each mapped span back to its raw entry (same order) to surface "reason"
-                    for mapped, raw_entry in zip(r["pred_labels"], r["llm_output"]):
-                        span_text = response[mapped["start"]:mapped["end"]]
-                        reason = raw_entry.get("reason", "(no reason given)")
-                        log.write(
-                            f"  [{mapped['start']}:{mapped['end']}] '{span_text}' | "
-                            f"{mapped['label']} | confidence: {mapped['prob']}\n"
-                            f"    reason: {reason}\n"
-                        )
+                write_sample_block(log, r)
 
     print(f"Wrote {len(records)} prediction records to: {log_path}")
     print("\nBreakdown by first-flagged label:")

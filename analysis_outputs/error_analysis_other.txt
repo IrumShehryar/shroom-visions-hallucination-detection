@@ -1,11 +1,11 @@
 OFFLINE ERROR ANALYSIS: OTHER
-Generated: 2026-07-12 23:55:23.249238
+Generated: 2026-07-15 01:17:30.470943
 ======================================================================
 SUMMARY
   Samples:     50
-  Average IoU: 0.3871
-  Perfect (1.0): 4
-  Partial:       21
+  Average IoU: 0.4106
+  Perfect (1.0): 11
+  Partial:       14
   Zero (0.0):    25
 ======================================================================
 
@@ -107,7 +107,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [50:59] 'm or mast' | OCR | model confidence: 0.9
-  [146:151] 'small' | mischaracterization | model confidence: 0.85
+  [146:188] 'small antennas and radar domes on its roof' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-2623 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -132,7 +132,7 @@ PREDICTED LABELS:
   [0:511] '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000' | other | model confidence: 0.99
 
 ==================== IMAGE ID: train-en-2522 ====================
-MODEL PERFORMANCE (IoU): 0.8333
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 Human:
@@ -151,7 +151,7 @@ GOLD LABELS (All Annotations):
   [0:5] 'Human' | other | agreement: 1.0
 
 PREDICTED LABELS:
-  [0:6] 'Human:' | other | model confidence: 0.95
+  [0:5] 'Human' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-499 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -235,7 +235,7 @@ PREDICTED LABELS:
   [218:245] 'orange or a similar variety' | invention | model confidence: 0.75
 
 ==================== IMAGE ID: train-en-10555 ====================
-MODEL PERFORMANCE (IoU): 0.8333
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 Human:
@@ -254,10 +254,10 @@ GOLD LABELS (All Annotations):
   [0:5] 'Human' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:6] 'Human:' | other | model confidence: 0.95
+  [0:5] 'Human' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10796 ====================
-MODEL PERFORMANCE (IoU): 0.7500
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 .com
@@ -276,7 +276,7 @@ GOLD LABELS (All Annotations):
   [1:4] 'com' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:4] '.com' | other | model confidence: 0.95
+  [1:4] 'com' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1281 ====================
 MODEL PERFORMANCE (IoU): 1.0000
@@ -326,7 +326,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-11173 ====================
-MODEL PERFORMANCE (IoU): 0.7463
+MODEL PERFORMANCE (IoU): 0.7576
 
 --- FULL MODEL RESPONSE ---
  grapefruit is shown in the image, not a grapefruit.
@@ -366,11 +366,11 @@ GOLD LABELS (All Annotations):
   [1:51] 'grapefruit is shown in the image, not a grapefruit' | other | agreement: 0.6666666667
 
 PREDICTED LABELS:
-  [1:52] 'grapefruit is shown in the image, not a grapefruit.' | other | model confidence: 0.95
+  [1:51] 'grapefruit is shown in the image, not a grapefruit' | other | model confidence: 0.95
   [317:333] 'yellowish-orange' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10223 ====================
-MODEL PERFORMANCE (IoU): 0.7607
+MODEL PERFORMANCE (IoU): 0.7654
 
 --- FULL MODEL RESPONSE ---
 Yes, the laptop is placed on a person's lap. The blue fabric visible around the edges of the image suggests that it’s resting comfortably there while they work or browse.
@@ -397,7 +397,7 @@ GOLD LABELS (All Annotations):
 
 PREDICTED LABELS:
   [5:43] 'the laptop is placed on a person's lap' | mischaracterization | model confidence: 0.95
-  [45:170] 'The blue fabric visible around the edges of the image suggests that it’s resting comfortably there while they work or browse.' | invention | model confidence: 0.9
+  [45:169] 'The blue fabric visible around the edges of the image suggests that it’s resting comfortably there while they work or browse' | invention | model confidence: 0.9
 
 ==================== IMAGE ID: train-en-11340 ====================
 MODEL PERFORMANCE (IoU): 0.9800
@@ -515,7 +515,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-10545 ====================
-MODEL PERFORMANCE (IoU): 0.7468
+MODEL PERFORMANCE (IoU): 0.7763
 
 --- FULL MODEL RESPONSE ---
 ://www.etsy.com/listing/144628382/embroidered-paper-airplane-embroidery-pattern
@@ -534,10 +534,10 @@ GOLD LABELS (All Annotations):
   [3:62] 'www.etsy.com/listing/144628382/embroidered-paper-airplane-e' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:79] '://www.etsy.com/listing/144628382/embroidered-paper-airplane-embroidery-pattern' | other | model confidence: 0.95
+  [3:79] 'www.etsy.com/listing/144628382/embroidered-paper-airplane-embroidery-pattern' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10757 ====================
-MODEL PERFORMANCE (IoU): 0.7500
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 .com
@@ -556,7 +556,7 @@ GOLD LABELS (All Annotations):
   [1:4] 'com' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:4] '.com' | other | model confidence: 0.95
+  [1:4] 'com' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10063 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -594,11 +594,11 @@ GOLD LABELS (All Annotations):
   [2:12] 'fim_suffix' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [353:358] 'white' | mischaracterization | model confidence: 0.85
+  [353:383] 'white shirt with black stripes' | mischaracterization | model confidence: 0.85
   [498:516] 'turquoise backpack' | mischaracterization | model confidence: 0.8
 
 ==================== IMAGE ID: train-en-2621 ====================
-MODEL PERFORMANCE (IoU): 0.9674
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 ://www.google.com/search?q=what+is+the+brand+of+this+cigarette+on+the+man%27s+mouth&tbm=isch
@@ -617,7 +617,7 @@ GOLD LABELS (All Annotations):
   [3:92] 'www.google.com/search?q=what+is+the+brand+of+this+cigarette+on+the+man%27s+mouth&tbm=isch' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:92] '://www.google.com/search?q=what+is+the+brand+of+this+cigarette+on+the+man%27s+mouth&tbm=isch' | other | model confidence: 0.95
+  [3:92] 'www.google.com/search?q=what+is+the+brand+of+this+cigarette+on+the+man%27s+mouth&tbm=isch' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10833 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -652,7 +652,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-11574 ====================
-MODEL PERFORMANCE (IoU): 0.1818
+MODEL PERFORMANCE (IoU): 0.1860
 
 --- FULL MODEL RESPONSE ---
 The shrimp in the image are not pink; instead, they have a translucent, grayish color with some greenish and brownish stripes. Pink shrimp, such as the commonly known pink river shrimp (Palaemon elegans), typically display a vibrant pink hue, sometimes becoming more intense when cooked. These shrimp appear to be raw and are displayed on ice, which highlights their natural, unustral coloration.
@@ -677,7 +677,7 @@ GOLD LABELS (All Annotations):
   [376:384] 'unustral' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [167:203] 'pink river shrimp (Palaemon elegans)' | invention | model confidence: 0.85
+  [167:202] 'pink river shrimp (Palaemon elegans' | invention | model confidence: 0.85
   [376:384] 'unustral' | OCR | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1194 ====================
@@ -779,7 +779,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-10070 ====================
-MODEL PERFORMANCE (IoU): 0.0652
+MODEL PERFORMANCE (IoU): 0.0667
 
 --- FULL MODEL RESPONSE ---
 <points x1="283" y1="778" x2="355" y2="795" x3="427" y3="853" alt="benches">benches</points>
@@ -798,7 +798,7 @@ GOLD LABELS (All Annotations):
   [1:7] 'points' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:92] '<points x1="283" y1="778" x2="355" y2="795" x3="427" y3="853" alt="benches">benches</points>' | other | model confidence: 0.95
+  [1:91] 'points x1="283" y1="778" x2="355" y2="795" x3="427" y3="853" alt="benches">benches</points' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10062 ====================
 MODEL PERFORMANCE (IoU): 0.9796
@@ -870,7 +870,7 @@ PREDICTED LABELS:
   [49:54] 'black' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10137 ====================
-MODEL PERFORMANCE (IoU): 0.9961
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 {100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 
@@ -889,10 +889,10 @@ GOLD LABELS (All Annotations):
   [1:509] '100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:510] '{100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600,' | other | model confidence: 0.95
+  [1:509] '100, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-10888 ====================
-MODEL PERFORMANCE (IoU): 0.7500
+MODEL PERFORMANCE (IoU): 1.0000
 
 --- FULL MODEL RESPONSE ---
 .com
@@ -911,7 +911,7 @@ GOLD LABELS (All Annotations):
   [1:4] 'com' | other | agreement: 0.6666666667
 
 PREDICTED LABELS:
-  [0:4] '.com' | other | model confidence: 0.95
+  [1:4] 'com' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-1785 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1087,7 +1087,7 @@ GOLD LABELS (All Annotations):
   [3:5] 'No' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [40:51] 'transparent' | mischaracterization | model confidence: 0.85
+  [7:60] 'the bottles in the image are not transparent or clear' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10573 ====================
 MODEL PERFORMANCE (IoU): 0.0262
@@ -1149,7 +1149,7 @@ PREDICTED LABELS:
   (No spans predicted)
 
 ==================== IMAGE ID: train-en-1059 ====================
-MODEL PERFORMANCE (IoU): 0.0714
+MODEL PERFORMANCE (IoU): 0.0725
 
 --- FULL MODEL RESPONSE ---
 To determine the number of lights on the Christmas tree, I will would:
@@ -1173,7 +1173,7 @@ GOLD LABELS (All Annotations):
   [64:69] 'would' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [0:70] 'To determine the number of lights on the Christmas tree, I will would:' | other | model confidence: 0.95
+  [0:69] 'To determine the number of lights on the Christmas tree, I will would' | other | model confidence: 0.95
 
 ==================== IMAGE ID: train-en-2635 ====================
 MODEL PERFORMANCE (IoU): 0.0000
@@ -1195,7 +1195,7 @@ GOLD LABELS (All Annotations):
   [1:5] 'bird' | other | agreement: 0.3333333333
 
 PREDICTED LABELS:
-  [90:96] 'bright' | mischaracterization | model confidence: 0.85
+  [90:108] 'bright orange beak' | mischaracterization | model confidence: 0.85
 
 ==================== IMAGE ID: train-en-10805 ====================
 MODEL PERFORMANCE (IoU): 0.9841

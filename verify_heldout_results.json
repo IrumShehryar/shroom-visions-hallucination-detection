@@ -1,0 +1,123 @@
+{
+  "FP": [
+    {
+      "id": "train-en-477",
+      "span": "lighter, almost white or lavender stripes",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.85,
+        "reason": "The eggplant clearly shows lighter, whitish-lavender streaks radiating across its purple surface, visible in the image."
+      }
+    },
+    {
+      "id": "train-en-2371",
+      "span": "cracked asphalt or concrete",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.6,
+        "reason": "The surrounding surface's texture with embedded aggregate and cracking pattern is ambiguous and could plausibly be asphalt, so the original hedge 'asphalt or concrete' was reasonable rather than clearly wrong."
+      }
+    },
+    {
+      "id": "train-en-2057",
+      "span": "propellers",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.75,
+        "reason": "The rotors are essentially ducted propellers, so calling them 'propellers' is not technically wrong even though 'ducted fans' is a more precise description."
+      }
+    },
+    {
+      "id": "train-en-1828",
+      "span": "The yellow and teal containers hold whole coconut fruits that still possess their hard outer shell",
+      "verdict": {
+        "verdict": "confirm",
+        "confidence": 0.85,
+        "reason": "The teal container shows what appears to be dehusked white coconut flesh and brown pieces, not whole coconuts with intact shells, contradicting the claim that both containers hold whole shelled fruits."
+      }
+    },
+    {
+      "id": "train-en-11101",
+      "span": "blue SUV",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.75,
+        "reason": "The vehicle (a Lada Niva) is a compact 4x4 which is reasonably classified as an SUV, and its dark teal/blue-gray color can fairly be described as blue."
+      }
+    },
+    {
+      "id": "train-en-830",
+      "span": "bright",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.6,
+        "reason": "The star appears as a distinct bright white point clearly standing out against the dark sky, justifying the description as bright."
+      }
+    },
+    {
+      "id": "train-en-469",
+      "span": "does not appear to have stitching",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.93,
+        "reason": "The teal curved lines are painted/molded color patterns, not actual stitching or seams, so the response's claim of no stitching is correct."
+      }
+    }
+  ],
+  "TP": [
+    {
+      "id": "train-en-876",
+      "span": "still has its skin on",
+      "verdict": {
+        "verdict": "confirm",
+        "confidence": 0.97,
+        "reason": "The potato held in the hand is fully peeled, showing pale yellow flesh with no brown skin remaining, contradicting the response's claim."
+      }
+    },
+    {
+      "id": "train-en-1483",
+      "span": "rectangular blade",
+      "verdict": {
+        "verdict": "confirm",
+        "confidence": 0.9,
+        "reason": "The drums shown are cylindrical with round or slotted holes, not rectangular blades, so describing them as a 'rectangular blade' mischaracterizes their shape."
+      }
+    },
+    {
+      "id": "train-en-11139",
+      "span": "rose or a floral pattern",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.75,
+        "reason": "The lower part of the utensil handle visible in the image shows an embossed floral/rose-like design, so the claim is reasonably accurate."
+      }
+    },
+    {
+      "id": "train-en-2207",
+      "span": "grayish areas around its neck",
+      "verdict": {
+        "verdict": "confirm",
+        "confidence": 0.8,
+        "reason": "The neck and upper back markings appear as distinct black/dark patches contrasting with white, not grayish tones."
+      }
+    },
+    {
+      "id": "train-en-1727",
+      "span": "suspended from the ceiling by chains or straps",
+      "verdict": {
+        "verdict": "confirm",
+        "confidence": 0.85,
+        "reason": "The image shows the chair suspended by a single chain from a curved stand, not multiple chains or straps from a ceiling."
+      }
+    },
+    {
+      "id": "train-en-9671",
+      "span": "blue and red text",
+      "verdict": {
+        "verdict": "reject",
+        "confidence": 0.97,
+        "reason": "The white sign held by the man clearly shows both blue text (top lines) and red text (bottom line), so the claim of blue and red text is accurate."
+      }
+    }
+  ]
+}
