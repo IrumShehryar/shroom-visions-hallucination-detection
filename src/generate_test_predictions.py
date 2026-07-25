@@ -28,11 +28,16 @@ LANGUAGE = "en"
 TEST_LIMIT = None   # set to None to run all 1201 samples
 
 # Sonnet second-opinion filter on mischaracterization flags (src/verify_mischaracterization.py).
-# Confirmed net-positive on both a curated batch and a genuinely random natural-composition
-# sample (Cor +0.086, Cor+Lbl +0.087 on touched rows) -- see validation_outputs/ and
-# src/verify_natural_composition.py. Costs one extra Sonnet call per mischaracterization flag
-# (~815 flags on the full test set, ~$5-6) -- OFF by default; flip explicitly before a real run.
+# DEPLOYED 2026-07-17, confirmed real leaderboard gain: Cor+Lbl 0.2897->0.3008,
+# Cor 0.3824->0.3934. Cached in sonnet_verify_cache.json -- reruns are free.
 ENABLE_SONNET_VERIFICATION = True
+
+# Sonnet second-opinion filter on miscounting flags (src/verify_miscounting.py).
+# Validated on a curated dev batch: +0.0177 Cor / +0.0201 Cor+Lbl on touched rows,
+# projected +0.0037 Cor+Lbl full-submission (~236 flags, ~$1.27). Separate cache
+# file (sonnet_verify_miscounting_cache.json) -- enabling this never re-pays for
+# or touches the mischaracterization cache.
+ENABLE_MISCOUNTING_VERIFICATION = True
 # ---------------------------------------------------------------------------
 
 
@@ -119,16 +124,22 @@ def build_submission(rows, cache_data):
     response_by_id = {r["id"]: r.get("response", "") for r in rows}
     cache_by_id = {item["id"]: item for item in cache_data}
 
-    if ENABLE_SONNET_VERIFICATION:
-        n_mischar = 0
+    if ENABLE_SONNET_VERIFICATION or ENABLE_MISCOUNTING_VERIFICATION:
+        n_mischar, n_miscounting = 0, 0
         for item in cache_data:
             raw = item.get("haiku_reasoning", "[]").replace("```json", "").replace("```", "").strip()
             try:
-                n_mischar += sum(1 for e in json.loads(raw) if str(e.get("label", "")).lower() == "mischaracterization")
+                parsed = json.loads(raw)
+                n_mischar += sum(1 for e in parsed if str(e.get("label", "")).lower() == "mischaracterization")
+                n_miscounting += sum(1 for e in parsed if str(e.get("label", "")).lower() == "miscounting")
             except json.JSONDecodeError:
                 pass
-        print(f"\nSonnet verification ENABLED: up to {n_mischar} mischaracterization flags may need a Sonnet call "
-              f"(cached verdicts in sonnet_verify_cache.json are reused, so re-runs only pay for new ones).")
+        if ENABLE_SONNET_VERIFICATION:
+            print(f"\nMischaracterization verification ENABLED: up to {n_mischar} flags may need a Sonnet call "
+                  f"(cached verdicts in sonnet_verify_cache.json are reused, so re-runs only pay for new ones).")
+        if ENABLE_MISCOUNTING_VERIFICATION:
+            print(f"Miscounting verification ENABLED: up to {n_miscounting} flags may need a Sonnet call "
+                  f"(cached verdicts in sonnet_verify_miscounting_cache.json are reused, so re-runs only pay for new ones).")
 
     submission_rows = []
     for i, row in enumerate(rows, 1):
@@ -144,9 +155,11 @@ def build_submission(rows, cache_data):
         image_path = os.path.join(IMAGES_DIR, row.get("image_name", ""))
         pred_labels = map_spans_to_characters(
             llm_output, response_text,
-            sample_id=sample_id, image_path=image_path, verify_mischar=ENABLE_SONNET_VERIFICATION,
+            sample_id=sample_id, image_path=image_path,
+            verify_mischar=ENABLE_SONNET_VERIFICATION,
+            verify_miscounting=ENABLE_MISCOUNTING_VERIFICATION,
         )
-        if ENABLE_SONNET_VERIFICATION and i % 50 == 0:
+        if (ENABLE_SONNET_VERIFICATION or ENABLE_MISCOUNTING_VERIFICATION) and i % 50 == 0:
             print(f"  ...verified {i}/{len(rows)} rows")
         clean_labels = [
             {

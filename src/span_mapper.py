@@ -87,18 +87,22 @@ def _find_unused_occurrence(haystack, needle, already_used):
         start = idx + 1
 
 
-def map_spans_to_characters(llm_output, response_text, sample_id=None, image_path=None, verify_mischar=False):
+def map_spans_to_characters(llm_output, response_text, sample_id=None, image_path=None, verify_mischar=False, verify_miscounting=False):
     # Local import: relabel_miscounting imports NUMBER_WORDS/_tokenize_words
     # from this module, so a top-level import here would be circular.
     from src.relabel_miscounting import relabel_miscounting
     llm_output = relabel_miscounting(llm_output)
 
-    # Optional Sonnet second-opinion filter on remaining mischaracterization
-    # flags -- costs real API calls, so it only runs when explicitly enabled
-    # with an image_path. See src/verify_mischaracterization.py for why.
+    # Optional Sonnet second-opinion filters -- cost real API calls, so they
+    # only run when explicitly enabled with an image_path. Each uses its own
+    # cache file (see src/verify_mischaracterization.py, src/verify_miscounting.py)
+    # so enabling one never re-pays for or touches the other's cached spend.
     if verify_mischar and image_path:
         from src.verify_mischaracterization import verify_mischaracterization_flags
         llm_output = verify_mischaracterization_flags(sample_id, llm_output, image_path, response_text)
+    if verify_miscounting and image_path:
+        from src.verify_miscounting import verify_miscounting_flags
+        llm_output = verify_miscounting_flags(sample_id, llm_output, image_path, response_text)
 
     mapped = []
     already_used = []

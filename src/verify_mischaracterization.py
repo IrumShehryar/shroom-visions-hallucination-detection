@@ -51,16 +51,16 @@ def _parse_verdict(raw_text):
         return {"verdict": "confirm", "confidence": None, "reason": "PARSE_ERROR -- kept flag"}
 
 
-def verify_mischaracterization_flags(sample_id, llm_output, image_path, response_text, cache_path=VERIFY_CACHE_PATH):
-    """Returns a filtered copy of llm_output: mischaracterization entries
+def verify_label_flags(sample_id, llm_output, image_path, response_text, label, cache_path):
+    """Returns a filtered copy of llm_output: entries of the given label that
     Sonnet rejects are dropped, everything else passes through untouched.
-    Makes one Sonnet API call per NOT-yet-cached mischaracterization entry."""
+    Makes one Sonnet API call per NOT-yet-cached entry of that label."""
     cache = _load_cache(cache_path)
     out = []
     changed = False
 
     for entry in llm_output:
-        if str(entry.get("label", "")).lower() != "mischaracterization":
+        if str(entry.get("label", "")).lower() != label:
             out.append(entry)
             continue
 
@@ -75,7 +75,7 @@ def verify_mischaracterization_flags(sample_id, llm_output, image_path, response
         else:
             result_text, _, _ = call_sonnet_verify(
                 image_path, response_text, span_text,
-                entry.get("label", "mischaracterization"), entry.get("reason", ""),
+                entry.get("label", label), entry.get("reason", ""),
             )
             verdict_obj = _parse_verdict(result_text)
             cache[cache_key] = verdict_obj
@@ -88,3 +88,7 @@ def verify_mischaracterization_flags(sample_id, llm_output, image_path, response
     if changed:
         _save_cache(cache, cache_path)
     return out
+
+
+def verify_mischaracterization_flags(sample_id, llm_output, image_path, response_text, cache_path=VERIFY_CACHE_PATH):
+    return verify_label_flags(sample_id, llm_output, image_path, response_text, "mischaracterization", cache_path)

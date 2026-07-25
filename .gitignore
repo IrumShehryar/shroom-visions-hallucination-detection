@@ -1,21 +1,16 @@
-.env
-distrib/
-*.jsonl
-*.tar.gz
-*.zip
-__pycache__/
-*.pyc
+# Ignore everything by default — only the live prediction pipeline ships here.
+*
 
-# raw API response caches — large, regeneratable, not source code
-cache_outputs/
-old_prompt_v1_cache_outputs/
-scoring_run/
-old_prompt_v1_scoring_run/
-test_predictions_raw_cache.json
-sonnet_verify_cache.json
-sonnet_verify_miscounting_cache.json
-fresh_validation_raw_cache.json
-fresh_verify_raw_cache.json
-
-# working scratch data — kept locally for re-verification until paper submission
-scratchpad_*
+# except:
+!.gitignore
+!src/
+!src/__init__.py
+!src/vision_llm.py
+!src/prompt_builder.py
+!src/relabel_miscounting.py
+!src/verify_flag_with_sonnet.py
+!src/verify_mischaracterization.py
+!src/verify_miscounting.py
+!src/span_mapper.py
+!src/format_checker.py
+!src/generate_test_predictions.py
