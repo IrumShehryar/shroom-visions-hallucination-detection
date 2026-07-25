@@ -3,6 +3,7 @@
 
 # except:
 !.gitignore
+!README.md
 !src/
 !src/__init__.py
 !src/vision_llm.py
