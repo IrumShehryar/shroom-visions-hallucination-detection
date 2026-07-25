@@ -16,3 +16,6 @@ sonnet_verify_cache.json
 sonnet_verify_miscounting_cache.json
 fresh_validation_raw_cache.json
 fresh_verify_raw_cache.json
+
+# working scratch data — kept locally for re-verification until paper submission
+scratchpad_*
