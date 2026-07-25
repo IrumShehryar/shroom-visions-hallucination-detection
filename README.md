@@ -54,3 +54,15 @@ This repo tracks only the live pipeline files that produce a submission — not 
 ## Setup
 
 Requires `anthropic`, `python-dotenv`, and `nltk` (with `averaged_perceptron_tagger_eng` and `punkt_tab` downloaded). Set `ANTHROPIC_API_KEY` in a `.env` file at the repo root. The organizers' dataset and images aren't included here — point `TEST_DATA_PATH` and `IMAGES_DIR` in `src/generate_test_predictions.py` at your local copy.
+
+## How to run
+
+From the repo root:
+
+```
+python -m src.generate_test_predictions
+```
+
+This calls Haiku 4.5 once per sample in `TEST_DATA_PATH`, checkpointing raw responses to a local cache every 25 samples so a crash or interruption doesn't cost you re-calls — rerunning the command resumes from the cache instead of re-querying already-processed samples. Before spending any API calls, it prints how many samples remain and asks for `y`/`n` confirmation.
+
+Once all samples are cached, it applies the numeral-relabeling fix, runs Sonnet 5 verification on mischaracterization/miscounting flags (toggle with `ENABLE_SONNET_VERIFICATION` / `ENABLE_MISCOUNTING_VERIFICATION` at the top of the file — each has its own cache, so disabling one doesn't affect the other's cached verdicts), maps spans to character offsets, writes the submission JSONL to `SUBMISSION_OUT`, and validates it with `format_checker.py` before reporting it ready to submit.
