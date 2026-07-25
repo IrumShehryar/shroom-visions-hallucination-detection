@@ -22,12 +22,29 @@ def get_image_media_type(image_path):
 
 def parse_llm_response(raw_text):
     print(f"RAW FROM CLAUDE: {raw_text}")
-    clean = re.sub(r"```json|```", "", raw_text).strip()
+
+    # Robust extraction: grab ONLY the first ```json ... ``` fenced block if
+    # present, and ignore any explanatory prose Haiku adds before/after it.
+    # A naive strip-and-parse breaks whenever the model reasons out loud
+    # around the JSON, silently turning a valid answer into an empty list.
+    fenced = re.search(r"```json\s*(.*?)```", raw_text, re.DOTALL)
+    candidate = fenced.group(1).strip() if fenced else raw_text.strip()
+
     try:
-        return json.loads(clean)
+        return json.loads(candidate)
     except json.JSONDecodeError:
-        print(f"Warning: Could not parse JSON: {raw_text[:100]}")
-        return []
+        pass
+
+    # Fallback: find the first top-level [...] array anywhere in the text.
+    bracket_match = re.search(r"\[.*?\]", raw_text, re.DOTALL)
+    if bracket_match:
+        try:
+            return json.loads(bracket_match.group(0))
+        except json.JSONDecodeError:
+            pass
+
+    print(f"Warning: Could not parse JSON: {raw_text[:100]}")
+    return []
 
 def call_vision_llm(image_path, audit_prompt):
     client = anthropic.Anthropic(
@@ -63,7 +80,3 @@ def call_vision_llm(image_path, audit_prompt):
     
     raw_text = response.content[0].text
     return parse_llm_response(raw_text),raw_text
-
-
-
-

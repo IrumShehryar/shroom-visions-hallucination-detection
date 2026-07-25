@@ -1,5 +1,17 @@
-.env
-distrib/
-*.jsonl
-*.tar.gz
-*.zip
+# Ignore everything by default — only the live prediction pipeline ships here.
+*
+
+# except:
+!.gitignore
+!README.md
+!src/
+!src/__init__.py
+!src/vision_llm.py
+!src/prompt_builder.py
+!src/relabel_miscounting.py
+!src/verify_flag_with_sonnet.py
+!src/verify_mischaracterization.py
+!src/verify_miscounting.py
+!src/span_mapper.py
+!src/format_checker.py
+!src/generate_test_predictions.py
