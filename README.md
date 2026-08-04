@@ -47,6 +47,8 @@ Haiku 4.5 does the initial zero-shot detection pass over every sample. Two cheap
 
 Both post-processing steps were validated on held-out labeled data before being deployed, and both produced a confirmed real gain on the leaderboard.
 
+A detailed write-up of the system, validation methodology, and results is being prepared as a research paper. It will be linked here once that work has completed peer review.
+
 ## Repo scope
 
 This repo tracks only the live pipeline files that produce a submission — not the research/validation trail (dev-set error analysis, ablations, chart generation, manual review tooling) used to arrive at it.
