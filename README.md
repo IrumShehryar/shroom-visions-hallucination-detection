@@ -47,7 +47,7 @@ Haiku 4.5 does the initial zero-shot detection pass over every sample. Two cheap
 
 Both post-processing steps were validated on held-out labeled data before being deployed, and both produced a confirmed real gain on the leaderboard.
 
-A detailed write-up of the system, validation methodology, and results is being prepared as a research paper. It will be linked here once that work has completed peer review.
+A detailed write-up of the system, validation methodology, and results — **IrumS at SHROOM-Visions 2026: When One Fix Doesn't Fit All — Category-Aware Hallucination Span Detection**, by Irum Shehryar — has been accepted at the UncertaiNLP workshop, co-located with EMNLP 2026. The system ranked 13th of 26 participating teams (Cor+Lbl 0.3015, Cor 0.3949, IoU 0.3421). A link to the published paper will be added here once the official proceedings are available.
 
 ## Repo scope
 
